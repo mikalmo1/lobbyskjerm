@@ -51,9 +51,10 @@
   }
   .cine__poster{
     position:absolute;
-    top:5vh; left:6vw; right:6vw; bottom:31vh;
-    width:88vw; height:64vh;
+    top:5vh; left:6vw; right:6vw;
+    width:88vw; height:55vh;   /* stopper før tekstsonen — brede bannere krasjet med tittelen */
     object-fit:contain;
+    object-position:50% 0;     /* anker mot toppen, ikke sentrert nedover */
     filter:drop-shadow(0 2vh 5vh rgba(0,0,0,.6));
   }
   .cine__scrim{
@@ -68,6 +69,7 @@
   #slide.fullmedia .cine__poster{
     top:0; left:0; right:0; bottom:0;
     width:100vw; height:100vh;
+    object-position:50% 50%;
     filter:none;
   }
   #video{
