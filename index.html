@@ -226,40 +226,56 @@ function parsePlakatnavn(navn){
   return {tittel: tittel || navn, dato: dato, harTid: !!m[4], erVideo: erVideo, fullbleed: fullbleed};
 }
 
+function _tilSlide(navn, url){
+  var p = parsePlakatnavn(navn);
+  if (!p) return null;
+  if (p.dato && p.dato < startenAvIdag()) return null; // passert → vis ikke
+  return {
+    type: "kino",
+    media: p.erVideo ? "video" : "bilde",
+    fullbleed: p.fullbleed,
+    kicker: "Bygdekinoen i Selbu",
+    kilde: "bygdekinoen.no",
+    tittel: p.tittel,
+    dato: p.dato,
+    harTid: p.harTid,
+    url: url
+  };
+}
+
 function hentPlakater(){
   var repo = detectRepo();
   if (!repo) return Promise.resolve([]);
-  var url = "https://api.github.com/repos/" + repo.user + "/" + repo.repo +
-            "/contents/" + PLAKAT_MAPPE + "?t=" + Date.now();
-  return fetch(url, {cache:"no-store"})
+  var base = "https://api.github.com/repos/" + repo.user + "/" + repo.repo;
+
+  // Bilder m.m. fra plakat-mappa.
+  var mappe = fetch(base + "/contents/" + PLAKAT_MAPPE + "?t=" + Date.now(), {cache:"no-store"})
     .then(function(r){ return r.ok ? r.json() : []; })
     .then(function(filer){
       if (!Array.isArray(filer)) return [];
-      var idag = startenAvIdag();
-      return filer.map(function(f){
-        var p = parsePlakatnavn(f.name);
-        if (!p) return null;
-        if (p.dato && p.dato < idag) return null; // passert → vis ikke
-        return {
-          type: "kino",
-          media: p.erVideo ? "video" : "bilde",
-          fullbleed: p.fullbleed,
-          kicker: "Bygdekinoen i Selbu",
-          kilde: "bygdekinoen.no",
-          tittel: p.tittel,
-          dato: p.dato,
-          harTid: p.harTid,
-          url: f.download_url
-        };
-      }).filter(Boolean)
-        .sort(function(a,b){
-          if (a.dato && b.dato) return a.dato - b.dato;
-          if (a.dato) return -1;
-          if (b.dato) return 1;
-          return a.tittel.localeCompare(b.tittel,"nb");
-        });
+      return filer.map(function(f){ return _tilSlide(f.name, f.download_url); });
     })
     .catch(function(){ return []; });
+
+  // Videoer fra release-en «infoskjerm» (store filer; publisert fra Knuten).
+  var release = fetch(base + "/releases/tags/infoskjerm?t=" + Date.now(), {cache:"no-store"})
+    .then(function(r){ return r.ok ? r.json() : null; })
+    .then(function(rel){
+      if (!rel || !Array.isArray(rel.assets)) return [];
+      return rel.assets.map(function(a){ return _tilSlide(a.name, a.browser_download_url); });
+    })
+    .catch(function(){ return []; });
+
+  return Promise.all([mappe, release]).then(function(res){
+    return res[0].concat(res[1])
+      .filter(Boolean)
+      .sort(function(a,b){
+        if (a.dato && b.dato) return a.dato - b.dato;
+        if (a.dato) return -1;
+        if (b.dato) return 1;
+        return a.tittel.localeCompare(b.tittel,"nb");
+      });
+  });
 }
 
 /* --- rotasjon (timeout-basert: bilder = fast tid, video = til den er ferdig) --- */

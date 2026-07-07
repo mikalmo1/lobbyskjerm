@@ -66,8 +66,10 @@ men rydd gjerne i mappa av og til likevel.
 ### Video
 
 - mp4/webm støttes; spilles av uten lyd (skjermen står i et venterom).
-- Hold filene under ~95 MB (GitHub-grense). Loop-videoen fra Knuten er innenfor;
-  komprimer med lavere bitrate om nødvendig.
+- Siden henter video fra to steder: `plakater/`-mappa (git — hold filer her under
+  ~50 MB) og **release-en med tag `infoskjerm`** (assets, tåler store filer —
+  det er dit Knutens publiser-knapp legger loop-videoene, komprimert til ~85 MB
+  ved behov). Navnekonvensjonen er den samme begge steder.
 - Kino-modulen i Knuten har en egen **«Publiser til infoskjerm»**-knapp som legger
   kveldens loop-video (eller lobbyplakat) rett i `plakater/`-mappa her — da trengs
   ikke git i det hele tatt. Jf. `DEPLOY-infoskjerm.md` i portal-repoet.
