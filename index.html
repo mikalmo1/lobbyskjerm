@@ -19,8 +19,10 @@
     background:linear-gradient(135deg,var(--nea-moerk) 0%,var(--nea-blaa) 60%,#37788f 100%);
     color:var(--hvit);
   }
+  /* NB: skjermens nettleser er gammel Chromium — unngå `inset`, flex-`gap`,
+     aspect-ratio o.l. Bruk top/left/right/bottom og marginer. */
   #slide{
-    position:absolute;inset:0;
+    position:absolute;top:0;left:0;right:0;bottom:0;
     display:flex;
     opacity:1;
     transition:opacity .7s ease;
@@ -47,10 +49,11 @@
     display:flex;flex-direction:column;justify-content:center;
     padding:0 4vw 8vh 3.5vw;
   }
-  /* video vises full-bleed uten tekstpanel */
+  /* video og [skjerm]-bilder vises full-bleed uten tekstpanel */
   #slide.fullvid{background:#000;}
   #slide.fullvid .media{flex:1;padding:0;background:#000;}
   #slide.fullvid .media video{width:100%;height:100%;}
+  #slide.fullvid .media img{max-width:100%;max-height:100%;width:100%;height:100%;border-radius:0;box-shadow:none;}
   #slide.fullvid .info{display:none;}
   .kicker{
     font-size:1.9vw;font-weight:700;letter-spacing:.35em;
@@ -69,11 +72,11 @@
   }
   /* fallback-slide */
   .fallback{
-    position:absolute;inset:0;
-    display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2vh;
+    position:absolute;top:0;left:0;right:0;bottom:0;
+    display:flex;flex-direction:column;align-items:center;justify-content:center;
   }
   .fallback .stor{font-size:6vw;font-weight:900;}
-  .fallback .liten{font-size:2.2vw;opacity:.8;}
+  .fallback .liten{font-size:2.2vw;opacity:.8;margin-top:2vh;}
   #bunn{
     position:absolute;left:0;right:0;bottom:0;
     display:flex;align-items:center;justify-content:space-between;
@@ -83,9 +86,10 @@
     z-index:2;
   }
   #klokke{font-weight:600;letter-spacing:.03em;}
-  #dots{display:flex;gap:.5vw;}
+  #dots{display:flex;}
   #dots span{
     width:.7vw;height:.7vw;border-radius:50%;
+    margin-left:.5vw;
     background:rgba(255,255,255,.35);
   }
   #dots span.aktiv{background:var(--hvit);}
@@ -206,8 +210,11 @@ function hentKultursal(){
    "2026-09-15 1800 En nasjon i sjakk.jpg" → tittel + "tirsdag 15. september kl. 18:00"
    "En nasjon i sjakk.jpg"                 → bare tittel
    "bygdekino-host.mp4"                    → video, spilles ferdig én gang
+   "[skjerm]" i navnet                     → bildet vises full-bleed uten tekstpanel
    Filer med dato som er passert vises ikke. */
 function parsePlakatnavn(navn){
+  var fullbleed = /\[skjerm\]/i.test(navn);
+  navn = navn.replace(/\s*\[skjerm\]\s*/ig," ").replace(/\s+/g," ").trim();
   var m = navn.match(/^(?:(\d{4})-(\d{2})-(\d{2})(?:[ _]+(\d{2})[.:]?(\d{2}))?[ _-]*)?(.*)\.(jpe?g|png|webp|gif|mp4|webm)$/i);
   if (!m) return null;
   var dato = null;
@@ -216,7 +223,7 @@ function parsePlakatnavn(navn){
   }
   var tittel = (m[6] || "").replace(/[_-]+/g," ").replace(/\s+/g," ").trim();
   var erVideo = /^(mp4|webm)$/i.test(m[7]);
-  return {tittel: tittel || navn, dato: dato, harTid: !!m[4], erVideo: erVideo};
+  return {tittel: tittel || navn, dato: dato, harTid: !!m[4], erVideo: erVideo, fullbleed: fullbleed};
 }
 
 function hentPlakater(){
@@ -236,6 +243,7 @@ function hentPlakater(){
         return {
           type: "kino",
           media: p.erVideo ? "video" : "bilde",
+          fullbleed: p.fullbleed,
           kicker: "Bygdekinoen i Selbu",
           kilde: "bygdekinoen.no",
           tittel: p.tittel,
@@ -289,7 +297,7 @@ function visSlide(n){
       vid.play().catch(function(){ planleggNeste(SEKUNDER_PER_SLIDE); });
       planleggNeste(MAKS_VIDEO_SEKUNDER); // sikkerhetsnett; onended vinner normalt
     } else {
-      slideEl.classList.remove("fullvid");
+      slideEl.classList.toggle("fullvid", !!s.fullbleed);
       vid.style.display = "none";
       img.style.display = "block";
       img.onerror = function(){ nesteSlide(); };

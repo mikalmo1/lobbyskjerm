@@ -10,7 +10,7 @@ Innholdet henter seg selv:
 
 ## Førstegangsoppsett
 
-1. Opprett et **offentlig** repo på github.com, f.eks. `infoskjerm` (uten README).
+1. Opprett et **offentlig** repo på github.com (dette repoet: `lobbyskjerm`).
 2. Push innholdet i denne mappa:
 
    **[LOKAL]**
@@ -20,12 +20,12 @@ Innholdet henter seg selv:
    git add .
    git commit -m "Infoskjerm v1"
    git branch -M main
-   git remote add origin git@github.com:<BRUKER>/infoskjerm.git
+   git remote add origin https://github.com/mikalmo1/lobbyskjerm.git
    git push -u origin main
    ```
 
 3. På github.com: **Settings → Pages → Source: Deploy from a branch → main / (root) → Save.**
-   Etter et par minutter ligger siden på `https://<BRUKER>.github.io/infoskjerm/`.
+   Etter et par minutter ligger siden på `https://mikalmo1.github.io/lobbyskjerm/`.
 4. Åpne URL-en i en nettleser og sjekk at kultursal-programmet vises.
 5. I MagicInfo: legg URL-en inn som web-innhold og bytt den inn i spillelisten
    (erstatter taletkultursal.no/infoskjerm2/). Dette gjøres **én gang**.
@@ -57,9 +57,20 @@ Skjermen viser de nye plakatene innen ca. et minutt (senest ved neste
 | `2026-09-15 1800 En nasjon i sjakk.jpg` | «En nasjon i sjakk» + *tirsdag 15. september kl. 18:00* |
 | `2026-09-15 En nasjon i sjakk.jpg` | tittel + dato uten klokkeslett |
 | `En nasjon i sjakk.jpg` | bare tittel |
+| `2026-09-15 Bygdekino loop.mp4` | video – spilles ferdig én gang per runde, full skjerm |
+| `2026-09-15 [skjerm] Bygdekino.png` | bilde i full skjerm **uten** tekstpanel (ferdigdesignet 1920×1080) |
 
-Plakater med dato **som er passert, forsvinner automatisk** fra skjermen –
+Filer med dato **som er passert, forsvinner automatisk** fra skjermen –
 men rydd gjerne i mappa av og til likevel.
+
+### Video
+
+- mp4/webm støttes; spilles av uten lyd (skjermen står i et venterom).
+- Hold filene under ~95 MB (GitHub-grense). Loop-videoen fra Knuten er innenfor;
+  komprimer med lavere bitrate om nødvendig.
+- Kino-modulen i Knuten har en egen **«Publiser til infoskjerm»**-knapp som legger
+  kveldens loop-video (eller lobbyplakat) rett i `plakater/`-mappa her — da trengs
+  ikke git i det hele tatt. Jf. `DEPLOY-infoskjerm.md` i portal-repoet.
 
 ## Slik virker det (teknisk)
 
