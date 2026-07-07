@@ -3,132 +3,276 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Infoskjerm – Selbu</title>
+<title>Tælet Kultursal · Infoskjerm</title>
+
+<!--
+  Infoskjerm for lobbyskjermen (Samsung S6/MagicInfo, 1920×1080).
+  Design: «kinematisk» retning fra Claude Design-leveransen (kongelilla fra
+  taletkultursal.no + gull-aksent, Oswald/Barlow). Skrevet for GAMMEL nettleser
+  (~Chromium 56): ingen grid, flex-gap, inset, aspect-ratio, clamp().
+
+  Innhold (hentes dynamisk):
+    · Tælet Kultursal-program  – åpent API på taletkultursal.no
+    · Bygdekino                – bilder fra plakater/-mappa (contents-API) og
+                                 videoer fra release «infoskjerm» (assets)
+    · Været i Selbu            – api.met.no (Yr), egen slide
+  Filnavn-konvensjon (plakater/assets): se README.md.
+-->
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700;900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+
 <style>
   :root{
-    --nea-blaa:#296079;
-    --nea-moerk:#1c4557;
-    --hvit:#ffffff;
+    --purple:      #4a2570;
+    --purple-lite: #6a3f9b;
+    --purple-deep: #2a1642;
+    --ink:         #180e28;
+    --gold:        #d8b25f;
   }
-  *{margin:0;padding:0;box-sizing:border-box;}
-  html,body{height:100%;overflow:hidden;}
-  body{
-    font-family:'Source Sans 3','Source Sans Pro','Segoe UI',sans-serif;
-    background:linear-gradient(135deg,var(--nea-moerk) 0%,var(--nea-blaa) 60%,#37788f 100%);
-    color:var(--hvit);
+  *{ box-sizing:border-box; margin:0; padding:0; }
+  html,body{ width:100%; height:100%; overflow:hidden; background:var(--ink); }
+  body{ font-family:'Barlow', Arial, sans-serif; -webkit-font-smoothing:antialiased; }
+
+  .lag{ position:absolute; top:0; left:0; right:0; bottom:0; }
+
+  /* ===== Kinematisk arrangement-slide ===== */
+  #slide{ background:var(--ink); opacity:1; transition:opacity .7s ease; }
+  #slide.skjul{ opacity:0; }
+
+  .cine__bg{
+    position:absolute; top:-6vh; left:-6vw; right:-6vw; bottom:-6vh;
+    width:112vw; height:112vh;
+    object-fit:cover;
+    -webkit-filter:blur(3.2vh) brightness(.5) saturate(1.05);
+            filter:blur(3.2vh) brightness(.5) saturate(1.05);
+    opacity:.9;
   }
-  /* NB: skjermens nettleser er gammel Chromium — unngå `inset`, flex-`gap`,
-     aspect-ratio o.l. Bruk top/left/right/bottom og marginer. */
-  #slide{
-    position:absolute;top:0;left:0;right:0;bottom:0;
-    display:flex;
-    opacity:1;
-    transition:opacity .7s ease;
-  }
-  #slide.skjul{opacity:0;}
-  .media{
-    flex:0 0 58%;
-    display:flex;align-items:center;justify-content:center;
-    background:rgba(0,0,0,.25);
-    padding:3vh 2vw;
-  }
-  .media img{
-    max-width:100%;max-height:100%;
+  .cine__poster{
+    position:absolute;
+    top:5vh; left:6vw; right:6vw; bottom:31vh;
+    width:88vw; height:64vh;
     object-fit:contain;
-    border-radius:.6vw;
-    box-shadow:0 1vh 4vh rgba(0,0,0,.45);
+    filter:drop-shadow(0 2vh 5vh rgba(0,0,0,.6));
   }
-  .media video{
-    max-width:100%;max-height:100%;
+  .cine__scrim{
+    position:absolute; left:0; right:0; bottom:0;
+    height:52vh;
+    background:linear-gradient(to top, rgba(15,8,25,.96) 0%, rgba(15,8,25,.86) 26%, rgba(15,8,25,0) 100%);
+  }
+  .cine__text{ position:absolute; left:6vw; right:6vw; bottom:12vh; }
+
+  /* video + [skjerm]-bilder: full-bleed uten tekst */
+  #slide.fullmedia .cine__bg, #slide.fullmedia .cine__scrim, #slide.fullmedia .cine__text{ display:none; }
+  #slide.fullmedia .cine__poster{
+    top:0; left:0; right:0; bottom:0;
+    width:100vw; height:100vh;
+    filter:none;
+  }
+  #video{
+    position:absolute; top:0; left:0; right:0; bottom:0;
+    width:100vw; height:100vh;
     object-fit:contain;
+    background:#000;
   }
-  .info{
-    flex:1;
-    display:flex;flex-direction:column;justify-content:center;
-    padding:0 4vw 8vh 3.5vw;
-  }
-  /* video og [skjerm]-bilder vises full-bleed uten tekstpanel */
-  #slide.fullvid{background:#000;}
-  #slide.fullvid .media{flex:1;padding:0;background:#000;}
-  #slide.fullvid .media video{width:100%;height:100%;}
-  #slide.fullvid .media img{max-width:100%;max-height:100%;width:100%;height:100%;border-radius:0;box-shadow:none;}
-  #slide.fullvid .info{display:none;}
+
+  /* ===== Tekstblokker ===== */
   .kicker{
-    font-size:1.9vw;font-weight:700;letter-spacing:.35em;
-    text-transform:uppercase;opacity:.75;margin-bottom:2.5vh;
+    font-family:'Oswald', sans-serif;
+    font-weight:600;
+    text-transform:uppercase;
+    letter-spacing:.28vw;
+    font-size:1.5vw;
+    color:var(--gold);
+    display:flex; align-items:center;
+    margin-bottom:2.4vh;
+  }
+  .kicker__dot{
+    display:inline-block;
+    width:1.15vw; height:1.15vw;
+    margin-right:1vw;
+    background:var(--gold);
+    -webkit-transform:rotate(45deg); transform:rotate(45deg);
   }
   .title{
-    font-size:3.6vw;font-weight:900;line-height:1.12;
-    margin-bottom:3vh;text-wrap:balance;
+    font-family:'Oswald', sans-serif;
+    font-weight:600;
+    line-height:1.02;
+    letter-spacing:.005em;
+    color:#fff;
+    font-size:4.4vw;
+    text-shadow:0 .4vh 3vh rgba(0,0,0,.55);
   }
-  .date{
-    font-size:2.3vw;font-weight:600;opacity:.95;
+  .rule{ width:9vw; height:.35vh; margin:3.2vh 0; border-radius:1vh; background:var(--gold); }
+  .when{
+    font-family:'Barlow', sans-serif;
+    font-weight:500;
+    font-size:2.05vw;
+    line-height:1.15;
+    color:#e9e2f2;
   }
-  .date .tid{opacity:.8;}
-  .src{
-    margin-top:5vh;font-size:1.3vw;opacity:.55;letter-spacing:.08em;
+  .when b{ font-weight:700; }
+
+  /* inn-animasjon på tekst når slide byttes */
+  @keyframes fadeUp{ from{ opacity:0; -webkit-transform:translateY(2vh); transform:translateY(2vh);} to{ opacity:1; -webkit-transform:none; transform:none;} }
+  .anim .kicker, .anim .title, .anim .rule, .anim .when{
+    -webkit-animation:fadeUp .7s ease both; animation:fadeUp .7s ease both;
   }
-  /* fallback-slide */
-  .fallback{
-    position:absolute;top:0;left:0;right:0;bottom:0;
-    display:flex;flex-direction:column;align-items:center;justify-content:center;
+  .anim .title{ -webkit-animation-delay:.08s; animation-delay:.08s; }
+  .anim .rule{  -webkit-animation-delay:.14s; animation-delay:.14s; }
+  .anim .when{  -webkit-animation-delay:.20s; animation-delay:.20s; }
+
+  /* ===== Rolige flater: fallback + vær ===== */
+  .calm{ background:linear-gradient(155deg, #56308a 0%, var(--purple) 42%, var(--purple-deep) 100%); }
+  .calm:after{
+    content:"";
+    position:absolute; top:0; left:0; right:0; bottom:0;
+    box-shadow:inset 0 0 40vh rgba(0,0,0,.35);
+    pointer-events:none;
   }
-  .fallback .stor{font-size:6vw;font-weight:900;}
-  .fallback .liten{font-size:2.2vw;opacity:.8;margin-top:2vh;}
-  #bunn{
-    position:absolute;left:0;right:0;bottom:0;
-    display:flex;align-items:center;justify-content:space-between;
-    padding:1.6vh 2vw;
+  .fb{
+    position:absolute; top:0; left:0; right:0; bottom:0;
+    display:flex; flex-direction:column;
+    align-items:center; justify-content:center;
+    text-align:center;
+    padding-bottom:6vh;
+  }
+  .emblem{
+    width:2.6vw; height:2.6vw;
+    margin-bottom:4vh;
+    border:.35vh solid var(--gold);
+    -webkit-transform:rotate(45deg); transform:rotate(45deg);
+  }
+  .fb__word{ font-family:'Oswald', sans-serif; font-weight:600; color:#fff; font-size:8vw; line-height:.95; letter-spacing:.06em; }
+  .fb__sub{ font-family:'Oswald', sans-serif; font-weight:400; color:rgba(255,255,255,.72); text-transform:uppercase; letter-spacing:1.1vw; font-size:2vw; margin-top:1.6vh; }
+  .fb__divider{ width:16vw; height:.3vh; margin:5vh 0; background:rgba(255,255,255,.28); }
+  .fb__date{ font-family:'Barlow', sans-serif; font-weight:500; color:rgba(255,255,255,.85); font-size:2.2vw; }
+  .fb__time{ font-family:'Oswald', sans-serif; font-weight:500; color:#fff; font-size:6vw; line-height:1; letter-spacing:.02em; margin-top:.5vh; }
+
+  /* ===== Vær-slide ===== */
+  #vaer{ opacity:1; transition:opacity .7s ease; }
+  #vaer.skjul{ opacity:0; }
+  .vaer__inn{
+    position:absolute; top:0; left:0; right:0; bottom:0;
+    display:flex; flex-direction:column;
+    align-items:center; justify-content:center;
+    padding-bottom:8vh;
+    text-align:center;
+  }
+  .vaer__naa{ display:flex; align-items:center; margin:4vh 0 6vh 0; }
+  .vaer__naa img{ width:11vw; height:11vw; }
+  .vaer__temp{
+    font-family:'Oswald', sans-serif; font-weight:500;
+    font-size:9vw; line-height:1; color:#fff;
+    margin-left:2vw;
+  }
+  .vaer__kol{ display:flex; }
+  .vaer__pkt{
+    width:14vw;
+    margin:0 1.5vw;
+    padding:2.5vh 0;
+    border-radius:1.5vh;
+    background:rgba(255,255,255,.08);
+  }
+  .vaer__pkt .n{
+    font-family:'Oswald', sans-serif; font-weight:500;
+    text-transform:uppercase; letter-spacing:.15vw;
+    font-size:1.3vw; color:rgba(255,255,255,.75);
+  }
+  .vaer__pkt img{ width:5.5vw; height:5.5vw; margin:1.2vh 0; }
+  .vaer__pkt .t{ font-family:'Oswald', sans-serif; font-weight:600; font-size:2.4vw; color:#fff; }
+  .vaer__pkt .r{ font-family:'Barlow', sans-serif; font-weight:600; font-size:1.2vw; color:#9fc6e8; margin-top:.6vh; min-height:1.6vw; }
+
+  /* ===== Persistent bunnlinje ===== */
+  .footer{
+    position:absolute; left:0; right:0; bottom:0;
+    height:10vh;
+    z-index:9;
+    display:flex;
+    align-items:flex-end;
+    justify-content:space-between;
+    padding:0 3vw 3vh 3vw;
+    background:linear-gradient(to top, rgba(15,8,25,.72) 0%, rgba(15,8,25,.30) 55%, rgba(15,8,25,0) 100%);
+    pointer-events:none;
+  }
+  .footer__clock{
+    font-family:'Barlow', sans-serif;
+    font-weight:600;
     font-size:1.5vw;
-    background:rgba(0,0,0,.28);
-    z-index:2;
+    color:#fff;
+    letter-spacing:.01em;
+    text-shadow:0 .2vh 1.2vh rgba(0,0,0,.5);
   }
-  #klokke{font-weight:600;letter-spacing:.03em;}
-  #dots{display:flex;}
-  #dots span{
-    width:.7vw;height:.7vw;border-radius:50%;
-    margin-left:.5vw;
-    background:rgba(255,255,255,.35);
+  .footer__dots{ display:flex; align-items:center; }
+  .dot{
+    width:1.05vh; height:1.05vh;
+    margin-left:1.1vh;
+    border-radius:50%;
+    background:rgba(255,255,255,.4);
+    transition:width .3s ease, background .3s ease;
   }
-  #dots span.aktiv{background:var(--hvit);}
+  .dot.is-active{ width:3.4vh; border-radius:1vh; background:var(--gold); }
 </style>
 </head>
 <body>
 
-<div id="slide" style="display:none">
-  <div class="media">
-    <img id="bilde" alt="" style="display:none">
-    <video id="video" muted playsinline preload="auto" style="display:none"></video>
-  </div>
-  <div class="info">
-    <div class="kicker" id="kicker"></div>
-    <div class="title" id="tittel"></div>
-    <div class="date" id="dato"></div>
-    <div class="src" id="kilde"></div>
+<!-- Arrangement/kino-slide (kinematisk) -->
+<div class="lag" id="slide" style="display:none">
+  <img class="cine__bg" id="bgimg" alt="">
+  <img class="cine__poster" id="bilde" alt="">
+  <video id="video" muted playsinline preload="auto" style="display:none"></video>
+  <div class="cine__scrim"></div>
+  <div class="cine__text" id="tekst">
+    <div class="kicker"><span class="kicker__dot"></span><span id="kicker"></span></div>
+    <h1 class="title" id="tittel"></h1>
+    <div class="rule" id="rule"></div>
+    <div class="when" id="dato"></div>
   </div>
 </div>
 
-<div class="fallback" id="fallback">
-  <div class="stor">Selbu kommune</div>
-  <div class="liten">Servicetorget</div>
+<!-- Vær-slide -->
+<div class="lag calm" id="vaer" style="display:none">
+  <div class="vaer__inn">
+    <div class="kicker"><span class="kicker__dot"></span>Været i Selbu</div>
+    <div class="vaer__naa">
+      <img id="vaer-naa-ikon" alt="">
+      <div class="vaer__temp" id="vaer-naa-temp"></div>
+    </div>
+    <div class="vaer__kol" id="vaer-kol"></div>
+  </div>
 </div>
 
-<div id="bunn">
-  <div id="klokke"></div>
-  <div id="dots"></div>
+<!-- Fallback -->
+<div class="lag calm" id="fallback">
+  <div class="fb">
+    <div class="emblem"></div>
+    <div class="fb__word">TÆLET</div>
+    <div class="fb__sub">Kultursal</div>
+    <div class="fb__divider"></div>
+    <div class="fb__date" id="fb-date"></div>
+    <div class="fb__time" id="fb-time"></div>
+  </div>
+</div>
+
+<!-- Persistent bunnlinje -->
+<div class="footer">
+  <div class="footer__clock" id="klokke"></div>
+  <div class="footer__dots" id="dots"></div>
 </div>
 
 <script>
 /* ================= KONFIG ================= */
-var GITHUB_USER = "";                 // fylles automatisk ut på *.github.io – overstyr her om nødvendig
+var GITHUB_USER = "";                 // auto på *.github.io — overstyr ved behov
 var GITHUB_REPO = "";
 var PLAKAT_MAPPE = "plakater";
+var RELEASE_TAG = "infoskjerm";
 var KULTURSAL_API = "https://www.taletkultursal.no/wp-json/tribe/events/v1/events?per_page=12";
-var SEKUNDER_PER_SLIDE = 12;          // bilder
-var MAKS_VIDEO_SEKUNDER = 180;        // sikkerhetsnett om 'ended' aldri kommer
-var MINUTTER_MELLOM_OPPDATERING = 30; // ny henting av data
+var VAER_LAT = 63.2175, VAER_LON = 11.0333;   // Mebonden/Selbu
+var VAER_IKON = "https://raw.githubusercontent.com/metno/weathericons/main/weather/svg/";
+var SEKUNDER_PER_SLIDE = 12;
+var MAKS_VIDEO_SEKUNDER = 600;        // sikkerhetsnett om 'ended' aldri kommer
+var MINUTTER_MELLOM_OPPDATERING = 30;
 var RELOAD_TIME = 4;                  // full omstart av siden kl. 04
 /* ========================================== */
 
@@ -147,33 +291,21 @@ function detectRepo(){
   if (m && seg.length) return {user:m[1], repo:seg[0]};
   return null;
 }
-
-function startenAvIdag(){
-  var d = new Date(); d.setHours(0,0,0,0); return d;
-}
-
-function parseWpDato(s){ // "2026-09-17 17:00:00" → lokal Date
-  if (!s) return null;
-  var d = new Date(s.replace(" ","T"));
-  return isNaN(d) ? null : d;
-}
+function startenAvIdag(){ var d = new Date(); d.setHours(0,0,0,0); return d; }
+function parseWpDato(s){ if (!s) return null; var d = new Date(s.replace(" ","T")); return isNaN(d) ? null : d; }
+function p2(n){ return (n < 10 ? "0" : "") + n; }
 
 function fmtDato(d, medTid){
   var t = DAGER[d.getDay()] + " " + d.getDate() + ". " + MND[d.getMonth()];
   if (d.getFullYear() !== new Date().getFullYear()) t += " " + d.getFullYear();
-  if (medTid){
-    var mm = ("0"+d.getMinutes()).slice(-2);
-    t += ' <span class="tid">kl. ' + d.getHours() + ":" + mm + "</span>";
-  }
+  if (medTid) t += " <b>kl. " + d.getHours() + ":" + p2(d.getMinutes()) + "</b>";
   return t;
 }
-
 function decodeEntities(s){
   var el = document.createElement("textarea");
   el.innerHTML = s || "";
   return el.value;
 }
-
 function pickImage(img){
   if (!img) return null;
   if (img.sizes){
@@ -183,7 +315,7 @@ function pickImage(img){
   return img.url || null;
 }
 
-/* --- Kultursalen: åpent The Events Calendar-API --- */
+/* --- Tælet Kultursal: åpent The Events Calendar-API --- */
 function hentKultursal(){
   return fetch(KULTURSAL_API, {cache:"no-store"})
     .then(function(r){ return r.json(); })
@@ -191,12 +323,11 @@ function hentKultursal(){
       var idag = startenAvIdag();
       return (j.events || []).map(function(ev){
         return {
-          type: "kultursal",
           media: "bilde",
           kicker: "Tælet Kultursal",
-          kilde: "taletkultursal.no",
           tittel: decodeEntities(ev.title),
           dato: parseWpDato(ev.start_date),
+          medTid: true,
           url: pickImage(ev.image)
         };
       }).filter(function(e){ return e.url && e.dato && e.dato >= idag; })
@@ -205,40 +336,32 @@ function hentKultursal(){
     .catch(function(){ return []; });
 }
 
-/* --- Bygdekinoen: plakater/video i repo-mappa, listet via GitHub API ---
-   Filnavn-konvensjon (valgfri dato/tid først):
-   "2026-09-15 1800 En nasjon i sjakk.jpg" → tittel + "tirsdag 15. september kl. 18:00"
-   "En nasjon i sjakk.jpg"                 → bare tittel
-   "bygdekino-host.mp4"                    → video, spilles ferdig én gang
-   "[skjerm]" i navnet                     → bildet vises full-bleed uten tekstpanel
-   Filer med dato som er passert vises ikke. */
+/* --- Bygdekinoen: plakater (contents) + videoer (release-assets) ---
+   Filnavn: "2026-09-15 1800 Tittel.jpg" (dato/tid valgfri), "[skjerm]" = full-bleed,
+   mp4/webm = video som spilles ferdig. Passert dato = vises ikke. */
 function parsePlakatnavn(navn){
   var fullbleed = /\[skjerm\]/i.test(navn);
   navn = navn.replace(/\s*\[skjerm\]\s*/ig," ").replace(/\s+/g," ").trim();
   var m = navn.match(/^(?:(\d{4})-(\d{2})-(\d{2})(?:[ _]+(\d{2})[.:]?(\d{2}))?[ _-]*)?(.*)\.(jpe?g|png|webp|gif|mp4|webm)$/i);
   if (!m) return null;
   var dato = null;
-  if (m[1]){
-    dato = new Date(+m[1], +m[2]-1, +m[3], m[4] ? +m[4] : 0, m[5] ? +m[5] : 0);
-  }
+  if (m[1]) dato = new Date(+m[1], +m[2]-1, +m[3], m[4] ? +m[4] : 0, m[5] ? +m[5] : 0);
   var tittel = (m[6] || "").replace(/[_-]+/g," ").replace(/\s+/g," ").trim();
-  var erVideo = /^(mp4|webm)$/i.test(m[7]);
-  return {tittel: tittel || navn, dato: dato, harTid: !!m[4], erVideo: erVideo, fullbleed: fullbleed};
+  return {tittel: tittel || navn, dato: dato, harTid: !!m[4],
+          erVideo: /^(mp4|webm)$/i.test(m[7]), fullbleed: fullbleed};
 }
 
 function _tilSlide(navn, url){
   var p = parsePlakatnavn(navn);
   if (!p) return null;
-  if (p.dato && p.dato < startenAvIdag()) return null; // passert → vis ikke
+  if (p.dato && p.dato < startenAvIdag()) return null;
   return {
-    type: "kino",
     media: p.erVideo ? "video" : "bilde",
     fullbleed: p.fullbleed,
     kicker: "Bygdekinoen i Selbu",
-    kilde: "bygdekinoen.no",
     tittel: p.tittel,
     dato: p.dato,
-    harTid: p.harTid,
+    medTid: p.harTid,
     url: url
   };
 }
@@ -248,7 +371,6 @@ function hentPlakater(){
   if (!repo) return Promise.resolve([]);
   var base = "https://api.github.com/repos/" + repo.user + "/" + repo.repo;
 
-  // Bilder m.m. fra plakat-mappa.
   var mappe = fetch(base + "/contents/" + PLAKAT_MAPPE + "?t=" + Date.now(), {cache:"no-store"})
     .then(function(r){ return r.ok ? r.json() : []; })
     .then(function(filer){
@@ -257,8 +379,7 @@ function hentPlakater(){
     })
     .catch(function(){ return []; });
 
-  // Videoer fra release-en «infoskjerm» (store filer; publisert fra Knuten).
-  var release = fetch(base + "/releases/tags/infoskjerm?t=" + Date.now(), {cache:"no-store"})
+  var release = fetch(base + "/releases/tags/" + RELEASE_TAG + "?t=" + Date.now(), {cache:"no-store"})
     .then(function(r){ return r.ok ? r.json() : null; })
     .then(function(rel){
       if (!rel || !Array.isArray(rel.assets)) return [];
@@ -267,8 +388,7 @@ function hentPlakater(){
     .catch(function(){ return []; });
 
   return Promise.all([mappe, release]).then(function(res){
-    return res[0].concat(res[1])
-      .filter(Boolean)
+    return res[0].concat(res[1]).filter(Boolean)
       .sort(function(a,b){
         if (a.dato && b.dato) return a.dato - b.dato;
         if (a.dato) return -1;
@@ -278,55 +398,132 @@ function hentPlakater(){
   });
 }
 
-/* --- rotasjon (timeout-basert: bilder = fast tid, video = til den er ferdig) --- */
+/* --- Været i Selbu (api.met.no / Yr) --- */
+function _vaerPunkt(ts, naar){
+  var best = null, avstand = Infinity;
+  for (var i = 0; i < ts.length; i++){
+    var d = Math.abs(new Date(ts[i].time) - naar);
+    if (d < avstand){ avstand = d; best = ts[i]; }
+  }
+  if (!best) return null;
+  var det = best.data.instant.details;
+  var neste = best.data.next_1_hours || best.data.next_6_hours;
+  return {
+    temp: Math.round(det.air_temperature),
+    ikon: neste && neste.summary ? neste.summary.symbol_code : null,
+    nedbor: neste && neste.details ? (neste.details.precipitation_amount || 0) : 0,
+    tid: new Date(best.time)
+  };
+}
+
+function hentVaer(){
+  var url = "https://api.met.no/weatherapi/locationforecast/2.0/compact?lat=" + VAER_LAT + "&lon=" + VAER_LON;
+  return fetch(url)
+    .then(function(r){ return r.json(); })
+    .then(function(j){
+      var ts = j.properties.timeseries;
+      if (!ts || !ts.length) return null;
+      var naa = Date.now();
+      var imorgen = new Date(); imorgen.setDate(imorgen.getDate() + 1); imorgen.setHours(12,0,0,0);
+      var punkter = [
+        {navn: "Nå",       p: _vaerPunkt(ts, naa)},
+        {navn: null,       p: _vaerPunkt(ts, naa + 6*3600*1000)},
+        {navn: null,       p: _vaerPunkt(ts, naa + 12*3600*1000)},
+        {navn: "I morgen", p: _vaerPunkt(ts, imorgen.getTime())}
+      ].filter(function(x){ return x.p && x.p.ikon; });
+      return punkter.length >= 2 ? {media: "vaer", punkter: punkter} : null;
+    })
+    .catch(function(){ return null; });
+}
+
+function tegnVaer(s){
+  var naa = s.punkter[0].p;
+  document.getElementById("vaer-naa-ikon").src = VAER_IKON + naa.ikon + ".svg";
+  document.getElementById("vaer-naa-temp").textContent = naa.temp + "°";
+  var h = "";
+  for (var i = 1; i < s.punkter.length; i++){
+    var x = s.punkter[i], navn = x.navn || ("kl. " + p2(x.p.tid.getHours()));
+    h += '<div class="vaer__pkt"><div class="n">' + navn + '</div>' +
+         '<img src="' + VAER_IKON + x.p.ikon + '.svg" alt="">' +
+         '<div class="t">' + x.p.temp + '°</div>' +
+         '<div class="r">' + (x.p.nedbor > 0 ? x.p.nedbor.toFixed(1).replace(".", ",") + " mm" : "") + '</div></div>';
+  }
+  document.getElementById("vaer-kol").innerHTML = h;
+}
+
+/* --- rotasjon --- */
 function planleggNeste(sek){
   clearTimeout(slideTimer);
   slideTimer = setTimeout(nesteSlide, sek * 1000);
 }
 
+function _vis(el, synlig){ el.style.display = synlig ? "block" : "none"; }
+
 function visSlide(n){
   var s = slides[n];
   var slideEl = document.getElementById("slide");
+  var vaerEl = document.getElementById("vaer");
   var fb = document.getElementById("fallback");
   var img = document.getElementById("bilde");
+  var bg = document.getElementById("bgimg");
   var vid = document.getElementById("video");
+
   if (!s){
-    slideEl.style.display = "none";
-    fb.style.display = "flex";
+    _vis(slideEl, false); _vis(vaerEl, false); _vis(fb, true);
     planleggNeste(SEKUNDER_PER_SLIDE);
     return;
   }
-  fb.style.display = "none";
+  _vis(fb, false);
   slideEl.classList.add("skjul");
+  vaerEl.classList.add("skjul");
+
   setTimeout(function(){
-    vid.pause();
-    vid.onended = null;
-    vid.removeAttribute("src");
-    vid.load();
-    if (s.media === "video"){
-      slideEl.classList.add("fullvid");
-      img.style.display = "none";
+    vid.pause(); vid.onended = null; vid.removeAttribute("src"); vid.load();
+
+    if (s.media === "vaer"){
+      _vis(slideEl, false);
+      tegnVaer(s);
+      _vis(vaerEl, true);
+      vaerEl.classList.remove("skjul");
+      planleggNeste(SEKUNDER_PER_SLIDE);
+    } else if (s.media === "video"){
+      _vis(vaerEl, false);
+      slideEl.classList.add("fullmedia");
+      img.style.display = "none"; bg.style.display = "none";
       vid.style.display = "block";
       vid.onended = function(){ nesteSlide(); };
       vid.onerror = function(){ nesteSlide(); };
       vid.src = s.url;
       vid.play().catch(function(){ planleggNeste(SEKUNDER_PER_SLIDE); });
-      planleggNeste(MAKS_VIDEO_SEKUNDER); // sikkerhetsnett; onended vinner normalt
+      planleggNeste(MAKS_VIDEO_SEKUNDER);
+      _vis(slideEl, true);
+      slideEl.classList.remove("skjul");
     } else {
-      slideEl.classList.toggle("fullvid", !!s.fullbleed);
+      _vis(vaerEl, false);
+      slideEl.classList.toggle("fullmedia", !!s.fullbleed);
       vid.style.display = "none";
-      img.style.display = "block";
       img.onerror = function(){ nesteSlide(); };
       img.src = s.url;
-      document.getElementById("kicker").textContent = s.kicker;
-      document.getElementById("tittel").textContent = s.tittel;
-      document.getElementById("dato").innerHTML =
-        s.dato ? fmtDato(s.dato, s.type === "kultursal" || s.harTid) : "";
-      document.getElementById("kilde").textContent = s.kilde;
+      img.style.display = "block";
+      if (s.fullbleed){
+        bg.style.display = "none";
+      } else {
+        bg.src = s.url;
+        bg.style.display = "block";
+        document.getElementById("kicker").textContent = s.kicker;
+        document.getElementById("tittel").textContent = s.tittel;
+        document.getElementById("dato").innerHTML = s.dato ? fmtDato(s.dato, s.medTid) : "";
+        _vis(document.getElementById("rule"), true);
+        // restart inn-animasjonen på teksten
+        var tekst = document.getElementById("tekst");
+        tekst.classList.remove("anim");
+        void tekst.offsetWidth;
+        tekst.classList.add("anim");
+      }
+      _vis(slideEl, true);
+      slideEl.classList.remove("skjul");
       planleggNeste(SEKUNDER_PER_SLIDE);
     }
-    slideEl.style.display = "flex";
-    slideEl.classList.remove("skjul");
     tegnDots(n);
   }, 700);
 }
@@ -336,7 +533,7 @@ function tegnDots(n){
   if (slides.length < 2 || slides.length > 20){ d.innerHTML = ""; return; }
   var h = "";
   for (var i = 0; i < slides.length; i++)
-    h += '<span class="' + (i === n ? "aktiv" : "") + '"></span>';
+    h += '<span class="dot' + (i === n ? " is-active" : "") + '"></span>';
   d.innerHTML = h;
 }
 
@@ -348,27 +545,31 @@ function nesteSlide(){
 }
 
 function lastData(){
-  Promise.all([hentKultursal(), hentPlakater()]).then(function(res){
-    slides = res[0].concat(res[1]);
+  Promise.all([hentKultursal(), hentPlakater(), hentVaer()]).then(function(res){
+    var ny = res[0].concat(res[1]);
+    if (res[2]) ny.push(res[2]);   // været sist i runden
+    slides = ny;
     if (idx >= slides.length) idx = 0;
     var vid = document.getElementById("video");
     var videoSpiller = vid.style.display !== "none" && !vid.paused && !vid.ended;
-    if (!videoSpiller) visSlide(slides.length ? idx : -1); // ikke avbryt video som spiller
+    if (!videoSpiller) visSlide(slides.length ? idx : -1);
   });
 }
 
 /* --- klokke + vedlikehold --- */
 function oppdaterKlokke(){
   var n = new Date();
-  var mm = ("0"+n.getMinutes()).slice(-2);
-  document.getElementById("klokke").textContent =
-    DAGER[n.getDay()] + " " + n.getDate() + ". " + MND[n.getMonth()] + "  ·  " + n.getHours() + ":" + mm;
+  var dag = DAGER[n.getDay()] + " " + n.getDate() + ". " + MND[n.getMonth()];
+  var tid = p2(n.getHours()) + ":" + p2(n.getMinutes());
+  document.getElementById("klokke").textContent = dag + " · " + tid;
+  document.getElementById("fb-date").textContent = dag;
+  document.getElementById("fb-time").textContent = tid;
 }
 
 try { idx = parseInt(localStorage.getItem("infoskjerm_idx") || "0", 10) || 0; } catch(e){}
 
 oppdaterKlokke();
-setInterval(oppdaterKlokke, 20000);
+setInterval(oppdaterKlokke, 10000);
 lastData();
 setInterval(lastData, MINUTTER_MELLOM_OPPDATERING * 60 * 1000);
 setInterval(function(){ // nattlig full omstart (minnehygiene på skjermen)
