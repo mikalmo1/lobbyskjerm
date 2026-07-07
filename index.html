@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Infoskjerm – Selbu</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --nea-blaa:#296079;
+    --nea-moerk:#1c4557;
+    --hvit:#ffffff;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html,body{height:100%;overflow:hidden;}
+  body{
+    font-family:'Source Sans 3','Source Sans Pro','Segoe UI',sans-serif;
+    background:linear-gradient(135deg,var(--nea-moerk) 0%,var(--nea-blaa) 60%,#37788f 100%);
+    color:var(--hvit);
+  }
+  #slide{
+    position:absolute;inset:0;
+    display:flex;
+    opacity:1;
+    transition:opacity .7s ease;
+  }
+  #slide.skjul{opacity:0;}
+  .media{
+    flex:0 0 58%;
+    display:flex;align-items:center;justify-content:center;
+    background:rgba(0,0,0,.25);
+    padding:3vh 2vw;
+  }
+  .media img{
+    max-width:100%;max-height:100%;
+    object-fit:contain;
+    border-radius:.6vw;
+    box-shadow:0 1vh 4vh rgba(0,0,0,.45);
+  }
+  .media video{
+    max-width:100%;max-height:100%;
+    object-fit:contain;
+  }
+  .info{
+    flex:1;
+    display:flex;flex-direction:column;justify-content:center;
+    padding:0 4vw 8vh 3.5vw;
+  }
+  /* video vises full-bleed uten tekstpanel */
+  #slide.fullvid{background:#000;}
+  #slide.fullvid .media{flex:1;padding:0;background:#000;}
+  #slide.fullvid .media video{width:100%;height:100%;}
+  #slide.fullvid .info{display:none;}
+  .kicker{
+    font-size:1.9vw;font-weight:700;letter-spacing:.35em;
+    text-transform:uppercase;opacity:.75;margin-bottom:2.5vh;
+  }
+  .title{
+    font-size:3.6vw;font-weight:900;line-height:1.12;
+    margin-bottom:3vh;text-wrap:balance;
+  }
+  .date{
+    font-size:2.3vw;font-weight:600;opacity:.95;
+  }
+  .date .tid{opacity:.8;}
+  .src{
+    margin-top:5vh;font-size:1.3vw;opacity:.55;letter-spacing:.08em;
+  }
+  /* fallback-slide */
+  .fallback{
+    position:absolute;inset:0;
+    display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2vh;
+  }
+  .fallback .stor{font-size:6vw;font-weight:900;}
+  .fallback .liten{font-size:2.2vw;opacity:.8;}
+  #bunn{
+    position:absolute;left:0;right:0;bottom:0;
+    display:flex;align-items:center;justify-content:space-between;
+    padding:1.6vh 2vw;
+    font-size:1.5vw;
+    background:rgba(0,0,0,.28);
+    z-index:2;
+  }
+  #klokke{font-weight:600;letter-spacing:.03em;}
+  #dots{display:flex;gap:.5vw;}
+  #dots span{
+    width:.7vw;height:.7vw;border-radius:50%;
+    background:rgba(255,255,255,.35);
+  }
+  #dots span.aktiv{background:var(--hvit);}
+</style>
+</head>
+<body>
+
+<div id="slide" style="display:none">
+  <div class="media">
+    <img id="bilde" alt="" style="display:none">
+    <video id="video" muted playsinline preload="auto" style="display:none"></video>
+  </div>
+  <div class="info">
+    <div class="kicker" id="kicker"></div>
+    <div class="title" id="tittel"></div>
+    <div class="date" id="dato"></div>
+    <div class="src" id="kilde"></div>
+  </div>
+</div>
+
+<div class="fallback" id="fallback">
+  <div class="stor">Selbu kommune</div>
+  <div class="liten">Servicetorget</div>
+</div>
+
+<div id="bunn">
+  <div id="klokke"></div>
+  <div id="dots"></div>
+</div>
+
+<script>
+/* ================= KONFIG ================= */
+var GITHUB_USER = "";                 // fylles automatisk ut på *.github.io – overstyr her om nødvendig
+var GITHUB_REPO = "";
+var PLAKAT_MAPPE = "plakater";
+var KULTURSAL_API = "https://www.taletkultursal.no/wp-json/tribe/events/v1/events?per_page=12";
+var SEKUNDER_PER_SLIDE = 12;          // bilder
+var MAKS_VIDEO_SEKUNDER = 180;        // sikkerhetsnett om 'ended' aldri kommer
+var MINUTTER_MELLOM_OPPDATERING = 30; // ny henting av data
+var RELOAD_TIME = 4;                  // full omstart av siden kl. 04
+/* ========================================== */
+
+var DAGER = ["søndag","mandag","tirsdag","onsdag","torsdag","fredag","lørdag"];
+var MND = ["januar","februar","mars","april","mai","juni","juli","august","september","oktober","november","desember"];
+
+var slides = [];
+var idx = 0;
+var startet = Date.now();
+var slideTimer = null;
+
+function detectRepo(){
+  if (GITHUB_USER && GITHUB_REPO) return {user:GITHUB_USER, repo:GITHUB_REPO};
+  var m = location.hostname.match(/^([^.]+)\.github\.io$/i);
+  var seg = location.pathname.split("/").filter(Boolean);
+  if (m && seg.length) return {user:m[1], repo:seg[0]};
+  return null;
+}
+
+function startenAvIdag(){
+  var d = new Date(); d.setHours(0,0,0,0); return d;
+}
+
+function parseWpDato(s){ // "2026-09-17 17:00:00" → lokal Date
+  if (!s) return null;
+  var d = new Date(s.replace(" ","T"));
+  return isNaN(d) ? null : d;
+}
+
+function fmtDato(d, medTid){
+  var t = DAGER[d.getDay()] + " " + d.getDate() + ". " + MND[d.getMonth()];
+  if (d.getFullYear() !== new Date().getFullYear()) t += " " + d.getFullYear();
+  if (medTid){
+    var mm = ("0"+d.getMinutes()).slice(-2);
+    t += ' <span class="tid">kl. ' + d.getHours() + ":" + mm + "</span>";
+  }
+  return t;
+}
+
+function decodeEntities(s){
+  var el = document.createElement("textarea");
+  el.innerHTML = s || "";
+  return el.value;
+}
+
+function pickImage(img){
+  if (!img) return null;
+  if (img.sizes){
+    if (img.sizes["1536x1536"]) return img.sizes["1536x1536"].url;
+    if (img.sizes.large) return img.sizes.large.url;
+  }
+  return img.url || null;
+}
+
+/* --- Kultursalen: åpent The Events Calendar-API --- */
+function hentKultursal(){
+  return fetch(KULTURSAL_API, {cache:"no-store"})
+    .then(function(r){ return r.json(); })
+    .then(function(j){
+      var idag = startenAvIdag();
+      return (j.events || []).map(function(ev){
+        return {
+          type: "kultursal",
+          media: "bilde",
+          kicker: "Tælet Kultursal",
+          kilde: "taletkultursal.no",
+          tittel: decodeEntities(ev.title),
+          dato: parseWpDato(ev.start_date),
+          url: pickImage(ev.image)
+        };
+      }).filter(function(e){ return e.url && e.dato && e.dato >= idag; })
+        .sort(function(a,b){ return a.dato - b.dato; });
+    })
+    .catch(function(){ return []; });
+}
+
+/* --- Bygdekinoen: plakater/video i repo-mappa, listet via GitHub API ---
+   Filnavn-konvensjon (valgfri dato/tid først):
+   "2026-09-15 1800 En nasjon i sjakk.jpg" → tittel + "tirsdag 15. september kl. 18:00"
+   "En nasjon i sjakk.jpg"                 → bare tittel
+   "bygdekino-host.mp4"                    → video, spilles ferdig én gang
+   Filer med dato som er passert vises ikke. */
+function parsePlakatnavn(navn){
+  var m = navn.match(/^(?:(\d{4})-(\d{2})-(\d{2})(?:[ _]+(\d{2})[.:]?(\d{2}))?[ _-]*)?(.*)\.(jpe?g|png|webp|gif|mp4|webm)$/i);
+  if (!m) return null;
+  var dato = null;
+  if (m[1]){
+    dato = new Date(+m[1], +m[2]-1, +m[3], m[4] ? +m[4] : 0, m[5] ? +m[5] : 0);
+  }
+  var tittel = (m[6] || "").replace(/[_-]+/g," ").replace(/\s+/g," ").trim();
+  var erVideo = /^(mp4|webm)$/i.test(m[7]);
+  return {tittel: tittel || navn, dato: dato, harTid: !!m[4], erVideo: erVideo};
+}
+
+function hentPlakater(){
+  var repo = detectRepo();
+  if (!repo) return Promise.resolve([]);
+  var url = "https://api.github.com/repos/" + repo.user + "/" + repo.repo +
+            "/contents/" + PLAKAT_MAPPE + "?t=" + Date.now();
+  return fetch(url, {cache:"no-store"})
+    .then(function(r){ return r.ok ? r.json() : []; })
+    .then(function(filer){
+      if (!Array.isArray(filer)) return [];
+      var idag = startenAvIdag();
+      return filer.map(function(f){
+        var p = parsePlakatnavn(f.name);
+        if (!p) return null;
+        if (p.dato && p.dato < idag) return null; // passert → vis ikke
+        return {
+          type: "kino",
+          media: p.erVideo ? "video" : "bilde",
+          kicker: "Bygdekinoen i Selbu",
+          kilde: "bygdekinoen.no",
+          tittel: p.tittel,
+          dato: p.dato,
+          harTid: p.harTid,
+          url: f.download_url
+        };
+      }).filter(Boolean)
+        .sort(function(a,b){
+          if (a.dato && b.dato) return a.dato - b.dato;
+          if (a.dato) return -1;
+          if (b.dato) return 1;
+          return a.tittel.localeCompare(b.tittel,"nb");
+        });
+    })
+    .catch(function(){ return []; });
+}
+
+/* --- rotasjon (timeout-basert: bilder = fast tid, video = til den er ferdig) --- */
+function planleggNeste(sek){
+  clearTimeout(slideTimer);
+  slideTimer = setTimeout(nesteSlide, sek * 1000);
+}
+
+function visSlide(n){
+  var s = slides[n];
+  var slideEl = document.getElementById("slide");
+  var fb = document.getElementById("fallback");
+  var img = document.getElementById("bilde");
+  var vid = document.getElementById("video");
+  if (!s){
+    slideEl.style.display = "none";
+    fb.style.display = "flex";
+    planleggNeste(SEKUNDER_PER_SLIDE);
+    return;
+  }
+  fb.style.display = "none";
+  slideEl.classList.add("skjul");
+  setTimeout(function(){
+    vid.pause();
+    vid.onended = null;
+    vid.removeAttribute("src");
+    vid.load();
+    if (s.media === "video"){
+      slideEl.classList.add("fullvid");
+      img.style.display = "none";
+      vid.style.display = "block";
+      vid.onended = function(){ nesteSlide(); };
+      vid.onerror = function(){ nesteSlide(); };
+      vid.src = s.url;
+      vid.play().catch(function(){ planleggNeste(SEKUNDER_PER_SLIDE); });
+      planleggNeste(MAKS_VIDEO_SEKUNDER); // sikkerhetsnett; onended vinner normalt
+    } else {
+      slideEl.classList.remove("fullvid");
+      vid.style.display = "none";
+      img.style.display = "block";
+      img.onerror = function(){ nesteSlide(); };
+      img.src = s.url;
+      document.getElementById("kicker").textContent = s.kicker;
+      document.getElementById("tittel").textContent = s.tittel;
+      document.getElementById("dato").innerHTML =
+        s.dato ? fmtDato(s.dato, s.type === "kultursal" || s.harTid) : "";
+      document.getElementById("kilde").textContent = s.kilde;
+      planleggNeste(SEKUNDER_PER_SLIDE);
+    }
+    slideEl.style.display = "flex";
+    slideEl.classList.remove("skjul");
+    tegnDots(n);
+  }, 700);
+}
+
+function tegnDots(n){
+  var d = document.getElementById("dots");
+  if (slides.length < 2 || slides.length > 20){ d.innerHTML = ""; return; }
+  var h = "";
+  for (var i = 0; i < slides.length; i++)
+    h += '<span class="' + (i === n ? "aktiv" : "") + '"></span>';
+  d.innerHTML = h;
+}
+
+function nesteSlide(){
+  if (!slides.length){ visSlide(-1); return; }
+  idx = (idx + 1) % slides.length;
+  try { localStorage.setItem("infoskjerm_idx", String(idx)); } catch(e){}
+  visSlide(idx);
+}
+
+function lastData(){
+  Promise.all([hentKultursal(), hentPlakater()]).then(function(res){
+    slides = res[0].concat(res[1]);
+    if (idx >= slides.length) idx = 0;
+    var vid = document.getElementById("video");
+    var videoSpiller = vid.style.display !== "none" && !vid.paused && !vid.ended;
+    if (!videoSpiller) visSlide(slides.length ? idx : -1); // ikke avbryt video som spiller
+  });
+}
+
+/* --- klokke + vedlikehold --- */
+function oppdaterKlokke(){
+  var n = new Date();
+  var mm = ("0"+n.getMinutes()).slice(-2);
+  document.getElementById("klokke").textContent =
+    DAGER[n.getDay()] + " " + n.getDate() + ". " + MND[n.getMonth()] + "  ·  " + n.getHours() + ":" + mm;
+}
+
+try { idx = parseInt(localStorage.getItem("infoskjerm_idx") || "0", 10) || 0; } catch(e){}
+
+oppdaterKlokke();
+setInterval(oppdaterKlokke, 20000);
+lastData();
+setInterval(lastData, MINUTTER_MELLOM_OPPDATERING * 60 * 1000);
+setInterval(function(){ // nattlig full omstart (minnehygiene på skjermen)
+  var n = new Date();
+  if (n.getHours() === RELOAD_TIME && Date.now() - startet > 2*3600*1000) location.reload();
+}, 60000);
+</script>
+</body>
+</html>
