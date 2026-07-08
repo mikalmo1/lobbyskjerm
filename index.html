@@ -65,7 +65,7 @@
     height:52vh;
     background:linear-gradient(to top, rgba(15,8,25,.96) 0%, rgba(15,8,25,.86) 26%, rgba(15,8,25,0) 100%);
   }
-  .cine__text{ position:absolute; left:6vw; right:6vw; bottom:15.5vh; }
+  .cine__text{ position:absolute; left:6vw; right:6vw; bottom:12vh; }
 
   /* video + [skjerm]-bilder: full-bleed uten tekst */
   #slide.fullmedia .cine__bg, #slide.fullmedia .cine__scrim, #slide.fullmedia .cine__text{ display:none; }
@@ -141,7 +141,7 @@
     display:flex; flex-direction:column;
     align-items:center; justify-content:center;
     text-align:center;
-    padding-bottom:13.5vh;
+    padding-bottom:6vh;
   }
   .emblem{
     width:2.6vw; height:2.6vw;
@@ -162,7 +162,7 @@
     position:absolute; top:0; left:0; right:0; bottom:0;
     display:flex; flex-direction:column;
     align-items:center; justify-content:center;
-    padding-bottom:13.5vh;
+    padding-bottom:8vh;
     text-align:center;
   }
   .vaer__naa{ display:flex; align-items:center; margin:4vh 0 6vh 0; }
@@ -234,31 +234,28 @@
     text-shadow:0 .2vh 1.2vh rgba(0,0,0,.5);
   }
 
-  /* ===== NRK-nyhetsticker (løftes inn av body.ticker-paa når det finnes saker) ===== */
-  .ticker-paa .footer{ bottom:7.6vh; height:6vh; padding-bottom:.8vh; }
+  /* ===== NRK-ticker: inline i bunnlinja, mellom vær-chip og prikkene ===== */
   .ticker{
-    position:absolute; left:2.5vw; right:2.5vw; bottom:2.2vh;
-    height:4.6vh; z-index:10;
-    display:none; align-items:center;
+    display:none;                 /* vises av body.ticker-paa når nyheter.json har saker */
+    flex:1 1 auto; min-width:0;   /* fyller midten; min-width:0 lar den krympe så uttoning/overflow virker */
+    align-items:center;
+    height:3.6vh; margin:0 2vw;
     overflow:hidden;
-    border-radius:1.1vh;
-    background:linear-gradient(to top, rgba(15,8,25,.93) 0%, rgba(15,8,25,.88) 65%, rgba(15,8,25,.6) 100%);
-    box-shadow:0 .5vh 2.2vh rgba(0,0,0,.42);
   }
   .ticker-paa .ticker{ display:flex; }
   .ticker__merke{
-    flex:0 0 auto; height:100%;
-    display:flex; align-items:center;
-    padding:0 1.2vw;
+    flex:0 0 auto;
+    padding:.35vh .75vw; margin-right:1vw;
+    border-radius:.4vh;
     background:var(--gold); color:var(--ink);
     font-family:'Oswald', sans-serif; font-weight:700;
-    text-transform:uppercase; letter-spacing:.12vw;
-    font-size:1.3vw;
+    text-transform:uppercase; letter-spacing:.1vw;
+    font-size:1.05vw; line-height:1;
   }
   .ticker__mask{
-    position:relative; flex:1 1 auto; height:100%; overflow:hidden;
-    -webkit-mask-image:linear-gradient(to right, rgba(0,0,0,0) 0, #000 3.5%, #000 93%, rgba(0,0,0,0) 100%);
-            mask-image:linear-gradient(to right, rgba(0,0,0,0) 0, #000 3.5%, #000 93%, rgba(0,0,0,0) 100%);
+    position:relative; flex:1 1 auto; min-width:0; height:100%; overflow:hidden;
+    -webkit-mask-image:linear-gradient(to right, rgba(0,0,0,0) 0, #000 2.5%, #000 92%, rgba(0,0,0,0) 100%);
+            mask-image:linear-gradient(to right, rgba(0,0,0,0) 0, #000 2.5%, #000 92%, rgba(0,0,0,0) 100%);
   }
   .ticker__spor{
     position:absolute; top:0; left:0; height:100%;
@@ -269,18 +266,20 @@
   }
   .ticker__sak{
     display:inline-flex; align-items:center;
-    padding:0 1.6vw;
+    padding:0 1.5vw;
     font-family:'Barlow', sans-serif; font-weight:500;
-    font-size:1.35vw; color:#fff;
+    font-size:1.25vw; color:#fff;
+    text-shadow:0 .2vh 1vh rgba(0,0,0,.6);
   }
   .ticker__kilde{
     font-family:'Oswald', sans-serif; font-weight:600;
     text-transform:uppercase; letter-spacing:.05vw;
-    font-size:1vw; color:var(--gold); margin-right:.7vw;
+    font-size:.95vw; color:var(--gold); margin-right:.6vw;
+    text-shadow:0 .2vh 1vh rgba(0,0,0,.6);
   }
   .ticker__prikk{
-    display:inline-block; width:.6vh; height:.6vh; margin:0 1.6vw;
-    border-radius:50%; background:rgba(216,178,95,.7);
+    display:inline-block; width:.55vh; height:.55vh; margin:0 1.5vw;
+    border-radius:50%; background:rgba(216,178,95,.75);
   }
   @keyframes tickerRull{
     from{ -webkit-transform:translateX(0);      transform:translateX(0); }
@@ -328,21 +327,20 @@
   </div>
 </div>
 
-<!-- Persistent bunnlinje -->
+<!-- Persistent bunnlinje: klokke · vær · NRK-ticker · prikker (alt på én linje) -->
 <div class="footer">
   <div class="footer__left">
     <div class="footer__clock" id="klokke"></div>
     <div class="footer__vaer" id="footer-vaer"></div>
   </div>
-  <div class="footer__dots" id="dots"></div>
-</div>
-
-<!-- NRK-nyhetsticker (vises kun når nyheter.json har saker) -->
-<div class="ticker" id="ticker">
-  <div class="ticker__merke">NRK</div>
-  <div class="ticker__mask">
-    <div class="ticker__spor" id="ticker-spor"></div>
+  <!-- NRK-ticker: vises kun når nyheter.json har saker -->
+  <div class="ticker" id="ticker">
+    <div class="ticker__merke">NRK</div>
+    <div class="ticker__mask">
+      <div class="ticker__spor" id="ticker-spor"></div>
+    </div>
   </div>
+  <div class="footer__dots" id="dots"></div>
 </div>
 
 <script>
