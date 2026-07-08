@@ -1,0 +1,30 @@
+{
+ "oppdatert": "2026-07-08T12:13:34Z",
+ "skoletid": {
+  "start": "07:00",
+  "slutt": "14:15"
+ },
+ "ferier": [],
+ "regimer": {
+  "skole": {
+   "sekunder": 12,
+   "innhold": {
+    "kultursal": true,
+    "kino": true,
+    "dashboard": true
+   },
+   "hovedskjerm": true,
+   "innslag_min": 30
+  },
+  "fritid": {
+   "sekunder": 12,
+   "innhold": {
+    "kultursal": true,
+    "kino": true,
+    "dashboard": true
+   },
+   "hovedskjerm": false,
+   "innslag_min": 30
+  }
+ }
+}
