@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kinoprogram – Tælet Kultursal</title>
+<!--
+  Kommende kinovisninger på Tælet Kultursal (Bygdekinoen).
+  Embeddes i iframe på kommunens kinoside — jf. DEPLOY-kinoliste.md i portalen.
+  Data: kino/program.json i samme repo, publisert automatisk fra Knuten
+  (bygdekino-modulen) hver gang programmet endres. Null manuelt vedlikehold.
+  Siden melder sin egen høyde til foreldresiden via postMessage
+  ({type:"selbukino-hoyde", hoyde: <px>}) så iframen kan auto-tilpasses.
+-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --nea:#296079;           /* Selbu kommune – Nea Blå */
+    --nea-mork:#1e4a5e;
+    --tekst:#1d2b33;
+    --dus:#5c6f79;
+    --linje:#d9e2e7;
+    --flate:#ffffff;
+    --duk:#f2f6f8;
+    --avlyst:#b3261e;
+    --avlyst-duk:#fdf1f0;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{background:transparent}
+  body{
+    font-family:"Source Sans 3","Source Sans Pro","Segoe UI",Arial,sans-serif;
+    color:var(--tekst);font-size:16px;line-height:1.45;
+    background:transparent;
+  }
+  .ramme{max-width:720px;margin:0 auto;padding:4px 2px 8px}
+
+  .dag{
+    background:var(--flate);border:1px solid var(--linje);border-radius:10px;
+    margin-bottom:14px;overflow:hidden;
+  }
+  .dag-topp{
+    display:flex;align-items:center;gap:10px;flex-wrap:wrap;
+    background:var(--duk);border-bottom:1px solid var(--linje);
+    padding:10px 16px;
+  }
+  .dag-topp h2{
+    font-size:1.05rem;font-weight:700;color:var(--nea);letter-spacing:.01em;
+  }
+  .dag.er-avlyst .dag-topp{background:var(--avlyst-duk)}
+  .dag.er-avlyst .dag-topp h2{color:var(--avlyst);text-decoration:line-through}
+
+  .merke-avlyst{
+    display:inline-block;background:var(--avlyst);color:#fff;
+    font-size:.72rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;
+    padding:2px 9px;border-radius:99px;
+  }
+  .avlyst-grunn{font-size:.85rem;color:var(--avlyst);flex-basis:100%}
+
+  .rad{
+    display:flex;align-items:center;gap:14px;
+    padding:13px 16px;
+  }
+  .rad + .rad{border-top:1px solid var(--linje)}
+
+  .tid{
+    flex:0 0 auto;min-width:58px;text-align:center;
+    background:var(--nea);color:#fff;font-weight:700;font-size:.95rem;
+    border-radius:7px;padding:5px 8px;
+  }
+  .info{flex:1 1 auto;min-width:0}
+  .tittel{font-weight:600;font-size:1.02rem}
+  .tittel .kommer{font-weight:400;font-style:italic;color:var(--dus)}
+  .meta{font-size:.85rem;color:var(--dus);margin-top:1px}
+  .meta span + span::before{content:"·";margin:0 6px;color:var(--linje)}
+
+  .hoyre{flex:0 0 auto;display:flex;align-items:center;gap:12px}
+  .pris{font-weight:600;white-space:nowrap}
+  .kjop{
+    display:inline-block;background:var(--nea);color:#fff;text-decoration:none;
+    font-weight:600;font-size:.9rem;white-space:nowrap;
+    padding:7px 14px;border-radius:7px;
+  }
+  .kjop:hover,.kjop:focus{background:var(--nea-mork)}
+
+  .rad.er-avlyst .tid{background:var(--dus);opacity:.55}
+  .rad.er-avlyst .tittel{text-decoration:line-through;color:var(--dus)}
+  .rad.er-avlyst .pris{color:var(--dus);text-decoration:line-through}
+  .rad .rad-avlyst-merke{flex:0 0 auto}
+
+  .tom,.feil{
+    background:var(--flate);border:1px solid var(--linje);border-radius:10px;
+    padding:22px 16px;text-align:center;color:var(--dus);
+  }
+
+  .bunn{font-size:.8rem;color:var(--dus);text-align:center;margin-top:2px}
+
+  @media (max-width:480px){
+    body{font-size:15px}
+    .rad{flex-wrap:wrap;gap:8px 12px}
+    .info{flex-basis:calc(100% - 70px)}
+    .hoyre{flex-basis:100%;justify-content:flex-start;padding-left:70px}
+  }
+</style>
+</head>
+<body>
+<div class="ramme" id="ramme">
+  <div class="tom" id="laster">Henter kinoprogrammet …</div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+  var ramme = document.getElementById("ramme");
+
+  // --- Auto-høyde til foreldresiden (iframe) --------------------------------
+  function meldHoyde(){
+    try{
+      parent.postMessage({type:"selbukino-hoyde",
+                          hoyde: document.documentElement.scrollHeight}, "*");
+    }catch(e){/* står siden alene, er dette uinteressant */}
+  }
+  if ("ResizeObserver" in window){
+    new ResizeObserver(meldHoyde).observe(document.body);
+  }
+  window.addEventListener("load", meldHoyde);
+
+  // --- Hjelpere ---------------------------------------------------------------
+  function esc(s){
+    return String(s).replace(/[&<>"']/g, function(c){
+      return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c];
+    });
+  }
+  function lokalDato(iso){                       // "2026-09-15" -> lokal Date (ikke UTC)
+    var d = iso.split("-");
+    return new Date(+d[0], +d[1]-1, +d[2]);
+  }
+  function dagTittel(iso){
+    var dt = lokalDato(iso);
+    var opts = {weekday:"long", day:"numeric", month:"long"};
+    if (dt.getFullYear() !== new Date().getFullYear()) opts.year = "numeric";
+    var s = new Intl.DateTimeFormat("nb-NO", opts).format(dt);
+    return s.charAt(0).toUpperCase() + s.slice(1);
+  }
+  function aldersTekst(a){
+    if (!a) return null;
+    if (String(a).toUpperCase() === "A") return "Tillatt for alle";
+    return /^\d+$/.test(a) ? a + " år" : String(a);
+  }
+  function tidTekst(min){
+    if (!min) return null;
+    var t = Math.floor(min/60), m = min%60;
+    return t ? (t + " t" + (m ? " " + m + " min" : "")) : (m + " min");
+  }
+
+  // --- Rendring ---------------------------------------------------------------
+  function radHtml(f, dagAvlyst){
+    var avlyst = !!f.avlyst;
+    var meta = [];
+    var alder = aldersTekst(f.aldersgrense); if (alder) meta.push(esc(alder));
+    var lengde = tidTekst(f.spilletid);      if (lengde) meta.push(esc(lengde));
+    if (f.undertekst) meta.push(esc(f.undertekst));
+
+    var h = '<div class="rad' + (avlyst ? ' er-avlyst' : '') + '">';
+    h += '<div class="tid">' + esc(f.tid || "–") + '</div>';
+    h += '<div class="info"><div class="tittel">' +
+         (f.tittel ? esc(f.tittel) : '<span class="kommer">Program kommer</span>') + '</div>';
+    if (meta.length) h += '<div class="meta"><span>' + meta.join("</span><span>") + '</span></div>';
+    if (avlyst && f.avlyst_grunn && !dagAvlyst)
+      h += '<div class="meta" style="color:var(--avlyst)">' + esc(f.avlyst_grunn) + '</div>';
+    h += '</div>';
+
+    h += '<div class="hoyre">';
+    if (avlyst && !dagAvlyst) h += '<span class="merke-avlyst rad-avlyst-merke">Avlyst</span>';
+    if (f.pris != null) h += '<span class="pris">' + esc(f.pris) + ' kr</span>';
+    if (f.billettlenke && !avlyst)
+      h += '<a class="kjop" href="' + esc(f.billettlenke) + '" target="_blank" rel="noopener">Kjøp billett</a>';
+    h += '</div></div>';
+    return h;
+  }
+
+  function dagHtml(dag){
+    var h = '<section class="dag' + (dag.avlyst ? ' er-avlyst' : '') + '">';
+    h += '<div class="dag-topp"><h2>' + esc(dagTittel(dag.dato)) + '</h2>';
+    if (dag.avlyst){
+      h += '<span class="merke-avlyst">Avlyst</span>';
+      if (dag.avlyst_grunn) h += '<span class="avlyst-grunn">' + esc(dag.avlyst_grunn) + '</span>';
+    }
+    h += '</div>';
+    if (dag.forestillinger.length){
+      h += dag.forestillinger.map(function(f){ return radHtml(f, dag.avlyst); }).join("");
+    } else {
+      h += '<div class="rad"><div class="info"><div class="tittel">' +
+           '<span class="kommer">Programmet er ikke klart ennå</span></div></div></div>';
+    }
+    h += '</section>';
+    return h;
+  }
+
+  function vis(program){
+    var iDag = new Date(); iDag.setHours(0,0,0,0);
+    var dager = (program.dager || []).filter(function(d){
+      return lokalDato(d.dato) >= iDag;         // JSON-en kan ligge litt etter kalenderen
+    });
+
+    var h = "";
+    if (!dager.length){
+      h = '<div class="tom">Ingen planlagte kinovisninger akkurat nå.<br>' +
+          'Nye datoer legges ut her så snart de er klare.</div>';
+    } else {
+      h = dager.map(dagHtml).join("");
+    }
+    if (program.oppdatert){
+      var od = new Date(program.oppdatert);
+      if (!isNaN(od)) h += '<p class="bunn">Sist endret ' +
+        new Intl.DateTimeFormat("nb-NO", {day:"numeric", month:"long", year:"numeric"}).format(od) +
+        ' · Lista oppdateres automatisk</p>';
+    }
+    ramme.innerHTML = h;
+    meldHoyde();
+  }
+
+  // Cache-bust: GitHub Pages sender max-age=600 — spørrestrengen omgår CDN-cachen.
+  fetch("program.json?v=" + Date.now(), {cache:"no-store"})
+    .then(function(r){ if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); })
+    .then(vis)
+    .catch(function(){
+      ramme.innerHTML = '<div class="feil">Klarte ikke å hente kinoprogrammet akkurat nå. ' +
+        'Prøv igjen om litt.</div>';
+      meldHoyde();
+    });
+})();
+</script>
+</body>
+</html>
