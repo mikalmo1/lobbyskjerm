@@ -87,28 +87,33 @@
   .tom{flex:1;display:flex;align-items:center;justify-content:center;text-align:center;color:var(--dus);padding:16px 6px}
 
   @media (max-width:560px){
-    /* Kompakte rader: alt må få plass i en FAST iframe-høyde — ingen autohøyde
-       (CMS-et stripper script). Blir det likevel trangt, scroller kortlista
-       diskret i stedet for at heroen kuttes i bunn. */
+    /* Mobil: samme formspråk som lista — rader på mørk bunn med 16:9-minibilde
+       til venstre, tidsmerke og tekst ved siden av. ALDRI tekst oppå bildet.
+       Alt må få plass i en FAST iframe-høyde (CMS-et stripper script); radene
+       midtstilles i ledig plass, og scroller diskret om det mot formodning
+       skulle bli for trangt. */
     .hero{padding:12px 12px 14px}
     .dato{font-size:1.2rem}
     .sted{display:none}                   /* redundant — heroen står på kinosiden */
-    .kort-rad{flex-direction:column;gap:8px;overflow-y:auto}
+    .kort-rad{flex-direction:column;gap:8px;overflow-y:auto;justify-content:center}
     .kort{
-      flex:1 1 0;min-height:78px;aspect-ratio:auto;
-      flex-direction:row;align-items:center;gap:10px;padding:10px 12px;
+      flex:0 0 auto;min-height:0;aspect-ratio:auto;max-height:none;
+      flex-direction:row;align-items:center;gap:10px;padding:8px 10px;
+      background:rgba(255,255,255,.08);
     }
-    .kort .tidmerke{position:static;flex:0 0 auto;font-size:.82rem}
-    .kort .innhold{position:relative;padding:0;min-width:0}
-    .k-tittel{font-size:.98rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-    .k-meta{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-    .k-handling{margin-top:5px}
-    .kjop{font-size:.8rem;padding:4px 10px}
+    .kort img.bg-blur,.kort .skygge{display:none}
+    .kort img.bg{
+      position:static;order:-1;flex:0 0 auto;
+      width:104px;height:auto;aspect-ratio:16/9;object-fit:cover;border-radius:6px;
+    }
+    .kort .tidmerke{position:static;flex:0 0 auto;font-size:.8rem}
+    .kort .innhold{position:relative;padding:0;min-width:0;flex:1}
+    .k-tittel{font-size:.95rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-shadow:none}
+    .k-meta{font-size:.78rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+    .k-handling{margin-top:4px}
+    .kjop{font-size:.78rem;padding:3px 9px}
     .varsel{font-size:.82rem}
-    /* I de kompakte radene er bildet bakgrunnsstemning bak gradienten — der er
-       kantfyll (cover) riktig, ikke contain. */
-    .kort img.bg{object-fit:cover}
-    .kort img.bg-blur{display:none}
+    .kort.er-avlyst img.bg{filter:grayscale(1) brightness(.6)}
   }
 </style>
 </head>
