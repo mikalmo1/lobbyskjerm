@@ -192,12 +192,12 @@
   /* ===== Persistent bunnlinje ===== */
   .footer{
     position:absolute; left:0; right:0; bottom:0;
-    height:10vh;
+    height:8vh;
     z-index:9;
     display:flex;
-    align-items:flex-end;
+    align-items:center;
     justify-content:space-between;
-    padding:0 3vw 3vh 3vw;
+    padding:0 3vw 1.2vh 3vw;
     background:linear-gradient(to top, rgba(15,8,25,.72) 0%, rgba(15,8,25,.30) 55%, rgba(15,8,25,0) 100%);
     pointer-events:none;
   }
@@ -220,17 +220,17 @@
   .dot.is-active{ width:3.4vh; border-radius:1vh; background:var(--gold); }
 
   /* ===== Vær-chip i bunnlinja ===== */
-  .footer__left{ display:flex; align-items:flex-end; }
-  .footer__vaer{ display:flex; align-items:center; margin-left:1.7vw; }
+  .footer__left{ display:flex; align-items:center; }
+  .footer__vaer{ display:flex; align-items:center; margin-left:1.6vw; }
   .footer__vaer .fl{
     font-family:'Barlow', sans-serif; font-weight:500;
     font-size:1.05vw; color:rgba(255,255,255,.82);
-    margin-right:.5vw; text-shadow:0 .2vh 1.2vh rgba(0,0,0,.5);
+    margin-right:.4vw; text-shadow:0 .2vh 1.2vh rgba(0,0,0,.5);
   }
-  .footer__vaer img{ width:2.7vw; height:2.7vw; }
+  .footer__vaer img{ width:1.9vw; height:1.9vw; }
   .footer__vaer .ft{
-    font-family:'Oswald', sans-serif; font-weight:600;
-    font-size:1.7vw; color:#fff; margin-left:.3vw;
+    font-family:'Barlow', sans-serif; font-weight:600;
+    font-size:1.5vw; color:#fff; margin-left:.35vw;
     text-shadow:0 .2vh 1.2vh rgba(0,0,0,.5);
   }
 
@@ -239,19 +239,10 @@
     display:none;                 /* vises av body.ticker-paa når nyheter.json har saker */
     flex:1 1 auto; min-width:0;   /* fyller midten; min-width:0 lar den krympe så uttoning/overflow virker */
     align-items:center;
-    height:3.6vh; margin:0 2vw;
+    height:2.9vh; margin:0 2vw;
     overflow:hidden;
   }
   .ticker-paa .ticker{ display:flex; }
-  .ticker__merke{
-    flex:0 0 auto;
-    padding:.35vh .75vw; margin-right:1vw;
-    border-radius:.4vh;
-    background:var(--gold); color:var(--ink);
-    font-family:'Oswald', sans-serif; font-weight:700;
-    text-transform:uppercase; letter-spacing:.1vw;
-    font-size:1.05vw; line-height:1;
-  }
   .ticker__mask{
     position:relative; flex:1 1 auto; min-width:0; height:100%; overflow:hidden;
     -webkit-mask-image:linear-gradient(to right, rgba(0,0,0,0) 0, #000 2.5%, #000 92%, rgba(0,0,0,0) 100%);
@@ -272,9 +263,9 @@
     text-shadow:0 .2vh 1vh rgba(0,0,0,.6);
   }
   .ticker__kilde{
-    font-family:'Oswald', sans-serif; font-weight:600;
-    text-transform:uppercase; letter-spacing:.05vw;
-    font-size:.95vw; color:var(--gold); margin-right:.6vw;
+    font-family:'Barlow', sans-serif; font-weight:700;
+    text-transform:uppercase; letter-spacing:.04vw;
+    font-size:.9vw; color:var(--gold); margin-right:.55vw;
     text-shadow:0 .2vh 1vh rgba(0,0,0,.6);
   }
   .ticker__prikk{
@@ -333,9 +324,8 @@
     <div class="footer__clock" id="klokke"></div>
     <div class="footer__vaer" id="footer-vaer"></div>
   </div>
-  <!-- NRK-ticker: vises kun når nyheter.json har saker -->
+  <!-- NRK-ticker: vises kun når nyheter.json har saker (kilde vises inne i teksten) -->
   <div class="ticker" id="ticker">
-    <div class="ticker__merke">NRK</div>
     <div class="ticker__mask">
       <div class="ticker__spor" id="ticker-spor"></div>
     </div>
