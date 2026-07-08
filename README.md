@@ -57,11 +57,17 @@ Styrer hva som vises og hvor lenge hver slide står, i to regimer:
   {"navn": "Høstferie", "fra": "2026-10-05", "til": "2026-10-09"}
  ],
  "regimer": {
-  "skole":  {"sekunder": 10, "innhold": {"kultursal": true, "kino": false, "dashboard": true}},
-  "fritid": {"sekunder": 12, "innhold": {"kultursal": true, "kino": true, "dashboard": true}}
+  "skole":  {"sekunder": 10, "innhold": {"kultursal": true, "kino": true, "dashboard": true},
+             "hovedskjerm": true, "innslag_min": 30},
+  "fritid": {"sekunder": 12, "innhold": {"kultursal": true, "kino": true, "dashboard": true},
+             "hovedskjerm": false, "innslag_min": 30}
  }
 }
 ```
+
+- `hovedskjerm: true` = «Selbu i dag» står fast (dataene fornyes hvert
+  slide-intervall, uten fade), og det øvrige innholdet spilles som ett innslag —
+  én runde gjennom lista — hvert `innslag_min`. minutt (30 = to ganger i timen).
 
 - `innhold`-nøklene er `kultursal` (arrangementer), `kino` (plakater/loop-video)
   og `dashboard` («Selbu i dag» med vær/buss/beskjeder).

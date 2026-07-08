@@ -901,6 +901,21 @@ function sekunderPerSlide(){
   return (sek >= 5 && sek <= 60) ? sek : SEKUNDER_PER_SLIDE;
 }
 
+/* Hovedskjerm-modus: «Selbu i dag» står fast, og resten av innholdet spilles som
+   ett innslag (én runde gjennom lista) hvert `innslag_min`. minutt. */
+function hovedskjermConf(){
+  var r = visning && visning.regimer && visning.regimer[regimeNaa()];
+  if (!r || !r.hovedskjerm) return null;
+  var min = Number(r.innslag_min);
+  return {min: (min >= 5 && min <= 180) ? min : 30};
+}
+
+function finnDashIdx(){
+  for (var i = 0; i < slides.length; i++)
+    if (slides[i].media === "vaer") return i;
+  return -1;
+}
+
 function filtrerSlides(tegnOm){
   var ny = [];
   for (var i = 0; i < alleSlides.length; i++)
@@ -918,6 +933,8 @@ function sjekkRegime(){
   var r = regimeNaa();
   if (r === sisteRegime) return;
   sisteRegime = r;
+  innslagAktiv = false;
+  sisteInnslag = Date.now();
   filtrerSlides(true);
 }
 
@@ -940,6 +957,16 @@ function visSlide(n){
 
   if (!s){
     _vis(slideEl, false); _vis(vaerEl, false); _vis(fb, true);
+    planleggNeste(sekunderPerSlide());
+    return;
+  }
+
+  // Hovedskjerm-modus: står dashboardet allerede framme, tegn bare dataene på
+  // nytt (ferske busstider/beskjeder) uten fade — ellers blinker skjermen ved
+  // hver «fornyelse» av samme slide.
+  if (s.media === "vaer" && vaerEl.style.display !== "none" && !vaerEl.classList.contains("skjul")){
+    tegnVaer(s);
+    tegnDots(n);
     planleggNeste(sekunderPerSlide());
     return;
   }
@@ -1038,8 +1065,36 @@ function tegnDots(n){
   d.innerHTML = h;
 }
 
+var innslagAktiv = false;             // spiller vi et innslag akkurat nå?
+var sisteInnslag = Date.now();        // forrige innslag startet (start = «nå» så
+                                      // første innslag kommer ETTER intervallet)
+
 function nesteSlide(){
   if (!slides.length){ visSlide(-1); return; }
+
+  var hs = hovedskjermConf();
+  var dashIdx = hs ? finnDashIdx() : -1;
+  if (hs && dashIdx !== -1){
+    if (innslagAktiv){
+      // Midt i et innslag: fortsett runden til vi er tilbake på dashboardet.
+      idx = (idx + 1) % slides.length;
+      if (idx === dashIdx) innslagAktiv = false;
+      visSlide(idx);
+      return;
+    }
+    if (slides.length > 1 && Date.now() - sisteInnslag >= hs.min * 60000){
+      // På tide med et innslag: start runden på sliden etter dashboardet.
+      innslagAktiv = true;
+      sisteInnslag = Date.now();
+      idx = (dashIdx + 1) % slides.length;
+      visSlide(idx);
+      return;
+    }
+    idx = dashIdx;                    // ellers: bli stående på «Selbu i dag»
+    visSlide(dashIdx);
+    return;
+  }
+
   idx = (idx + 1) % slides.length;
   try { localStorage.setItem("infoskjerm_idx", String(idx)); } catch(e){}
   visSlide(idx);
