@@ -198,7 +198,19 @@
     align-items:center;
     justify-content:space-between;
     padding:0 3vw 1.2vh 3vw;
-    background:linear-gradient(to top, rgba(15,8,25,.72) 0%, rgba(15,8,25,.30) 55%, rgba(15,8,25,0) 100%);
+    background:none;   /* uttoningen ligger i ::before så den kan være høyere enn tekstlinja */
+    pointer-events:none;
+  }
+  /* Mørk «nedre tredjedel» bak bunnlinja — skiller den fra plakatens egen bunn */
+  .footer:before{
+    content:"";
+    position:absolute; left:0; right:0; bottom:0; top:-5vh;
+    z-index:-1;
+    background:linear-gradient(to top,
+      rgba(12,7,20,.92) 0%,
+      rgba(12,7,20,.82) 35%,
+      rgba(12,7,20,.45) 68%,
+      rgba(12,7,20,0) 100%);
     pointer-events:none;
   }
   .footer__clock{
