@@ -56,7 +56,10 @@
     background:linear-gradient(160deg,#33708c,var(--nea-dyp));
     aspect-ratio:16/9;max-height:100%;display:flex;align-items:flex-end;
   }
-  .kort img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+  /* Bildet vises alltid HELT (contain) — avviker det fra 16:9, fyller en uskarp
+     kopi av samme bilde feltene rundt i stedet for at motivet beskjæres. */
+  .kort img.bg-blur{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:blur(16px) brightness(.65);transform:scale(1.12)}
+  .kort img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:contain}
   .kort .skygge{position:absolute;inset:0;background:linear-gradient(to top,rgba(10,30,40,.88) 0%,rgba(10,30,40,.25) 55%,rgba(10,30,40,.05) 100%)}
   .kort .tidmerke{
     position:absolute;top:10px;left:10px;background:var(--gull);color:#2b2410;
@@ -102,6 +105,10 @@
     .k-handling{margin-top:5px}
     .kjop{font-size:.8rem;padding:4px 10px}
     .varsel{font-size:.82rem}
+    /* I de kompakte radene er bildet bakgrunnsstemning bak gradienten — der er
+       kantfyll (cover) riktig, ikke contain. */
+    .kort img.bg{object-fit:cover}
+    .kort img.bg-blur{display:none}
   }
 </style>
 </head>
@@ -148,7 +155,10 @@
     if (f.undertekst) meta.push(esc(f.undertekst));
 
     var h = '<div class="kort' + (avlyst ? ' er-avlyst' : '') + '">';
-    if (bilde) h += '<img class="bg" src="' + esc(bilde) + '" alt="" onerror="this.remove()">';
+    if (bilde){
+      h += '<img class="bg-blur" src="' + esc(bilde) + '" alt="" onerror="this.remove()">';
+      h += '<img class="bg" src="' + esc(bilde) + '" alt="" onerror="this.remove()">';
+    }
     h += '<div class="skygge"></div>';
     if (f.tid) h += '<div class="tidmerke">Kl. ' + esc(f.tid) + '</div>';
     h += '<div class="innhold">';
