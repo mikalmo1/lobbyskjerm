@@ -7,6 +7,40 @@ Innholdet henter seg selv:
   events-API-et på taletkultursal.no. Null vedlikehold.
 - **Bygdekinoen** – plakatbilder som ligger i `plakater/`-mappa i dette repoet.
   Oppdateres med `git push` – ingen MagicInfo-innlogging.
+- **«Selbu i dag»-sliden** – dashboard med fire felt, alt henter seg selv:
+  - *Været i Selbu* – api.met.no (Yr), nå + tre punkter framover.
+  - *Neste buss* – de tre neste avgangene fra **Bell skole/Selbu ungdomsskole**
+    (Entur JourneyPlanner, åpent API; grønn prikk = sanntid). Oppdateres hvert
+    5. minutt.
+  - *Beskjeder* – fra `beskjeder.json` i dette repoet (se under). Pushes normalt
+    fra Knuten, men kan også redigeres for hånd + `git push`.
+  - *Siste fra NRK* – de to øverste sakene fra `nyheter.json` (samme kilde som
+    tickeren i bunnlinja). Skjules automatisk hvis tre beskjeder trenger plassen.
+
+## Beskjeder fra kommune og skole (`beskjeder.json`)
+
+```json
+{
+ "beskjeder": [
+  {
+   "tittel": "Foreldremøte 8. trinn torsdag kl. 18",
+   "tekst": "Møtet holdes i kultursalen. Velkommen!",
+   "avsender": "Selbu ungdomsskole",
+   "viktig": false,
+   "fra": "2026-08-10",
+   "til": "2026-08-13"
+  }
+ ]
+}
+```
+
+- `tittel` er eneste påkrevde felt.
+- `avsender` vises som liten etikett (f.eks. «Selbu kommune» / «Selbu ungdomsskole»).
+- `viktig: true` gir rødt, uthevet kort og sorteres først.
+- `fra`/`til` er valgfrie ISO-datoer; beskjeden vises kun i intervallet.
+  `til` uten klokkeslett gjelder **ut** den dagen. Utløpte beskjeder forsvinner
+  av seg selv – fila trenger ikke ryddes for at skjermen skal bli riktig.
+- Maks 3 beskjeder vises (viktige først). Skjermen sjekker fila hvert 5. minutt.
 
 ## Førstegangsoppsett
 

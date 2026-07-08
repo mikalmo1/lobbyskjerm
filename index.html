@@ -15,7 +15,13 @@
     · Tælet Kultursal-program  – åpent API på taletkultursal.no
     · Bygdekino                – bilder fra plakater/-mappa (contents-API) og
                                  videoer fra release «infoskjerm» (assets)
-    · Været i Selbu            – api.met.no (Yr): egen slide + kompakt chip i bunnlinja
+    · «Selbu i dag»-slide      – dashboard med fire felt:
+        · Været i Selbu        – api.met.no (Yr); også kompakt chip i bunnlinja
+        · Neste buss           – Entur JourneyPlanner v3 (åpent GraphQL-API) fra
+                                 Bell skole/Selbu ungdomsskole (NSR:StopPlace:43628)
+        · Beskjeder            – beskjeder.json i repoet (pushes fra Knuten;
+                                 kommune/skole-beskjeder, «viktig»-flagg = rød)
+        · NRK-toppsaker        – de to øverste fra nyheter.json (skjules ved 3 beskjeder)
     · NRK-nyhetsticker         – nyheter.json i repoet (lages av GitHub Action
                                  .github/workflows/nyheter.yml; NRK har ikke CORS,
                                  så feeden hentes server-side og committes)
@@ -155,39 +161,129 @@
   .fb__date{ font-family:'Barlow', sans-serif; font-weight:500; color:rgba(255,255,255,.85); font-size:2.2vw; }
   .fb__time{ font-family:'Oswald', sans-serif; font-weight:500; color:#fff; font-size:6vw; line-height:1; letter-spacing:.02em; margin-top:.5vh; }
 
-  /* ===== Vær-slide ===== */
+  /* ===== «Selbu i dag»-slide: vær · buss · beskjeder · NRK =====
+     (gammel nettleser: flex uten gap — avstand via margin) */
   #vaer{ opacity:1; transition:opacity .7s ease; }
   #vaer.skjul{ opacity:0; }
-  .vaer__inn{
+  .dash{
     position:absolute; top:0; left:0; right:0; bottom:0;
+    padding:5.5vh 5vw 11vh 5vw;
     display:flex; flex-direction:column;
-    align-items:center; justify-content:center;
-    padding-bottom:8vh;
-    text-align:center;
   }
-  .vaer__naa{ display:flex; align-items:center; margin:4vh 0 6vh 0; }
-  .vaer__naa img{ width:11vw; height:11vw; }
+  .dash .kicker{ margin-bottom:3.5vh; }
+  .dash__kol{ display:flex; flex:1 1 auto; min-height:0; }
+  .dash__venstre{ width:54%; padding-right:3vw; display:flex; flex-direction:column; }
+  .dash__hoyre{ width:46%; display:flex; flex-direction:column; }
+  .dash__label{
+    font-family:'Oswald', sans-serif; font-weight:600;
+    text-transform:uppercase; letter-spacing:.22vw;
+    font-size:1.05vw; color:var(--gold);
+    margin-bottom:1.8vh;
+  }
+
+  /* vær (venstre topp) */
+  .vaer__naa{ display:flex; align-items:center; margin-bottom:2.5vh; }
+  .vaer__naa img{ width:7.5vw; height:7.5vw; }
   .vaer__temp{
     font-family:'Oswald', sans-serif; font-weight:500;
-    font-size:9vw; line-height:1; color:#fff;
-    margin-left:2vw;
+    font-size:6.5vw; line-height:1; color:#fff;
+    margin-left:1.5vw;
   }
   .vaer__kol{ display:flex; }
   .vaer__pkt{
-    width:14vw;
-    margin:0 1.5vw;
-    padding:2.5vh 0;
+    width:9.5vw;
+    margin-right:1.2vw;
+    padding:1.8vh 0;
     border-radius:1.5vh;
     background:rgba(255,255,255,.08);
+    text-align:center;
   }
   .vaer__pkt .n{
     font-family:'Oswald', sans-serif; font-weight:500;
-    text-transform:uppercase; letter-spacing:.15vw;
-    font-size:1.3vw; color:rgba(255,255,255,.75);
+    text-transform:uppercase; letter-spacing:.12vw;
+    font-size:1.05vw; color:rgba(255,255,255,.75);
   }
-  .vaer__pkt img{ width:5.5vw; height:5.5vw; margin:1.2vh 0; }
-  .vaer__pkt .t{ font-family:'Oswald', sans-serif; font-weight:600; font-size:2.4vw; color:#fff; }
-  .vaer__pkt .r{ font-family:'Barlow', sans-serif; font-weight:600; font-size:1.2vw; color:#9fc6e8; margin-top:.6vh; min-height:1.6vw; }
+  .vaer__pkt img{ width:3.8vw; height:3.8vw; margin:.8vh 0; }
+  .vaer__pkt .t{ font-family:'Oswald', sans-serif; font-weight:600; font-size:1.9vw; color:#fff; }
+  .vaer__pkt .r{ font-family:'Barlow', sans-serif; font-weight:600; font-size:1vw; color:#9fc6e8; margin-top:.4vh; min-height:1.3vw; }
+
+  /* buss (venstre bunn) */
+  .buss{ margin-top:auto; }
+  .buss__rad{
+    display:flex; align-items:center;
+    padding:1.6vh 0;
+    border-bottom:.15vh solid rgba(255,255,255,.14);
+  }
+  .buss__rad:last-child{ border-bottom:none; }
+  .buss__linje{
+    min-width:3.4vw; padding:.5vh .6vw; margin-right:1.2vw;
+    border-radius:.8vh;
+    background:var(--gold); color:var(--ink);
+    font-family:'Oswald', sans-serif; font-weight:600;
+    font-size:1.55vw; line-height:1.1; text-align:center;
+  }
+  .buss__mot{
+    flex:1 1 auto; min-width:0;
+    font-family:'Barlow', sans-serif; font-weight:500;
+    font-size:1.7vw; color:#fff;
+    white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+  }
+  .buss__tid{
+    font-family:'Oswald', sans-serif; font-weight:600;
+    font-size:1.8vw; color:#fff;
+    margin-left:1.2vw; white-space:nowrap;
+  }
+  .buss__tid .rt{
+    display:inline-block; width:.9vh; height:.9vh; margin-left:.5vw;
+    border-radius:50%; background:#7ee08a;
+    vertical-align:middle;
+  }
+  .buss__tom{
+    font-family:'Barlow', sans-serif; font-weight:500;
+    font-size:1.4vw; color:rgba(255,255,255,.7);
+    padding:1.6vh 0;
+  }
+
+  /* beskjeder (høyre topp) */
+  .besk{
+    margin-bottom:2vh; padding:2vh 1.6vw;
+    border-radius:1.5vh;
+    background:rgba(255,255,255,.09);
+    border-left:.4vw solid var(--gold);
+  }
+  .besk--viktig{ background:#a32638; border-left-color:#fff; }
+  .besk__avs{
+    font-family:'Oswald', sans-serif; font-weight:600;
+    text-transform:uppercase; letter-spacing:.15vw;
+    font-size:.95vw; color:var(--gold);
+    margin-bottom:.7vh;
+  }
+  .besk--viktig .besk__avs{ color:rgba(255,255,255,.85); }
+  .besk__tit{ font-family:'Oswald', sans-serif; font-weight:600; font-size:2vw; line-height:1.15; color:#fff; }
+  .besk__tekst{
+    font-family:'Barlow', sans-serif; font-weight:500;
+    font-size:1.35vw; line-height:1.35;
+    color:rgba(255,255,255,.92);
+    margin-top:.8vh;
+  }
+
+  /* NRK-toppsaker (høyre bunn) */
+  .nrk{ margin-top:auto; }
+  .nrk__sak{
+    padding:1.5vh 0;
+    border-bottom:.15vh solid rgba(255,255,255,.14);
+  }
+  .nrk__sak:last-child{ border-bottom:none; }
+  .nrk__kilde{
+    font-family:'Barlow', sans-serif; font-weight:700;
+    text-transform:uppercase; letter-spacing:.05vw;
+    font-size:.9vw; color:var(--gold);
+  }
+  .nrk__tit{
+    font-family:'Barlow', sans-serif; font-weight:600;
+    font-size:1.55vw; line-height:1.25; color:#fff;
+    margin-top:.4vh;
+  }
 
   /* ===== Persistent bunnlinje ===== */
   .footer{
@@ -306,15 +402,28 @@
   </div>
 </div>
 
-<!-- Vær-slide -->
+<!-- «Selbu i dag»-slide: vær · buss · beskjeder · NRK -->
 <div class="lag calm" id="vaer" style="display:none">
-  <div class="vaer__inn">
-    <div class="kicker"><span class="kicker__dot"></span>Været i Selbu</div>
-    <div class="vaer__naa">
-      <img id="vaer-naa-ikon" alt="">
-      <div class="vaer__temp" id="vaer-naa-temp"></div>
+  <div class="dash">
+    <div class="kicker"><span class="kicker__dot"></span>Selbu i dag</div>
+    <div class="dash__kol">
+      <div class="dash__venstre">
+        <div class="dash__label">Været i Selbu</div>
+        <div class="vaer__naa">
+          <img id="vaer-naa-ikon" alt="">
+          <div class="vaer__temp" id="vaer-naa-temp"></div>
+        </div>
+        <div class="vaer__kol" id="vaer-kol"></div>
+        <div class="buss">
+          <div class="dash__label">Neste buss · Bell skole/ungdomsskolen</div>
+          <div id="buss-liste"></div>
+        </div>
+      </div>
+      <div class="dash__hoyre">
+        <div id="besk-felt"></div>
+        <div class="nrk" id="nrk-felt"></div>
+      </div>
     </div>
-    <div class="vaer__kol" id="vaer-kol"></div>
   </div>
 </div>
 
@@ -361,6 +470,13 @@ var RELOAD_TIME = 4;                  // full omstart av siden kl. 04
 var NYHETER_FIL = "nyheter.json";     // same-origin, lages av GitHub Action
 var MIN_MELLOM_NYHETER = 15;          // hvor ofte skjermen henter nyheter.json
 var TICKER_PX_PER_SEK = 95;           // rullefart (høyere = raskere)
+var ENTUR_API = "https://api.entur.io/journey-planner/v3/graphql";
+var ET_CLIENT = "selbukommune-lobbyskjerm";      // påkrevd av Entur (identifiserer oss)
+var BUSS_STOPP = "NSR:StopPlace:43628";          // Bell skole/Selbu ungdomsskole
+var BUSS_ANTALL = 3;                  // avganger vist på sliden
+var MIN_MELLOM_BUSS = 5;              // hvor ofte avganger hentes på nytt
+var BESKJEDER_FIL = "beskjeder.json"; // same-origin, pushes fra Knuten
+var MIN_MELLOM_BESKJEDER = 5;         // beskjeder skal ut raskt
 /* ========================================== */
 
 var DAGER = ["søndag","mandag","tirsdag","onsdag","torsdag","fredag","lørdag"];
@@ -546,6 +662,133 @@ function tegnVaer(s){
          '<div class="r">' + (x.p.nedbor > 0 ? x.p.nedbor.toFixed(1).replace(".", ",") + " mm" : "") + '</div></div>';
   }
   document.getElementById("vaer-kol").innerHTML = h;
+  // resten av dashboardet tegnes ved hver visning så «om X min» alltid er ferskt
+  tegnBuss();
+  tegnBeskjeder();
+  tegnNrkFelt();
+}
+
+/* --- Neste buss fra Bell skole/Selbu ungdomsskole (Entur JourneyPlanner v3) ---
+   Åpent GraphQL-API med CORS; krever bare ET-Client-Name-headeren. */
+var bussAvganger = null;   // null = ikke hentet ennå, [] = hentet men tomt
+
+function hentBuss(){
+  var q = '{ stopPlace(id: "' + BUSS_STOPP + '") {' +
+          ' estimatedCalls(timeRange: 86400, numberOfDepartures: 10) {' +
+          ' realtime expectedDepartureTime' +
+          ' destinationDisplay { frontText }' +
+          ' serviceJourney { line { publicCode } } } } }';
+  fetch(ENTUR_API, {
+    method: "POST",
+    headers: {"Content-Type": "application/json", "ET-Client-Name": ET_CLIENT},
+    body: JSON.stringify({query: q})
+  })
+  .then(function(r){ return r.json(); })
+  .then(function(j){
+    var calls = (j && j.data && j.data.stopPlace && j.data.stopPlace.estimatedCalls) || [];
+    bussAvganger = calls.map(function(c){
+      return {
+        tid: new Date(c.expectedDepartureTime),
+        linje: (c.serviceJourney && c.serviceJourney.line && c.serviceJourney.line.publicCode) || "",
+        mot: (c.destinationDisplay && c.destinationDisplay.frontText) || "",
+        rt: !!c.realtime
+      };
+    });
+    tegnBuss();
+  })
+  .catch(function(){ /* behold forrige liste ved nettverksfeil */ });
+}
+
+function fmtBussTid(d){
+  var diffMin = Math.round((d - Date.now()) / 60000);
+  if (diffMin <= 0) return "nå";
+  if (diffMin < 60) return "om " + diffMin + " min";
+  var t = "kl. " + d.getHours() + ":" + p2(d.getMinutes());
+  if (d.getDate() !== new Date().getDate()) t = "i morgen " + t;
+  return t;
+}
+
+function tegnBuss(){
+  var el = document.getElementById("buss-liste");
+  if (bussAvganger === null){ el.innerHTML = ""; return; }
+  var grense = Date.now() - 60000;   // vis avganger inntil ett minutt tilbake
+  var komm = [];
+  for (var i = 0; i < bussAvganger.length && komm.length < BUSS_ANTALL; i++)
+    if (bussAvganger[i].tid >= grense) komm.push(bussAvganger[i]);
+  if (!komm.length){
+    el.innerHTML = '<div class="buss__tom">Ingen avganger neste døgn</div>';
+    return;
+  }
+  var h = "";
+  for (i = 0; i < komm.length; i++){
+    var a = komm[i];
+    h += '<div class="buss__rad">' +
+         (a.linje ? '<div class="buss__linje">' + esc(a.linje) + '</div>' : '') +
+         '<div class="buss__mot">' + esc(a.mot) + '</div>' +
+         '<div class="buss__tid">' + fmtBussTid(a.tid) + (a.rt ? '<span class="rt"></span>' : '') + '</div>' +
+         '</div>';
+  }
+  el.innerHTML = h;
+}
+
+/* --- Beskjeder fra kommune/skole (same-origin beskjeder.json, pushes fra Knuten) ---
+   Format: {"beskjeder":[{"tittel","tekst","avsender","viktig","fra","til"}]}
+   fra/til er valgfrie ISO-datoer; "til" uten klokkeslett gjelder ut dagen. */
+var beskjeder = [];
+
+function hentBeskjeder(){
+  fetch(BESKJEDER_FIL + "?t=" + Date.now(), {cache: "no-store"})
+  .then(function(r){ return r.ok ? r.json() : null; })
+  .then(function(j){
+    var alle = (j && j.beskjeder) || [];
+    var naa = new Date();
+    beskjeder = alle.filter(function(b){
+      if (!b || !b.tittel) return false;
+      if (b.fra && naa < new Date(b.fra)) return false;
+      if (b.til){
+        var til = new Date(b.til);
+        if (String(b.til).length <= 10) til.setHours(23, 59, 59);
+        if (naa > til) return false;
+      }
+      return true;
+    }).sort(function(a, b){ return (b.viktig ? 1 : 0) - (a.viktig ? 1 : 0); })
+      .slice(0, 3);
+    tegnBeskjeder();
+    tegnNrkFelt();
+  })
+  .catch(function(){ /* behold forrige */ });
+}
+
+function tegnBeskjeder(){
+  var el = document.getElementById("besk-felt");
+  if (!beskjeder.length){ el.innerHTML = ""; return; }
+  var h = '<div class="dash__label">Beskjeder</div>';
+  for (var i = 0; i < beskjeder.length; i++){
+    var b = beskjeder[i];
+    h += '<div class="besk' + (b.viktig ? ' besk--viktig' : '') + '">' +
+         (b.avsender ? '<div class="besk__avs">' + esc(b.avsender) + '</div>' : '') +
+         '<div class="besk__tit">' + esc(b.tittel) + '</div>' +
+         (b.tekst ? '<div class="besk__tekst">' + esc(b.tekst) + '</div>' : '') +
+         '</div>';
+  }
+  el.innerHTML = h;
+}
+
+/* --- NRK-toppsaker på sliden (de to øverste fra nyheter.json) --- */
+var nyhetsSaker = [];
+
+function tegnNrkFelt(){
+  var el = document.getElementById("nrk-felt");
+  if (beskjeder.length >= 3 || !nyhetsSaker.length){ el.innerHTML = ""; return; }
+  var h = '<div class="dash__label">Siste fra NRK</div>';
+  for (var i = 0; i < Math.min(2, nyhetsSaker.length); i++){
+    var s = nyhetsSaker[i];
+    h += '<div class="nrk__sak">' +
+         (s.kilde ? '<span class="nrk__kilde">' + esc(s.kilde) + '</span>' : '') +
+         '<div class="nrk__tit">' + esc(s.tittel) + '</div>' +
+         '</div>';
+  }
+  el.innerHTML = h;
 }
 
 /* --- NRK-nyhetsticker (same-origin nyheter.json fra GitHub Action) --- */
@@ -557,7 +800,11 @@ function esc(s){
 function hentNyheter(){
   fetch(NYHETER_FIL + "?t=" + Date.now(), {cache:"no-store"})
     .then(function(r){ return r.ok ? r.json() : null; })
-    .then(function(j){ byggTicker(j && j.saker ? j.saker : []); })
+    .then(function(j){
+      nyhetsSaker = (j && j.saker) || [];
+      tegnNrkFelt();
+      byggTicker(nyhetsSaker);
+    })
     .catch(function(){ byggTicker([]); });
 }
 
@@ -748,6 +995,10 @@ lastData();
 setInterval(lastData, MINUTTER_MELLOM_OPPDATERING * 60 * 1000);
 hentNyheter();
 setInterval(hentNyheter, MIN_MELLOM_NYHETER * 60 * 1000);
+hentBuss();
+setInterval(hentBuss, MIN_MELLOM_BUSS * 60 * 1000);
+hentBeskjeder();
+setInterval(hentBeskjeder, MIN_MELLOM_BESKJEDER * 60 * 1000);
 setInterval(function(){ // nattlig full omstart (minnehygiene på skjermen)
   var n = new Date();
   if (n.getHours() === RELOAD_TIME && Date.now() - startet > 2*3600*1000) location.reload();
