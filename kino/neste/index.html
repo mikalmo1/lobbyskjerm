@@ -118,19 +118,30 @@
     .kort.er-avlyst img.bg{filter:grayscale(1) brightness(.6)}
   }
 
-  /* Lav iframe på mobil: kompakter trinnvis i stedet for å scrolle. */
+  /* Lav iframe på mobil (ACOS skalerer widget-høyden med bredden — på smal
+     skjerm er heroen typisk bare ~180–200px høy): kompakter trinnvis i stedet
+     for å scrolle. Minibildene beholdes hele veien ned. */
   @media (max-width:560px) and (max-height:340px){
     .hero{padding:8px 10px 10px}
     .kicker{font-size:.68rem}
     .dato{font-size:1.05rem}
     .kort-rad{gap:6px;margin-top:6px}
-    .kort{padding:6px 8px}
+    .kort{padding:5px 8px}
     .kort img.bg{width:84px}
     .k-meta{display:none}
   }
   @media (max-width:560px) and (max-height:250px){
-    .kort img.bg{display:none}
+    .hero{padding:6px 8px 8px;border-radius:8px}
+    .kicker{display:none}
+    .dato{font-size:.98rem}
+    .kort-rad{gap:5px;margin-top:5px}
+    .kort{padding:4px 6px;gap:8px}
+    .kort img.bg{width:70px;border-radius:4px}
+    .kort .tidmerke{font-size:.72rem;padding:2px 7px}
+    .k-tittel{font-size:.86rem}
     .k-handling{margin-top:2px}
+    .kjop{font-size:.72rem;padding:2px 8px}
+    .pris{font-size:.82rem}
   }
 </style>
 </head>
