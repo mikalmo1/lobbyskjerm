@@ -15,7 +15,10 @@
     · Tælet Kultursal-program  – åpent API på taletkultursal.no
     · Bygdekino                – bilder fra plakater/-mappa (contents-API) og
                                  videoer fra release «infoskjerm» (assets)
-    · Været i Selbu            – api.met.no (Yr), egen slide
+    · Været i Selbu            – api.met.no (Yr): egen slide + kompakt chip i bunnlinja
+    · NRK-nyhetsticker         – nyheter.json i repoet (lages av GitHub Action
+                                 .github/workflows/nyheter.yml; NRK har ikke CORS,
+                                 så feeden hentes server-side og committes)
   Filnavn-konvensjon (plakater/assets): se README.md.
 -->
 
@@ -62,7 +65,7 @@
     height:52vh;
     background:linear-gradient(to top, rgba(15,8,25,.96) 0%, rgba(15,8,25,.86) 26%, rgba(15,8,25,0) 100%);
   }
-  .cine__text{ position:absolute; left:6vw; right:6vw; bottom:12vh; }
+  .cine__text{ position:absolute; left:6vw; right:6vw; bottom:14vh; }
 
   /* video + [skjerm]-bilder: full-bleed uten tekst */
   #slide.fullmedia .cine__bg, #slide.fullmedia .cine__scrim, #slide.fullmedia .cine__text{ display:none; }
@@ -138,7 +141,7 @@
     display:flex; flex-direction:column;
     align-items:center; justify-content:center;
     text-align:center;
-    padding-bottom:6vh;
+    padding-bottom:12vh;
   }
   .emblem{
     width:2.6vw; height:2.6vw;
@@ -159,7 +162,7 @@
     position:absolute; top:0; left:0; right:0; bottom:0;
     display:flex; flex-direction:column;
     align-items:center; justify-content:center;
-    padding-bottom:8vh;
+    padding-bottom:12vh;
     text-align:center;
   }
   .vaer__naa{ display:flex; align-items:center; margin:4vh 0 6vh 0; }
@@ -215,6 +218,69 @@
     transition:width .3s ease, background .3s ease;
   }
   .dot.is-active{ width:3.4vh; border-radius:1vh; background:var(--gold); }
+
+  /* ===== Vær-chip i bunnlinja ===== */
+  .footer__left{ display:flex; align-items:flex-end; }
+  .footer__vaer{ display:flex; align-items:center; margin-left:1.7vw; }
+  .footer__vaer .fl{
+    font-family:'Barlow', sans-serif; font-weight:500;
+    font-size:1.05vw; color:rgba(255,255,255,.82);
+    margin-right:.5vw; text-shadow:0 .2vh 1.2vh rgba(0,0,0,.5);
+  }
+  .footer__vaer img{ width:2.7vw; height:2.7vw; }
+  .footer__vaer .ft{
+    font-family:'Oswald', sans-serif; font-weight:600;
+    font-size:1.7vw; color:#fff; margin-left:.3vw;
+    text-shadow:0 .2vh 1.2vh rgba(0,0,0,.5);
+  }
+
+  /* ===== NRK-nyhetsticker (løftes inn av body.ticker-paa når det finnes saker) ===== */
+  .ticker-paa .footer{ bottom:4.6vh; height:7vh; padding-bottom:1.4vh; }
+  .ticker{
+    position:absolute; left:0; right:0; bottom:0;
+    height:4.6vh; z-index:10;
+    display:none; align-items:center;
+    overflow:hidden;
+    background:rgba(15,8,25,.9);
+    border-top:.22vh solid rgba(216,178,95,.5);
+  }
+  .ticker-paa .ticker{ display:flex; }
+  .ticker__merke{
+    flex:0 0 auto; height:100%;
+    display:flex; align-items:center;
+    padding:0 1.2vw;
+    background:var(--gold); color:var(--ink);
+    font-family:'Oswald', sans-serif; font-weight:700;
+    text-transform:uppercase; letter-spacing:.12vw;
+    font-size:1.3vw;
+  }
+  .ticker__mask{ position:relative; flex:1 1 auto; height:100%; overflow:hidden; }
+  .ticker__spor{
+    position:absolute; top:0; left:0; height:100%;
+    display:flex; align-items:center;
+    white-space:nowrap; will-change:transform;
+    -webkit-animation:tickerRull linear infinite;
+            animation:tickerRull linear infinite;
+  }
+  .ticker__sak{
+    display:inline-flex; align-items:center;
+    padding:0 1.6vw;
+    font-family:'Barlow', sans-serif; font-weight:500;
+    font-size:1.35vw; color:#fff;
+  }
+  .ticker__kilde{
+    font-family:'Oswald', sans-serif; font-weight:600;
+    text-transform:uppercase; letter-spacing:.05vw;
+    font-size:1vw; color:var(--gold); margin-right:.7vw;
+  }
+  .ticker__prikk{
+    display:inline-block; width:.6vh; height:.6vh; margin:0 1.6vw;
+    border-radius:50%; background:rgba(216,178,95,.7);
+  }
+  @keyframes tickerRull{
+    from{ -webkit-transform:translateX(0);      transform:translateX(0); }
+    to{   -webkit-transform:translateX(-50%);   transform:translateX(-50%); }
+  }
 </style>
 </head>
 <body>
@@ -259,8 +325,19 @@
 
 <!-- Persistent bunnlinje -->
 <div class="footer">
-  <div class="footer__clock" id="klokke"></div>
+  <div class="footer__left">
+    <div class="footer__clock" id="klokke"></div>
+    <div class="footer__vaer" id="footer-vaer"></div>
+  </div>
   <div class="footer__dots" id="dots"></div>
+</div>
+
+<!-- NRK-nyhetsticker (vises kun når nyheter.json har saker) -->
+<div class="ticker" id="ticker">
+  <div class="ticker__merke">NRK</div>
+  <div class="ticker__mask">
+    <div class="ticker__spor" id="ticker-spor"></div>
+  </div>
 </div>
 
 <script>
@@ -276,6 +353,9 @@ var SEKUNDER_PER_SLIDE = 12;
 var MAKS_VIDEO_SEKUNDER = 600;        // sikkerhetsnett om 'ended' aldri kommer
 var MINUTTER_MELLOM_OPPDATERING = 30;
 var RELOAD_TIME = 4;                  // full omstart av siden kl. 04
+var NYHETER_FIL = "nyheter.json";     // same-origin, lages av GitHub Action
+var MIN_MELLOM_NYHETER = 15;          // hvor ofte skjermen henter nyheter.json
+var TICKER_PX_PER_SEK = 95;           // rullefart (høyere = raskere)
 /* ========================================== */
 
 var DAGER = ["søndag","mandag","tirsdag","onsdag","torsdag","fredag","lørdag"];
@@ -285,6 +365,7 @@ var slides = [];
 var idx = 0;
 var startet = Date.now();
 var slideTimer = null;
+var sisteNyhetSig = "";               // hindrer restart av rulle-animasjonen når saker er uendret
 
 function detectRepo(){
   if (GITHUB_USER && GITHUB_REPO) return {user:GITHUB_USER, repo:GITHUB_REPO};
@@ -426,6 +507,7 @@ function hentVaer(){
       var ts = j.properties.timeseries;
       if (!ts || !ts.length) return null;
       var naa = Date.now();
+      oppdaterVaerChip(_vaerPunkt(ts, naa));   // kompakt chip i bunnlinja
       var imorgen = new Date(); imorgen.setDate(imorgen.getDate() + 1); imorgen.setHours(12,0,0,0);
       var punkter = [
         {navn: "Nå",       p: _vaerPunkt(ts, naa)},
@@ -436,6 +518,14 @@ function hentVaer(){
       return punkter.length >= 2 ? {media: "vaer", punkter: punkter} : null;
     })
     .catch(function(){ return null; });
+}
+
+function oppdaterVaerChip(p){
+  if (!p || !p.ikon) return;
+  document.getElementById("footer-vaer").innerHTML =
+    '<span class="fl">Selbu</span>' +
+    '<img src="' + VAER_IKON + p.ikon + '.svg" alt="">' +
+    '<span class="ft">' + p.temp + '°</span>';
 }
 
 function tegnVaer(s){
@@ -451,6 +541,52 @@ function tegnVaer(s){
          '<div class="r">' + (x.p.nedbor > 0 ? x.p.nedbor.toFixed(1).replace(".", ",") + " mm" : "") + '</div></div>';
   }
   document.getElementById("vaer-kol").innerHTML = h;
+}
+
+/* --- NRK-nyhetsticker (same-origin nyheter.json fra GitHub Action) --- */
+function esc(s){
+  return String(s == null ? "" : s)
+    .replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
+}
+
+function hentNyheter(){
+  fetch(NYHETER_FIL + "?t=" + Date.now(), {cache:"no-store"})
+    .then(function(r){ return r.ok ? r.json() : null; })
+    .then(function(j){ byggTicker(j && j.saker ? j.saker : []); })
+    .catch(function(){ byggTicker([]); });
+}
+
+function byggTicker(saker){
+  var spor = document.getElementById("ticker-spor");
+  if (!saker || !saker.length){          // ingen nyheter: skjul tickeren, footer tilbake til full høyde
+    settTicker(false);
+    spor.innerHTML = "";
+    sisteNyhetSig = "";
+    return;
+  }
+  var sig = saker.map(function(s){ return s.tittel; }).join("|");
+  if (sig === sisteNyhetSig) return;     // uendret innhold -> ikke restart rullingen
+  sisteNyhetSig = sig;
+
+  var en = "";
+  for (var i = 0; i < saker.length; i++){
+    var s = saker[i];
+    en += '<span class="ticker__sak">';
+    if (s.kilde) en += '<span class="ticker__kilde">' + esc(s.kilde) + '</span>';
+    en += esc(s.tittel) + '</span><span class="ticker__prikk"></span>';
+  }
+  spor.innerHTML = en + en;              // to kopier => sømløs løkke ved translateX(-50%)
+  settTicker(true);
+
+  var enKopiPx = spor.scrollWidth / 2;   // scrollWidth tvinger reflow -> gyldig bredde
+  var sek = Math.max(20, Math.round(enKopiPx / TICKER_PX_PER_SEK));
+  spor.style.webkitAnimationDuration = sek + "s";
+  spor.style.animationDuration = sek + "s";
+}
+
+function settTicker(paa){
+  var b = document.body, kl = b.className.replace(/\s*ticker-paa/g, "");
+  b.className = paa ? (kl + " ticker-paa") : kl;
 }
 
 /* --- rotasjon --- */
@@ -605,6 +741,8 @@ oppdaterKlokke();
 setInterval(oppdaterKlokke, 10000);
 lastData();
 setInterval(lastData, MINUTTER_MELLOM_OPPDATERING * 60 * 1000);
+hentNyheter();
+setInterval(hentNyheter, MIN_MELLOM_NYHETER * 60 * 1000);
 setInterval(function(){ // nattlig full omstart (minnehygiene på skjermen)
   var n = new Date();
   if (n.getHours() === RELOAD_TIME && Date.now() - startet > 2*3600*1000) location.reload();

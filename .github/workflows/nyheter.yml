@@ -1,0 +1,38 @@
+name: Hent NRK-nyheter
+
+# Henter NRK-RSS server-side (NRK har ikke CORS) og committer nyheter.json,
+# som lobbyskjermen leser same-origin. Kjører hvert kvarter + kan startes manuelt.
+
+on:
+  schedule:
+    - cron: "*/15 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: nyheter
+  cancel-in-progress: false
+
+jobs:
+  hent:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Sjekk ut repoet
+        uses: actions/checkout@v4
+
+      - name: Hent og miks NRK-feeder
+        run: python3 scripts/hent_nyheter.py
+
+      - name: Commit ved endring
+        run: |
+          git config user.name  "nyheter-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add nyheter.json
+          if git diff --staged --quiet; then
+            echo "Ingen endring i nyheter.json."
+          else
+            git commit -m "Oppdater NRK-nyheter [skip ci]"
+            git push
+          fi
