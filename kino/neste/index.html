@@ -27,13 +27,17 @@
     --avlyst:#ff8a80;
   }
   *{box-sizing:border-box;margin:0;padding:0}
+  html,body{height:100%}
   html{background:transparent}
   body{
     font-family:"Source Sans 3","Source Sans Pro","Segoe UI",Arial,sans-serif;
     color:var(--hvit);background:transparent;font-size:16px;line-height:1.4;
   }
+  /* Heroen fyller HELE iframen (bredde og høyde) — widgetens px-felter i CMS-et
+     bestemmer størrelsen, og det blir aldri dødrom under panelet. */
   .hero{
-    max-width:960px;margin:0 auto;border-radius:12px;overflow:hidden;
+    height:100%;display:flex;flex-direction:column;
+    border-radius:12px;overflow:hidden;
     background:linear-gradient(135deg,var(--nea) 0%,var(--nea-dyp) 55%,var(--nea-natt) 100%);
     padding:18px 20px 20px;
   }
@@ -44,11 +48,11 @@
   .varsel{
     font-size:.88rem;color:var(--avlyst);margin:2px 0 6px;
   }
-  .kort-rad{display:flex;gap:14px;margin-top:10px}
+  .kort-rad{display:flex;gap:14px;margin-top:10px;flex:1 1 auto;min-height:0}
   .kort{
     position:relative;flex:1 1 0;min-width:0;border-radius:10px;overflow:hidden;
     background:linear-gradient(160deg,#33708c,var(--nea-dyp));
-    aspect-ratio:16/9;display:flex;align-items:flex-end;
+    min-height:150px;display:flex;align-items:flex-end;
   }
   .kort img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
   .kort .skygge{position:absolute;inset:0;background:linear-gradient(to top,rgba(10,30,40,.88) 0%,rgba(10,30,40,.25) 55%,rgba(10,30,40,.05) 100%)}
@@ -75,13 +79,13 @@
     display:inline-block;background:#b3261e;color:#fff;font-size:.72rem;font-weight:700;
     letter-spacing:.06em;text-transform:uppercase;padding:2px 9px;border-radius:99px;
   }
-  .tom{padding:26px 6px;text-align:center;color:var(--dus)}
+  .tom{flex:1;display:flex;align-items:center;justify-content:center;text-align:center;color:var(--dus);padding:16px 6px}
 
   @media (max-width:560px){
     .hero{padding:14px 14px 16px}
     .dato{font-size:1.3rem}
     .kort-rad{flex-direction:column;gap:10px}
-    .kort{aspect-ratio:auto;min-height:96px;display:flex;align-items:stretch}
+    .kort{min-height:96px;display:flex;align-items:stretch}
     .kort .innhold{padding:10px 12px 10px 12px;display:flex;flex-direction:column;justify-content:flex-end}
     .kort .tidmerke{top:8px;left:8px}
     .k-tittel{font-size:1.02rem}
