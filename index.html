@@ -213,41 +213,61 @@
   .vaer__pkt .t{ font-family:'Oswald', sans-serif; font-weight:600; font-size:1.9vw; color:#fff; }
   .vaer__pkt .r{ font-family:'Barlow', sans-serif; font-weight:600; font-size:1vw; color:#9fc6e8; margin-top:.4vh; min-height:1.3vw; }
 
-  /* buss (venstre bunn) */
-  .buss{ margin-top:auto; }
-  .buss__rad{
-    display:flex; align-items:center;
-    padding:1.6vh 0;
-    border-bottom:.15vh solid rgba(255,255,255,.14);
+  /* buss (venstre bunn): ett kort per retning — plattformene ligger på hver
+     sin side av veien, så retningen må være utvetydig */
+  .buss{ margin-top:auto; padding-top:3vh; }
+  .buss__retninger{ display:flex; }
+  .buss__retning{
+    flex:1 1 0; min-width:0;
+    margin-right:1.2vw;
+    padding:2vh 1.4vw 1.8vh 1.4vw;
+    border-radius:1.5vh;
+    background:rgba(255,255,255,.08);
   }
-  .buss__rad:last-child{ border-bottom:none; }
+  .buss__retning:last-child{ margin-right:0; }
+  .buss__mot{
+    font-family:'Oswald', sans-serif; font-weight:500;
+    text-transform:uppercase; letter-spacing:.12vw;
+    font-size:1.05vw; color:rgba(255,255,255,.75);
+    white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+  }
+  .buss__neste{
+    display:flex; align-items:baseline;
+    margin-top:1.2vh;
+  }
   .buss__linje{
-    min-width:3.4vw; padding:.5vh .6vw; margin-right:1.2vw;
+    align-self:center;
+    padding:.4vh .55vw; margin-right:.9vw;
     border-radius:.8vh;
     background:var(--gold); color:var(--ink);
     font-family:'Oswald', sans-serif; font-weight:600;
-    font-size:1.55vw; line-height:1.1; text-align:center;
-  }
-  .buss__mot{
-    flex:1 1 auto; min-width:0;
-    font-family:'Barlow', sans-serif; font-weight:500;
-    font-size:1.7vw; color:#fff;
-    white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+    font-size:1.35vw; line-height:1.1;
   }
   .buss__tid{
     font-family:'Oswald', sans-serif; font-weight:600;
-    font-size:1.8vw; color:#fff;
-    margin-left:1.2vw; white-space:nowrap;
+    font-size:2.3vw; line-height:1.05; color:#fff;
+    white-space:nowrap;
   }
   .buss__tid .rt{
     display:inline-block; width:.9vh; height:.9vh; margin-left:.5vw;
     border-radius:50%; background:#7ee08a;
     vertical-align:middle;
   }
+  .buss__til{
+    font-family:'Barlow', sans-serif; font-weight:500;
+    font-size:1.1vw; color:rgba(255,255,255,.85);
+    margin-top:.9vh;
+    white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+  }
+  .buss__deretter{
+    font-family:'Barlow', sans-serif; font-weight:500;
+    font-size:1vw; color:rgba(255,255,255,.55);
+    margin-top:.4vh;
+  }
   .buss__tom{
     font-family:'Barlow', sans-serif; font-weight:500;
-    font-size:1.4vw; color:rgba(255,255,255,.7);
-    padding:1.6vh 0;
+    font-size:1.25vw; color:rgba(255,255,255,.6);
+    margin-top:1.4vh;
   }
 
   /* beskjeder (høyre topp) */
@@ -421,8 +441,8 @@
         </div>
         <div class="vaer__kol" id="vaer-kol"></div>
         <div class="buss">
-          <div class="dash__label">Neste buss · Marienborg</div>
-          <div id="buss-liste"></div>
+          <div class="dash__label">Neste buss fra Marienborg</div>
+          <div class="buss__retninger" id="buss-liste"></div>
         </div>
       </div>
       <div class="dash__hoyre">
@@ -482,7 +502,11 @@ var BUSS_STOPP = "NSR:StopPlace:42434";          // Marienborg — nærmeste sto
                                                  // rutetrafikk (linje 430); holdeplassen
                                                  // Bell skole/ungdomsskolen (43628) har
                                                  // ingen avganger i rutedata
-var BUSS_ANTALL = 3;                  // avganger vist på sliden
+// Plattformene ligger på hver sin side av veien — merk retningen eksplisitt.
+var BUSS_RETNINGER = [
+  {quay: "NSR:Quay:72672", navn: "Mot Stjørdal / Trondheim"},
+  {quay: "NSR:Quay:72671", navn: "Mot Selbu sentrum / Tydal"}
+];
 var MIN_MELLOM_BUSS = 5;              // hvor ofte avganger hentes på nytt
 var BESKJEDER_FIL = "beskjeder.json"; // same-origin, pushes fra Knuten
 var MIN_MELLOM_BESKJEDER = 5;         // beskjeder skal ut raskt
@@ -688,8 +712,9 @@ var bussAvganger = null;   // null = ikke hentet ennå, [] = hentet men tomt
 
 function hentBuss(){
   var q = '{ stopPlace(id: "' + BUSS_STOPP + '") {' +
-          ' estimatedCalls(timeRange: 86400, numberOfDepartures: 10) {' +
+          ' estimatedCalls(timeRange: 86400, numberOfDepartures: 12) {' +
           ' realtime expectedDepartureTime' +
+          ' quay { id }' +
           ' destinationDisplay { frontText }' +
           ' serviceJourney { line { publicCode } } } } }';
   fetch(ENTUR_API, {
@@ -703,6 +728,7 @@ function hentBuss(){
     bussAvganger = calls.map(function(c){
       return {
         tid: new Date(c.expectedDepartureTime),
+        quay: (c.quay && c.quay.id) || "",
         linje: (c.serviceJourney && c.serviceJourney.line && c.serviceJourney.line.publicCode) || "",
         mot: (c.destinationDisplay && c.destinationDisplay.frontText) || "",
         rt: !!c.realtime
@@ -726,21 +752,27 @@ function tegnBuss(){
   var el = document.getElementById("buss-liste");
   if (bussAvganger === null){ el.innerHTML = ""; return; }
   var grense = Date.now() - 60000;   // vis avganger inntil ett minutt tilbake
-  var komm = [];
-  for (var i = 0; i < bussAvganger.length && komm.length < BUSS_ANTALL; i++)
-    if (bussAvganger[i].tid >= grense) komm.push(bussAvganger[i]);
-  if (!komm.length){
-    el.innerHTML = '<div class="buss__tom">Ingen avganger neste døgn</div>';
-    return;
-  }
   var h = "";
-  for (i = 0; i < komm.length; i++){
-    var a = komm[i];
-    h += '<div class="buss__rad">' +
-         (a.linje ? '<div class="buss__linje">' + esc(a.linje) + '</div>' : '') +
-         '<div class="buss__mot">' + esc(a.mot) + '</div>' +
-         '<div class="buss__tid">' + fmtBussTid(a.tid) + (a.rt ? '<span class="rt"></span>' : '') + '</div>' +
-         '</div>';
+  for (var r = 0; r < BUSS_RETNINGER.length; r++){
+    var retning = BUSS_RETNINGER[r];
+    var komm = [];
+    for (var i = 0; i < bussAvganger.length && komm.length < 2; i++)
+      if (bussAvganger[i].quay === retning.quay && bussAvganger[i].tid >= grense)
+        komm.push(bussAvganger[i]);
+    h += '<div class="buss__retning"><div class="buss__mot">' + esc(retning.navn) + '</div>';
+    if (!komm.length){
+      h += '<div class="buss__tom">Ingen avganger neste døgn</div>';
+    } else {
+      var a = komm[0];
+      h += '<div class="buss__neste">' +
+           (a.linje ? '<span class="buss__linje">' + esc(a.linje) + '</span>' : '') +
+           '<span class="buss__tid">' + fmtBussTid(a.tid) + (a.rt ? '<span class="rt"></span>' : '') + '</span>' +
+           '</div>' +
+           (a.mot ? '<div class="buss__til">til ' + esc(a.mot) + '</div>' : '');
+      if (komm.length > 1)
+        h += '<div class="buss__deretter">deretter ' + fmtBussTid(komm[1].tid) + '</div>';
+    }
+    h += '</div>';
   }
   el.innerHTML = h;
 }
