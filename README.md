@@ -43,6 +43,34 @@ Innholdet henter seg selv:
   av seg selv – fila trenger ikke ryddes for at skjermen skal bli riktig.
 - Maks 3 beskjeder vises (viktige først). Skjermen sjekker fila hvert 5. minutt.
 
+## Visningsstyring (`visning.json`)
+
+Styrer hva som vises og hvor lenge hver slide står, i to regimer:
+**skole** (mandag–fredag i skoletiden, utenom ferier/fridager) og **fritid**
+(ettermiddag, kveld, helg og ferie). Redigeres normalt i Knuten
+(Infoskjerm → Visning), men kan også pushes for hånd:
+
+```json
+{
+ "skoletid": {"start": "08:00", "slutt": "15:30"},
+ "ferier": [
+  {"navn": "Høstferie", "fra": "2026-10-05", "til": "2026-10-09"}
+ ],
+ "regimer": {
+  "skole":  {"sekunder": 10, "innhold": {"kultursal": true, "kino": false, "dashboard": true}},
+  "fritid": {"sekunder": 12, "innhold": {"kultursal": true, "kino": true, "dashboard": true}}
+ }
+}
+```
+
+- `innhold`-nøklene er `kultursal` (arrangementer), `kino` (plakater/loop-video)
+  og `dashboard` («Selbu i dag» med vær/buss/beskjeder).
+- Skjermen sjekker regimet hvert minutt og bytter innhold umiddelbart ved
+  overgangene (kl.-slettene, ny dag, ferie-start/-slutt).
+- Mangler fila (eller en nøkkel), vises alt med 12 s per slide — skjermen blir
+  aldri svart av en manglende/ødelagt fil. Er alt innhold skrudd av i et regime,
+  vises fallback-siden med klokke.
+
 ## Førstegangsoppsett
 
 1. Opprett et **offentlig** repo på github.com (dette repoet: `lobbyskjerm`).

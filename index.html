@@ -22,6 +22,11 @@
                                  ved ungdomsskolen med rutetrafikk (linje 430)
         · Beskjeder            – beskjeder.json i repoet (pushes fra Knuten;
                                  kommune/skole-beskjeder, «viktig»-flagg = rød)
+    · Visningsstyring          – visning.json i repoet (pushes fra Knuten): hva som
+                                 vises og sekunder per slide i to regimer — «skole»
+                                 (skoledager i skoletiden, utenom ferier) og «fritid»
+                                 (ettermiddag/kveld, helg, ferie). Mangler fila,
+                                 vises alt med 12 s per slide.
         · NRK-toppsaker        – de to øverste fra nyheter.json (skjules ved 3 beskjeder)
     · NRK-nyhetsticker         – nyheter.json i repoet (lages av GitHub Action
                                  .github/workflows/nyheter.yml; NRK har ikke CORS,
@@ -481,12 +486,15 @@ var BUSS_ANTALL = 3;                  // avganger vist på sliden
 var MIN_MELLOM_BUSS = 5;              // hvor ofte avganger hentes på nytt
 var BESKJEDER_FIL = "beskjeder.json"; // same-origin, pushes fra Knuten
 var MIN_MELLOM_BESKJEDER = 5;         // beskjeder skal ut raskt
+var VISNING_FIL = "visning.json";     // same-origin, pushes fra Knuten (visningsstyring)
+var MIN_MELLOM_VISNING = 5;
 /* ========================================== */
 
 var DAGER = ["søndag","mandag","tirsdag","onsdag","torsdag","fredag","lørdag"];
 var MND = ["januar","februar","mars","april","mai","juni","juli","august","september","oktober","november","desember"];
 
-var slides = [];
+var alleSlides = [];                  // alt innhold (ufiltrert)
+var slides = [];                      // det gjeldende regimet viser
 var idx = 0;
 var startet = Date.now();
 var slideTimer = null;
@@ -532,6 +540,7 @@ function hentKultursal(){
       return (j.events || []).map(function(ev){
         return {
           media: "bilde",
+          kategori: "kultursal",
           kicker: "Tælet Kultursal",
           tittel: decodeEntities(ev.title),
           dato: parseWpDato(ev.start_date),
@@ -565,6 +574,7 @@ function _tilSlide(navn, url){
   if (p.dato && p.dato < startenAvIdag()) return null;
   return {
     media: p.erVideo ? "video" : "bilde",
+    kategori: "kino",
     fullbleed: p.fullbleed,
     kicker: "Bygdekinoen i Selbu",
     tittel: p.tittel,
@@ -640,7 +650,7 @@ function hentVaer(){
         {navn: null,       p: _vaerPunkt(ts, naa + 12*3600*1000)},
         {navn: "I morgen", p: _vaerPunkt(ts, imorgen.getTime())}
       ].filter(function(x){ return x.p && x.p.ikon; });
-      return punkter.length >= 2 ? {media: "vaer", punkter: punkter} : null;
+      return punkter.length >= 2 ? {media: "vaer", kategori: "dashboard", punkter: punkter} : null;
     })
     .catch(function(){ return null; });
 }
@@ -845,6 +855,72 @@ function settTicker(paa){
   b.className = paa ? (kl + " ticker-paa") : kl;
 }
 
+/* --- Visningsstyring (same-origin visning.json fra Knuten) ---
+   To regimer: «skole» = man–fre innenfor skoletiden, utenom ferier/fridager;
+   alt annet = «fritid». Regimet styrer hvilke kategorier som vises og hvor
+   lenge hver slide står. Uten fil: alt vises, SEKUNDER_PER_SLIDE gjelder. */
+var visning = null;
+var sisteRegime = null;
+
+function hentVisning(){
+  fetch(VISNING_FIL + "?t=" + Date.now(), {cache:"no-store"})
+    .then(function(r){ return r.ok ? r.json() : null; })
+    .then(function(j){
+      if (!j) return;
+      visning = j;
+      sisteRegime = regimeNaa();
+      filtrerSlides(false);   // ny innholdsliste tas i bruk fra neste slidebytte
+    })
+    .catch(function(){ /* behold forrige styring */ });
+}
+
+function regimeNaa(){
+  if (!visning) return "fritid";
+  var n = new Date();
+  if (n.getDay() === 0 || n.getDay() === 6) return "fritid";
+  var iso = n.getFullYear() + "-" + p2(n.getMonth() + 1) + "-" + p2(n.getDate());
+  var ferier = visning.ferier || [];
+  for (var i = 0; i < ferier.length; i++)
+    if (ferier[i].fra <= iso && iso <= ferier[i].til) return "fritid";
+  var kl = p2(n.getHours()) + ":" + p2(n.getMinutes());
+  var st = (visning.skoletid && visning.skoletid.start) || "08:00";
+  var sl = (visning.skoletid && visning.skoletid.slutt) || "15:30";
+  return (st <= kl && kl < sl) ? "skole" : "fritid";
+}
+
+function innholdPaa(kategori){
+  if (!visning || !kategori) return true;
+  var r = visning.regimer && visning.regimer[regimeNaa()];
+  if (!r || !r.innhold) return true;
+  return r.innhold[kategori] !== false;
+}
+
+function sekunderPerSlide(){
+  var r = visning && visning.regimer && visning.regimer[regimeNaa()];
+  var sek = r && Number(r.sekunder);
+  return (sek >= 5 && sek <= 60) ? sek : SEKUNDER_PER_SLIDE;
+}
+
+function filtrerSlides(tegnOm){
+  var ny = [];
+  for (var i = 0; i < alleSlides.length; i++)
+    if (innholdPaa(alleSlides[i].kategori)) ny.push(alleSlides[i]);
+  slides = ny;
+  if (idx >= slides.length) idx = 0;
+  if (!tegnOm) return;
+  var vid = document.getElementById("video");
+  var videoSpiller = vid.style.display !== "none" && !vid.paused && !vid.ended;
+  if (!videoSpiller) visSlide(slides.length ? idx : -1);
+}
+
+function sjekkRegime(){
+  // Bytter skjermen regime (kl. 08:00/15:30, ny dag), filtrer og tegn om straks.
+  var r = regimeNaa();
+  if (r === sisteRegime) return;
+  sisteRegime = r;
+  filtrerSlides(true);
+}
+
 /* --- rotasjon --- */
 function planleggNeste(sek){
   clearTimeout(slideTimer);
@@ -864,7 +940,7 @@ function visSlide(n){
 
   if (!s){
     _vis(slideEl, false); _vis(vaerEl, false); _vis(fb, true);
-    planleggNeste(SEKUNDER_PER_SLIDE);
+    planleggNeste(sekunderPerSlide());
     return;
   }
   _vis(fb, false);
@@ -880,7 +956,7 @@ function visSlide(n){
       tegnVaer(s);
       _vis(vaerEl, true);
       vaerEl.classList.remove("skjul");
-      planleggNeste(SEKUNDER_PER_SLIDE);
+      planleggNeste(sekunderPerSlide());
       forhandslastNeste(n);
     } else if (s.media === "video"){
       _vis(vaerEl, false);
@@ -890,7 +966,7 @@ function visSlide(n){
       vid.onended = function(){ nesteSlide(); };
       vid.onerror = function(){ nesteSlide(); };
       vid.src = s.url;
-      vid.play().catch(function(){ planleggNeste(SEKUNDER_PER_SLIDE); });
+      vid.play().catch(function(){ planleggNeste(sekunderPerSlide()); });
       planleggNeste(MAKS_VIDEO_SEKUNDER);
       _vis(slideEl, true);
       slideEl.classList.remove("skjul");
@@ -926,7 +1002,7 @@ function visSlide(n){
         }
         _vis(slideEl, true);
         slideEl.classList.remove("skjul");
-        planleggNeste(SEKUNDER_PER_SLIDE);
+        planleggNeste(sekunderPerSlide());
         forhandslastNeste(n);
       };
       img.onload = visNaa;
@@ -972,12 +1048,9 @@ function nesteSlide(){
 function lastData(){
   Promise.all([hentKultursal(), hentPlakater(), hentVaer()]).then(function(res){
     var ny = res[0].concat(res[1]);
-    if (res[2]) ny.push(res[2]);   // været sist i runden
-    slides = ny;
-    if (idx >= slides.length) idx = 0;
-    var vid = document.getElementById("video");
-    var videoSpiller = vid.style.display !== "none" && !vid.paused && !vid.ended;
-    if (!videoSpiller) visSlide(slides.length ? idx : -1);
+    if (res[2]) ny.push(res[2]);   // «Selbu i dag» sist i runden
+    alleSlides = ny;
+    filtrerSlides(true);
   });
 }
 
@@ -1003,6 +1076,9 @@ hentBuss();
 setInterval(hentBuss, MIN_MELLOM_BUSS * 60 * 1000);
 hentBeskjeder();
 setInterval(hentBeskjeder, MIN_MELLOM_BESKJEDER * 60 * 1000);
+hentVisning();
+setInterval(hentVisning, MIN_MELLOM_VISNING * 60 * 1000);
+setInterval(sjekkRegime, 60000);   // fanger regime-skiftene (kl. 08/15:30, ny dag)
 setInterval(function(){ // nattlig full omstart (minnehygiene på skjermen)
   var n = new Date();
   if (n.getHours() === RELOAD_TIME && Date.now() - startet > 2*3600*1000) location.reload();
