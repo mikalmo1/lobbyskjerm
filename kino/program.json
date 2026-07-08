@@ -3,8 +3,8 @@
  "dager": [
   {
    "dato": "2026-09-02",
-   "avlyst": true,
-   "avlyst_grunn": "test",
+   "avlyst": false,
+   "avlyst_grunn": null,
    "forestillinger": [
     {
      "id": 48107,
@@ -15,7 +15,7 @@
      "undertekst": "2D Norsk tale Norsk tekst",
      "pris": 110,
      "billettlenke": null,
-     "avlyst": true,
+     "avlyst": false,
      "avlyst_grunn": null
     },
     {
@@ -27,7 +27,7 @@
      "undertekst": "2D Original tale Norsk tekst",
      "pris": 130,
      "billettlenke": null,
-     "avlyst": true,
+     "avlyst": false,
      "avlyst_grunn": null
     }
    ]
@@ -146,8 +146,11 @@
   }
  ],
  "hero": {
-  "dato": "2026-09-16",
-  "bilder": {}
+  "dato": "2026-09-02",
+  "bilder": {
+   "48107": "2026-09-02_48107_5.jpg",
+   "48223": "2026-09-02_48223_7.jpg"
+  }
  },
- "oppdatert": "2026-07-08T11:17"
+ "oppdatert": "2026-07-08T11:19"
 }
