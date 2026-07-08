@@ -1,5 +1,5 @@
 {
- "oppdatert": "2026-07-08T12:21:08Z",
+ "oppdatert": "2026-07-08T12:39:18Z",
  "skoletid": {
   "start": "07:00",
   "slutt": "14:15"
@@ -14,13 +14,13 @@
     "dashboard": true
    },
    "hovedskjerm": true,
-   "innslag_min": 30
+   "innslag_min": 15
   },
   "fritid": {
-   "sekunder": 12,
+   "sekunder": 15,
    "innhold": {
-    "kultursal": false,
-    "kino": false,
+    "kultursal": true,
+    "kino": true,
     "dashboard": true
    },
    "hovedskjerm": false,
