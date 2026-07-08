@@ -173,7 +173,7 @@
   #vaer.skjul{ opacity:0; }
   .dash{
     position:absolute; top:0; left:0; right:0; bottom:0;
-    padding:5.5vh 5vw 11vh 5vw;
+    padding:4.5vh 5vw 14vh 5vw;   /* romslig bunn: buss/NRK skal ikke klemme mot bunnlinja */
     display:flex; flex-direction:column;
   }
   .dash .kicker{ margin-bottom:3.5vh; }
@@ -187,19 +187,19 @@
     margin-bottom:1.8vh;
   }
 
-  /* vær (venstre topp) */
-  .vaer__naa{ display:flex; align-items:center; margin-bottom:2.5vh; }
-  .vaer__naa img{ width:7.5vw; height:7.5vw; }
+  /* vær (venstre topp) — kompakt, så buss/NRK får plass uten å klemmes ned */
+  .vaer__naa{ display:flex; align-items:center; margin-bottom:1.8vh; }
+  .vaer__naa img{ width:6vw; height:6vw; }
   .vaer__temp{
     font-family:'Oswald', sans-serif; font-weight:500;
-    font-size:6.5vw; line-height:1; color:#fff;
-    margin-left:1.5vw;
+    font-size:5.2vw; line-height:1; color:#fff;
+    margin-left:1.2vw;
   }
   .vaer__kol{ display:flex; }
   .vaer__pkt{
-    width:9.5vw;
-    margin-right:1.2vw;
-    padding:1.8vh 0;
+    width:8.5vw;
+    margin-right:1.1vw;
+    padding:1.3vh 0;
     border-radius:1.5vh;
     background:rgba(255,255,255,.08);
     text-align:center;
@@ -207,11 +207,11 @@
   .vaer__pkt .n{
     font-family:'Oswald', sans-serif; font-weight:500;
     text-transform:uppercase; letter-spacing:.12vw;
-    font-size:1.05vw; color:rgba(255,255,255,.75);
+    font-size:.95vw; color:rgba(255,255,255,.75);
   }
-  .vaer__pkt img{ width:3.8vw; height:3.8vw; margin:.8vh 0; }
-  .vaer__pkt .t{ font-family:'Oswald', sans-serif; font-weight:600; font-size:1.9vw; color:#fff; }
-  .vaer__pkt .r{ font-family:'Barlow', sans-serif; font-weight:600; font-size:1vw; color:#9fc6e8; margin-top:.4vh; min-height:1.3vw; }
+  .vaer__pkt img{ width:3.1vw; height:3.1vw; margin:.6vh 0; }
+  .vaer__pkt .t{ font-family:'Oswald', sans-serif; font-weight:600; font-size:1.65vw; color:#fff; }
+  .vaer__pkt .r{ font-family:'Barlow', sans-serif; font-weight:600; font-size:.95vw; color:#9fc6e8; margin-top:.3vh; min-height:1.2vw; }
 
   /* buss (venstre bunn): ett kort per retning — plattformene ligger på hver
      sin side av veien, så retningen må være utvetydig */
