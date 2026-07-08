@@ -53,8 +53,8 @@
   },
   {
    "dato": "2026-09-30",
-   "avlyst": true,
-   "avlyst_grunn": "test",
+   "avlyst": false,
+   "avlyst_grunn": null,
    "forestillinger": [
     {
      "id": 47847,
@@ -65,7 +65,7 @@
      "undertekst": "2D Original tale Norsk tekst",
      "pris": 110,
      "billettlenke": null,
-     "avlyst": true,
+     "avlyst": false,
      "avlyst_grunn": null
     }
    ]
@@ -152,5 +152,5 @@
    "48223": "2026-09-02_48223_7.jpg"
   }
  },
- "oppdatert": "2026-07-08T11:14"
+ "oppdatert": "2026-07-08T11:16"
 }
