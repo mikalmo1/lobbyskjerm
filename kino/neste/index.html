@@ -82,13 +82,24 @@
   .tom{flex:1;display:flex;align-items:center;justify-content:center;text-align:center;color:var(--dus);padding:16px 6px}
 
   @media (max-width:560px){
-    .hero{padding:14px 14px 16px}
-    .dato{font-size:1.3rem}
-    .kort-rad{flex-direction:column;gap:10px}
-    .kort{min-height:96px;display:flex;align-items:stretch}
-    .kort .innhold{padding:10px 12px 10px 12px;display:flex;flex-direction:column;justify-content:flex-end}
-    .kort .tidmerke{top:8px;left:8px}
-    .k-tittel{font-size:1.02rem}
+    /* Kompakte rader: alt må få plass i en FAST iframe-høyde — ingen autohøyde
+       (CMS-et stripper script). Blir det likevel trangt, scroller kortlista
+       diskret i stedet for at heroen kuttes i bunn. */
+    .hero{padding:12px 12px 14px}
+    .dato{font-size:1.2rem}
+    .sted{display:none}                   /* redundant — heroen står på kinosiden */
+    .kort-rad{flex-direction:column;gap:8px;overflow-y:auto}
+    .kort{
+      flex:1 1 0;min-height:78px;
+      flex-direction:row;align-items:center;gap:10px;padding:10px 12px;
+    }
+    .kort .tidmerke{position:static;flex:0 0 auto;font-size:.82rem}
+    .kort .innhold{position:relative;padding:0;min-width:0}
+    .k-tittel{font-size:.98rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+    .k-meta{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+    .k-handling{margin-top:5px}
+    .kjop{font-size:.8rem;padding:4px 10px}
+    .varsel{font-size:.82rem}
   }
 </style>
 </head>
