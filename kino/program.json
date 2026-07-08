@@ -7,6 +7,7 @@
    "avlyst_grunn": null,
    "forestillinger": [
     {
+     "id": 48107,
      "tid": "18:00",
      "tittel": "Paw Patrol: Dinofilmen",
      "aldersgrense": "6 år",
@@ -18,6 +19,7 @@
      "avlyst_grunn": null
     },
     {
+     "id": 48223,
      "tid": "20:00",
      "tittel": "Spider-Man: Brand New Day",
      "aldersgrense": "12 år",
@@ -36,6 +38,7 @@
    "avlyst_grunn": null,
    "forestillinger": [
     {
+     "id": 47986,
      "tid": "20:00",
      "tittel": "En nasjon i sjakk",
      "aldersgrense": "15",
@@ -54,6 +57,7 @@
    "avlyst_grunn": null,
    "forestillinger": [
     {
+     "id": 47847,
      "tid": "18:00",
      "tittel": "Tilbake til Tottori",
      "aldersgrense": "6",
@@ -78,6 +82,7 @@
    "avlyst_grunn": null,
    "forestillinger": [
     {
+     "id": 47370,
      "tid": "18:00",
      "tittel": "Mysteriepakken",
      "aldersgrense": "A",
@@ -89,6 +94,7 @@
      "avlyst_grunn": null
     },
     {
+     "id": 47669,
      "tid": "20:00",
      "tittel": "Pensjonskuppet",
      "aldersgrense": null,
@@ -107,6 +113,7 @@
    "avlyst_grunn": null,
    "forestillinger": [
     {
+     "id": 47464,
      "tid": "18:00",
      "tittel": "Julenissens verksted",
      "aldersgrense": null,
@@ -138,5 +145,12 @@
    "forestillinger": []
   }
  ],
- "oppdatert": "2026-07-08T09:40"
+ "hero": {
+  "dato": "2026-09-02",
+  "bilder": {
+   "48107": "2026-09-02_48107_5.jpg",
+   "48223": "2026-09-02_48223_7.jpg"
+  }
+ },
+ "oppdatert": "2026-07-08T10:17"
 }
