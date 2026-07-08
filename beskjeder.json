@@ -1,4 +1,13 @@
 {
- "oppdatert": "2026-07-08T00:00:00Z",
- "beskjeder": []
+ "oppdatert": "2026-07-08T12:05:36Z",
+ "beskjeder": [
+  {
+   "tittel": "Basseng stengt",
+   "tekst": "Det er funnet levende laks i bassenget. Stenges inntil videre.",
+   "avsender": "Selbu ungdomsskole",
+   "viktig": true,
+   "fra": "2026-07-08",
+   "til": "2026-07-09"
+  }
+ ]
 }
