@@ -481,6 +481,7 @@ function visSlide(n){
 
   setTimeout(function(){
     vid.pause(); vid.onended = null; vid.removeAttribute("src"); vid.load();
+    img.onload = null; img.onerror = null;
 
     if (s.media === "vaer"){
       _vis(slideEl, false);
@@ -488,6 +489,7 @@ function visSlide(n){
       _vis(vaerEl, true);
       vaerEl.classList.remove("skjul");
       planleggNeste(SEKUNDER_PER_SLIDE);
+      forhandslastNeste(n);
     } else if (s.media === "video"){
       _vis(vaerEl, false);
       slideEl.classList.add("fullmedia");
@@ -500,34 +502,63 @@ function visSlide(n){
       planleggNeste(MAKS_VIDEO_SEKUNDER);
       _vis(slideEl, true);
       slideEl.classList.remove("skjul");
+      forhandslastNeste(n);
     } else {
       _vis(vaerEl, false);
       slideEl.classList.toggle("fullmedia", !!s.fullbleed);
       vid.style.display = "none";
-      img.onerror = function(){ nesteSlide(); };
+
+      // Fade først inn når bildet er ferdig lastet, så tekst og bilde alltid
+      // kommer i takt (en <img> viser det gamle bildet til det nye er klart).
+      // Lastevakt: en treg/død URL skal ikke fryse rotasjonen.
+      var vist = false;
+      var lastevakt = null;
+      var visNaa = function(){
+        if (vist) return;
+        vist = true;
+        clearTimeout(lastevakt);
+        if (s.fullbleed){
+          bg.style.display = "none";
+        } else {
+          bg.src = s.url;
+          bg.style.display = "block";
+          document.getElementById("kicker").textContent = s.kicker;
+          document.getElementById("tittel").textContent = s.tittel;
+          document.getElementById("dato").innerHTML = s.dato ? fmtDato(s.dato, s.medTid) : "";
+          _vis(document.getElementById("rule"), true);
+          // restart inn-animasjonen på teksten
+          var tekst = document.getElementById("tekst");
+          tekst.classList.remove("anim");
+          void tekst.offsetWidth;
+          tekst.classList.add("anim");
+        }
+        _vis(slideEl, true);
+        slideEl.classList.remove("skjul");
+        planleggNeste(SEKUNDER_PER_SLIDE);
+        forhandslastNeste(n);
+      };
+      img.onload = visNaa;
+      img.onerror = function(){
+        if (vist) return;
+        vist = true;
+        clearTimeout(lastevakt);
+        nesteSlide();
+      };
+      lastevakt = setTimeout(visNaa, 2500);
       img.src = s.url;
       img.style.display = "block";
-      if (s.fullbleed){
-        bg.style.display = "none";
-      } else {
-        bg.src = s.url;
-        bg.style.display = "block";
-        document.getElementById("kicker").textContent = s.kicker;
-        document.getElementById("tittel").textContent = s.tittel;
-        document.getElementById("dato").innerHTML = s.dato ? fmtDato(s.dato, s.medTid) : "";
-        _vis(document.getElementById("rule"), true);
-        // restart inn-animasjonen på teksten
-        var tekst = document.getElementById("tekst");
-        tekst.classList.remove("anim");
-        void tekst.offsetWidth;
-        tekst.classList.add("anim");
-      }
-      _vis(slideEl, true);
-      slideEl.classList.remove("skjul");
-      planleggNeste(SEKUNDER_PER_SLIDE);
     }
     tegnDots(n);
   }, 700);
+}
+
+/* Forhåndslast neste bilde i rotasjonen (hopper over vær/video) — da ligger
+   det i cache før slidebyttet, og lasteventingen i visSlide blir umerkelig. */
+function forhandslastNeste(n){
+  for (var i = 1; i < slides.length; i++){
+    var s = slides[(n + i) % slides.length];
+    if (s.media === "bilde"){ (new Image()).src = s.url; return; }
+  }
 }
 
 function tegnDots(n){
