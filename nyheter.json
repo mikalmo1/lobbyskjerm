@@ -1,10 +1,25 @@
 {
- "oppdatert": "2026-07-08T19:48:12Z",
+ "oppdatert": "2026-07-08T21:07:43Z",
  "saker": [
+  {
+   "tittel": "8 av 10 ønsker å lese mer enn de gjør",
+   "kilde": "Trøndelag",
+   "lenke": "https://www.nrk.no/trondelag/leserundersokelsen-2026-fra-bokhandlerforeningen-viser-at-atte-av-ti-har-lyst-til-a-lese-mer-1.17949431"
+  },
+  {
+   "tittel": "Reagerer kraftig på VM-hets: – Folk med mangel på IQ",
+   "kilde": "NRK",
+   "lenke": "https://www.nrk.no/fotballvm2026/fotball-vm_-fifa-etterforsker-rasisme-mot-internettfenomen-ishowspeed-_-bakenga-slar-alarm-1.17951877"
+  },
   {
    "tittel": "Ansatte spylte bort måsereir – risikerer fengselsstraff",
    "kilde": "Trøndelag",
    "lenke": "https://www.nrk.no/trondelag/spylte-bort-krykkjereir-i-rorvik-_-ma-mote-i-trondelag-tingrett-1.17934101"
+  },
+  {
+   "tittel": "Alvorlig trafikkulykke i Kongsvinger",
+   "kilde": "NRK",
+   "lenke": "https://www.nrk.no/innlandet/alvorlig-trafikkulykke-i-kongsvinger-1.17952402"
   },
   {
    "tittel": "Voldssiktet kvinne mener de var to om det",
@@ -12,9 +27,9 @@
    "lenke": "https://www.nrk.no/trondelag/kvinne-fra-froya-siktet-for-grov-kroppsskade-_-slipper-varetekt-1.17951368"
   },
   {
-   "tittel": "Louis (4) badar i elleve grader: Kaldare klima har ikkje skremt turistane",
+   "tittel": "USA har iverksatt nytt angrep på Iran",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/vestland/fjordar-og-fjell-lokkar-framleis-_-turistar-stroymer-til-noreg-1.17950596"
+   "lenke": "https://www.nrk.no/nyheter/usa-har-iverksatt-nytt-angrep-pa-iran-1.17952458"
   },
   {
    "tittel": "Strammer inn laksefisket i flere elver",
@@ -22,9 +37,9 @@
    "lenke": "https://www.nrk.no/trondelag/innstramming-i-laksefisket-pa-grunn-av-lite-laks-1.17952224"
   },
   {
-   "tittel": "Varslet om livsfarlige arbeidsforhold – ble utlevert av Statsforvalteren",
+   "tittel": "Nato-toppmøtet: Europa tar ansvar, Trump raser på sidelinjen",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/ostfold/varslet-om-livsfarlige-arbeidsforhold-_-ble-utlevert-av-statsforvalteren-1.17806304"
+   "lenke": "https://www.nrk.no/ytring/nato-toppmotet_-europa-tar-ansvar_-trump-raser-pa-sidelinjen-1.17952172"
   },
   {
    "tittel": "Se dagens Midtnytt",
@@ -32,14 +47,14 @@
    "lenke": "https://www.nrk.no/video/DKTL98070826"
   },
   {
-   "tittel": "Avfeier ryktene: – Sterkt overdrevet",
-   "kilde": "NRK",
-   "lenke": "https://www.nrk.no/fotballvm2026/fotball-vm_-martin-odegaard-om-norge-sykdom-1.17952150"
-  },
-  {
    "tittel": "Slik blir været når Norge møter England",
    "kilde": "Trøndelag",
    "lenke": "https://www.nrk.no/vestland/slik-blir-vm-vaeret-nar-norge-moter-england-i-kvartfinalen-1.17951395"
+  },
+  {
+   "tittel": "Louis (4) badar i elleve grader: Kaldare klima har ikkje skremt turistane",
+   "kilde": "NRK",
+   "lenke": "https://www.nrk.no/vestland/fjordar-og-fjell-lokkar-framleis-_-turistar-stroymer-til-noreg-1.17950596"
   },
   {
    "tittel": "Gifter seg med engelskmann før VM-kvartfinalen: – Han blåser i kampen",
@@ -47,9 +62,9 @@
    "lenke": "https://www.nrk.no/vestfoldogtelemark/gifter-seg-med-engelskmann-for-vm-kvartfinalen_-_-han-blaser-i-kampen-1.17950354"
   },
   {
-   "tittel": "Lukker varslingssak: BDO fant ikke brudd på regelverket",
+   "tittel": "Varslet om livsfarlige arbeidsforhold – ble utlevert av Statsforvalteren",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/sapmi/sametingsradet-lukker-varslingssak_-konkluderer-med-at-direktoren-fulgte-reglene-1.17951962"
+   "lenke": "https://www.nrk.no/ostfold/varslet-om-livsfarlige-arbeidsforhold-_-ble-utlevert-av-statsforvalteren-1.17806304"
   },
   {
    "tittel": "Historisk oppgradering på Stiklestad. Se Midtnytt",
@@ -57,19 +72,9 @@
    "lenke": "https://www.nrk.no/video/DKTL98070726"
   },
   {
-   "tittel": "Laksefisket begrenses på grunn av lite laks",
+   "tittel": "Avfeier ryktene: – Sterkt overdrevet",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/nyheter/laksefisket-begrenses-pa-grunn-av-lite-laks-1.17952214"
-  },
-  {
-   "tittel": "Kvinne i 60-åra pågrepet etter voldshendelse på Frøya",
-   "kilde": "Trøndelag",
-   "lenke": "https://www.nrk.no/trondelag/vaepnet-aksjon-etter-voldshendelse-pa-froya-1.17949785"
-  },
-  {
-   "tittel": "Dødsbrannen i Fredrikstad: Politiet vil granske helsevesenet",
-   "kilde": "NRK",
-   "lenke": "https://www.nrk.no/ostfold/dodsbrannen-i-fredrikstad_-politiet-vil-granske-helsevesenet-1.17951815"
+   "lenke": "https://www.nrk.no/fotballvm2026/fotball-vm_-martin-odegaard-om-norge-sykdom-1.17952150"
   }
  ]
 }
