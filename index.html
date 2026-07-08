@@ -18,7 +18,8 @@
     · «Selbu i dag»-slide      – dashboard med fire felt:
         · Været i Selbu        – api.met.no (Yr); også kompakt chip i bunnlinja
         · Neste buss           – Entur JourneyPlanner v3 (åpent GraphQL-API) fra
-                                 Bell skole/Selbu ungdomsskole (NSR:StopPlace:43628)
+                                 Marienborg (NSR:StopPlace:42434) — nærmeste stopp
+                                 ved ungdomsskolen med rutetrafikk (linje 430)
         · Beskjeder            – beskjeder.json i repoet (pushes fra Knuten;
                                  kommune/skole-beskjeder, «viktig»-flagg = rød)
         · NRK-toppsaker        – de to øverste fra nyheter.json (skjules ved 3 beskjeder)
@@ -415,7 +416,7 @@
         </div>
         <div class="vaer__kol" id="vaer-kol"></div>
         <div class="buss">
-          <div class="dash__label">Neste buss · Bell skole/ungdomsskolen</div>
+          <div class="dash__label">Neste buss · Marienborg</div>
           <div id="buss-liste"></div>
         </div>
       </div>
@@ -472,7 +473,10 @@ var MIN_MELLOM_NYHETER = 15;          // hvor ofte skjermen henter nyheter.json
 var TICKER_PX_PER_SEK = 95;           // rullefart (høyere = raskere)
 var ENTUR_API = "https://api.entur.io/journey-planner/v3/graphql";
 var ET_CLIENT = "selbukommune-lobbyskjerm";      // påkrevd av Entur (identifiserer oss)
-var BUSS_STOPP = "NSR:StopPlace:43628";          // Bell skole/Selbu ungdomsskole
+var BUSS_STOPP = "NSR:StopPlace:42434";          // Marienborg — nærmeste stopp med
+                                                 // rutetrafikk (linje 430); holdeplassen
+                                                 // Bell skole/ungdomsskolen (43628) har
+                                                 // ingen avganger i rutedata
 var BUSS_ANTALL = 3;                  // avganger vist på sliden
 var MIN_MELLOM_BUSS = 5;              // hvor ofte avganger hentes på nytt
 var BESKJEDER_FIL = "beskjeder.json"; // same-origin, pushes fra Knuten

@@ -9,9 +9,10 @@ Innholdet henter seg selv:
   Oppdateres med `git push` – ingen MagicInfo-innlogging.
 - **«Selbu i dag»-sliden** – dashboard med fire felt, alt henter seg selv:
   - *Været i Selbu* – api.met.no (Yr), nå + tre punkter framover.
-  - *Neste buss* – de tre neste avgangene fra **Bell skole/Selbu ungdomsskole**
-    (Entur JourneyPlanner, åpent API; grønn prikk = sanntid). Oppdateres hvert
-    5. minutt.
+  - *Neste buss* – de tre neste avgangene fra **Marienborg** (nærmeste stopp
+    ved ungdomsskolen med rutetrafikk – holdeplassen «Bell skole/Selbu
+    ungdomsskole» har ingen avganger i rutedata). Entur JourneyPlanner, åpent
+    API; grønn prikk = sanntid. Oppdateres hvert 5. minutt.
   - *Beskjeder* – fra `beskjeder.json` i dette repoet (se under). Pushes normalt
     fra Knuten, men kan også redigeres for hånd + `git push`.
   - *Siste fra NRK* – de to øverste sakene fra `nyheter.json` (samme kilde som
