@@ -1,0 +1,142 @@
+{
+ "sted": "Tælet Kultursal",
+ "dager": [
+  {
+   "dato": "2026-09-02",
+   "avlyst": false,
+   "avlyst_grunn": null,
+   "forestillinger": [
+    {
+     "tid": "18:00",
+     "tittel": "Paw Patrol: Dinofilmen",
+     "aldersgrense": "6 år",
+     "spilletid": 88,
+     "undertekst": "2D Norsk tale Norsk tekst",
+     "pris": 110,
+     "billettlenke": null,
+     "avlyst": false,
+     "avlyst_grunn": null
+    },
+    {
+     "tid": "20:00",
+     "tittel": "Spider-Man: Brand New Day",
+     "aldersgrense": "12 år",
+     "spilletid": 140,
+     "undertekst": "2D Original tale Norsk tekst",
+     "pris": 130,
+     "billettlenke": null,
+     "avlyst": false,
+     "avlyst_grunn": null
+    }
+   ]
+  },
+  {
+   "dato": "2026-09-16",
+   "avlyst": false,
+   "avlyst_grunn": null,
+   "forestillinger": [
+    {
+     "tid": "20:00",
+     "tittel": "En nasjon i sjakk",
+     "aldersgrense": "15",
+     "spilletid": 110,
+     "undertekst": "2D Original tale Norsk tekst",
+     "pris": 130,
+     "billettlenke": null,
+     "avlyst": false,
+     "avlyst_grunn": null
+    }
+   ]
+  },
+  {
+   "dato": "2026-09-30",
+   "avlyst": false,
+   "avlyst_grunn": null,
+   "forestillinger": [
+    {
+     "tid": "18:00",
+     "tittel": "Tilbake til Tottori",
+     "aldersgrense": "6",
+     "spilletid": 92,
+     "undertekst": "2D Original tale Norsk tekst",
+     "pris": 110,
+     "billettlenke": null,
+     "avlyst": false,
+     "avlyst_grunn": null
+    }
+   ]
+  },
+  {
+   "dato": "2026-10-14",
+   "avlyst": false,
+   "avlyst_grunn": null,
+   "forestillinger": []
+  },
+  {
+   "dato": "2026-10-28",
+   "avlyst": false,
+   "avlyst_grunn": null,
+   "forestillinger": [
+    {
+     "tid": "18:00",
+     "tittel": "Mysteriepakken",
+     "aldersgrense": "A",
+     "spilletid": 86,
+     "undertekst": "2D Original tale Norsk tekst",
+     "pris": 110,
+     "billettlenke": null,
+     "avlyst": false,
+     "avlyst_grunn": null
+    },
+    {
+     "tid": "20:00",
+     "tittel": "Pensjonskuppet",
+     "aldersgrense": null,
+     "spilletid": 0,
+     "undertekst": "2D Original tale Norsk tekst",
+     "pris": 130,
+     "billettlenke": null,
+     "avlyst": false,
+     "avlyst_grunn": null
+    }
+   ]
+  },
+  {
+   "dato": "2026-11-11",
+   "avlyst": false,
+   "avlyst_grunn": null,
+   "forestillinger": [
+    {
+     "tid": "18:00",
+     "tittel": "Julenissens verksted",
+     "aldersgrense": null,
+     "spilletid": 75,
+     "undertekst": "2D Norsk tale Norsk tekst",
+     "pris": 110,
+     "billettlenke": null,
+     "avlyst": false,
+     "avlyst_grunn": null
+    }
+   ]
+  },
+  {
+   "dato": "2026-11-25",
+   "avlyst": false,
+   "avlyst_grunn": null,
+   "forestillinger": []
+  },
+  {
+   "dato": "2026-12-09",
+   "avlyst": false,
+   "avlyst_grunn": null,
+   "forestillinger": []
+  },
+  {
+   "dato": "2026-12-23",
+   "avlyst": true,
+   "avlyst_grunn": "Lille julaften",
+   "forestillinger": []
+  }
+ ],
+ "oppdatert": "2026-07-08T09:40"
+}
