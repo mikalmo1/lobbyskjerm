@@ -1,5 +1,5 @@
 {
- "oppdatert": "2026-07-12T19:40:32Z",
+ "oppdatert": "2026-07-12T20:27:16Z",
  "saker": [
   {
    "tittel": "Rosenborg med drømmestart etter sommerpausen",
@@ -7,9 +7,9 @@
    "lenke": "https://www.nrk.no/trondelag/rosenborg-vant-3_0-over-kristiansund-1.17956101"
   },
   {
-   "tittel": "Minst 27 omkom i brann på pub i Bangkok, ifølge myndighetene",
+   "tittel": "Dypt inne i fjellet øver de på det verste som kan skje",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/nyheter/minst-27-omkom-i-brann-pa-pub-i-bangkok_-ifolge-myndighetene-1.17956203"
+   "lenke": "https://www.nrk.no/rogaland/xl/ved-nato-basen-pa-jatta-i-stavanger-over-de-pa-det-verste-som-kan-skje-1.17910017"
   },
   {
    "tittel": "Se VM-stemninga i Trondheim",
@@ -17,9 +17,9 @@
    "lenke": "https://www.nrk.no/trondelag/se-vm-stemninga-i-trondheim-1.17955327"
   },
   {
-   "tittel": "Brann sikra siger i Horneland-returen",
+   "tittel": "Truet med å skyte i Frikirken i Sarpsborg",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/vestland/brann-sikra-siger-i-horneland-returen-1.17956074"
+   "lenke": "https://www.nrk.no/ostfold/mann-pagrepet-for-trusler-og-kroppskrenkelse-i-sarpsborg-1.17956187"
   },
   {
    "tittel": "Motorsyklist omkom i trafikkulykke på E6",
@@ -27,9 +27,9 @@
    "lenke": "https://www.nrk.no/trondelag/alvorlig-mc-ulykke-i-grong-1.17955206"
   },
   {
-   "tittel": "Tolv dødsulykker i trafikken på én uke: – Skremmende feriestart",
+   "tittel": "Minst 27 omkom i brann på pub i Bangkok, ifølge myndighetene",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/nyheter/tolv-dodsulykker-i-trafikken-pa-en-uke_-_-skremmende-feriestart-1.17956170"
+   "lenke": "https://www.nrk.no/nyheter/minst-27-omkom-i-brann-pa-pub-i-bangkok_-ifolge-myndighetene-1.17956203"
   },
   {
    "tittel": "Mener vi ikke skal ødelegge en god historie om vikinger og roing med fakta",
@@ -37,14 +37,19 @@
    "lenke": "https://www.nrk.no/trondelag/vikingekspert-fra-stiklestad-om-roing-og-hvordan-vikingene-egentlig-var-1.17949670"
   },
   {
+   "tittel": "Brann sikra siger i Horneland-returen",
+   "kilde": "NRK",
+   "lenke": "https://www.nrk.no/vestland/brann-sikra-siger-i-horneland-returen-1.17956074"
+  },
+  {
    "tittel": "Nidarosdomen styrker vaktholdet under VM-festen lørdag",
    "kilde": "Trøndelag",
    "lenke": "https://www.nrk.no/trondelag/nidarosdomen-forbereder-vm-fest-og-setter-opp-vakter-1.17954340"
   },
   {
-   "tittel": "Solbakken om VAR: – Fallitterklæring av verdens beste dommere",
+   "tittel": "Tolv dødsulykker i trafikken på én uke: – Skremmende feriestart",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/fotballvm2026/fotball-vm_-solbakken-motte-pressen-etter-vm-exiten-1.17956039"
+   "lenke": "https://www.nrk.no/nyheter/tolv-dodsulykker-i-trafikken-pa-en-uke_-_-skremmende-feriestart-1.17956170"
   },
   {
    "tittel": "Mange dødsulykker på Norske veier, forberedelser til VM-fest og ukas artist på Rockheim",
@@ -52,19 +57,14 @@
    "lenke": "https://www.nrk.no/video/DKTL98071026"
   },
   {
-   "tittel": "Brann slet i Hornelands retur – reddet tre poeng like før slutt",
-   "kilde": "NRK",
-   "lenke": "https://www.nrk.no/sport/brann-slet-i-hornelands-retur-_-reddet-tre-poeng-like-for-slutt-1.17956113"
-  },
-  {
    "tittel": "Tre grevlinger tok seg inn i bolig via katteluke – beboer måtte gjemme seg på soverommet",
    "kilde": "Trøndelag",
    "lenke": "https://www.nrk.no/trondelag/tre-grevlinger-tok-seg-inn-i-bolig-i-trondheim-_-matte-ringe-politiets-nodtelefon-1.17954085"
   },
   {
-   "tittel": "Det har blitt flaut å være alene",
+   "tittel": "Solbakken om VAR: – Fallitterklæring av verdens beste dommere",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/ytring/det-har-blitt-flaut-a-vaere-alene-1.17931219"
+   "lenke": "https://www.nrk.no/fotballvm2026/fotball-vm_-solbakken-motte-pressen-etter-vm-exiten-1.17956039"
   },
   {
    "tittel": "Måtte sørge for at Olav Tryggvason «får sett» kampen",
@@ -72,9 +72,9 @@
    "lenke": "https://www.nrk.no/trondelag/fikk-fiksa-pa-statuen-av-olav-tryggvason-pa-torvet-i-trondheim-for-vm-festen-1.17953386"
   },
   {
-   "tittel": "Tobias Halland Johannessen spurtslått av van der Poel i ekstremvarmen",
+   "tittel": "Brann slet i Hornelands retur – reddet tre poeng like før slutt",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/sport/ekstremvarmen-skaper-utfordringer-i-tour-de-france-_-farger-asfalten-hvit-1.17952199"
+   "lenke": "https://www.nrk.no/sport/brann-slet-i-hornelands-retur-_-reddet-tre-poeng-like-for-slutt-1.17956113"
   }
  ]
 }
