@@ -1,6 +1,16 @@
 {
- "oppdatert": "2026-07-12T16:04:56Z",
+ "oppdatert": "2026-07-12T17:17:32Z",
  "saker": [
+  {
+   "tittel": "Rosenborg med drømmestart etter sommerpausen",
+   "kilde": "Trøndelag",
+   "lenke": "https://www.nrk.no/trondelag/rosenborg-vant-3-_-0-over-kristiansund-1.17956101"
+  },
+  {
+   "tittel": "Brann slet i Hornelands retur – reddet tre poeng like før slutt",
+   "kilde": "NRK",
+   "lenke": "https://www.nrk.no/sport/brann-slet-i-hornelands-retur-_-reddet-tre-poeng-like-for-slutt-1.17956113"
+  },
   {
    "tittel": "Følg VM-stemninga i Trondheim",
    "kilde": "Trøndelag",
@@ -70,16 +80,6 @@
    "tittel": "Send di helsing til VM-heltane",
    "kilde": "NRK",
    "lenke": "https://www.nrk.no/norge/vm-heltane-blir-hylla-i-noreg_-send-di-helsing-til-det-norske-landslaget-1.17955885"
-  },
-  {
-   "tittel": "Jøte Toftaker med torsdagens Midtnytt",
-   "kilde": "Trøndelag",
-   "lenke": "https://www.nrk.no/video/DKTL98070926"
-  },
-  {
-   "tittel": "Engelske aviser hyller Norge: – Knapt til å forstå",
-   "kilde": "NRK",
-   "lenke": "https://www.nrk.no/fotballvm2026/engelske-aviser-etter-vm-seieren-over-norge-1.17955712"
   }
  ]
 }
