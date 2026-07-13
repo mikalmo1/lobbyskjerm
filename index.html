@@ -15,6 +15,10 @@
     · Tælet Kultursal-program  – åpent API på taletkultursal.no
     · Bygdekino                – bilder fra plakater/-mappa (contents-API) og
                                  videoer fra release «infoskjerm» (assets)
+    · Plakater (kommune o.l.)  – filer i plakater/-mappa MED oppføring i
+                                 plakatmeta.json (lastes opp via Knuten):
+                                 tittel/avsender/fullskjerm/periode fra metadataen,
+                                 kategori «plakat» i visningsstyringen
     · «Selbu i dag»-slide      – dashboard med fire felt:
         · Været i Selbu        – api.met.no (Yr); også kompakt chip i bunnlinja
         · Neste buss           – Entur JourneyPlanner v3 (åpent GraphQL-API) fra
@@ -608,6 +612,26 @@ function _tilSlide(navn, url){
   };
 }
 
+/* Plakater lastet opp via Knuten har metadata i plakatmeta.json (tittel, avsender,
+   fullskjerm, visningsperiode) og egen kategori «plakat» i visningsstyringen.
+   Filer UTEN metadata (manuell git-push, kino-publisering) følger filnavn-
+   konvensjonen som før. */
+function _tilMetaSlide(m, navn, url){
+  var naa = new Date();
+  if (m.fra && naa < new Date(m.fra + "T00:00:00")) return null;
+  if (m.til && naa > new Date(m.til + "T23:59:59")) return null;   // til = ut dagen
+  return {
+    media: "bilde",
+    kategori: "plakat",
+    fullbleed: !!m.fullskjerm,
+    kicker: m.avsender || "Selbu kommune",
+    tittel: m.tittel || navn.replace(/\.[^.]+$/, ""),
+    dato: null,
+    medTid: false,
+    url: url
+  };
+}
+
 function hentPlakater(){
   var repo = detectRepo();
   if (!repo) return Promise.resolve([]);
@@ -615,11 +639,13 @@ function hentPlakater(){
 
   var mappe = fetch(base + "/contents/" + PLAKAT_MAPPE + "?t=" + Date.now(), {cache:"no-store"})
     .then(function(r){ return r.ok ? r.json() : []; })
-    .then(function(filer){
-      if (!Array.isArray(filer)) return [];
-      return filer.map(function(f){ return _tilSlide(f.name, f.download_url); });
-    })
+    .then(function(filer){ return Array.isArray(filer) ? filer : []; })
     .catch(function(){ return []; });
+
+  var meta = fetch("plakatmeta.json?t=" + Date.now(), {cache:"no-store"})
+    .then(function(r){ return r.ok ? r.json() : null; })
+    .then(function(j){ return (j && j.plakater) || {}; })
+    .catch(function(){ return {}; });
 
   var release = fetch(base + "/releases/tags/" + RELEASE_TAG + "?t=" + Date.now(), {cache:"no-store"})
     .then(function(r){ return r.ok ? r.json() : null; })
@@ -629,8 +655,16 @@ function hentPlakater(){
     })
     .catch(function(){ return []; });
 
-  return Promise.all([mappe, release]).then(function(res){
-    return res[0].concat(res[1]).filter(Boolean)
+  return Promise.all([mappe, release, meta]).then(function(res){
+    var pm = res[2];
+    var ut = [];
+    for (var i = 0; i < res[0].length; i++){
+      var f = res[0][i];
+      var s = pm[f.name] ? _tilMetaSlide(pm[f.name], f.name, f.download_url)
+                         : _tilSlide(f.name, f.download_url);
+      if (s) ut.push(s);
+    }
+    return ut.concat(res[1]).filter(Boolean)
       .sort(function(a,b){
         if (a.dato && b.dato) return a.dato - b.dato;
         if (a.dato) return -1;

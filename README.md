@@ -43,6 +43,31 @@ Innholdet henter seg selv:
   av seg selv – fila trenger ikke ryddes for at skjermen skal bli riktig.
 - Maks 3 beskjeder vises (viktige først). Skjermen sjekker fila hvert 5. minutt.
 
+## Plakater fra Knuten (`plakatmeta.json`)
+
+Plakater lastet opp via Knuten (Infoskjerm → Plakater) ligger som vanlige filer i
+`plakater/`-mappa, men har i tillegg en oppføring i `plakatmeta.json` (nøklet på
+filnavn) med `tittel`, `avsender` (kicker på tekstpanelet), `fullskjerm` og
+valgfri visningsperiode `fra`/`til` (`til` gjelder ut dagen):
+
+```json
+{
+ "plakater": {
+  "sommerungdom-2026.png": {
+   "tittel": "Sommerungdom 2026",
+   "avsender": "Selbu kommune",
+   "fra": "2026-07-01",
+   "til": "2026-08-01"
+  }
+ }
+}
+```
+
+Filer med metadata får kategori **plakat** i visningsstyringen. Filer uten
+metadata (manuell git-push, kino-publiseringen) følger filnavn-konvensjonen
+over som før. Slett/endre plakater i Knuten — ikke rediger metadata-fila for
+hånd samtidig som noen bruker UI-et.
+
 ## Visningsstyring (`visning.json`)
 
 Styrer hva som vises og hvor lenge hver slide står, i to regimer:
@@ -69,8 +94,9 @@ Styrer hva som vises og hvor lenge hver slide står, i to regimer:
   slide-intervall, uten fade), og det øvrige innholdet spilles som ett innslag —
   én runde gjennom lista — hvert `innslag_min`. minutt (30 = to ganger i timen).
 
-- `innhold`-nøklene er `kultursal` (arrangementer), `kino` (plakater/loop-video)
-  og `dashboard` («Selbu i dag» med vær/buss/beskjeder).
+- `innhold`-nøklene er `kultursal` (arrangementer), `kino` (kinoplakater/loop-video),
+  `plakat` (opplastede plakater fra Knuten) og `dashboard` («Selbu i dag» med
+  vær/buss/beskjeder).
 - Skjermen sjekker regimet hvert minutt og bytter innhold umiddelbart ved
   overgangene (kl.-slettene, ny dag, ferie-start/-slutt).
 - Mangler fila (eller en nøkkel), vises alt med 12 s per slide — skjermen blir
