@@ -1,5 +1,5 @@
 {
- "oppdatert": "2026-07-15T09:00:21Z",
+ "oppdatert": "2026-07-15T11:01:45Z",
  "saker": [
   {
    "tittel": "Mann angrepet av okse på Røros",
@@ -7,9 +7,9 @@
    "lenke": "https://www.nrk.no/trondelag/mann-angrepet-av-okse-i-roros-1.17958633"
   },
   {
-   "tittel": "Kripos: 1024 personer pågrepet for menneskehandel i global aksjon – fire halliksaker i Norge",
+   "tittel": "Brann i lastebil ved Kløfta – E6 stengt i begge retninger",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/nyheter/kripos_-1024-personer-pagrepet-for-menneskehandel-i-global-aksjon-_-fire-halliksaker-i-norge-1.17958605"
+   "lenke": "https://www.nrk.no/stor-oslo/brann-i-lastebil-ved-klofta-_-e6-stengt-i-begge-retninger-1.17958861"
   },
   {
    "tittel": "Trakassert i møte med politiet: – Han var upassande og intens",
@@ -17,14 +17,19 @@
    "lenke": "https://www.nrk.no/trondelag/trakassert-i-mote-med-politiet-i-trondheim_-_-han-var-upassande-og-intens-1.17853243"
   },
   {
+   "tittel": "Fant giga-manet i fjæra: – Litt av en opplevelse!",
+   "kilde": "NRK",
+   "lenke": "https://www.nrk.no/tromsogfinnmark/ingrid-_3_-oppdaget-et-_sjomonster_-i-fjaera-1.17958738"
+  },
+  {
    "tittel": "Tirsdagens Midtnytt",
    "kilde": "Trøndelag",
    "lenke": "https://www.nrk.no/video/DKTL98071426"
   },
   {
-   "tittel": "Trump: – Vi kommer til å slå ut alle kraftverk og broer",
+   "tittel": "Tallene setter ut NRK-eksperten – stjerne krever endring",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/urix/trump-med-nye-trusler-mot-iran_-_-vi-kommer-til-a-sla-ut-alle-kraftverk-og-broer-1.17958432"
+   "lenke": "https://www.nrk.no/sport/varmetallene-i-tour-de-france-setter-ut-nrks-sykkelekspert-oivind-lukkedal-1.17957836"
   },
   {
    "tittel": "Departementet gir grønt lys – får felle omstridt ulv",
@@ -32,9 +37,9 @@
    "lenke": "https://www.nrk.no/innlandet/statsforvalteren-i-innlandet-apner-for-skadefelling-av-ulv-1.17957914"
   },
   {
-   "tittel": "Pausen i VM-finalen kan bli 30 minutter lang: – Hva er det de driver med?",
+   "tittel": "Advarer mot ny ferietrend: – Kan rett og slett lyve",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/fotballvm2026/reagerer-pa-at-pausen-i-vm-finalen-kan-bli-30-minutter-lang_-_-det-gir-ikke-mening-1.17958336"
+   "lenke": "https://www.nrk.no/rogaland/ekspert-advarer-mot-ki-i-ferieplanleggingen_-_-kan-rett-og-slett-lyve-1.17941833"
   },
   {
    "tittel": "Vil merke gode utleiere: – Handler ikke om at det skal være en luksusbolig",
@@ -42,9 +47,9 @@
    "lenke": "https://www.nrk.no/trondelag/sv-og-venstre-i-trondheim-vil-merke-gode-utleiere-med-_boligmerket_-for-a-fremheve-seriose-utleiere-1.17905225"
   },
   {
-   "tittel": "Mistenkjer at sjukepleiar har snoka i 76 journalar - helseekspertar kritiserer kommunen",
+   "tittel": "Fire menn tiltalt: Her skyter de med maskinpistol i garasje",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/mr/mistenkjer-at-sjukepleiar-har-snoka-i-76-journalar---helseekspertar-kritiserer-kommunen-1.17892597"
+   "lenke": "https://www.nrk.no/norge/fire-menn-tiltalt-for-skyting-i-garasjeanlegg-i-oslo-1.17957812"
   },
   {
    "tittel": "Betaler minst 100 millioner for å få nok strøm",
@@ -52,24 +57,24 @@
    "lenke": "https://www.nrk.no/trondelag/betaler-minst-100-millioner-for-a-fa-nok-strom-til-elbusser-i-trondheim-1.17940889"
   },
   {
+   "tittel": "Et brennhett oppgjør – disse puster Nesbyen i nakken",
+   "kilde": "NRK",
+   "lenke": "https://www.nrk.no/norge/her-star-slaget-om-ny-norsk-varmerekord-1.17958079"
+  },
+  {
    "tittel": "Rosenborg med drømmestart etter sommerpausen",
    "kilde": "Trøndelag",
    "lenke": "https://www.nrk.no/trondelag/rosenborg-vant-3_0-over-kristiansund-1.17956101"
   },
   {
-   "tittel": "USA: Har gjennomført nye angrep i Iran",
+   "tittel": "Kripos: 1024 personer pågrepet for menneskehandel i global aksjon – fire halliksaker i Norge",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/nyheter/usa_-har-gjennomfort-nye-angrep-i-iran-1.17958413"
+   "lenke": "https://www.nrk.no/nyheter/kripos_-1024-personer-pagrepet-for-menneskehandel-i-global-aksjon-_-fire-halliksaker-i-norge-1.17958605"
   },
   {
    "tittel": "Sørloth og familien får drapstrusler etter VM-exiten: – Det er jo tragisk",
    "kilde": "Trøndelag",
    "lenke": "https://www.nrk.no/fotballvm2026/sjansen-som-hjemsoker-norge-_-fikk-solbakken-og-haaland-til-a-rase-1.17955478"
-  },
-  {
-   "tittel": "Her får den franske stjernen nok: – Hva tror du?",
-   "kilde": "NRK",
-   "lenke": "https://www.nrk.no/fotballvm2026/fotball-vm_-spania-storspilte-mot-frankrike-i-semifinalen-1.17958302"
   }
  ]
 }
