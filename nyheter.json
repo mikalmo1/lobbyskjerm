@@ -1,15 +1,20 @@
 {
- "oppdatert": "2026-07-15T06:35:36Z",
+ "oppdatert": "2026-07-15T09:00:21Z",
  "saker": [
+  {
+   "tittel": "Mann angrepet av okse på Røros",
+   "kilde": "Trøndelag",
+   "lenke": "https://www.nrk.no/trondelag/mann-angrepet-av-okse-i-roros-1.17958633"
+  },
+  {
+   "tittel": "Kripos: 1024 personer pågrepet for menneskehandel i global aksjon – fire halliksaker i Norge",
+   "kilde": "NRK",
+   "lenke": "https://www.nrk.no/nyheter/kripos_-1024-personer-pagrepet-for-menneskehandel-i-global-aksjon-_-fire-halliksaker-i-norge-1.17958605"
+  },
   {
    "tittel": "Trakassert i møte med politiet: – Han var upassande og intens",
    "kilde": "Trøndelag",
    "lenke": "https://www.nrk.no/trondelag/trakassert-i-mote-med-politiet-i-trondheim_-_-han-var-upassande-og-intens-1.17853243"
-  },
-  {
-   "tittel": "Pausen i VM-finalen kan bli 30 minutter lang: – Hva er det de driver med?",
-   "kilde": "NRK",
-   "lenke": "https://www.nrk.no/fotballvm2026/reagerer-pa-at-pausen-i-vm-finalen-kan-bli-30-minutter-lang_-_-det-gir-ikke-mening-1.17958336"
   },
   {
    "tittel": "Tirsdagens Midtnytt",
@@ -17,9 +22,9 @@
    "lenke": "https://www.nrk.no/video/DKTL98071426"
   },
   {
-   "tittel": "Mistenkjer at sjukepleiar har snoka i 76 journalar - helseekspertar kritiserer kommunen",
+   "tittel": "Trump: – Vi kommer til å slå ut alle kraftverk og broer",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/mr/mistenkjer-at-sjukepleiar-har-snoka-i-76-journalar---helseekspertar-kritiserer-kommunen-1.17892597"
+   "lenke": "https://www.nrk.no/urix/trump-med-nye-trusler-mot-iran_-_-vi-kommer-til-a-sla-ut-alle-kraftverk-og-broer-1.17958432"
   },
   {
    "tittel": "Departementet gir grønt lys – får felle omstridt ulv",
@@ -27,14 +32,19 @@
    "lenke": "https://www.nrk.no/innlandet/statsforvalteren-i-innlandet-apner-for-skadefelling-av-ulv-1.17957914"
   },
   {
+   "tittel": "Pausen i VM-finalen kan bli 30 minutter lang: – Hva er det de driver med?",
+   "kilde": "NRK",
+   "lenke": "https://www.nrk.no/fotballvm2026/reagerer-pa-at-pausen-i-vm-finalen-kan-bli-30-minutter-lang_-_-det-gir-ikke-mening-1.17958336"
+  },
+  {
    "tittel": "Vil merke gode utleiere: – Handler ikke om at det skal være en luksusbolig",
    "kilde": "Trøndelag",
    "lenke": "https://www.nrk.no/trondelag/sv-og-venstre-i-trondheim-vil-merke-gode-utleiere-med-_boligmerket_-for-a-fremheve-seriose-utleiere-1.17905225"
   },
   {
-   "tittel": "USA: Har gjennomført nye angrep i Iran",
+   "tittel": "Mistenkjer at sjukepleiar har snoka i 76 journalar - helseekspertar kritiserer kommunen",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/nyheter/usa_-har-gjennomfort-nye-angrep-i-iran-1.17958413"
+   "lenke": "https://www.nrk.no/mr/mistenkjer-at-sjukepleiar-har-snoka-i-76-journalar---helseekspertar-kritiserer-kommunen-1.17892597"
   },
   {
    "tittel": "Betaler minst 100 millioner for å få nok strøm",
@@ -42,19 +52,14 @@
    "lenke": "https://www.nrk.no/trondelag/betaler-minst-100-millioner-for-a-fa-nok-strom-til-elbusser-i-trondheim-1.17940889"
   },
   {
-   "tittel": "Her får den franske stjernen nok: – Hva tror du?",
-   "kilde": "NRK",
-   "lenke": "https://www.nrk.no/fotballvm2026/fotball-vm_-spania-storspilte-mot-frankrike-i-semifinalen-1.17958302"
-  },
-  {
    "tittel": "Rosenborg med drømmestart etter sommerpausen",
    "kilde": "Trøndelag",
    "lenke": "https://www.nrk.no/trondelag/rosenborg-vant-3_0-over-kristiansund-1.17956101"
   },
   {
-   "tittel": "Keeperhelten tilbake i heimbygda – taus om framtida",
+   "tittel": "USA: Har gjennomført nye angrep i Iran",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/mr/keeperhelten-tilbake-i-heimbygda-1.17958051"
+   "lenke": "https://www.nrk.no/nyheter/usa_-har-gjennomfort-nye-angrep-i-iran-1.17958413"
   },
   {
    "tittel": "Sørloth og familien får drapstrusler etter VM-exiten: – Det er jo tragisk",
@@ -62,19 +67,9 @@
    "lenke": "https://www.nrk.no/fotballvm2026/sjansen-som-hjemsoker-norge-_-fikk-solbakken-og-haaland-til-a-rase-1.17955478"
   },
   {
-   "tittel": "NRK-ekspertar hardt ut mot VM-nyvinning: – Kastar opp av tanken",
+   "tittel": "Her får den franske stjernen nok: – Hva tror du?",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/fotballvm2026/fotball-vm_-nrk-ekspertar-hardt-ut-mot-vm-nyvinning_-_-kastar-opp-av-tanken-1.17958150"
-  },
-  {
-   "tittel": "Se VM-stemninga i Trondheim",
-   "kilde": "Trøndelag",
-   "lenke": "https://www.nrk.no/trondelag/se-vm-stemninga-i-trondheim-1.17955327"
-  },
-  {
-   "tittel": "Fritidseiendom til salgs for 85 millioner – markedets dyreste",
-   "kilde": "NRK",
-   "lenke": "https://www.nrk.no/ostfold/hytte-i-larkollen-til-salgs-for-85-millioner-_-markedets-dyreste-1.17957010"
+   "lenke": "https://www.nrk.no/fotballvm2026/fotball-vm_-spania-storspilte-mot-frankrike-i-semifinalen-1.17958302"
   }
  ]
 }
