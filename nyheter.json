@@ -1,15 +1,25 @@
 {
- "oppdatert": "2026-07-18T09:56:27Z",
+ "oppdatert": "2026-07-18T11:07:00Z",
  "saker": [
+  {
+   "tittel": "Matilde (15) fikk en av 1000 utlyste stillinger – konkurrerte med 15.000",
+   "kilde": "Trøndelag",
+   "lenke": "https://www.nrk.no/trondelag/15.000-sokte-pa-1000-sommerjobber-hos-iskremkiosk-1.17945318"
+  },
+  {
+   "tittel": "Solkrem og sammenbrudd",
+   "kilde": "NRK",
+   "lenke": "https://www.nrk.no/ytring/solkrem-og-sammenbrudd-1.17915321"
+  },
   {
    "tittel": "To bjørner felt på to døgn i Snåsa",
    "kilde": "Trøndelag",
    "lenke": "https://www.nrk.no/trondelag/hannbjorn-felt-i-snasa-fredag-kveld-1.17961989"
   },
   {
-   "tittel": "Matilde (15) fikk en av 1000 utlyste stillinger – konkurrerte med 15.000",
+   "tittel": "Slik ser det ut i brannområdet lørdag",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/trondelag/15.000-sokte-pa-1000-sommerjobber-hos-iskremkiosk-1.17945318"
+   "lenke": "https://www.nrk.no/buskerud/slik-ser-det-ut-i-krokstadelva-morgenen-etter-storbrannen-1.17962001"
   },
   {
    "tittel": "Flere går i fjellet",
@@ -17,14 +27,14 @@
    "lenke": "https://www.nrk.no/video/DKTL98071726"
   },
   {
-   "tittel": "Johan Baumann er død",
-   "kilde": "NRK",
-   "lenke": "https://www.nrk.no/buskerud/johan-baumann-er-dod-1.17962016"
-  },
-  {
    "tittel": "Anmeldes etter bjørnebinne ble skutt i Snåsa",
    "kilde": "Trøndelag",
    "lenke": "https://www.nrk.no/trondelag/bjornebinne-skutt-i-snasa-_-vare-rovdyr-og-noah-har-sendt-anmeldelse-til-politiet-1.17959955"
+  },
+  {
+   "tittel": "Johan Baumann er død",
+   "kilde": "NRK",
+   "lenke": "https://www.nrk.no/buskerud/johan-baumann-er-dod-1.17962016"
   },
   {
    "tittel": "Kvinner er mest utsatt for helseplager på jobb",
@@ -37,19 +47,14 @@
    "lenke": "https://www.nrk.no/video/DKTL98071626"
   },
   {
-   "tittel": "Storbrann i Drammen: Over 400 evakuert",
-   "kilde": "NRK",
-   "lenke": "https://www.nrk.no/norge/katastrofebrann-i-drammen_-over-400-evakuert-1.17961940"
-  },
-  {
    "tittel": "Uenige i vedtak om å stenge tre elver i Trøndelag for laksefiske: – Tragisk",
    "kilde": "Trøndelag",
    "lenke": "https://www.nrk.no/trondelag/miljodirektoratet-stenger-orkla_-gaula-og-verdalselva-i-trondelag-for-laksefiske-1.17960410"
   },
   {
-   "tittel": "Strømmer inn med folk som vil hjelpe: – Det er menneskelig å reagere",
+   "tittel": "Storbrann i Drammen: Over 400 evakuert",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/buskerud/det-er-mange-som-onsker-a-hjelpe-brannofrene-etter-storbrannen-i-drammen-1.17961740"
+   "lenke": "https://www.nrk.no/norge/katastrofebrann-i-drammen_-over-400-evakuert-1.17961940"
   },
   {
    "tittel": "Seks Rosenborg-supportarar fekk opphaldsforbod og bøter – no har tingretten konkludert",
@@ -57,19 +62,9 @@
    "lenke": "https://www.nrk.no/trondelag/seks-rosenborg-supportarar-fekk-opphaldsforbod-og-boter-_-no-har-tingretten-konkludert-1.17957013"
   },
   {
-   "tittel": "Hyller nytt grep mot seksualisering i friidretten: – Ble skikkelig glad da jeg så det",
+   "tittel": "Strømmer inn med folk som vil hjelpe: – Det er menneskelig å reagere",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/sport/superstjerner-hyller-grep-mot-seksualisering-i-friidretten_-_-bor-fa-lov-til-a-kle-oss-som-vi-vil-1.17961510"
-  },
-  {
-   "tittel": "Tapte VM-veddemål – må gå 270 kilometer",
-   "kilde": "Trøndelag",
-   "lenke": "https://www.nrk.no/trondelag/tapte-vm-veddemal-_-ma-ga-270-kilometer-til-og-fra-jobb-1.17958186"
-  },
-  {
-   "tittel": "Russisk ambassadør fyrer løs mot Bodø: – De gjør det de kan for å skape uro",
-   "kilde": "NRK",
-   "lenke": "https://www.nrk.no/nordland/knallhard-russisk-kritikk-mot-nato-senter-i-bodo-1.17959953"
+   "lenke": "https://www.nrk.no/buskerud/det-er-mange-som-onsker-a-hjelpe-brannofrene-etter-storbrannen-i-drammen-1.17961740"
   }
  ]
 }
