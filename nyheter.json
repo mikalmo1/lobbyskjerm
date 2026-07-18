@@ -1,5 +1,5 @@
 {
- "oppdatert": "2026-07-18T08:19:46Z",
+ "oppdatert": "2026-07-18T09:56:27Z",
  "saker": [
   {
    "tittel": "To bjørner felt på to døgn i Snåsa",
@@ -7,14 +7,19 @@
    "lenke": "https://www.nrk.no/trondelag/hannbjorn-felt-i-snasa-fredag-kveld-1.17961989"
   },
   {
+   "tittel": "Matilde (15) fikk en av 1000 utlyste stillinger – konkurrerte med 15.000",
+   "kilde": "NRK",
+   "lenke": "https://www.nrk.no/trondelag/15.000-sokte-pa-1000-sommerjobber-hos-iskremkiosk-1.17945318"
+  },
+  {
    "tittel": "Flere går i fjellet",
    "kilde": "Trøndelag",
    "lenke": "https://www.nrk.no/video/DKTL98071726"
   },
   {
-   "tittel": "Storbrann i Drammen: 400 evakuert",
+   "tittel": "Johan Baumann er død",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/norge/katastrofebrann-i-drammen_-400-evakuert-1.17961940"
+   "lenke": "https://www.nrk.no/buskerud/johan-baumann-er-dod-1.17962016"
   },
   {
    "tittel": "Anmeldes etter bjørnebinne ble skutt i Snåsa",
@@ -22,19 +27,9 @@
    "lenke": "https://www.nrk.no/trondelag/bjornebinne-skutt-i-snasa-_-vare-rovdyr-og-noah-har-sendt-anmeldelse-til-politiet-1.17959955"
   },
   {
-   "tittel": "Strømmer inn med folk som vil hjelpe: – Det er menneskelig å reagere",
-   "kilde": "NRK",
-   "lenke": "https://www.nrk.no/buskerud/det-er-mange-som-onsker-a-hjelpe-brannofrene-etter-storbrannen-i-drammen-1.17961740"
-  },
-  {
    "tittel": "Kvinner er mest utsatt for helseplager på jobb",
    "kilde": "Trøndelag",
    "lenke": "https://www.nrk.no/trondelag/kvinner-er-mer-plaget-enn-menn-med-jobbrelaterte-helseproblemer-viser-statistikk-fra-ssb-1.17951672"
-  },
-  {
-   "tittel": "Hyller nytt grep mot seksualisering i friidretten: – Ble skikkelig glad da jeg så det",
-   "kilde": "NRK",
-   "lenke": "https://www.nrk.no/sport/superstjerner-hyller-grep-mot-seksualisering-i-friidretten_-_-bor-fa-lov-til-a-kle-oss-som-vi-vil-1.17961510"
   },
   {
    "tittel": "Midtnytt torsdag",
@@ -42,9 +37,9 @@
    "lenke": "https://www.nrk.no/video/DKTL98071626"
   },
   {
-   "tittel": "Russisk ambassadør fyrer løs mot Bodø: – De gjør det de kan for å skape uro",
+   "tittel": "Storbrann i Drammen: Over 400 evakuert",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/nordland/knallhard-russisk-kritikk-mot-nato-senter-i-bodo-1.17959953"
+   "lenke": "https://www.nrk.no/norge/katastrofebrann-i-drammen_-over-400-evakuert-1.17961940"
   },
   {
    "tittel": "Uenige i vedtak om å stenge tre elver i Trøndelag for laksefiske: – Tragisk",
@@ -52,9 +47,9 @@
    "lenke": "https://www.nrk.no/trondelag/miljodirektoratet-stenger-orkla_-gaula-og-verdalselva-i-trondelag-for-laksefiske-1.17960410"
   },
   {
-   "tittel": "Ville hente Nyland før VM:– Trur det blir ganske vrient no",
+   "tittel": "Strømmer inn med folk som vil hjelpe: – Det er menneskelig å reagere",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/fotballvm2026/vm-kan-ha-sendt-norske-spelarar-til-toppen-av-onskjelistene-1.17958098"
+   "lenke": "https://www.nrk.no/buskerud/det-er-mange-som-onsker-a-hjelpe-brannofrene-etter-storbrannen-i-drammen-1.17961740"
   },
   {
    "tittel": "Seks Rosenborg-supportarar fekk opphaldsforbod og bøter – no har tingretten konkludert",
@@ -62,9 +57,9 @@
    "lenke": "https://www.nrk.no/trondelag/seks-rosenborg-supportarar-fekk-opphaldsforbod-og-boter-_-no-har-tingretten-konkludert-1.17957013"
   },
   {
-   "tittel": "Større forskjeller på by og land: - Man kan bli litt låst",
+   "tittel": "Hyller nytt grep mot seksualisering i friidretten: – Ble skikkelig glad da jeg så det",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/norge/storre-forskjeller-i-boligprisene-pa-by-og-land_---man-kan-bli-litt-last-1.17942145"
+   "lenke": "https://www.nrk.no/sport/superstjerner-hyller-grep-mot-seksualisering-i-friidretten_-_-bor-fa-lov-til-a-kle-oss-som-vi-vil-1.17961510"
   },
   {
    "tittel": "Tapte VM-veddemål – må gå 270 kilometer",
@@ -72,9 +67,9 @@
    "lenke": "https://www.nrk.no/trondelag/tapte-vm-veddemal-_-ma-ga-270-kilometer-til-og-fra-jobb-1.17958186"
   },
   {
-   "tittel": "Brannvesenet: – Har fortsatt ikke kontroll",
+   "tittel": "Russisk ambassadør fyrer løs mot Bodø: – De gjør det de kan for å skape uro",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/nyheter/brannvesenet_-_-har-fortsatt-ikke-kontroll-1.17961887"
+   "lenke": "https://www.nrk.no/nordland/knallhard-russisk-kritikk-mot-nato-senter-i-bodo-1.17959953"
   }
  ]
 }
