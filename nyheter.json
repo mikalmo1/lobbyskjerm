@@ -1,15 +1,20 @@
 {
- "oppdatert": "2026-07-18T06:27:06Z",
+ "oppdatert": "2026-07-18T08:19:46Z",
  "saker": [
+  {
+   "tittel": "To bjørner felt på to døgn i Snåsa",
+   "kilde": "Trøndelag",
+   "lenke": "https://www.nrk.no/trondelag/hannbjorn-felt-i-snasa-fredag-kveld-1.17961989"
+  },
   {
    "tittel": "Flere går i fjellet",
    "kilde": "Trøndelag",
    "lenke": "https://www.nrk.no/video/DKTL98071726"
   },
   {
-   "tittel": "Hyller nytt grep mot seksualisering i friidretten: – Ble skikkelig glad da jeg så det",
+   "tittel": "Storbrann i Drammen: 400 evakuert",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/sport/superstjerner-hyller-grep-mot-seksualisering-i-friidretten_-_-bor-fa-lov-til-a-kle-oss-som-vi-vil-1.17961510"
+   "lenke": "https://www.nrk.no/norge/katastrofebrann-i-drammen_-400-evakuert-1.17961940"
   },
   {
    "tittel": "Anmeldes etter bjørnebinne ble skutt i Snåsa",
@@ -17,9 +22,9 @@
    "lenke": "https://www.nrk.no/trondelag/bjornebinne-skutt-i-snasa-_-vare-rovdyr-og-noah-har-sendt-anmeldelse-til-politiet-1.17959955"
   },
   {
-   "tittel": "Russisk ambassadør fyrer løs mot Bodø: – De gjør det de kan for å skape uro",
+   "tittel": "Strømmer inn med folk som vil hjelpe: – Det er menneskelig å reagere",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/nordland/knallhard-russisk-kritikk-mot-nato-senter-i-bodo-1.17959953"
+   "lenke": "https://www.nrk.no/buskerud/det-er-mange-som-onsker-a-hjelpe-brannofrene-etter-storbrannen-i-drammen-1.17961740"
   },
   {
    "tittel": "Kvinner er mest utsatt for helseplager på jobb",
@@ -27,9 +32,9 @@
    "lenke": "https://www.nrk.no/trondelag/kvinner-er-mer-plaget-enn-menn-med-jobbrelaterte-helseproblemer-viser-statistikk-fra-ssb-1.17951672"
   },
   {
-   "tittel": "Ville hente Nyland før VM:– Trur det blir ganske vrient no",
+   "tittel": "Hyller nytt grep mot seksualisering i friidretten: – Ble skikkelig glad da jeg så det",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/fotballvm2026/vm-kan-ha-sendt-norske-spelarar-til-toppen-av-onskjelistene-1.17958098"
+   "lenke": "https://www.nrk.no/sport/superstjerner-hyller-grep-mot-seksualisering-i-friidretten_-_-bor-fa-lov-til-a-kle-oss-som-vi-vil-1.17961510"
   },
   {
    "tittel": "Midtnytt torsdag",
@@ -37,9 +42,9 @@
    "lenke": "https://www.nrk.no/video/DKTL98071626"
   },
   {
-   "tittel": "Større forskjeller på by og land: - Man kan bli litt låst",
+   "tittel": "Russisk ambassadør fyrer løs mot Bodø: – De gjør det de kan for å skape uro",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/norge/storre-forskjeller-i-boligprisene-pa-by-og-land_---man-kan-bli-litt-last-1.17942145"
+   "lenke": "https://www.nrk.no/nordland/knallhard-russisk-kritikk-mot-nato-senter-i-bodo-1.17959953"
   },
   {
    "tittel": "Uenige i vedtak om å stenge tre elver i Trøndelag for laksefiske: – Tragisk",
@@ -47,9 +52,9 @@
    "lenke": "https://www.nrk.no/trondelag/miljodirektoratet-stenger-orkla_-gaula-og-verdalselva-i-trondelag-for-laksefiske-1.17960410"
   },
   {
-   "tittel": "Brannvesenet: – Har fortsatt ikke kontroll",
+   "tittel": "Ville hente Nyland før VM:– Trur det blir ganske vrient no",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/nyheter/brannvesenet_-_-har-fortsatt-ikke-kontroll-1.17961887"
+   "lenke": "https://www.nrk.no/fotballvm2026/vm-kan-ha-sendt-norske-spelarar-til-toppen-av-onskjelistene-1.17958098"
   },
   {
    "tittel": "Seks Rosenborg-supportarar fekk opphaldsforbod og bøter – no har tingretten konkludert",
@@ -57,9 +62,9 @@
    "lenke": "https://www.nrk.no/trondelag/seks-rosenborg-supportarar-fekk-opphaldsforbod-og-boter-_-no-har-tingretten-konkludert-1.17957013"
   },
   {
-   "tittel": "USA: Har gjennomført nye angrep mot Iran",
+   "tittel": "Større forskjeller på by og land: - Man kan bli litt låst",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/nyheter/usa_-har-gjennomfort-nye-angrep-mot-iran-1.17961922"
+   "lenke": "https://www.nrk.no/norge/storre-forskjeller-i-boligprisene-pa-by-og-land_---man-kan-bli-litt-last-1.17942145"
   },
   {
    "tittel": "Tapte VM-veddemål – må gå 270 kilometer",
@@ -67,19 +72,9 @@
    "lenke": "https://www.nrk.no/trondelag/tapte-vm-veddemal-_-ma-ga-270-kilometer-til-og-fra-jobb-1.17958186"
   },
   {
-   "tittel": "Politiet: – Brannen har roet seg",
+   "tittel": "Brannvesenet: – Har fortsatt ikke kontroll",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/nyheter/politiet_-_-brannen-har-roet-seg-1.17961605"
-  },
-  {
-   "tittel": "Er det fremdeles VM-feber?",
-   "kilde": "Trøndelag",
-   "lenke": "https://www.nrk.no/video/DKTL98071526"
-  },
-  {
-   "tittel": "Justin Bieber delte Anna sin Tiktok-video: – Det her er heilt sjukt!",
-   "kilde": "NRK",
-   "lenke": "https://www.nrk.no/vestland/justin-bieber-delte-anna-lille-sin-tiktok-video-pa-instagram-til-millionar-1.17961848"
+   "lenke": "https://www.nrk.no/nyheter/brannvesenet_-_-har-fortsatt-ikke-kontroll-1.17961887"
   }
  ]
 }
