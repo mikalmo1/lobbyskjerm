@@ -1,10 +1,25 @@
 {
- "oppdatert": "2026-07-19T07:15:55Z",
+ "oppdatert": "2026-07-19T09:27:04Z",
  "saker": [
   {
-   "tittel": "Leteaksjon etter mann i 20-åra i Trondheim",
+   "tittel": "MC-ulykke i Steinkjer – en person alvorlig skadd",
+   "kilde": "Trøndelag",
+   "lenke": "https://www.nrk.no/trondelag/mc-ulykke-i-steinkjer_-_-framstar-som-alvorlig-1.17962677"
+  },
+  {
+   "tittel": "Russland med største åtak sidan krigen starta",
+   "kilde": "NRK",
+   "lenke": "https://www.nrk.no/nyheter/russland-med-storste-atak-sidan-krigen-starta-1.17962599"
+  },
+  {
+   "tittel": "Mann i 20 åra funnet etter leteaksjon i Trondheim",
    "kilde": "Trøndelag",
    "lenke": "https://www.nrk.no/trondelag/leteaksjon-etter-mann-i-20-ara-i-trondheim-1.17962603"
+  },
+  {
+   "tittel": "Storbrannen i Krokstadelva: – Katastrofe for Drammen",
+   "kilde": "NRK",
+   "lenke": "https://www.nrk.no/norge/storbrannen-i-krokstadelva_-jobber-enna-med-slokking-1.17962633"
   },
   {
    "tittel": "Fly på veg til München måtte lande på Gardermoen på grunn av røyklukt",
@@ -12,9 +27,9 @@
    "lenke": "https://www.nrk.no/trondelag/fly-pa-veg-fra-trondheim-til-munchen-matte-lande-pa-gardermoen-_-mott-av-seks-brannbilar-1.17962497"
   },
   {
-   "tittel": "Klatreulukke i Jotunheimen",
+   "tittel": "MC-ulykke i Steinkjer: – Fremstår som alvorlig",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/vestland/klatreulukke-i-jotunheimen-1.17962604"
+   "lenke": "https://www.nrk.no/trondelag/mc-ulykke-i-steinkjer_-_-fremstar-som-alvorlig-1.17962660"
   },
   {
    "tittel": "Nok en seier for Rosenborg",
@@ -22,19 +37,14 @@
    "lenke": "https://www.nrk.no/sport/ny-seier-for-rosenborg-_-start-leiren-tordnet-etter-kontroversiell-dommeravgjorelse-1.17962361"
   },
   {
-   "tittel": "Når bare pipene står igjen",
-   "kilde": "NRK",
-   "lenke": "https://www.nrk.no/buskerud/xl/nar-bare-pipene-star-igjen-1.17962008"
-  },
-  {
    "tittel": "Pilegrimer velger kjølig vandring i Norge",
    "kilde": "Trøndelag",
    "lenke": "https://www.nrk.no/trondelag/pilegrimsmottaket-i-trondheim-merker-en-okning-av-folk-som-rommer-fra-varmen-i-europa-1.17956568"
   },
   {
-   "tittel": "Fastlegen får ti ganger mer betalt om han ikke sykmelder deg – det skaper reaksjoner",
+   "tittel": "Klatreulukke i Jotunheimen",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/rogaland/fastleger-tjener-50-kroner-pa-a-ikke-sykmelde-_-tidligere-fastlege-kritisk-til-nye-regler-1.17958923"
+   "lenke": "https://www.nrk.no/vestland/klatreulukke-i-jotunheimen-1.17962604"
   },
   {
    "tittel": "Matilde (15) fikk en av 1000 utlyste stillinger – konkurrerte med 15.000",
@@ -42,9 +52,9 @@
    "lenke": "https://www.nrk.no/trondelag/15.000-sokte-pa-1000-sommerjobber-hos-iskremkiosk-1.17945318"
   },
   {
-   "tittel": "Ukraina: En drept og ni såret",
+   "tittel": "Når bare pipene står igjen",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/nyheter/ukraina_-en-drept-og-ni-saret-1.17962588"
+   "lenke": "https://www.nrk.no/buskerud/xl/nar-bare-pipene-star-igjen-1.17962008"
   },
   {
    "tittel": "To bjørner felt på to døgn i Snåsa",
@@ -52,9 +62,9 @@
    "lenke": "https://www.nrk.no/trondelag/hannbjorn-felt-i-snasa-fredag-kveld-1.17961989"
   },
   {
-   "tittel": "Kyiv-ordfører: Sju såret i russiske angrep",
+   "tittel": "Fastlegen får ti ganger mer betalt om han ikke sykmelder deg – det skaper reaksjoner",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/nyheter/kyiv-ordforer_-sju-saret-i-russiske-angrep-1.17962585"
+   "lenke": "https://www.nrk.no/rogaland/fastleger-tjener-50-kroner-pa-a-ikke-sykmelde-_-tidligere-fastlege-kritisk-til-nye-regler-1.17958923"
   },
   {
    "tittel": "Flere går i fjellet",
@@ -62,19 +72,9 @@
    "lenke": "https://www.nrk.no/video/DKTL98071726"
   },
   {
-   "tittel": "Reagerer på Mbappé-bileta: – Veldig uvanleg",
+   "tittel": "Ukraina: En drept og ni såret",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/fotballvm2026/fotball-vm-2026_-kylian-mbappe-gjekk-smilande-til-garderoben-etter-audmjukande-omgang-1.17962557"
-  },
-  {
-   "tittel": "Anmeldes etter bjørnebinne ble skutt i Snåsa",
-   "kilde": "Trøndelag",
-   "lenke": "https://www.nrk.no/trondelag/bjornebinne-skutt-i-snasa-_-vare-rovdyr-og-noah-har-sendt-anmeldelse-til-politiet-1.17959955"
-  },
-  {
-   "tittel": "AP: Tate-brødrene pågrepet i Miami",
-   "kilde": "NRK",
-   "lenke": "https://www.nrk.no/nyheter/ap_-tate-brodrene-pagrepet-i-miami-1.17962574"
+   "lenke": "https://www.nrk.no/nyheter/ukraina_-en-drept-og-ni-saret-1.17962588"
   }
  ]
 }
