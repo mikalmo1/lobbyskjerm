@@ -1,5 +1,5 @@
 {
- "oppdatert": "2026-07-25T04:28:03Z",
+ "oppdatert": "2026-07-25T06:40:34Z",
  "saker": [
   {
    "tittel": "Dyretragedie i Levanger: Hundrevis av griser brant inne",
@@ -7,14 +7,19 @@
    "lenke": "https://www.nrk.no/trondelag/dyretragedie-i-levanger_-hundrevis-av-griser-brant-inne-i-fjos-1.17968681"
   },
   {
+   "tittel": "Haaland-feber i sosiale medium: – Marknadsverdien veks astronomisk",
+   "kilde": "NRK",
+   "lenke": "https://www.nrk.no/sport/internettfenomenet-erling-braut-haaland-tar-verda-med-storm-1.17966728"
+  },
+  {
    "tittel": "Vurderer salg av tomtene rundt Lerkendal stadion – kan være verdt en milliard",
    "kilde": "Trøndelag",
    "lenke": "https://www.nrk.no/trondelag/ledere-i-rosenborg-skal-ha-lagt-fram-planer-for-hvordan-man-kan-selge-unna-tomter-pa-lerkendal-1.17965031"
   },
   {
-   "tittel": "Hundrevis av griser brant inne i fjøs i Levanger",
+   "tittel": "Flått drep fleire sau enn rovdyr",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/nyheter/hundrevis-av-griser-brant-inne-i-fjos-i-levanger-1.17968670"
+   "lenke": "https://www.nrk.no/vestland/flatt-er-farlege-for-sau-pa-beite-enn-orn-og-andre-rovdyr-1.17963359"
   },
   {
    "tittel": "Midtnytt i samsending med Møre og Romsdal",
@@ -22,19 +27,14 @@
    "lenke": "https://www.nrk.no/video/DKMR98072426"
   },
   {
-   "tittel": "Mann kritisk skadet etter MC-ulykke i Larvik",
-   "kilde": "NRK",
-   "lenke": "https://www.nrk.no/vestfoldogtelemark/alvorlig-mc-ulykke-i-larvik-1.17968667"
-  },
-  {
    "tittel": "Bjørnefelling på Snåsa skaper storm i kommentarfeltet",
    "kilde": "Trøndelag",
    "lenke": "https://www.nrk.no/sapmi/bjornefelling-pa-snasa-skaper-storm-i-kommentarfeltet-1.17967116"
   },
   {
-   "tittel": "Alvorlig MC-ulykke i Larvik",
+   "tittel": "Hundrevis av griser brant inne i fjøs i Levanger",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/nyheter/alvorlig-mc-ulykke-i-larvik-1.17968664"
+   "lenke": "https://www.nrk.no/nyheter/hundrevis-av-griser-brant-inne-i-fjos-i-levanger-1.17968670"
   },
   {
    "tittel": "Charlotte kom inn på drømmestudiet: – Wow, jeg greide det!",
@@ -42,9 +42,9 @@
    "lenke": "https://www.nrk.no/trondelag/studieopptaket-2026_-_-lang-ventetid-pa-psykologi-1.17964624"
   },
   {
-   "tittel": "Guttormsen brøt magisk grense: – Dette var helt sykt",
+   "tittel": "Mann kritisk skadet etter MC-ulykke i Larvik",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/sport/guttormsen-brot-magisk-grense_-__dette-var-helt-sykt-1.17968656"
+   "lenke": "https://www.nrk.no/vestfoldogtelemark/alvorlig-mc-ulykke-i-larvik-1.17968667"
   },
   {
    "tittel": "Knivstikking Trondheim: Siktede løslates fredag",
@@ -52,14 +52,14 @@
    "lenke": "https://www.nrk.no/trondelag/en-siktet-etter-knivstikking-i-trondheim-1.17966671"
   },
   {
-   "tittel": "Over 4000 innstillingar på fem år: Krev 38 millionar etter elektrisk ferjetrøbbel",
+   "tittel": "Alvorlig MC-ulykke i Larvik",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/innlandet/innlandet-fylkeskommune-varslar-soksmal-etter-trobbel-med-randsfjordferja-_elrond_-1.17936068"
+   "lenke": "https://www.nrk.no/nyheter/alvorlig-mc-ulykke-i-larvik-1.17968664"
   },
   {
-   "tittel": "Slik var dramaet under opprøret i Mandal fengsel: – Ugunstig tidspunkt",
+   "tittel": "Guttormsen brøt magisk grense: – Dette var helt sykt",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/sorlandet/slik-var-dramaet-under-opproret-i-mandal-fengsel-1.17967808"
+   "lenke": "https://www.nrk.no/sport/guttormsen-brot-magisk-grense_-__dette-var-helt-sykt-1.17968656"
   },
   {
    "tittel": "Nye elbusser mangler strøm: – Må lære av Danmark",
@@ -67,9 +67,9 @@
    "lenke": "https://www.nrk.no/trondelag/nye-elbusser-mangler-strom_-_-ma-laere-av-danmark-1.17960353"
   },
   {
-   "tittel": "It’s coming home",
+   "tittel": "Over 4000 innstillingar på fem år: Krev 38 millionar etter elektrisk ferjetrøbbel",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/fotballvm2026/vm-oppsummert_-it_s-coming-home-1.17965751"
+   "lenke": "https://www.nrk.no/innlandet/innlandet-fylkeskommune-varslar-soksmal-etter-trobbel-med-randsfjordferja-_elrond_-1.17936068"
   }
  ]
 }
