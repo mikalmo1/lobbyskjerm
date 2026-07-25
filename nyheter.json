@@ -1,15 +1,25 @@
 {
- "oppdatert": "2026-07-25T13:25:49Z",
+ "oppdatert": "2026-07-25T14:47:12Z",
  "saker": [
+  {
+   "tittel": "Væpnet aksjon i Trondheim: – Jeg fikk sjokk og sprang unna",
+   "kilde": "Trøndelag",
+   "lenke": "https://www.nrk.no/trondelag/vaepnet-aksjon-i-trondheim-_-mann-gikk-amok-i-butikk-1.17969019"
+  },
+  {
+   "tittel": "De snakker ikke så mye om såre nipler og sånn",
+   "kilde": "NRK",
+   "lenke": "https://www.nrk.no/tromsogfinnmark/xl/13-menn-med-14-barn_-her-lofter-de-pappapermen-til-nye-hoyder-1.17887713"
+  },
   {
    "tittel": "Var nær randen av kollaps – nå har noe skjedd",
    "kilde": "Trøndelag",
    "lenke": "https://www.nrk.no/trondelag/trondersk-rap-har-vaert-naer-randen-av-kollaps-1.17934627"
   },
   {
-   "tittel": "Nordmenn i skogbrannområdet: – Det var nesten apokalyptisk",
+   "tittel": "Et nei skal være nok",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/norge/nordmenn-i-skogbrannomradet_-_-det-var-nesten-apokalyptisk-1.17968867"
+   "lenke": "https://www.nrk.no/ytring/et-nei-skal-vaere-nok-1.17967801"
   },
   {
    "tittel": "Dyretragedie i Levanger: Hundrevis av griser brant inne",
@@ -17,9 +27,9 @@
    "lenke": "https://www.nrk.no/trondelag/dyretragedie-i-levanger_-hundrevis-av-griser-brant-inne-i-fjos-1.17968681"
   },
   {
-   "tittel": "Indias utdanningsminister går av etter voldsomme studentprotester",
+   "tittel": "Alvorlig fallulykke i Larvik – skal ha falt seks meter",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/urix/indias-utenriksminister-gar-av-etter-_kakerlakk_-oppror-1.17968817"
+   "lenke": "https://www.nrk.no/vestfoldogtelemark/alvorlig-fallulykke-i-larvik-1.17969017"
   },
   {
    "tittel": "Vurderer salg av tomtene rundt Lerkendal stadion – kan være verdt en milliard",
@@ -27,9 +37,9 @@
    "lenke": "https://www.nrk.no/trondelag/ledere-i-rosenborg-skal-ha-lagt-fram-planer-for-hvordan-man-kan-selge-unna-tomter-pa-lerkendal-1.17965031"
   },
   {
-   "tittel": "Ulykken i Råde: Antatt sjåfør utskrevet og siktet",
+   "tittel": "Småfly styrtet inn i en bolig i Tyskland - minst en omkommet",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/ostfold/ulykken-i-rade_-antatt-sjafor-utskrevet-og-siktet-1.17968824"
+   "lenke": "https://www.nrk.no/nyheter/smafly-styrtet-inn-i-en-bolig-i-tyskland---minst-en-omkommet-1.17969006"
   },
   {
    "tittel": "Midtnytt i samsending med Møre og Romsdal",
@@ -37,9 +47,9 @@
    "lenke": "https://www.nrk.no/video/DKMR98072426"
   },
   {
-   "tittel": "Ein av landets mest populære utdanningar – Kaya (20) kom gjennom nålauget",
+   "tittel": "Fallulykke i Larvik – skal ha falt seks meter",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/vestland/ambulansefag-er-blant-linjene-med-hogast-karaktersnitt-1.17952167"
+   "lenke": "https://www.nrk.no/vestfoldogtelemark/fallulykke-i-larvik-_-skal-ha-falt-seks-meter-1.17968925"
   },
   {
    "tittel": "Bjørnefelling på Snåsa skaper storm i kommentarfeltet",
@@ -47,9 +57,9 @@
    "lenke": "https://www.nrk.no/sapmi/bjornefelling-pa-snasa-skaper-storm-i-kommentarfeltet-1.17967116"
   },
   {
-   "tittel": "Råde-ulykken: Antatt sjåfør skrevet ut og siktet",
+   "tittel": "Kometene snuser på samme rekord: – Den lever farlig",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/ostfold/rade-ulykken_-antatt-sjafor-skrevet-ut-og-siktet-1.17968722"
+   "lenke": "https://www.nrk.no/sport/friidrett_-kometene-jakter-samme-rekord-pa-100-m-hekk_-_-den-lever-farlig-1.17968753"
   },
   {
    "tittel": "Charlotte kom inn på drømmestudiet: – Wow, jeg greide det!",
@@ -57,9 +67,9 @@
    "lenke": "https://www.nrk.no/trondelag/studieopptaket-2026_-_-lang-ventetid-pa-psykologi-1.17964624"
   },
   {
-   "tittel": "Yacht-bonanza: Denne yachten kan du leie for 11 millioner kroner – i uka",
+   "tittel": "Nordmenn i skogbrannområdet: – Det var nesten apokalyptisk",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/tromsogfinnmark/flere-yachter_-_-har-en-folelse-av-at-vi-aldri-har-hatt-sa-mange-for-1.17963351"
+   "lenke": "https://www.nrk.no/norge/nordmenn-i-skogbrannomradet_-_-det-var-nesten-apokalyptisk-1.17968867"
   },
   {
    "tittel": "Knivstikking Trondheim: Siktede løslates fredag",
@@ -67,14 +77,9 @@
    "lenke": "https://www.nrk.no/trondelag/en-siktet-etter-knivstikking-i-trondheim-1.17966671"
   },
   {
-   "tittel": "Debatten raser før Tour-etappe: – De mektige gjør hva enn de vil",
+   "tittel": "Indias utdanningsminister går av etter voldsomme studentprotester",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/sport/tour-de-france_-underskriftskampanje-mot-fjelletappe-_-na-gir-initiativtakeren-opp-1.17967955"
-  },
-  {
-   "tittel": "Evakuerer forsteder til Bordeaux",
-   "kilde": "NRK",
-   "lenke": "https://www.nrk.no/nyheter/evakuerer-forsteder-til-bordeaux-1.17968743"
+   "lenke": "https://www.nrk.no/urix/indias-utenriksminister-gar-av-etter-_kakerlakk_-oppror-1.17968817"
   }
  ]
 }
