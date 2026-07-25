@@ -1,15 +1,25 @@
 {
- "oppdatert": "2026-07-25T11:45:50Z",
+ "oppdatert": "2026-07-25T13:25:49Z",
  "saker": [
+  {
+   "tittel": "Var nær randen av kollaps – nå har noe skjedd",
+   "kilde": "Trøndelag",
+   "lenke": "https://www.nrk.no/trondelag/trondersk-rap-har-vaert-naer-randen-av-kollaps-1.17934627"
+  },
+  {
+   "tittel": "Nordmenn i skogbrannområdet: – Det var nesten apokalyptisk",
+   "kilde": "NRK",
+   "lenke": "https://www.nrk.no/norge/nordmenn-i-skogbrannomradet_-_-det-var-nesten-apokalyptisk-1.17968867"
+  },
   {
    "tittel": "Dyretragedie i Levanger: Hundrevis av griser brant inne",
    "kilde": "Trøndelag",
    "lenke": "https://www.nrk.no/trondelag/dyretragedie-i-levanger_-hundrevis-av-griser-brant-inne-i-fjos-1.17968681"
   },
   {
-   "tittel": "Ulykken i Råde: Antatt sjåfør utskrevet og siktet",
+   "tittel": "Indias utdanningsminister går av etter voldsomme studentprotester",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/ostfold/ulykken-i-rade_-antatt-sjafor-utskrevet-og-siktet-1.17968824"
+   "lenke": "https://www.nrk.no/urix/indias-utenriksminister-gar-av-etter-_kakerlakk_-oppror-1.17968817"
   },
   {
    "tittel": "Vurderer salg av tomtene rundt Lerkendal stadion – kan være verdt en milliard",
@@ -17,9 +27,9 @@
    "lenke": "https://www.nrk.no/trondelag/ledere-i-rosenborg-skal-ha-lagt-fram-planer-for-hvordan-man-kan-selge-unna-tomter-pa-lerkendal-1.17965031"
   },
   {
-   "tittel": "Ein av landets mest populære utdanningar – Kaya (20) kom gjennom nålauget",
+   "tittel": "Ulykken i Råde: Antatt sjåfør utskrevet og siktet",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/vestland/ambulansefag-er-blant-linjene-med-hogast-karaktersnitt-1.17952167"
+   "lenke": "https://www.nrk.no/ostfold/ulykken-i-rade_-antatt-sjafor-utskrevet-og-siktet-1.17968824"
   },
   {
    "tittel": "Midtnytt i samsending med Møre og Romsdal",
@@ -27,9 +37,9 @@
    "lenke": "https://www.nrk.no/video/DKMR98072426"
   },
   {
-   "tittel": "Råde-ulykken: Antatt sjåfør skrevet ut og siktet",
+   "tittel": "Ein av landets mest populære utdanningar – Kaya (20) kom gjennom nålauget",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/ostfold/rade-ulykken_-antatt-sjafor-skrevet-ut-og-siktet-1.17968722"
+   "lenke": "https://www.nrk.no/vestland/ambulansefag-er-blant-linjene-med-hogast-karaktersnitt-1.17952167"
   },
   {
    "tittel": "Bjørnefelling på Snåsa skaper storm i kommentarfeltet",
@@ -37,9 +47,9 @@
    "lenke": "https://www.nrk.no/sapmi/bjornefelling-pa-snasa-skaper-storm-i-kommentarfeltet-1.17967116"
   },
   {
-   "tittel": "Yacht-bonanza: Denne yachten kan du leie for 11 millioner kroner – i uka",
+   "tittel": "Råde-ulykken: Antatt sjåfør skrevet ut og siktet",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/tromsogfinnmark/flere-yachter_-_-har-en-folelse-av-at-vi-aldri-har-hatt-sa-mange-for-1.17963351"
+   "lenke": "https://www.nrk.no/ostfold/rade-ulykken_-antatt-sjafor-skrevet-ut-og-siktet-1.17968722"
   },
   {
    "tittel": "Charlotte kom inn på drømmestudiet: – Wow, jeg greide det!",
@@ -47,9 +57,9 @@
    "lenke": "https://www.nrk.no/trondelag/studieopptaket-2026_-_-lang-ventetid-pa-psykologi-1.17964624"
   },
   {
-   "tittel": "Debatten raser før Tour-etappe: – De mektige gjør hva enn de vil",
+   "tittel": "Yacht-bonanza: Denne yachten kan du leie for 11 millioner kroner – i uka",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/sport/tour-de-france_-underskriftskampanje-mot-fjelletappe-_-na-gir-initiativtakeren-opp-1.17967955"
+   "lenke": "https://www.nrk.no/tromsogfinnmark/flere-yachter_-_-har-en-folelse-av-at-vi-aldri-har-hatt-sa-mange-for-1.17963351"
   },
   {
    "tittel": "Knivstikking Trondheim: Siktede løslates fredag",
@@ -57,19 +67,14 @@
    "lenke": "https://www.nrk.no/trondelag/en-siktet-etter-knivstikking-i-trondheim-1.17966671"
   },
   {
-   "tittel": "Skogbrannen nærmer seg byen Bordeaux",
+   "tittel": "Debatten raser før Tour-etappe: – De mektige gjør hva enn de vil",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/nyheter/skogbrannen-naermer-seg-byen-bordeaux-1.17968743"
+   "lenke": "https://www.nrk.no/sport/tour-de-france_-underskriftskampanje-mot-fjelletappe-_-na-gir-initiativtakeren-opp-1.17967955"
   },
   {
-   "tittel": "Brannene i Europa sprer seg: Flere grunner til at de starter",
+   "tittel": "Evakuerer forsteder til Bordeaux",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/urix/skogbrannene-i-frankrike-og-spania-sprer-seg_-flere-grunner-til-at-de-starter-1.17968688"
-  },
-  {
-   "tittel": "Nye elbusser mangler strøm: – Må lære av Danmark",
-   "kilde": "Trøndelag",
-   "lenke": "https://www.nrk.no/trondelag/nye-elbusser-mangler-strom_-_-ma-laere-av-danmark-1.17960353"
+   "lenke": "https://www.nrk.no/nyheter/evakuerer-forsteder-til-bordeaux-1.17968743"
   }
  ]
 }
