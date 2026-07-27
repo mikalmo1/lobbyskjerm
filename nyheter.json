@@ -1,15 +1,25 @@
 {
- "oppdatert": "2026-07-27T16:19:52Z",
+ "oppdatert": "2026-07-27T18:05:00Z",
  "saker": [
+  {
+   "tittel": "Midtnytt",
+   "kilde": "Trøndelag",
+   "lenke": "https://www.nrk.no/video/DKTL98072726"
+  },
+  {
+   "tittel": "Hudfletter Infantinos flybruk: – Det blir heilt feil",
+   "kilde": "NRK",
+   "lenke": "https://www.nrk.no/sport/reiste-96-000-kilometer-under-vm_-_-ingen-bryr-seg-1.17963347"
+  },
   {
    "tittel": "Person plukket blomster i togsporet",
    "kilde": "Trøndelag",
    "lenke": "https://www.nrk.no/trondelag/1.17970065"
   },
   {
-   "tittel": "Jakob Ingebrigtsen klar for EM - men usikkert om han skal løpe favorittdistansen",
+   "tittel": "Jentene som var savnet i sjøen ved Tofte er funnet i god behold",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/sport/jakob-ingebrigtsen-til-em.-1.17970542"
+   "lenke": "https://www.nrk.no/nyheter/jentene-som-var-savnet-i-sjoen-ved-tofte-er-funnet-i-god-behold-1.17970592"
   },
   {
    "tittel": "Paal William (31) sliter med angst og depresjon - han er ikke alene",
@@ -17,9 +27,9 @@
    "lenke": "https://www.nrk.no/trondelag/okning-av-unge-som-oppsoker-fastlegen-om-psykiske-plager-ifolge-ny-studie-fra-folkehelseinstituttet-1.17959252"
   },
   {
-   "tittel": "Jakob Ingebrigtsen: Klar for EM",
+   "tittel": "Bestilte pakke – fikk beskjed om å hente på Ica i Småland",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/sport/jakob-ingebrigtsen_-klar-for-em-1.17970522"
+   "lenke": "https://www.nrk.no/vestland/bestilte-pakke-_-fikk-beskjed-om-a-hente-pa-ica-i-smaland-1.17967191"
   },
   {
    "tittel": "Væpnet aksjon i Trondheim: – Jeg fikk sjokk og sprang unna",
@@ -27,9 +37,9 @@
    "lenke": "https://www.nrk.no/trondelag/vaepnet-aksjon-i-trondheim-_-mann-gikk-amok-i-butikk-1.17969019"
   },
   {
-   "tittel": "Flere titalls millioner er borte – politiet henlegger saken",
+   "tittel": "Grunnen vakler på Svalbard: – Hus blir ubeboelige",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/rogaland/the-gate-index_-politiet-henlegger-saken-1.17967610"
+   "lenke": "https://www.nrk.no/tromsogfinnmark/permafrosten-pa-svalbard-tiner.-hus-blir-ubeboelige-og-bygg-skadet-1.17954019"
   },
   {
    "tittel": "Var nær randen av kollaps – nå har noe skjedd",
@@ -37,9 +47,9 @@
    "lenke": "https://www.nrk.no/trondelag/trondersk-rap-har-vaert-naer-randen-av-kollaps-1.17934627"
   },
   {
-   "tittel": "Leter etter fortvilte katter som ikke skjønner noen ting",
+   "tittel": "Norsk stjerne fnyser av Hushovds hårete mål: – Det er urealistisk",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/buskerud/brannen-i-krokstadelva_-leter-etter-fortvilte-katter-som-ikke-skjonner-noen-ting-1.17970013"
+   "lenke": "https://www.nrk.no/sport/fnyser-av-sjefens-harete-mal_-_-det-er-urealistisk-1.17969783"
   },
   {
    "tittel": "Dyretragedie i Levanger: Hundrevis av griser brant inne",
@@ -47,9 +57,9 @@
    "lenke": "https://www.nrk.no/trondelag/dyretragedie-i-levanger_-hundrevis-av-griser-brant-inne-i-fjos-1.17968681"
   },
   {
-   "tittel": "Istopp i juli: – Dette er min andre, og klokka er bare to!",
+   "tittel": "Kvinne død på Nærbø - mann siktet for drap",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/sorlandet/istopp-i-juli_-_-dette-er-min-andre_-og-klokka-er-bare-to_-1.17967256"
+   "lenke": "https://www.nrk.no/rogaland/kvinne-dode-etter-skader-pa-naerbo---mann-siktet-for-drap-1.17970023"
   },
   {
    "tittel": "Vurderer salg av tomtene rundt Lerkendal stadion – kan være verdt en milliard",
@@ -57,9 +67,9 @@
    "lenke": "https://www.nrk.no/trondelag/ledere-i-rosenborg-skal-ha-lagt-fram-planer-for-hvordan-man-kan-selge-unna-tomter-pa-lerkendal-1.17965031"
   },
   {
-   "tittel": "Oslo-barnehage rasert: – Overalt var det tilgriset",
+   "tittel": "Jakob Ingebrigtsen klar for EM – men usikkert om han skal løpe favorittdistansen",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/stor-oslo/barnehage-i-oslo-rasert-i-lopet-av-helga-1.17970200"
+   "lenke": "https://www.nrk.no/sport/jakob-ingebrigtsen-til-em.-1.17970542"
   },
   {
    "tittel": "Midtnytt i samsending med Møre og Romsdal",
@@ -67,19 +77,9 @@
    "lenke": "https://www.nrk.no/video/DKMR98072426"
   },
   {
-   "tittel": "Råde-ulykken: Fire menn i 20-årene utenfor livsfare",
+   "tittel": "Jakob Ingebrigtsen: Klar for EM",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/ostfold/politiet_-ingen-livstruende-skadet-etter-rade-ulykken-1.17970098"
-  },
-  {
-   "tittel": "Bjørnefelling på Snåsa skaper storm i kommentarfeltet",
-   "kilde": "Trøndelag",
-   "lenke": "https://www.nrk.no/sapmi/bjornefelling-pa-snasa-skaper-storm-i-kommentarfeltet-1.17967116"
-  },
-  {
-   "tittel": "KFC kommer til Norge",
-   "kilde": "NRK",
-   "lenke": "https://www.nrk.no/nyheter/kfc-kommer-til-norge-1.17970175"
+   "lenke": "https://www.nrk.no/sport/jakob-ingebrigtsen_-klar-for-em-1.17970522"
   }
  ]
 }
