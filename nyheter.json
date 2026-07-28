@@ -1,15 +1,25 @@
 {
- "oppdatert": "2026-07-28T07:17:49Z",
+ "oppdatert": "2026-07-28T10:05:38Z",
  "saker": [
+  {
+   "tittel": "Mann siktet for drapsforsøk",
+   "kilde": "Trøndelag",
+   "lenke": "https://www.nrk.no/trondelag/mann-i-20-ara-sikta-for-drapsforsok-1.17971041"
+  },
+  {
+   "tittel": "PST: Endrer foreløpig ikke trusselbildet i Norge",
+   "kilde": "NRK",
+   "lenke": "https://www.nrk.no/norge/pst_-endrer-forelopig-ikke-trusselbildet-i-norge-1.17971108"
+  },
   {
    "tittel": "Midtnytt",
    "kilde": "Trøndelag",
    "lenke": "https://www.nrk.no/video/DKTL98072726"
   },
   {
-   "tittel": "Petter Langlo (57) omkom i Sjoa",
+   "tittel": "Da «swatting» kom til Jæren",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/innlandet/petter-langlo-_57_-omkom-i-sjoa-1.17970963"
+   "lenke": "https://www.nrk.no/rogaland/xl/da__swatting_-kom-til-jaeren-1.17968771"
   },
   {
    "tittel": "Person plukket blomster i togsporet",
@@ -17,9 +27,9 @@
    "lenke": "https://www.nrk.no/trondelag/1.17970065"
   },
   {
-   "tittel": "Bryne-drakta skjuler ein spesiell detalj: – Ein stoltheit for spelarane",
+   "tittel": "Jordskjelv og tsunamivarsel i Japan",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/sport/haaland-feberen-folgjer-bryne-jentene__-nesten-ingen-gar-forbi-utan-a-rope-1.17969160"
+   "lenke": "https://www.nrk.no/nyheter/jordskjelv-og-tsunamivarsel-i-japan-1.17971038"
   },
   {
    "tittel": "Paal William (31) sliter med angst og depresjon - han er ikke alene",
@@ -27,9 +37,9 @@
    "lenke": "https://www.nrk.no/trondelag/okning-av-unge-som-oppsoker-fastlegen-om-psykiske-plager-ifolge-ny-studie-fra-folkehelseinstituttet-1.17959252"
   },
   {
-   "tittel": "Konrad nektes erstatning – har «feil» kreft",
+   "tittel": "Petter Langlo (57) omkom i Sjoa",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/rogaland/oljepioneren-konrad-far-ikke-kompensasjon-fra-nav-_-har-_feil_-kreft-1.17966455"
+   "lenke": "https://www.nrk.no/innlandet/petter-langlo-_57_-omkom-i-sjoa-1.17970963"
   },
   {
    "tittel": "Væpnet aksjon i Trondheim: – Jeg fikk sjokk og sprang unna",
@@ -37,9 +47,9 @@
    "lenke": "https://www.nrk.no/trondelag/vaepnet-aksjon-i-trondheim-_-mann-gikk-amok-i-butikk-1.17969019"
   },
   {
-   "tittel": "Innbrudd hos Elkjøp på Rudshøgda – frykter store verdier er stjålet",
+   "tittel": "Bryne-drakta skjuler ein spesiell detalj: – Ein stoltheit for spelarane",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/nyheter/innbrudd-hos-elkjop-pa-rudshogda-_-frykter-store-verdier-er-stjalet-1.17970826"
+   "lenke": "https://www.nrk.no/sport/haaland-feberen-folgjer-bryne-jentene__-nesten-ingen-gar-forbi-utan-a-rope-1.17969160"
   },
   {
    "tittel": "Var nær randen av kollaps – nå har noe skjedd",
@@ -47,9 +57,9 @@
    "lenke": "https://www.nrk.no/trondelag/trondersk-rap-har-vaert-naer-randen-av-kollaps-1.17934627"
   },
   {
-   "tittel": "Brann på skole i Arendal – driver etterslukking",
+   "tittel": "Konrad nektes erstatning – har «feil» kreft",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/sorlandet/roykutvikling-ved-skole-1.17970724"
+   "lenke": "https://www.nrk.no/rogaland/oljepioneren-konrad-far-ikke-kompensasjon-fra-nav-_-har-_feil_-kreft-1.17966455"
   },
   {
    "tittel": "Dyretragedie i Levanger: Hundrevis av griser brant inne",
@@ -57,9 +67,9 @@
    "lenke": "https://www.nrk.no/trondelag/dyretragedie-i-levanger_-hundrevis-av-griser-brant-inne-i-fjos-1.17968681"
   },
   {
-   "tittel": "Bjørnar fikk et halvt sekund på å avverge ulykke: – Der berget jeg nok et liv",
+   "tittel": "Innbrudd hos Elkjøp på Rudshøgda – frykter store verdier er stjålet",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/nordland/yrkessjafor-forhindret-frontulykke-pa-e6-i-nordland-1.17970494"
+   "lenke": "https://www.nrk.no/nyheter/innbrudd-hos-elkjop-pa-rudshogda-_-frykter-store-verdier-er-stjalet-1.17970826"
   },
   {
    "tittel": "Vurderer salg av tomtene rundt Lerkendal stadion – kan være verdt en milliard",
@@ -67,19 +77,9 @@
    "lenke": "https://www.nrk.no/trondelag/ledere-i-rosenborg-skal-ha-lagt-fram-planer-for-hvordan-man-kan-selge-unna-tomter-pa-lerkendal-1.17965031"
   },
   {
-   "tittel": "Skogbrannene i Frankrike: Over 160 pågrepet de siste tre ukene",
+   "tittel": "Brann på skole i Arendal: – Det er jo skremmende",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/nyheter/skogbrannene-i-frankrike_-over-160-pagrepet-de-siste-tre-ukene-1.17970699"
-  },
-  {
-   "tittel": "Midtnytt i samsending med Møre og Romsdal",
-   "kilde": "Trøndelag",
-   "lenke": "https://www.nrk.no/video/DKMR98072426"
-  },
-  {
-   "tittel": "Hudfletter Infantinos flybruk: – Det blir heilt feil",
-   "kilde": "NRK",
-   "lenke": "https://www.nrk.no/sport/reiste-96-000-kilometer-under-vm_-_-ingen-bryr-seg-1.17963347"
+   "lenke": "https://www.nrk.no/sorlandet/brann-pa-stinta-skole-i-arendal-1.17970724"
   }
  ]
 }
