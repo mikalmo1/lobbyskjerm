@@ -1,15 +1,25 @@
 {
- "oppdatert": "2026-07-30T15:30:53Z",
+ "oppdatert": "2026-07-30T17:08:07Z",
  "saker": [
+  {
+   "tittel": "7 kommuner utsatt i tilfellet krig- se Midtnytt",
+   "kilde": "Trøndelag",
+   "lenke": "https://www.nrk.no/video/DKTL98073026"
+  },
+  {
+   "tittel": "Norway Cup stopper alle kamper",
+   "kilde": "NRK",
+   "lenke": "https://www.nrk.no/stor-oslo/norway-cup-stopper-alle-kamper-1.17974303"
+  },
   {
    "tittel": "Uforløst KI-konsert",
    "kilde": "Trøndelag",
    "lenke": "https://www.nrk.no/artikkel/apningskonsert-olavsfest-2026-uforlost-ki-konsert-1523695"
   },
   {
-   "tittel": "Siktet etter Råde-ulykken: – Erkjenner ikke straffskyld",
+   "tittel": "Ber folk forlate Ekebergsletta",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/ostfold/siktet-etter-rade-ulykken_-erkjenner-ikke-straffskyld-1.17974236"
+   "lenke": "https://www.nrk.no/stor-oslo/ber-folk-forlate-ekebergsletta-1.17974159"
   },
   {
    "tittel": "Oppdal: Politiet har stengt NM i feltskyting",
@@ -17,9 +27,9 @@
    "lenke": "https://www.nrk.no/trondelag/1.17973850"
   },
   {
-   "tittel": "Uefa vil boikotte fotball-VM",
+   "tittel": "Siktet etter Råde-ulykken: – Erkjenner ikke straffskyld",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/sport/uefa-vil-boikotte-fotball-vm-1.17974171"
+   "lenke": "https://www.nrk.no/ostfold/siktet-etter-rade-ulykken_-erkjenner-ikke-straffskyld-1.17974236"
   },
   {
    "tittel": "Filmen «La fjella leve» møtt med stående applaus: – Handler om rettssikkerheten til oss alle",
@@ -27,9 +37,9 @@
    "lenke": "https://www.nrk.no/sapmi/norgespremiere-pa-_la-fjella-leve__-tarer-og-staende-applaus-1.17972001"
   },
   {
-   "tittel": "Vannproblemene var enda mer omfattende: Ett kumlokk var gjengrodd",
+   "tittel": "NFF bekrefter: Vil trekke seg fra fremtidige fotball-VM",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/buskerud/vannproblemene-i-krokstadelva-var-enda-mer-omfattende_-ett-kumlokk-var-gjengrodd-1.17973455"
+   "lenke": "https://www.nrk.no/sport/nff-bekrefter_-vil-trekke-seg-fra-fremtidige-fotball-vm-1.17974171"
   },
   {
    "tittel": "Victoria (20) har valgt et instrument få tør satse på",
@@ -37,9 +47,9 @@
    "lenke": "https://www.nrk.no/trondelag/victoria-_20_-har-valgt-et-instrument-fa-tor-satse-pa-1.17972931"
   },
   {
-   "tittel": "Kommunen om brannen i Krokstadelva: Problemer ved seks vannuttak",
+   "tittel": "Vannproblemene var enda mer omfattende: Ett kumlokk var gjengrodd",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/nyheter/kommunen-om-brannen-i-krokstadelva_-problemer-ved-seks-vannuttak-1.17974242"
+   "lenke": "https://www.nrk.no/buskerud/vannproblemene-i-krokstadelva-var-enda-mer-omfattende_-ett-kumlokk-var-gjengrodd-1.17973455"
   },
   {
    "tittel": "Én person er død – tre alvorlig skadet i trafikkulykke på Dovrefjell",
@@ -47,9 +57,9 @@
    "lenke": "https://www.nrk.no/innlandet/e6-ved-dovrefjell_-trafikkulykke-med-flere-biler-1.17972835"
   },
   {
-   "tittel": "Katastrofefantasier",
+   "tittel": "Kommunen om brannen i Krokstadelva: Problemer ved seks vannuttak",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/ytring/katastrofefantasier-1.17972549"
+   "lenke": "https://www.nrk.no/nyheter/kommunen-om-brannen-i-krokstadelva_-problemer-ved-seks-vannuttak-1.17974242"
   },
   {
    "tittel": "Midtnytt: Lite vann i trønderske vannmagasin – hva skjer med strømprisen?",
@@ -57,9 +67,9 @@
    "lenke": "https://www.nrk.no/video/DKTL98072926"
   },
   {
-   "tittel": "Nå har det rablet",
+   "tittel": "Katastrofefantasier",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/ytring/na-har-det-rablet-1.17972372"
+   "lenke": "https://www.nrk.no/ytring/katastrofefantasier-1.17972549"
   },
   {
    "tittel": "Johanne og Julia åpen om diagnosene: – Vil hjelpe andre barn",
@@ -67,19 +77,9 @@
    "lenke": "https://www.nrk.no/tromsogfinnmark/flere-barn-i-nord-norge-enn-sor-i-landet-far-autoimmune-sykdommer-som-diabetes-og-coliaki-1.17957699"
   },
   {
-   "tittel": "Trenerlegenden innrømmer VM-tabbe mot Norge: – Tapte i drikkepausen",
+   "tittel": "Nå har det rablet",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/sport/trenerlegenden-innrommer-vm-tabbe-mot-norge_-_-tapte-i-drikkepausen-1.17974069"
-  },
-  {
-   "tittel": "Kapteinen erkjenner straffskyld",
-   "kilde": "Trøndelag",
-   "lenke": "https://www.nrk.no/trondelag/kapteinen-erkjenner-straffskyld-for-grunnstotingen-i-trondheim-1.17971370"
-  },
-  {
-   "tittel": "UDI om siktede i Nærbø-saken: – Har lovlig opphold",
-   "kilde": "NRK",
-   "lenke": "https://www.nrk.no/rogaland/udi-om-siktede-i-naerbo-saken_-_-har-lovlig-opphold--1.17973993"
+   "lenke": "https://www.nrk.no/ytring/na-har-det-rablet-1.17972372"
   }
  ]
 }
