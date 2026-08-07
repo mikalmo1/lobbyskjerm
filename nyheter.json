@@ -1,15 +1,20 @@
 {
- "oppdatert": "2026-08-07T09:17:06Z",
+ "oppdatert": "2026-08-07T10:25:33Z",
  "saker": [
+  {
+   "tittel": "Bad om pengar til musikkvideo – no trekk D.D.E. søknadane",
+   "kilde": "Trøndelag",
+   "lenke": "https://www.nrk.no/trondelag/bad-om-pengar-til-musikkvideo-_-no-snur-d.d.e.-1.17982178"
+  },
   {
    "tittel": "Moser-gruppa med ny banebrytande forsking: Har funne «hjernens søkelys»",
    "kilde": "Trøndelag",
    "lenke": "https://www.nrk.no/trondelag/moser-gruppa-ved-kavli-instituttet-pa-ntnu-med-ny-banebrytande-forsking-som-blir-publisert-i-science-1.17980638"
   },
   {
-   "tittel": "NFF erklærer mistillit mot Infantino: – Vi vil be ham om å fratre",
+   "tittel": "Blatter-stikk etter presidentmelding: – Husker at han ville vi skulle spille med kortere shortser",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/sport/lise-klaveness-moter-pressen-etter-fifa-braket-_-kan-erklaere-mistillit-mot-infantino-1.17982047"
+   "lenke": "https://www.nrk.no/sport/blatter-stikk-etter-presidentmelding_-_-husker-at-han-ville-vi-skulle-spille-med-kortere-shortser-1.17982181"
   },
   {
    "tittel": "TNT rasar mot festival etter avlysing: – Aldri opplevd maken på 40 år",
@@ -17,9 +22,9 @@
    "lenke": "https://www.nrk.no/kultur/tnt-rasar-mot-festival-etter-avlysing_-_-aldri-opplevd-maken-pa-40-ar-1.17981087"
   },
   {
-   "tittel": "Kvinne truet med kniv på Jessheim",
+   "tittel": "Bilførar sikta etter dødsulykke i Molde",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/stor-oslo/kvinne-truet-med-kniv-pa-jessheim-1.17981981"
+   "lenke": "https://www.nrk.no/mr/bilforar-sikta-etter-dodsulykka-pa-julsundvegen-i-molde-1.17982072"
   },
   {
    "tittel": "Sivert (13) fekk NRK-ekspert til å måpe: – Eg er lettare sjokkert",
@@ -27,9 +32,9 @@
    "lenke": "https://www.nrk.no/sport/landsskyttarstemnet-pa-lesja-2026_-13-ar-gamle-sivert-harstad-sjokkerer-ola-lunde-1.17981360"
   },
   {
-   "tittel": "Apotek-trøbbel i hele landet – ingen får hente ut resept",
+   "tittel": "Apotekforeningen: Feilen hos apotekene er rettet",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/nyheter/apotek-trobbel-i-hele-landet-_-ingen-far-hente-ut-resept-1.17982033"
+   "lenke": "https://www.nrk.no/nyheter/apotekforeningen_-feilen-hos-apotekene-er-rettet-1.17982192"
   },
   {
    "tittel": "Tørrfisken velsignes - se Midtnytt",
@@ -37,9 +42,9 @@
    "lenke": "https://www.nrk.no/video/DKTL98080626"
   },
   {
-   "tittel": "Fredrik Solvang starter podkast – skal hete «Duellen»",
+   "tittel": "Ammoniakklekkasjen i Skien: Nå får hotellgjestene komme tilbake",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/nyheter/fredrik-solvang-starter-podkast-_-skal-hete-_duellen_-1.17981935"
+   "lenke": "https://www.nrk.no/vestfoldogtelemark/hotell-fritidsparken-i-normal-drift-etter-ammoniakklekkasje-ved-skien-fritidspark-1.17981932"
   },
   {
    "tittel": "Trafikkulykke på E6: – En av bilene er på taket",
@@ -47,9 +52,9 @@
    "lenke": "https://www.nrk.no/trondelag/trafikkulykke-pa-e6-i-melhus-med-to-biler-involvert_-_-den-ene-bilen-er-pa-taket-1.17981141"
   },
   {
-   "tittel": "Fylkesordfører trekker seg etter hemmelig forhold: – Vi fikk ikke korrekt informasjon",
+   "tittel": "Avinor om det skeive flyplasstårnet i Rana: – Dette er ei feil-levering",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/vestfoldogtelemark/sven-tore-lokslid-trekker-seg-1.17981903"
+   "lenke": "https://www.nrk.no/nordland/avinor-om-det-skeive-flyplasstarnet-i-rana_-_-dette-er-ei-feillevering-1.17981101"
   },
   {
    "tittel": "Refser RBK-ledelsen etter møteinnkalling: – Bruker dokumenter de ikke eier",
@@ -57,9 +62,9 @@
    "lenke": "https://www.nrk.no/trondelag/refser-rbk-ledelsen-etter-moteinnkalling-1.17980187"
   },
   {
-   "tittel": "Studiestart: Trang økonomi gjør at Milla (26) bor hjemme",
+   "tittel": "NFF erklærer mistillit mot Infantino: – Han må gå av nå",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/norge/studiestart_-trang-okonomi-gjor-at-milla-_26_-bor-hjemme-1.17978293"
+   "lenke": "https://www.nrk.no/sport/lise-klaveness-moter-pressen-etter-fifa-braket-_-kan-erklaere-mistillit-mot-infantino-1.17982047"
   },
   {
    "tittel": "Lastebil velta – førar redda ut gjennom vindauge",
@@ -67,19 +72,9 @@
    "lenke": "https://www.nrk.no/trondelag/lastebil-velta-i-trondheim-_-forar-redda-ut-gjennom-vindauge-1.17980561"
   },
   {
-   "tittel": "Listhaug ut mot Søreide: – Uansvarlig",
+   "tittel": "Kvinne truet med kniv på Jessheim",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/norge/knallhardt-oppgjor-mellom-frp-og-hoyre_-_-lappeteppe-av-krisepakker-1.17981786"
-  },
-  {
-   "tittel": "Hevder å ha blitt slått med jernstang etter masseslagsmål",
-   "kilde": "Trøndelag",
-   "lenke": "https://www.nrk.no/trondelag/to-store-slagsmal-i-trondheim-1.17980378"
-  },
-  {
-   "tittel": "Slik skal Oslo gjøre disse grønnere – advarer om høyere boligpriser",
-   "kilde": "NRK",
-   "lenke": "https://www.nrk.no/stor-oslo/slik-vil-byradet-gjore-byggeplassene-gronne-_-flere-er-kritiske-1.17981423"
+   "lenke": "https://www.nrk.no/stor-oslo/kvinne-truet-med-kniv-pa-jessheim-1.17981981"
   }
  ]
 }
