@@ -1,5 +1,5 @@
 {
- "oppdatert": "2026-08-07T11:22:14Z",
+ "oppdatert": "2026-08-07T12:08:31Z",
  "saker": [
   {
    "tittel": "Bad om pengar til musikkvideo – no trekk D.D.E. søknadane",
@@ -7,9 +7,9 @@
    "lenke": "https://www.nrk.no/trondelag/bad-om-pengar-til-musikkvideo-_-no-snur-d.d.e.-1.17982178"
   },
   {
-   "tittel": "Regjeringen med ny kraft-pakke: Vil halvere tidsbruken",
+   "tittel": "Mistet alt i krigen: Nå skal han ta bachelor og master samtidig",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/nordland/regjeringen-tar-store-grep-for-raskere-utbygging-av-kraft-og-stromnett-1.17982228"
+   "lenke": "https://www.nrk.no/innlandet/rekordmange-ukrainere-soker-utdanning-i-norge-etter-krigens-femte-ar-1.17980895"
   },
   {
    "tittel": "Moser-gruppa med ny banebrytande forsking: Har funne «hjernens søkelys»",
@@ -17,9 +17,9 @@
    "lenke": "https://www.nrk.no/trondelag/moser-gruppa-ved-kavli-instituttet-pa-ntnu-med-ny-banebrytande-forsking-som-blir-publisert-i-science-1.17980638"
   },
   {
-   "tittel": "Maren Sømme (30) begraves",
+   "tittel": "Støre om drivstoffprisene: – Vedtaket står",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/rogaland/maren-somme-_30_-begraves-i-tjensvoll-kapell-i-stavanger-1.17980964"
+   "lenke": "https://www.nrk.no/nyheter/store-om-drivstoffprisene_-_-vedtaket-star-1.17982415"
   },
   {
    "tittel": "TNT rasar mot festival etter avlysing: – Aldri opplevd maken på 40 år",
@@ -27,9 +27,9 @@
    "lenke": "https://www.nrk.no/kultur/tnt-rasar-mot-festival-etter-avlysing_-_-aldri-opplevd-maken-pa-40-ar-1.17981087"
   },
   {
-   "tittel": "Gruveselskap ber om millionhjelp – går tom for pengar om ein månad",
+   "tittel": "Apotekforeningen: – Tar lenger tid enn først ventet",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/vestland/nordic-mining-i-pengenod-1.17982183"
+   "lenke": "https://www.nrk.no/nyheter/apotekforeningen_-_-tar-lenger-tid-enn-forst-ventet-1.17982377"
   },
   {
    "tittel": "Sivert (13) fekk NRK-ekspert til å måpe: – Eg er lettare sjokkert",
@@ -37,14 +37,19 @@
    "lenke": "https://www.nrk.no/sport/landsskyttarstemnet-pa-lesja-2026_-13-ar-gamle-sivert-harstad-sjokkerer-ola-lunde-1.17981360"
   },
   {
+   "tittel": "Regjeringen med ny kraft-pakke: Vil halvere tidsbruken",
+   "kilde": "NRK",
+   "lenke": "https://www.nrk.no/nordland/regjeringen-tar-store-grep-for-raskere-utbygging-av-kraft-og-stromnett-1.17982228"
+  },
+  {
    "tittel": "Tørrfisken velsignes - se Midtnytt",
    "kilde": "Trøndelag",
    "lenke": "https://www.nrk.no/video/DKTL98080626"
   },
   {
-   "tittel": "Blatter-stikk etter presidentmelding: – Husker at han ville vi skulle spille med kortere shortser",
+   "tittel": "Maren Sømme (30) begravet: – Vi er alle i sjokk",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/sport/blatter-stikk-etter-presidentmelding_-_-husker-at-han-ville-vi-skulle-spille-med-kortere-shortser-1.17982181"
+   "lenke": "https://www.nrk.no/rogaland/maren-somme-_30_-begraves-i-tjensvoll-kapell-i-stavanger-1.17980964"
   },
   {
    "tittel": "Trafikkulykke på E6: – En av bilene er på taket",
@@ -52,9 +57,9 @@
    "lenke": "https://www.nrk.no/trondelag/trafikkulykke-pa-e6-i-melhus-med-to-biler-involvert_-_-den-ene-bilen-er-pa-taket-1.17981141"
   },
   {
-   "tittel": "Bilførar sikta etter dødsulykke i Molde",
+   "tittel": "Gruveselskap ber om millionhjelp – går tom for pengar om ein månad",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/mr/bilforar-sikta-etter-dodsulykka-pa-julsundvegen-i-molde-1.17982072"
+   "lenke": "https://www.nrk.no/vestland/nordic-mining-i-pengenod-1.17982183"
   },
   {
    "tittel": "Refser RBK-ledelsen etter møteinnkalling: – Bruker dokumenter de ikke eier",
@@ -62,19 +67,14 @@
    "lenke": "https://www.nrk.no/trondelag/refser-rbk-ledelsen-etter-moteinnkalling-1.17980187"
   },
   {
-   "tittel": "Apotekforeningen: Feilen hos apotekene er rettet",
-   "kilde": "NRK",
-   "lenke": "https://www.nrk.no/nyheter/apotekforeningen_-feilen-hos-apotekene-er-rettet-1.17982192"
-  },
-  {
    "tittel": "Lastebil velta – førar redda ut gjennom vindauge",
    "kilde": "Trøndelag",
    "lenke": "https://www.nrk.no/trondelag/lastebil-velta-i-trondheim-_-forar-redda-ut-gjennom-vindauge-1.17980561"
   },
   {
-   "tittel": "Ammoniakklekkasjen i Skien: Nå får hotellgjestene komme tilbake",
+   "tittel": "Blatter-stikk etter presidentmelding: – Husker at han ville vi skulle spille med kortere shortser",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/vestfoldogtelemark/hotell-fritidsparken-i-normal-drift-etter-ammoniakklekkasje-ved-skien-fritidspark-1.17981932"
+   "lenke": "https://www.nrk.no/sport/blatter-stikk-etter-presidentmelding_-_-husker-at-han-ville-vi-skulle-spille-med-kortere-shortser-1.17982181"
   }
  ]
 }
