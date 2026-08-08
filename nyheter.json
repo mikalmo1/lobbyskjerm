@@ -1,15 +1,20 @@
 {
- "oppdatert": "2026-08-08T09:48:28Z",
+ "oppdatert": "2026-08-08T10:32:31Z",
  "saker": [
+  {
+   "tittel": "Flere skadd i bussvelt i Namsskogan",
+   "kilde": "Trøndelag",
+   "lenke": "https://www.nrk.no/trondelag/flere-skal-vaere-skadd-i-bussvelt-i-namsskogan-1.17983034"
+  },
+  {
+   "tittel": "Ønsker seg nytt andlet før skulestart",
+   "kilde": "NRK",
+   "lenke": "https://www.nrk.no/vestland/xl/onsker-seg-nytt-andlet-for-skulestart-1.17957655"
+  },
   {
    "tittel": "Kan «The Odyssey» og vikingfeber blåse vind i segla til eit gamalt yrke?",
    "kilde": "Trøndelag",
    "lenke": "https://www.nrk.no/trondelag/seglmakaren-pa-joa-skal-pensjonere-seg-_-hapar-storfilmen-kan-bidra-til-auka-interesse-1.17972337"
-  },
-  {
-   "tittel": "Si det likevel",
-   "kilde": "NRK",
-   "lenke": "https://www.nrk.no/ytring/si-det-likevel-1.17974083"
   },
   {
    "tittel": "Bad om pengar til musikkvideo – no trekk D.D.E. søknadane",
@@ -17,9 +22,9 @@
    "lenke": "https://www.nrk.no/trondelag/bad-om-pengar-til-musikkvideo-_-no-snur-d.d.e.-1.17982178"
   },
   {
-   "tittel": "Sigrid deler gigantscene med Ed Sheeran: – Tidenes sommerjobb!",
+   "tittel": "Bussulykke i Namsskogan",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/mr/sigrid-solbakk-raabe-fra-alesund-varmer-opp-for-ed-sheeran-i-usa_-_-tidenes-sommerjobb-1.17980924"
+   "lenke": "https://www.nrk.no/trondelag/bussulykke-i-namsskogan-1.17983016"
   },
   {
    "tittel": "Moser med ny oppdagelse - se Midtnytt",
@@ -27,9 +32,9 @@
    "lenke": "https://www.nrk.no/video/DKTL98080726"
   },
   {
-   "tittel": "Tre menn siktet for grov kroppsskade i Fredrikstad",
+   "tittel": "Buss har kjørt av E6 og veltet i Namsskogan – flere skal være skadet, ifølge politiet",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/ostfold/tre-menn-siktet-for-grov-kroppsskade-i-fredrikstad-1.17983013"
+   "lenke": "https://www.nrk.no/nyheter/buss-har-kjort-av-e6-og-veltet-i-namsskogan-_-flere-skal-vaere-skadet_-ifolge-politiet-1.17982997"
   },
   {
    "tittel": "Moser-gruppa med ny banebrytande forsking: Har funne «hjernens søkelys»",
@@ -37,9 +42,9 @@
    "lenke": "https://www.nrk.no/trondelag/moser-gruppa-ved-kavli-instituttet-pa-ntnu-med-ny-banebrytande-forsking-som-blir-publisert-i-science-1.17980638"
   },
   {
-   "tittel": "Senatet godkjenner Todd Blanche som USAs nye justisminister",
+   "tittel": "Si det likevel",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/nyheter/senatet-godkjenner-todd-blanche-som-usas-nye-justisminister-1.17982995"
+   "lenke": "https://www.nrk.no/ytring/si-det-likevel-1.17974083"
   },
   {
    "tittel": "TNT rasar mot festival etter avlysing: – Aldri opplevd maken på 40 år",
@@ -47,9 +52,9 @@
    "lenke": "https://www.nrk.no/kultur/tnt-rasar-mot-festival-etter-avlysing_-_-aldri-opplevd-maken-pa-40-ar-1.17981087"
   },
   {
-   "tittel": "Voldshendelsen i Fredrikstad: Tre personer siktet for grov kroppsskade",
+   "tittel": "Sigrid deler gigantscene med Ed Sheeran: – Tidenes sommerjobb!",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/nyheter/voldshendelsen-i-fredrikstad_-tre-personer-siktet-for-grov-kroppsskade-1.17982968"
+   "lenke": "https://www.nrk.no/mr/sigrid-solbakk-raabe-fra-alesund-varmer-opp-for-ed-sheeran-i-usa_-_-tidenes-sommerjobb-1.17980924"
   },
   {
    "tittel": "Sivert (13) fekk NRK-ekspert til å måpe: – Eg er lettare sjokkert",
@@ -57,9 +62,9 @@
    "lenke": "https://www.nrk.no/sport/landsskyttarstemnet-pa-lesja-2026_-13-ar-gamle-sivert-harstad-sjokkerer-ola-lunde-1.17981360"
   },
   {
-   "tittel": "Silje (21) kan ikke drikke alkohol lenger",
+   "tittel": "Tre menn siktet for grov kroppsskade i Fredrikstad",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/vestfoldogtelemark/silje-_21_-kan-ikke-drikke-alkohol-lenger-1.17944581"
+   "lenke": "https://www.nrk.no/ostfold/tre-menn-siktet-for-grov-kroppsskade-i-fredrikstad-1.17983013"
   },
   {
    "tittel": "Tørrfisken velsignes - se Midtnytt",
@@ -67,19 +72,9 @@
    "lenke": "https://www.nrk.no/video/DKTL98080626"
   },
   {
-   "tittel": "Hunter Biden: Farens benådning «ikke bra» for ettermælet",
+   "tittel": "Senatet godkjenner Todd Blanche som USAs nye justisminister",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/nyheter/hunter-biden_-farens-benadning__ikke-bra_-for-ettermaelet-1.17982901"
-  },
-  {
-   "tittel": "Trafikkulykke på E6: – En av bilene er på taket",
-   "kilde": "Trøndelag",
-   "lenke": "https://www.nrk.no/trondelag/trafikkulykke-pa-e6-i-melhus-med-to-biler-involvert_-_-den-ene-bilen-er-pa-taket-1.17981141"
-  },
-  {
-   "tittel": "Iuel fryktar dei tre viktigaste døgna i karrieren: – Blir sliten av tanken",
-   "kilde": "NRK",
-   "lenke": "https://www.nrk.no/sport/friidretts-em_-amalie-iuels-tre-viktigaste-dogn_-_-blir-sliten-av-tanken-1.17979397"
+   "lenke": "https://www.nrk.no/nyheter/senatet-godkjenner-todd-blanche-som-usas-nye-justisminister-1.17982995"
   }
  ]
 }
