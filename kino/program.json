@@ -45,7 +45,7 @@
      "spilletid": 110,
      "undertekst": "2D Original tale Norsk tekst",
      "pris": 130,
-     "billettlenke": null,
+     "billettlenke": "https://kinologg.kino.no/nettsalg/47986",
      "avlyst": false,
      "avlyst_grunn": null
     }
@@ -152,5 +152,5 @@
    "48223": "2026-09-02_48223_7.jpg"
   }
  },
- "oppdatert": "2026-08-10T13:42"
+ "oppdatert": "2026-08-10T13:45"
 }
