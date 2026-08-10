@@ -1,15 +1,25 @@
 {
- "oppdatert": "2026-08-10T03:54:26Z",
+ "oppdatert": "2026-08-10T05:26:22Z",
  "saker": [
+  {
+   "tittel": "Dette skjedde da unge folk spiste mye proteiner til frokost",
+   "kilde": "Trøndelag",
+   "lenke": "https://www.nrk.no/trondelag/unge-som-spiste-frokost-rik-pa-proteiner_-reduserte-inntaket-av-fett-og-sukker-om-dagen-1.17966852"
+  },
+  {
+   "tittel": "MDG krev omkamp om noregspris – vil kutte 10 milliardar",
+   "kilde": "NRK",
+   "lenke": "https://www.nrk.no/norge/vil-ha-omkamp-om-noregspris_-_-ute-av-kontroll-1.17982541"
+  },
   {
    "tittel": "Ny Rosenborg-seier etter sjansedrama",
    "kilde": "Trøndelag",
    "lenke": "https://www.nrk.no/sport/ny-rosenborg-seier-etter-sjansedrama-1.17983792"
   },
   {
-   "tittel": "Ingebrigtsen innrømmer svakhet før comebacket: – Må fremdeles ha is i magen",
+   "tittel": "Høgre med frieri til Vedum: – Gjer alvor av orda",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/sport/friidretts-em_-jakob-asserson-ingebrigtsen-innrommer-svakhet-for-em-comebacket-1.17983981"
+   "lenke": "https://www.nrk.no/norge/hogre-med-frieri-til-vedum_-_-gjer-alvor-av-orda-1.17983410"
   },
   {
    "tittel": "To til sykehus etter elgpåkjørsel på E6 – store materielle skader",
@@ -17,19 +27,14 @@
    "lenke": "https://www.nrk.no/trondelag/to-til-sykehus-etter-elgpakjorsel-_-store-skader-pa-bilen-1.17983781"
   },
   {
-   "tittel": "Tordner mot bildene: – Fotballgleden har forsvunnet",
-   "kilde": "NRK",
-   "lenke": "https://www.nrk.no/sport/eirik-hestad-tordner-mot-bildene_-_-fotballgleden-har-forsvunnet-1.17984038"
-  },
-  {
    "tittel": "Utleigaren kravde 6000 kroner da Karianne flytta ut: – Heilt sinnssjukt",
    "kilde": "Trøndelag",
    "lenke": "https://www.nrk.no/trondelag/kraftig-auke-i-saker-som-blir-klaga-til-htu_-utleigaren-kravde-6000-kroner-da-karianne-flytta-ut-1.17970238"
   },
   {
-   "tittel": "Molde-smell i lokaloppgjør – mareritt for keeperdebutant",
+   "tittel": "Ingebrigtsen innrømmer svakhet før comebacket: – Må fremdeles ha is i magen",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/sport/molde-smell-i-lokaloppgjor-_-mareritt-for-keeperdebutant-1.17983984"
+   "lenke": "https://www.nrk.no/sport/friidretts-em_-jakob-asserson-ingebrigtsen-innrommer-svakhet-for-em-comebacket-1.17983981"
   },
   {
    "tittel": "Fant savna bærplukker i god behold",
@@ -37,9 +42,9 @@
    "lenke": "https://www.nrk.no/trondelag/soker-etter-savnet-mann-i-lierne--1.17983314"
   },
   {
-   "tittel": "Rekdal forbannet etter ny uavgjort: – Jeg er dritt lei",
+   "tittel": "Tordner mot bildene: – Fotballgleden har forsvunnet",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/innlandet/kjetil-rekdal-forbannet-etter-ny-uavgjort-for-aalesund_-_-jeg-er-dritt-lei-1.17983802"
+   "lenke": "https://www.nrk.no/sport/eirik-hestad-tordner-mot-bildene_-_-fotballgleden-har-forsvunnet-1.17984038"
   },
   {
    "tittel": "Flere skadd i bussvelt i Namsskogan – frivillige slo seg inn i bussen med hammer",
@@ -47,9 +52,9 @@
    "lenke": "https://www.nrk.no/trondelag/flere-skal-vaere-skadd-i-bussvelt-i-namsskogan-1.17983034"
   },
   {
-   "tittel": "Nekter Joachim å dykke ved ulykker: – For risikabelt",
+   "tittel": "Molde-smell i lokaloppgjør – mareritt for keeperdebutant",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/ostfold/nekter-brannfolk-a-dykke-ved-ulykker_-_-for-risikabelt-1.17980053"
+   "lenke": "https://www.nrk.no/sport/molde-smell-i-lokaloppgjor-_-mareritt-for-keeperdebutant-1.17983984"
   },
   {
    "tittel": "Kan «The Odyssey» og vikingfeber blåse vind i segla til eit gamalt yrke?",
@@ -57,9 +62,9 @@
    "lenke": "https://www.nrk.no/trondelag/seglmakaren-pa-joa-skal-pensjonere-seg-_-hapar-storfilmen-kan-bidra-til-auka-interesse-1.17972337"
   },
   {
-   "tittel": "Mistenkelig dødsfall i Haugesund",
+   "tittel": "Rekdal forbannet etter ny uavgjort: – Jeg er dritt lei",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/nyheter/mistenkelig-dodsfall-i-haugesund-1.17983890"
+   "lenke": "https://www.nrk.no/innlandet/kjetil-rekdal-forbannet-etter-ny-uavgjort-for-aalesund_-_-jeg-er-dritt-lei-1.17983802"
   },
   {
    "tittel": "Bad om pengar til musikkvideo – no trekk D.D.E. søknadane",
@@ -67,19 +72,9 @@
    "lenke": "https://www.nrk.no/trondelag/bad-om-pengar-til-musikkvideo-_-no-snur-d.d.e.-1.17982178"
   },
   {
-   "tittel": "To pågrepet etter skyting i Danmark – tre såret",
+   "tittel": "Nekter Joachim å dykke ved ulykker: – For risikabelt",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/nyheter/to-pagrepet-etter-skyting-i-danmark-_-tre-saret-1.17983860"
-  },
-  {
-   "tittel": "Moser med ny oppdagelse - se Midtnytt",
-   "kilde": "Trøndelag",
-   "lenke": "https://www.nrk.no/video/DKTL98080726"
-  },
-  {
-   "tittel": "Avslører sykdomstrøbbel til NRK: – Setter andre ting på vent",
-   "kilde": "NRK",
-   "lenke": "https://www.nrk.no/sport/avslorer-sykdomstrobbel-til-nrk_-_-setter-andre-ting-pa-vent-1.17983821"
+   "lenke": "https://www.nrk.no/ostfold/nekter-brannfolk-a-dykke-ved-ulykker_-_-for-risikabelt-1.17980053"
   }
  ]
 }
