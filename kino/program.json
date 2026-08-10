@@ -14,7 +14,7 @@
      "spilletid": 88,
      "undertekst": "2D Norsk tale Norsk tekst",
      "pris": 110,
-     "billettlenke": null,
+     "billettlenke": "https://kinologg.kino.no/nettsalg/48107",
      "avlyst": false,
      "avlyst_grunn": null
     },
@@ -152,5 +152,5 @@
    "48223": "2026-09-02_48223_7.jpg"
   }
  },
- "oppdatert": "2026-07-08T11:19"
+ "oppdatert": "2026-08-10T13:41"
 }
