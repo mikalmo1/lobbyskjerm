@@ -1,5 +1,5 @@
 {
- "oppdatert": "2026-08-12T15:41:31Z",
+ "oppdatert": "2026-08-12T16:37:12Z",
  "saker": [
   {
    "tittel": "Blandet feil kjemikalier i badeland – 68 personer evakuert",
@@ -7,9 +7,9 @@
    "lenke": "https://www.nrk.no/trondelag/dampsaga-bad-evakuert-etter-feil-blanding-av-kjemikalier-1.17987566"
   },
   {
-   "tittel": "110.000 unge står uten jobb: – Jeg synes det haster",
+   "tittel": "Voldshendelse på Lindeberg i Oslo",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/ostfold/110.000-ungdom-star-utenfor-arbeidslivet_-politikere-er-uenige-om-veien-videre-1.17987624"
+   "lenke": "https://www.nrk.no/stor-oslo/voldshendelse-pa-lindeberg-i-oslo-1.17987931"
   },
   {
    "tittel": "Knivstakk mann i Trondheim – nå er han tiltalt for drapsforsøk",
@@ -17,9 +17,9 @@
    "lenke": "https://www.nrk.no/trondelag/knivstakk-mann-i-trondheim-_-na-er-han-tiltalt-for-drapsforsok-1.17986541"
   },
   {
-   "tittel": "– Jeg ser dem mer enn familien min",
+   "tittel": "Tok EM-sølv i «muskelsport» på soya og tofu – ekspert åtvarar",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/norge/ungdoms-ledere-ute-i-debatt-arendalsuka-1.17987718"
+   "lenke": "https://www.nrk.no/friidrettsem/em-i-friidrett_-veganske-merlin-hummel-vann-em-solv-i-slegge-1.17986888"
   },
   {
    "tittel": "Midtnytt: Det gjøres klart for krepsefiske🦐",
@@ -27,9 +27,9 @@
    "lenke": "https://www.nrk.no/video/DKTL98081126"
   },
   {
-   "tittel": "Nye båter skal stanse smuglerne: – Det er ingen vits i å prøve å stikke av",
+   "tittel": "Nye regler i Eurovision",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/sorlandet/tolletatens-nye-supervapen-mot-narkotikasmugling-1.17986011"
+   "lenke": "https://www.nrk.no/nyheter/nye-regler-i-eurovision-1.17987884"
   },
   {
    "tittel": "Må legge ned etter 25 år: – Nå er det slutt på hesten",
@@ -37,9 +37,9 @@
    "lenke": "https://www.nrk.no/trondelag/fa-fodsler-og-dyrtid-kan-fa-store-konsekvenser-for-hestesporten-1.17939972"
   },
   {
-   "tittel": "Dødsfallet i Salangen: Dropper siktelse mot kvinne",
+   "tittel": "110.000 unge står uten jobb: – Jeg synes det haster",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/tromsogfinnmark/dodsfallet-i-salangen_-dropper-siktelse-mot-kvinne-1.17987085"
+   "lenke": "https://www.nrk.no/ostfold/110.000-ungdom-star-utenfor-arbeidslivet_-politikere-er-uenige-om-veien-videre-1.17987624"
   },
   {
    "tittel": "Leteaksjon etter mann i Trondheim",
@@ -47,14 +47,19 @@
    "lenke": "https://www.nrk.no/trondelag/leteaksjon-etter-mann-i-60-arene-i-trondheim-1.17985841"
   },
   {
+   "tittel": "– Jeg ser dem mer enn familien min",
+   "kilde": "NRK",
+   "lenke": "https://www.nrk.no/norge/ungdoms-ledere-ute-i-debatt-arendalsuka-1.17987718"
+  },
+  {
    "tittel": "RBK overrasker: – Nå har de ingenting å frykte",
    "kilde": "Trøndelag",
    "lenke": "https://www.nrk.no/trondelag/freyr-alexandersson-overrasker-med-et-helt-nytt-rbk_-_-na-har-de-ingenting-a-frykte_-sier-ekspert-1.17985116"
   },
   {
-   "tittel": "Matpris-uro i USA: – Mange lever heilt på kanten no",
+   "tittel": "Nye båter skal stanse smuglerne: – Det er ingen vits i å prøve å stikke av",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/urix/matpris-uro-i-usa_-_-mange-lever-heilt-pa-kanten-no-1.17984061"
+   "lenke": "https://www.nrk.no/sorlandet/tolletatens-nye-supervapen-mot-narkotikasmugling-1.17986011"
   },
   {
    "tittel": "Dette skjedde da unge folk spiste mye proteiner til frokost",
@@ -62,14 +67,14 @@
    "lenke": "https://www.nrk.no/trondelag/unge-som-spiste-frokost-rik-pa-proteiner_-reduserte-inntaket-av-fett-og-sukker-om-dagen-1.17966852"
   },
   {
+   "tittel": "Dødsfallet i Salangen: Dropper siktelse mot kvinne",
+   "kilde": "NRK",
+   "lenke": "https://www.nrk.no/tromsogfinnmark/dodsfallet-i-salangen_-dropper-siktelse-mot-kvinne-1.17987085"
+  },
+  {
    "tittel": "Midtnytt på mandag",
    "kilde": "Trøndelag",
    "lenke": "https://www.nrk.no/video/DKTL98081026"
-  },
-  {
-   "tittel": "Colombia: Daniela reddet ut i live",
-   "kilde": "NRK",
-   "lenke": "https://www.nrk.no/urix/colombia_-daniela-reddet-ut-i-live-etter-36-timer-i-ruinene-1.17987144"
   }
  ]
 }
