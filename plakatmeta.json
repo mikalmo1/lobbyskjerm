@@ -1,13 +1,14 @@
 {
- "oppdatert": "2026-08-12T10:08:24Z",
+ "oppdatert": "2026-08-12T10:09:22Z",
  "plakater": {
   "MOT_Hei_Animasjon_Norsk.mp4": {
-   "tittel": "MOT Hei Animasjon Norsk",
-   "avsender": "Selbu kommune",
    "video": true,
    "varighet": 18,
-   "spillemodus": "runde",
-   "innslag_min": 30
+   "tittel": "MOT Hei Animasjon Norsk",
+   "avsender": "Selbu kommune",
+   "fra": "2026-08-12",
+   "til": "2026-09-01",
+   "spillemodus": "runde"
   }
  }
 }
