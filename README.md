@@ -43,7 +43,7 @@ Innholdet henter seg selv:
   av seg selv – fila trenger ikke ryddes for at skjermen skal bli riktig.
 - Maks 3 beskjeder vises (viktige først). Skjermen sjekker fila hvert 5. minutt.
 
-## Plakater fra Knuten (`plakatmeta.json`)
+## Plakater og filmer fra Knuten (`plakatmeta.json`)
 
 Plakater lastet opp via Knuten (Infoskjerm → Plakater) ligger som vanlige filer i
 `plakater/`-mappa, men har i tillegg en oppføring i `plakatmeta.json` (nøklet på
@@ -58,10 +58,33 @@ valgfri visningsperiode `fra`/`til` (`til` gjelder ut dagen):
    "avsender": "Selbu kommune",
    "fra": "2026-07-01",
    "til": "2026-08-01"
+  },
+  "Ungdomsskolen-sin-film.mp4": {
+   "tittel": "Ungdomsskolen sin film",
+   "avsender": "Selbu ungdomsskole",
+   "video": true,
+   "varighet": 214,
+   "spillemodus": "innslag",
+   "innslag_min": 30,
+   "til": "2026-09-30"
   }
  }
 }
 ```
+
+**Filmer** lastes opp samme sted i Knuten, men selve fila blir en
+**release-asset** på tag-en `infoskjerm` (contents-API-et takler ikke store
+filer) — metadataen ligger likevel i `plakatmeta.json`, nøklet på asset-navnet.
+Knuten re-enkoder alt som lastes opp til H.264/MP4, maks 1920×1080, 30 fps og
+**uten lydspor** (skjermen har ingen høyttalere).
+
+- `spillemodus: "runde"` – filmen spilles ferdig hver gang rotasjonen kommer til
+  den, som en vanlig slide.
+- `spillemodus: "innslag"` – filmen holdes **utenfor** rotasjonen og spilles i
+  stedet hvert `innslag_min`. minutt. Bruk denne for alt som varer mer enn et
+  halvminutt; ellers stopper skjermen opp på filmen hver eneste runde.
+- `varighet` (sekunder) er bare et sikkerhetsnett hvis nettleseren aldri melder
+  fra at avspillingen er ferdig.
 
 Filer med metadata får kategori **plakat** i visningsstyringen. Filer uten
 metadata (manuell git-push, kino-publiseringen) følger filnavn-konvensjonen
@@ -95,8 +118,8 @@ Styrer hva som vises og hvor lenge hver slide står, i to regimer:
   én runde gjennom lista — hvert `innslag_min`. minutt (30 = to ganger i timen).
 
 - `innhold`-nøklene er `kultursal` (arrangementer), `kino` (kinoplakater/loop-video),
-  `plakat` (opplastede plakater fra Knuten) og `dashboard` («Selbu i dag» med
-  vær/buss/beskjeder).
+  `plakat` (opplastede plakater OG filmer fra Knuten) og `dashboard` («Selbu i dag»
+  med vær/buss/beskjeder).
 - Skjermen sjekker regimet hvert minutt og bytter innhold umiddelbart ved
   overgangene (kl.-slettene, ny dag, ferie-start/-slutt).
 - Mangler fila (eller en nøkkel), vises alt med 12 s per slide — skjermen blir
@@ -160,7 +183,9 @@ men rydd gjerne i mappa av og til likevel.
 
 ### Video
 
-- mp4/webm støttes; spilles av uten lyd (skjermen står i et venterom).
+- mp4/webm støttes; spilles av uten lyd (skjermen står i et venterom). Filmer
+  fra skole/lag legges normalt inn via Knuten (Infoskjerm → Plakater) — se
+  «Plakater og filmer fra Knuten» over. Det som følger her er den manuelle veien.
 - Siden henter video fra to steder: `plakater/`-mappa (git — hold filer her under
   ~50 MB) og **release-en med tag `infoskjerm`** (assets, tåler store filer —
   det er dit Knutens publiser-knapp legger loop-videoene, komprimert til ~85 MB

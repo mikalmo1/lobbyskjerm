@@ -19,6 +19,12 @@
                                  plakatmeta.json (lastes opp via Knuten):
                                  tittel/avsender/fullskjerm/periode fra metadataen,
                                  kategori «plakat» i visningsstyringen
+    · Filmer (skole, lag o.l.) – release-assets MED oppføring i plakatmeta.json.
+                                 Samme kategori «plakat». Alltid full-bleed og
+                                 stum (skjermen har ingen lyd). «spillemodus»:
+                                   runde   = spilles ferdig i vanlig rotasjon
+                                   innslag = holdes UTENFOR rotasjonen og spilles
+                                             hvert «innslag_min». minutt
     · «Selbu i dag»-slide      – dashboard med fire felt:
         · Været i Selbu        – api.met.no (Yr); også kompakt chip i bunnlinja
         · Neste buss           – Entur JourneyPlanner v3 (åpent GraphQL-API) fra
@@ -494,7 +500,7 @@ var KULTURSAL_API = "https://www.taletkultursal.no/wp-json/tribe/events/v1/event
 var VAER_LAT = 63.2175, VAER_LON = 11.0333;   // Mebonden/Selbu
 var VAER_IKON = "https://raw.githubusercontent.com/metno/weathericons/main/weather/svg/";
 var SEKUNDER_PER_SLIDE = 12;
-var MAKS_VIDEO_SEKUNDER = 600;        // sikkerhetsnett om 'ended' aldri kommer
+var MAKS_VIDEO_SEKUNDER = 900;        // sikkerhetsnett om 'ended' aldri kommer
 var MINUTTER_MELLOM_OPPDATERING = 30;
 var RELOAD_TIME = 4;                  // full omstart av siden kl. 04
 var NYHETER_FIL = "nyheter.json";     // same-origin, lages av GitHub Action
@@ -612,22 +618,28 @@ function _tilSlide(navn, url){
   };
 }
 
-/* Plakater lastet opp via Knuten har metadata i plakatmeta.json (tittel, avsender,
-   fullskjerm, visningsperiode) og egen kategori «plakat» i visningsstyringen.
-   Filer UTEN metadata (manuell git-push, kino-publisering) følger filnavn-
-   konvensjonen som før. */
+/* Plakater og filmer lastet opp via Knuten har metadata i plakatmeta.json (tittel,
+   avsender, fullskjerm, visningsperiode, spillemodus) og egen kategori «plakat» i
+   visningsstyringen. Filer UTEN metadata (manuell git-push, kino-publisering)
+   følger filnavn-konvensjonen som før. */
 function _tilMetaSlide(m, navn, url){
   var naa = new Date();
   if (m.fra && naa < new Date(m.fra + "T00:00:00")) return null;
   if (m.til && naa > new Date(m.til + "T23:59:59")) return null;   // til = ut dagen
+  var video = /\.(mp4|webm)$/i.test(navn);
   return {
-    media: "bilde",
+    media: video ? "video" : "bilde",
     kategori: "plakat",
-    fullbleed: !!m.fullskjerm,
+    // Film har ingen tekstpanel — bildet ER innholdet.
+    fullbleed: video ? true : !!m.fullskjerm,
     kicker: m.avsender || "Selbu kommune",
     tittel: m.tittel || navn.replace(/\.[^.]+$/, ""),
     dato: null,
     medTid: false,
+    varighet: video ? (Number(m.varighet) || 0) : 0,
+    // >0 = holdes utenfor den vanlige rotasjonen og spilles med dette intervallet.
+    innslagMin: (video && m.spillemodus === "innslag")
+      ? (Number(m.innslag_min) || 30) : 0,
     url: url
   };
 }
@@ -647,24 +659,31 @@ function hentPlakater(){
     .then(function(j){ return (j && j.plakater) || {}; })
     .catch(function(){ return {}; });
 
+  // Rå asset-liste — metadataen kobles på nedenfor, når begge kallene er i havn.
   var release = fetch(base + "/releases/tags/" + RELEASE_TAG + "?t=" + Date.now(), {cache:"no-store"})
     .then(function(r){ return r.ok ? r.json() : null; })
     .then(function(rel){
-      if (!rel || !Array.isArray(rel.assets)) return [];
-      return rel.assets.map(function(a){ return _tilSlide(a.name, a.browser_download_url); });
+      return (rel && Array.isArray(rel.assets)) ? rel.assets : [];
     })
     .catch(function(){ return []; });
 
   return Promise.all([mappe, release, meta]).then(function(res){
     var pm = res[2];
     var ut = [];
-    for (var i = 0; i < res[0].length; i++){
+    var i, s;
+    for (i = 0; i < res[0].length; i++){
       var f = res[0][i];
-      var s = pm[f.name] ? _tilMetaSlide(pm[f.name], f.name, f.download_url)
-                         : _tilSlide(f.name, f.download_url);
+      s = pm[f.name] ? _tilMetaSlide(pm[f.name], f.name, f.download_url)
+                     : _tilSlide(f.name, f.download_url);
       if (s) ut.push(s);
     }
-    return ut.concat(res[1]).filter(Boolean)
+    for (i = 0; i < res[1].length; i++){
+      var a = res[1][i];
+      s = pm[a.name] ? _tilMetaSlide(pm[a.name], a.name, a.browser_download_url)
+                     : _tilSlide(a.name, a.browser_download_url);
+      if (s) ut.push(s);
+    }
+    return ut.filter(Boolean)
       .sort(function(a,b){
         if (a.dato && b.dato) return a.dato - b.dato;
         if (a.dato) return -1;
@@ -982,11 +1001,21 @@ function finnDashIdx(){
   return -1;
 }
 
+/* Filmer merket «eget innslag» holdes UTENFOR den vanlige rotasjonen og spilles
+   med sitt eget intervall (se forfaltInnslag) — ellers ville en fem minutters
+   film blokkert skjermen hver runde. */
+var innslagSlides = [];
+var innslagSist = {};                 // url -> da filmen sist ble spilt
+
 function filtrerSlides(tegnOm){
-  var ny = [];
-  for (var i = 0; i < alleSlides.length; i++)
-    if (innholdPaa(alleSlides[i].kategori)) ny.push(alleSlides[i]);
+  var ny = [], egne = [];
+  for (var i = 0; i < alleSlides.length; i++){
+    var s = alleSlides[i];
+    if (!innholdPaa(s.kategori)) continue;
+    if (s.innslagMin) egne.push(s); else ny.push(s);
+  }
   slides = ny;
+  innslagSlides = egne;
   if (idx >= slides.length) idx = 0;
   if (!tegnOm) return;
   var vid = document.getElementById("video");
@@ -1012,8 +1041,11 @@ function planleggNeste(sek){
 
 function _vis(el, synlig){ el.style.display = synlig ? "block" : "none"; }
 
+/* `n` er indeks i rotasjonen, ELLER et slide-objekt (film som spilles som eget
+   innslag — den ligger ikke i `slides`, og posisjonen i rotasjonen skal stå). */
 function visSlide(n){
-  var s = slides[n];
+  var utenfor = (n !== null && typeof n === "object");
+  var s = utenfor ? n : slides[n];
   var slideEl = document.getElementById("slide");
   var vaerEl = document.getElementById("vaer");
   var fb = document.getElementById("fallback");
@@ -1060,7 +1092,10 @@ function visSlide(n){
       vid.onerror = function(){ nesteSlide(); };
       vid.src = s.url;
       vid.play().catch(function(){ planleggNeste(sekunderPerSlide()); });
-      planleggNeste(MAKS_VIDEO_SEKUNDER);
+      // Sikkerhetsnett om 'ended' aldri kommer: filmens egen varighet + margin
+      // når vi kjenner den, ellers taket.
+      planleggNeste(s.varighet ? Math.min(s.varighet + 30, MAKS_VIDEO_SEKUNDER)
+                               : MAKS_VIDEO_SEKUNDER);
       _vis(slideEl, true);
       slideEl.classList.remove("skjul");
       forhandslastNeste(n);
@@ -1109,13 +1144,14 @@ function visSlide(n){
       img.src = s.url;
       img.style.display = "block";
     }
-    tegnDots(n);
+    tegnDots(utenfor ? -1 : n);
   }, 700);
 }
 
 /* Forhåndslast neste bilde i rotasjonen (hopper over vær/video) — da ligger
    det i cache før slidebyttet, og lasteventingen i visSlide blir umerkelig. */
 function forhandslastNeste(n){
+  if (typeof n !== "number") n = idx;   // innslagsfilm: fortsett fra rotasjonen
   for (var i = 1; i < slides.length; i++){
     var s = slides[(n + i) % slides.length];
     if (s.media === "bilde"){ (new Image()).src = s.url; return; }
@@ -1135,7 +1171,24 @@ var innslagAktiv = false;             // spiller vi et innslag akkurat nå?
 var sisteInnslag = Date.now();        // forrige innslag startet (start = «nå» så
                                       // første innslag kommer ETTER intervallet)
 
+/* Er en «eget innslag»-film forfalt? Første gang telles fra oppstart, så skjermen
+   ikke åpner med filmen rett etter en omstart. */
+function forfaltInnslag(){
+  var naa = Date.now();
+  for (var i = 0; i < innslagSlides.length; i++){
+    var s = innslagSlides[i];
+    if (naa - (innslagSist[s.url] || startet) >= s.innslagMin * 60000) return s;
+  }
+  return null;
+}
+
 function nesteSlide(){
+  var innslag = forfaltInnslag();
+  if (innslag){
+    innslagSist[innslag.url] = Date.now();
+    visSlide(innslag);            // egen slide — rører ikke posisjonen i rotasjonen
+    return;
+  }
   if (!slides.length){ visSlide(-1); return; }
 
   var hs = hovedskjermConf();
