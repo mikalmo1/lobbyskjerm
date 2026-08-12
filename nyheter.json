@@ -1,5 +1,5 @@
 {
- "oppdatert": "2026-08-12T16:37:12Z",
+ "oppdatert": "2026-08-12T17:42:39Z",
  "saker": [
   {
    "tittel": "Blandet feil kjemikalier i badeland – 68 personer evakuert",
@@ -7,7 +7,17 @@
    "lenke": "https://www.nrk.no/trondelag/dampsaga-bad-evakuert-etter-feil-blanding-av-kjemikalier-1.17987566"
   },
   {
-   "tittel": "Voldshendelse på Lindeberg i Oslo",
+   "tittel": "SJÅ DIREKTE: – Dette bør du få med deg",
+   "kilde": "NRK",
+   "lenke": "https://www.nrk.no/mr/slik-er-solformorkinga-rundt-om-i-noreg--den-storste-sidan-2015-1.17987725"
+  },
+  {
+   "tittel": "Midtnytt: Gassutslipp på badeland",
+   "kilde": "Trøndelag",
+   "lenke": "https://www.nrk.no/video/DKTL98081226"
+  },
+  {
+   "tittel": "– Noen er holdt tilbake mot sin vilje",
    "kilde": "NRK",
    "lenke": "https://www.nrk.no/stor-oslo/voldshendelse-pa-lindeberg-i-oslo-1.17987931"
   },
@@ -70,11 +80,6 @@
    "tittel": "Dødsfallet i Salangen: Dropper siktelse mot kvinne",
    "kilde": "NRK",
    "lenke": "https://www.nrk.no/tromsogfinnmark/dodsfallet-i-salangen_-dropper-siktelse-mot-kvinne-1.17987085"
-  },
-  {
-   "tittel": "Midtnytt på mandag",
-   "kilde": "Trøndelag",
-   "lenke": "https://www.nrk.no/video/DKTL98081026"
   }
  ]
 }
