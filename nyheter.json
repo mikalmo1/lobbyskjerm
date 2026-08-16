@@ -1,6 +1,16 @@
 {
- "oppdatert": "2026-08-16T08:46:34Z",
+ "oppdatert": "2026-08-16T09:26:24Z",
  "saker": [
+  {
+   "tittel": "Studentsamskipnad utsatt for dataangrep",
+   "kilde": "Trøndelag",
+   "lenke": "https://www.nrk.no/trondelag/studentsamskipnad-utsatt-for-dataangrep-1.17991446"
+  },
+  {
+   "tittel": "Skogbrannen i Belgia har doblet seg på 24 timer",
+   "kilde": "NRK",
+   "lenke": "https://www.nrk.no/norge/rekordstor-skogbrann-i-belgia-sprer-seg-1.17991420"
+  },
   {
    "tittel": "Elva er kjent for fin ørret – men denne kan ødelegge alt",
    "kilde": "Trøndelag",
@@ -70,16 +80,6 @@
    "tittel": "Fra Italia til Nordkapp i en 3D-printet bobil på tre hjul",
    "kilde": "NRK",
    "lenke": "https://www.nrk.no/nordland/3d-printet-mini-van_-ombygd-piaggio-ape_-har-kjort-fra-italia-til-nordkapp-1.17991051"
-  },
-  {
-   "tittel": "Terminalutvidelsen på Trondheim lufthavn",
-   "kilde": "Trøndelag",
-   "lenke": "https://www.nrk.no/trondelag/1.17989299"
-  },
-  {
-   "tittel": "Bonnie Tylers kiste fraktet gjennom gatene i Wales",
-   "kilde": "NRK",
-   "lenke": "https://www.nrk.no/nyheter/bonnie-tylers-kiste-fraktet-gjennom-gatene-i-wales-1.17991113"
   }
  ]
 }
