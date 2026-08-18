@@ -57,12 +57,12 @@
    "avlyst_grunn": null,
    "forestillinger": [
     {
-     "id": 47847,
+     "id": 48481,
      "tid": "18:00",
-     "tittel": "Tilbake til Tottori",
-     "aldersgrense": "6",
-     "spilletid": 92,
-     "undertekst": "2D Original tale Norsk tekst",
+     "tittel": "Glemselens øy",
+     "aldersgrense": "9",
+     "spilletid": 109,
+     "undertekst": "2D Norsk tale Norsk tekst",
      "pris": 110,
      "billettlenke": null,
      "avlyst": false,
@@ -152,5 +152,5 @@
    "48223": "2026-09-02_48223_7.jpg"
   }
  },
- "oppdatert": "2026-08-12T07:00"
+ "oppdatert": "2026-08-18T17:00"
 }
