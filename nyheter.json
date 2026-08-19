@@ -1,6 +1,11 @@
 {
- "oppdatert": "2026-08-19T17:02:35Z",
+ "oppdatert": "2026-08-19T17:40:11Z",
  "saker": [
+  {
+   "tittel": "Han er ny styreleder i Rosenborg",
+   "kilde": "Trøndelag",
+   "lenke": "https://www.nrk.no/trondelag/odd-einar-landsem-ny-styreleder-i-rosenborg-1.17995125"
+  },
   {
    "tittel": "Evakuerte Trondheim lufthavn etter mistanke om eksplosiver i bagasje",
    "kilde": "Trøndelag",
@@ -37,7 +42,7 @@
    "lenke": "https://www.nrk.no/trondelag/25.000-har-tegnet-norgespris-i-midt-norge-pa-en-uke-1.17988470"
   },
   {
-   "tittel": "Anbefaler grønt lys til midlertidig tømming i Førdefjorden",
+   "tittel": "Anbefaler grønt lys til mellombels tømming i Førdefjorden",
    "kilde": "NRK",
    "lenke": "https://www.nrk.no/vestland/miljodirektoratet-har-sagt-sitt-_-no-avgjer-regjeringa-sjodeponiet-i-fordefjorden-1.17994640"
   },
@@ -70,16 +75,6 @@
    "tittel": "Stian overraska av enorme haglkuler: – Det høyrdest ut som kongler",
    "kilde": "NRK",
    "lenke": "https://www.nrk.no/ostfold/kraftigare-hagl-kan-komme-oftare_-stian-overraska-av-enorme-haglkuler-1.17992190"
-  },
-  {
-   "tittel": "Ber om 45 dagers fengsel for kapteinen på «NCL Salten»",
-   "kilde": "Trøndelag",
-   "lenke": "https://www.nrk.no/trondelag/patalemakta-ber-om-fengsel-i-45-dager-for-kapteinen-pa-_ncl-salten_-som-grunnstotte-pa-byneset-1.17992075"
-  },
-  {
-   "tittel": "Politiet etterforskar valdshending i Kristiansund – to menn er pågripne",
-   "kilde": "NRK",
-   "lenke": "https://www.nrk.no/mr/politiet-etterforsker-mulig-voldshendelse-i-kristiansund-_-en-mann-er-pagrepet-1.17994869"
   }
  ]
 }
