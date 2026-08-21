@@ -98,7 +98,7 @@
      "tid": "20:00",
      "tittel": "Pensjonskuppet",
      "aldersgrense": "9",
-     "spilletid": 0,
+     "spilletid": 110,
      "undertekst": "2D Original tale Norsk tekst",
      "pris": 130,
      "billettlenke": null,
@@ -152,5 +152,5 @@
    "48223": "2026-09-02_48223_7.jpg"
   }
  },
- "oppdatert": "2026-08-18T17:00"
+ "oppdatert": "2026-08-21T07:00"
 }
