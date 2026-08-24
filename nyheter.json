@@ -1,5 +1,5 @@
 {
- "oppdatert": "2026-08-24T13:53:48Z",
+ "oppdatert": "2026-08-24T14:41:03Z",
  "saker": [
   {
    "tittel": "Her er NRKs nye lokaler i Trondheim",
@@ -7,9 +7,9 @@
    "lenke": "https://www.nrk.no/trondelag/nrk-trondelag-flytta-inn-i-nytt-bygg-i-trondheim-1.17996926"
   },
   {
-   "tittel": "Streiken er over – men kven vann forteljinga?",
+   "tittel": "Situasjonen er fortsatt stabil for kongen",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/ytring/flygeleiarstreiken-er-over_-kven-vann-kampen-om-arbeidstid_-tryggleik-og-tillit-1.17999622"
+   "lenke": "https://www.nrk.no/norge/situasjonen-er-fortsatt-stabil-for-kongen-1.17999203"
   },
   {
    "tittel": "Krev svar frå Rolf Nordmo i lagmannsretten i Helsingfors",
@@ -17,9 +17,9 @@
    "lenke": "https://www.nrk.no/trondelag/i-dag-startar-ankesaka-mot-rolf-nordmo-i-finland-1.17964862"
   },
   {
-   "tittel": "Trekker paralleller mellom Glimt og Karpe",
+   "tittel": "Slottet: Ingen vesentlige endringer i kongens helse – fortsatt stabil",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/nordland/pressekonferanse-for-kampen-mellom-bodo_glimt-og-nec-nijmegen-1.17999555"
+   "lenke": "https://www.nrk.no/nyheter/slottet_-ingen-vesentlige-endringer-i-kongens-helse-_-fortsatt-stabil-1.17999899"
   },
   {
    "tittel": "Sissel om Fosen-kampen: – Jeg tror ikke vindturbiner står for evig",
@@ -27,9 +27,9 @@
    "lenke": "https://www.nrk.no/sapmi/xl/sissel-om-fosen-kampen_-_-jeg-tror-ikke-vindturbiner-star-for-evig-1.17972462"
   },
   {
-   "tittel": "Mann omkom etter angrep fra ku i Hallingdal",
+   "tittel": "Her er utgiftene til straum dobla: – Klart at ein blir litt uroleg",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/buskerud/mann-omkom-etter-angrep-fra-ku-i-hallingdal-1.17999661"
+   "lenke": "https://www.nrk.no/sorlandet/straumutgiftene-dobla-i-delar-av-landet-for-bedriftene-1.17994963"
   },
   {
    "tittel": "Lennarts nye oppfinnelse kan snu opp ned på jordbærproduksjonen",
@@ -37,9 +37,9 @@
    "lenke": "https://www.nrk.no/trondelag/jordbaerkarusellen-pa-jorem-gard-kan-spare-verdifull-plass-1.17975184"
   },
   {
-   "tittel": "Skolebygg brant ned – ber om straff for tenåringsjenter",
+   "tittel": "Adopsjonsstrid i retten kan endre norsk praksis",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/innlandet/administrasjonsbygget-ved-loten-ungdomsskole-brant-ned-_-ber-om-straff-for-to-jenter-1.17997503"
+   "lenke": "https://www.nrk.no/rogaland/utanlandsadopsjon-i-retten_-adopsjonsforum-saksoker-bufdir-etter-adopsjonsstopp-1.17993126"
   },
   {
    "tittel": "Langrennsprofil i ukjent drama: – Kappet av senene til tre fingrer",
@@ -47,9 +47,9 @@
    "lenke": "https://www.nrk.no/sport/jan-thomas-jenssen-rammet-av-nytt-uhell-_-ville-legge-opp-pa-dagen-1.17998027"
   },
   {
-   "tittel": "De tre store går sammen om nye oljefunn: – Nå er det litt «drill, baby, drill»",
+   "tittel": "Streiken er over – men kven vann forteljinga?",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/rogaland/equinor_-aker-bp-og-var-energi-gar-sammen-om-ett-mal_-et-gigafunn-pa-norsk-sokkel-1.17999206"
+   "lenke": "https://www.nrk.no/ytring/flygeleiarstreiken-er-over_-kven-vann-kampen-om-arbeidstid_-tryggleik-og-tillit-1.17999622"
   },
   {
    "tittel": "Skal løpe 50 mil på to dager: – Ønsker å vise at det er greit å snakke om følelser",
@@ -57,14 +57,19 @@
    "lenke": "https://www.nrk.no/trondelag/david-sannesmoen-fra-melhus-skal-lope-fra-oslo-til-trondheim-til-inntekt-for-menns-psykiske-helse-1.17996177"
   },
   {
+   "tittel": "Trekker paralleller mellom Glimt og Karpe",
+   "kilde": "NRK",
+   "lenke": "https://www.nrk.no/nordland/pressekonferanse-for-kampen-mellom-bodo_glimt-og-nec-nijmegen-1.17999555"
+  },
+  {
    "tittel": "Storseier til Rosenborg",
    "kilde": "Trøndelag",
    "lenke": "https://www.nrk.no/sport/bakenga-inn-mot-gamleklubben-_-rosenborg-med-storseier-i-cupen-1.17998254"
   },
   {
-   "tittel": "Kongen på sykehus: – Eldre har ofte et komplisert sykdomsbilde",
+   "tittel": "Mann omkom etter angrep fra ku i Hallingdal",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/norge/kongen-pa-sykehus_-_-eldre-har-ofte-et-komplisert-sykdomsbilde-1.17999268"
+   "lenke": "https://www.nrk.no/buskerud/mann-omkom-etter-angrep-fra-ku-i-hallingdal-1.17999661"
   },
   {
    "tittel": "Nytt håp om gruvestart etter lovende mineralfunn",
@@ -72,9 +77,9 @@
    "lenke": "https://www.nrk.no/trondelag/nytt-hap-for-gruvestart-etter-lovende-mineralfunn-i-royrvik-1.17994187"
   },
   {
-   "tittel": "Kronprinsen besøkte kongen på Rikshospitalet",
+   "tittel": "Skolebygg brant ned – ber om straff for tenåringsjenter",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/norge/kronprinsen-besokte-kongen-pa-rikshospitalet-1.17999203"
+   "lenke": "https://www.nrk.no/innlandet/administrasjonsbygget-ved-loten-ungdomsskole-brant-ned-_-ber-om-straff-for-to-jenter-1.17997503"
   }
  ]
 }
