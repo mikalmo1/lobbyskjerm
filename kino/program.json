@@ -2,37 +2,6 @@
  "sted": "Tælet Kultursal",
  "dager": [
   {
-   "dato": "2026-09-02",
-   "avlyst": false,
-   "avlyst_grunn": null,
-   "forestillinger": [
-    {
-     "id": 48107,
-     "tid": "18:00",
-     "tittel": "Paw Patrol: Dinofilmen",
-     "aldersgrense": "6 år",
-     "spilletid": 88,
-     "undertekst": "2D Norsk tale Norsk tekst",
-     "pris": 110,
-     "billettlenke": "https://kinologg.kino.no/nettsalg/48107",
-     "avlyst": false,
-     "avlyst_grunn": null
-    },
-    {
-     "id": 48223,
-     "tid": "20:00",
-     "tittel": "Spider-Man: Brand New Day",
-     "aldersgrense": "12 år",
-     "spilletid": 140,
-     "undertekst": "2D Original tale Norsk tekst",
-     "pris": 130,
-     "billettlenke": "https://kinologg.kino.no/nettsalg/48223",
-     "avlyst": false,
-     "avlyst_grunn": null
-    }
-   ]
-  },
-  {
    "dato": "2026-09-16",
    "avlyst": false,
    "avlyst_grunn": null,
@@ -146,11 +115,10 @@
   }
  ],
  "hero": {
-  "dato": "2026-09-02",
+  "dato": "2026-09-16",
   "bilder": {
-   "48107": "2026-09-02_48107_5.jpg",
-   "48223": "2026-09-02_48223_7.jpg"
+   "47986": "2026-09-16_47986_9.jpg"
   }
  },
- "oppdatert": "2026-08-21T07:00"
+ "oppdatert": "2026-09-03T00:00"
 }
