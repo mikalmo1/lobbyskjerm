@@ -1,15 +1,25 @@
 {
- "oppdatert": "2026-09-02T01:01:28Z",
+ "oppdatert": "2026-09-02T05:50:02Z",
  "saker": [
+  {
+   "tittel": "Bilbrann spredte seg til bolig: – Mye flammer på stedet",
+   "kilde": "Trøndelag",
+   "lenke": "https://www.nrk.no/trondelag/brann-i-bolig-i-inderoy-i-trondelag-1.18011217"
+  },
+  {
+   "tittel": "Lot rusmidler og våpenkopi ligge igjen i død datters leilighet",
+   "kilde": "NRK",
+   "lenke": "https://www.nrk.no/stor-oslo/politiet-lot-rusmidler-og-vapenkopi-ligge-igjen-i-dod-datters-leilighet-1.17338080"
+  },
   {
    "tittel": "Kong Harald minnes i Trondheim",
    "kilde": "Trøndelag",
    "lenke": "https://www.nrk.no/trondelag/kong-harald-minnes-i-trondheim-1.18011104"
   },
   {
-   "tittel": "Væpnet politiaksjon i Dyrøy: – Løsnet skudd mot politiet",
+   "tittel": "Ingen togstreik på Østlandet",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/tromsogfinnmark/vaepnet-aksjon-i-troms-1.18010900"
+   "lenke": "https://www.nrk.no/stor-oslo/ingen-togstreik-pa-ostlandet-1.18011165"
   },
   {
    "tittel": "Rapport om nytt vinterbeite for Fosenrein: Kan ha konsekvenser for villreinen",
@@ -17,9 +27,9 @@
    "lenke": "https://www.nrk.no/sapmi/rapport-fra-norconsult-om-fosenreinen-forteller-om-mulige-konsekvenser-og-interessekonflikt-1.18008820"
   },
   {
-   "tittel": "Fare for togstreik onsdag morgen –mekler på overtid",
+   "tittel": "Ingen togstreik onsdag",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/nyheter/fare-for-togstreik-onsdag-morgen-_mekler-pa-overtid-1.18011118"
+   "lenke": "https://www.nrk.no/stor-oslo/ingen-togstreik-onsdag-1.18011176"
   },
   {
    "tittel": "Midtnytt: Bussen blir billigere – bensinprisene går opp",
@@ -27,9 +37,9 @@
    "lenke": "https://www.nrk.no/video/DKTL98090126"
   },
   {
-   "tittel": "Nye bilete frå Nepal: Dette veit vi om det som skjedde",
+   "tittel": "Hardt ut mot Diamond League-arrangør: – De tar profitten på bekostning av oss utøvere",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/urix/dette-veit-vi-om-det-som-skjedde-under-flaumen-i-nepal-1.18008824"
+   "lenke": "https://www.nrk.no/sport/karsten-warholm-hardt-ut-mot-diamond-league-arrangor_-_-det-handler-ikke-om-penger-1.18003553"
   },
   {
    "tittel": "Skal ha misbrukt stillingen i møte med tenåringsjente: – Veldig alvorlig",
@@ -37,9 +47,9 @@
    "lenke": "https://www.nrk.no/trondelag/politimann-i-trondelag-tiltalt-for-a-ha-oppbevart-seksualiserte-bilder-1.18010012"
   },
   {
-   "tittel": "VG: Kongeparet har dratt fra Rikshospitalet",
+   "tittel": "Væpnet politiaksjon i Dyrøy: – Løsnet skudd mot politiet",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/nyheter/vg_-kongeparet-har-dratt-fra-rikshospitalet-1.18011070"
+   "lenke": "https://www.nrk.no/tromsogfinnmark/vaepnet-aksjon-i-troms-1.18010900"
   },
   {
    "tittel": "Arbeidsgivar for både tiltalte og drepne: – Hadde jo blitt ein del skittkasting og krangling",
@@ -47,9 +57,9 @@
    "lenke": "https://www.nrk.no/trondelag/pagreip-drapstiltalte-jorn-andersen_-_-da-sa-han-noko-sant-som-at-_eg-erkjenner-alt_-1.18009954"
   },
   {
-   "tittel": "Kong Haakon er tilbake på Rikshospitalet",
+   "tittel": "Fare for togstreik onsdag morgen –mekler på overtid",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/nyheter/kong-haakon-er-tilbake-pa-rikshospitalet-1.18011046"
+   "lenke": "https://www.nrk.no/nyheter/fare-for-togstreik-onsdag-morgen-_mekler-pa-overtid-1.18011118"
   },
   {
    "tittel": "Midtnytt: Drapet på Løkken for retten",
@@ -57,9 +67,9 @@
    "lenke": "https://www.nrk.no/video/DKTL98083126"
   },
   {
-   "tittel": "Da kongen «reddet» OL-stemningen",
+   "tittel": "Nye bilete frå Nepal: Dette veit vi om det som skjedde",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/innlandet/xl/da-kongen-_reddet_-ol-1.18008993"
+   "lenke": "https://www.nrk.no/urix/dette-veit-vi-om-det-som-skjedde-under-flaumen-i-nepal-1.18008824"
   },
   {
    "tittel": "Erkjenner ikke å ha drept Marita (35): – Det ble helt svart",
@@ -67,19 +77,9 @@
    "lenke": "https://www.nrk.no/trondelag/rettssaken-etter-drapet-pa-marita-lofshus-haugen-_-uvisst-om-jorn-andersen-vil-forklare-seg-1.18004154"
   },
   {
-   "tittel": "Debatten raste på 60-tallet: Ville ikke ha Sonja som dronning",
+   "tittel": "VG: Kongeparet har dratt fra Rikshospitalet",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/norge/debatten-raste-pa-60-tallet_-ville-ikke-ha-sonja-som-dronning-1.18009125"
-  },
-  {
-   "tittel": "Biskopen i Nidaros: – Kongen med omsorgshjertet",
-   "kilde": "Trøndelag",
-   "lenke": "https://www.nrk.no/trondelag/biskopen-i-nidaros_-_-kongen-med-omsorgshjertet-1.18008268"
-  },
-  {
-   "tittel": "Her sparer du ti kroner literen – nå vil svensker fjerne avgiftene for godt",
-   "kilde": "NRK",
-   "lenke": "https://www.nrk.no/ostfold/fjerner-norsk-avgiftskutt-pa-drivstoff-_-svensker-vil-gjore-kuttene-permanente-1.18009958"
+   "lenke": "https://www.nrk.no/nyheter/vg_-kongeparet-har-dratt-fra-rikshospitalet-1.18011070"
   }
  ]
 }
