@@ -1,15 +1,25 @@
 {
- "oppdatert": "2026-09-02T05:50:02Z",
+ "oppdatert": "2026-09-02T10:44:55Z",
  "saker": [
   {
-   "tittel": "Bilbrann spredte seg til bolig: – Mye flammer på stedet",
+   "tittel": "Drapet på Marita: Ber om 21 år forvaring for Jørn Andersen",
+   "kilde": "Trøndelag",
+   "lenke": "https://www.nrk.no/trondelag/drapet-pa-marita-lofshus-haugen-pa-lokken-verk_-ber-om-21-ar-forvaring-for-jorn-andersen-1.18011337"
+  },
+  {
+   "tittel": "Gondolsøknad har ligget tre år i skuffen – bremses av betent reinkonflikt",
+   "kilde": "NRK",
+   "lenke": "https://www.nrk.no/nordland/vil-bygge-gondol-til-oyfjellet-_-har-ventet-i-snart-tre-ar-pa-svar-1.17996985"
+  },
+  {
+   "tittel": "Bilbrann spredte seg til bolig: – En omfattende brann",
    "kilde": "Trøndelag",
    "lenke": "https://www.nrk.no/trondelag/brann-i-bolig-i-inderoy-i-trondelag-1.18011217"
   },
   {
-   "tittel": "Lot rusmidler og våpenkopi ligge igjen i død datters leilighet",
+   "tittel": "Oslo: Oppfordres til å gi skolefri for kong Haralds gravferd",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/stor-oslo/politiet-lot-rusmidler-og-vapenkopi-ligge-igjen-i-dod-datters-leilighet-1.17338080"
+   "lenke": "https://www.nrk.no/stor-oslo/oslo_-oppfordres-til-a-gi-skolefri-for-kong-haralds-gravferd-1.18011598"
   },
   {
    "tittel": "Kong Harald minnes i Trondheim",
@@ -17,9 +27,9 @@
    "lenke": "https://www.nrk.no/trondelag/kong-harald-minnes-i-trondheim-1.18011104"
   },
   {
-   "tittel": "Ingen togstreik på Østlandet",
+   "tittel": "Tiltalt etter garderobesaken: Skal ha filmet jenter som skiftet",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/stor-oslo/ingen-togstreik-pa-ostlandet-1.18011165"
+   "lenke": "https://www.nrk.no/ostfold/tiltalt-etter-garderobesaken_-skal-ha-filmet-jenter-som-skiftet-1.17994755"
   },
   {
    "tittel": "Rapport om nytt vinterbeite for Fosenrein: Kan ha konsekvenser for villreinen",
@@ -27,9 +37,9 @@
    "lenke": "https://www.nrk.no/sapmi/rapport-fra-norconsult-om-fosenreinen-forteller-om-mulige-konsekvenser-og-interessekonflikt-1.18008820"
   },
   {
-   "tittel": "Ingen togstreik onsdag",
+   "tittel": "Ryktene om kongens død: – Rikshospitalet tar taushetsplikten svært alvorlig",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/stor-oslo/ingen-togstreik-onsdag-1.18011176"
+   "lenke": "https://www.nrk.no/norge/ryktene-om-kongens-dod_-_-rikshospitalet-tar-taushetsplikten-svaert-alvorlig-1.18011409"
   },
   {
    "tittel": "Midtnytt: Bussen blir billigere – bensinprisene går opp",
@@ -37,19 +47,14 @@
    "lenke": "https://www.nrk.no/video/DKTL98090126"
   },
   {
-   "tittel": "Hardt ut mot Diamond League-arrangør: – De tar profitten på bekostning av oss utøvere",
-   "kilde": "NRK",
-   "lenke": "https://www.nrk.no/sport/karsten-warholm-hardt-ut-mot-diamond-league-arrangor_-_-det-handler-ikke-om-penger-1.18003553"
-  },
-  {
    "tittel": "Skal ha misbrukt stillingen i møte med tenåringsjente: – Veldig alvorlig",
    "kilde": "Trøndelag",
    "lenke": "https://www.nrk.no/trondelag/politimann-i-trondelag-tiltalt-for-a-ha-oppbevart-seksualiserte-bilder-1.18010012"
   },
   {
-   "tittel": "Væpnet politiaksjon i Dyrøy: – Løsnet skudd mot politiet",
+   "tittel": "Sykehusprest tiltalt for voldtekt av sårbar pasient",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/tromsogfinnmark/vaepnet-aksjon-i-troms-1.18010900"
+   "lenke": "https://www.nrk.no/norge/sykehusprest-tiltalt-for-seksuelle-overgrep-mot-pasient-1.18006149"
   },
   {
    "tittel": "Arbeidsgivar for både tiltalte og drepne: – Hadde jo blitt ein del skittkasting og krangling",
@@ -57,9 +62,9 @@
    "lenke": "https://www.nrk.no/trondelag/pagreip-drapstiltalte-jorn-andersen_-_-da-sa-han-noko-sant-som-at-_eg-erkjenner-alt_-1.18009954"
   },
   {
-   "tittel": "Fare for togstreik onsdag morgen –mekler på overtid",
+   "tittel": "Har kjempet for nytt hus i seks år – får avslag på avslag",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/nyheter/fare-for-togstreik-onsdag-morgen-_mekler-pa-overtid-1.18011118"
+   "lenke": "https://www.nrk.no/rogaland/rev-huset-da-staten-bygde-sykkelstamveg-i-stavanger_-nektes-a-bygge-nytt-1.17865291"
   },
   {
    "tittel": "Midtnytt: Drapet på Løkken for retten",
@@ -67,19 +72,9 @@
    "lenke": "https://www.nrk.no/video/DKTL98083126"
   },
   {
-   "tittel": "Nye bilete frå Nepal: Dette veit vi om det som skjedde",
+   "tittel": "Kongehuset avlyser alt offisielt program i en måned etter gravferden",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/urix/dette-veit-vi-om-det-som-skjedde-under-flaumen-i-nepal-1.18008824"
-  },
-  {
-   "tittel": "Erkjenner ikke å ha drept Marita (35): – Det ble helt svart",
-   "kilde": "Trøndelag",
-   "lenke": "https://www.nrk.no/trondelag/rettssaken-etter-drapet-pa-marita-lofshus-haugen-_-uvisst-om-jorn-andersen-vil-forklare-seg-1.18004154"
-  },
-  {
-   "tittel": "VG: Kongeparet har dratt fra Rikshospitalet",
-   "kilde": "NRK",
-   "lenke": "https://www.nrk.no/nyheter/vg_-kongeparet-har-dratt-fra-rikshospitalet-1.18011070"
+   "lenke": "https://www.nrk.no/nyheter/kongehuset-avlyser-alt-offisielt-program-i-en-maned-etter-gravferden-1.18011468"
   }
  ]
 }
