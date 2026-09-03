@@ -36,6 +36,18 @@
      "billettlenke": null,
      "avlyst": false,
      "avlyst_grunn": null
+    },
+    {
+     "id": 48888,
+     "tid": "20:00",
+     "tittel": "Practical Magic: Family Legacy",
+     "aldersgrense": "12",
+     "spilletid": 129,
+     "undertekst": "2D Original tale Norsk tekst",
+     "pris": 130,
+     "billettlenke": null,
+     "avlyst": false,
+     "avlyst_grunn": null
     }
    ]
   },
@@ -120,5 +132,5 @@
    "47986": "2026-09-16_47986_9.jpg"
   }
  },
- "oppdatert": "2026-09-03T00:00"
+ "oppdatert": "2026-09-03T14:00"
 }
