@@ -215,10 +215,11 @@
       return lokalDato(d.dato) >= iDag;
     });
 
-    // Heroen løfter fram første IKKE-avlyste kveld; avlyste kvelder før den nevnes.
+    // Heroen løfter fram første IKKE-avlyste, ordinære kveld; avlyste kvelder og
+    // skolekinodager (lukket visning) før den nevnes bare.
     var dag = null, avlystFoer = [];
     for (var i = 0; i < kommende.length; i++){
-      if (kommende[i].avlyst){ avlystFoer.push(kommende[i]); } else { dag = kommende[i]; break; }
+      if (kommende[i].avlyst || kommende[i].lukket){ avlystFoer.push(kommende[i]); } else { dag = kommende[i]; break; }
     }
 
     var h = '<div class="topp"><div><div class="kicker">Neste kinokveld</div>' +
@@ -226,8 +227,13 @@
             '</div><div class="sted">' + esc(program.sted || "Tælet Kultursal") + '</div></div>';
 
     avlystFoer.forEach(function(d){
-      h += '<div class="varsel">Visningen ' + esc(datoTekst(d.dato).toLowerCase()) + ' er avlyst' +
-           (d.avlyst_grunn ? ' — ' + esc(d.avlyst_grunn) : '') + '.</div>';
+      if (d.avlyst){
+        h += '<div class="varsel">Visningen ' + esc(datoTekst(d.dato).toLowerCase()) + ' er avlyst' +
+             (d.avlyst_grunn ? ' — ' + esc(d.avlyst_grunn) : '') + '.</div>';
+      } else {
+        h += '<div class="varsel">' + esc(datoTekst(d.dato)) + ' er det skolekino (lukket visning), ' +
+             'ingen ordinær kinokveld.</div>';
+      }
     });
 
     if (!dag){
