@@ -5,6 +5,8 @@
    "dato": "2026-09-16",
    "avlyst": false,
    "avlyst_grunn": null,
+   "lukket": false,
+   "lukket_notat": "Skolekino",
    "forestillinger": [
     {
      "id": 47986,
@@ -16,7 +18,9 @@
      "pris": 130,
      "billettlenke": "https://kinologg.kino.no/nettsalg/47986",
      "avlyst": false,
-     "avlyst_grunn": null
+     "avlyst_grunn": null,
+     "lukket": false,
+     "lukket_notat": null
     }
    ]
   },
@@ -24,6 +28,8 @@
    "dato": "2026-09-30",
    "avlyst": false,
    "avlyst_grunn": null,
+   "lukket": false,
+   "lukket_notat": null,
    "forestillinger": [
     {
      "id": 48481,
@@ -35,7 +41,9 @@
      "pris": 110,
      "billettlenke": null,
      "avlyst": false,
-     "avlyst_grunn": null
+     "avlyst_grunn": null,
+     "lukket": false,
+     "lukket_notat": null
     },
     {
      "id": 48888,
@@ -47,7 +55,9 @@
      "pris": 130,
      "billettlenke": null,
      "avlyst": false,
-     "avlyst_grunn": null
+     "avlyst_grunn": null,
+     "lukket": false,
+     "lukket_notat": null
     }
    ]
   },
@@ -55,12 +65,16 @@
    "dato": "2026-10-14",
    "avlyst": false,
    "avlyst_grunn": null,
+   "lukket": false,
+   "lukket_notat": null,
    "forestillinger": []
   },
   {
    "dato": "2026-10-28",
    "avlyst": false,
    "avlyst_grunn": null,
+   "lukket": false,
+   "lukket_notat": null,
    "forestillinger": [
     {
      "id": 47370,
@@ -72,7 +86,9 @@
      "pris": 110,
      "billettlenke": null,
      "avlyst": false,
-     "avlyst_grunn": null
+     "avlyst_grunn": null,
+     "lukket": false,
+     "lukket_notat": null
     },
     {
      "id": 47669,
@@ -84,7 +100,9 @@
      "pris": 130,
      "billettlenke": null,
      "avlyst": false,
-     "avlyst_grunn": null
+     "avlyst_grunn": null,
+     "lukket": false,
+     "lukket_notat": null
     }
    ]
   },
@@ -92,6 +110,8 @@
    "dato": "2026-11-11",
    "avlyst": false,
    "avlyst_grunn": null,
+   "lukket": false,
+   "lukket_notat": null,
    "forestillinger": [
     {
      "id": 47464,
@@ -103,7 +123,9 @@
      "pris": 110,
      "billettlenke": null,
      "avlyst": false,
-     "avlyst_grunn": null
+     "avlyst_grunn": null,
+     "lukket": false,
+     "lukket_notat": null
     }
    ]
   },
@@ -111,18 +133,24 @@
    "dato": "2026-11-25",
    "avlyst": false,
    "avlyst_grunn": null,
+   "lukket": false,
+   "lukket_notat": null,
    "forestillinger": []
   },
   {
    "dato": "2026-12-09",
    "avlyst": false,
    "avlyst_grunn": null,
+   "lukket": false,
+   "lukket_notat": null,
    "forestillinger": []
   },
   {
    "dato": "2026-12-23",
    "avlyst": true,
    "avlyst_grunn": "Lille julaften",
+   "lukket": false,
+   "lukket_notat": null,
    "forestillinger": []
   }
  ],
@@ -132,5 +160,5 @@
    "47986": "2026-09-16_47986_9.jpg"
   }
  },
- "oppdatert": "2026-09-03T14:00"
+ "oppdatert": "2026-09-07T10:42"
 }
