@@ -1,15 +1,25 @@
 {
- "oppdatert": "2026-09-08T14:19:00Z",
+ "oppdatert": "2026-09-08T18:00:04Z",
  "saker": [
+  {
+   "tittel": "Se tirsdagens Midtnytt",
+   "kilde": "Trøndelag",
+   "lenke": "https://www.nrk.no/video/DKTL98090826"
+  },
+  {
+   "tittel": "Zelenskyj har kommet til Norge",
+   "kilde": "NRK",
+   "lenke": "https://www.nrk.no/nyheter/zelenskyj-har-kommet-til-norge-1.18018344"
+  },
   {
    "tittel": "Karskbrennevin ble stoppet av Vinmonopolet",
    "kilde": "Trøndelag",
    "lenke": "https://www.nrk.no/trondelag/karskbrennevin-fra-by-brenneri-ble-stoppet-av-vinmonopolet-1.18017184"
   },
   {
-   "tittel": "Hyller Solbakkens Maresca-ønske: – Helt avgjørende",
+   "tittel": "Stuttgart-trenaren hyllar norsk fotball: – Viking ville klart seg i Bundesliga",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/sport/stale-solbakken-onsker-enzo-maresca-mote-_-stottes-av-ekspert-1.18016883"
+   "lenke": "https://www.nrk.no/rogaland/stuttgart-trenaren-hyllar-norsk-fotball_-_-viking-ville-klart-seg-i-bundesliga-1.18018242"
   },
   {
    "tittel": "Kartla ansatte på sykehus: Svært mange går på jobb med smerter",
@@ -17,9 +27,9 @@
    "lenke": "https://www.nrk.no/trondelag/syv-av-ti-ansatte-ved-st.-olavs-hospital-gar-pa-jobb-med-smerter-i-muskler-og-ledd-1.17994182"
   },
   {
-   "tittel": "Bekrefter at personer fra det russiske skipet «Professor Moltsjanov» har kommet seg hjem",
+   "tittel": "Ruffen-tegner Thore Hansen er død",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/tromsogfinnmark/69-personer-tilbake-i-russland-etter-arrest-av-russisk-skip-pa-svalbard-1.18018029"
+   "lenke": "https://www.nrk.no/ostfold/ruffen-tegner-thore-hansen-er-dod-1.18018162"
   },
   {
    "tittel": "Russisk kritikk mot amerikansk missilsystem i Trøndelag",
@@ -27,9 +37,9 @@
    "lenke": "https://www.nrk.no/norge/russisk-kritikk-mot-amerikansk-missilsystem-i-trondelag-1.18017095"
   },
   {
-   "tittel": "Kongefamilien besøkte Oslo Domkirke",
+   "tittel": "Handelsbanken: Renta økes i september",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/nyheter/kongefamilien-besokte-oslo-domkirke-1.18018060"
+   "lenke": "https://www.nrk.no/innlandet/handelsbanken-spar-renteheving-i-september-og-hoyere-normalt-renteniva-1.18017595"
   },
   {
    "tittel": "Elisabeth Strand Mølster med ukas første sending",
@@ -37,9 +47,9 @@
    "lenke": "https://www.nrk.no/video/DKTL98090726"
   },
   {
-   "tittel": "Gjestene til gravferden begynner å ankomme",
+   "tittel": "Blei dei siste som sleppte inn i Slottskapellet",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/norge/gjestene-til-gravferden-begynner-a-ankomme-1.18017874"
+   "lenke": "https://www.nrk.no/norge/kongefamilien-besokte-oslo-domkirke-1.18018181"
   },
   {
    "tittel": "Visste katastrofen kunne skje: – For noen er det tall, for oss er det mennesker vi kjenner",
@@ -47,9 +57,9 @@
    "lenke": "https://www.nrk.no/trondelag/forskere-og-studenter-ved-ntnu-er-bekymret-for-sine-kollegaer-i-nepal-1.18013509"
   },
   {
-   "tittel": "Generalens hemmelighet: Slo kong Harald til ridder",
+   "tittel": "Kreml: Trump og Putin snakket en time på telefon",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/sorlandet/et-liv-tett-pa-kongerekka_-generalen-har-mott-de-fire-siste-kongene-1.18017124"
+   "lenke": "https://www.nrk.no/nyheter/kreml_-trump-og-putin-snakket-en-time-pa-telefon-1.18018178"
   },
   {
    "tittel": "Ny fotballsupporter frikjent i retten – meiner politiet må vurdere eigen praksis",
@@ -57,9 +67,9 @@
    "lenke": "https://www.nrk.no/trondelag/fotballsupporter-frikjent-i-retten-_-sjuande-gong-politiet-i-trondelag-tapar-i-retten-1.18006144"
   },
   {
-   "tittel": "100.000 har signert Infantino-klage: – En sjokkerende rekke med beviser",
+   "tittel": "Hyller Solbakkens Maresca-ønske: – Helt avgjørende",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/sport/100.000-har-signert_-mener-infantino-har-brutt-fifa-regler-atte-ganger-1.18016678"
+   "lenke": "https://www.nrk.no/sport/stale-solbakken-onsker-enzo-maresca-mote-_-stottes-av-ekspert-1.18016883"
   },
   {
    "tittel": "– Sju bad på éin dag og 300 mil på ni døgn",
@@ -67,19 +77,9 @@
    "lenke": "https://www.nrk.no/mr/mor-og-dotter-bada-i-kvar-kommune-i-trondelag-og-more-og-romsdal-1.18011350"
   },
   {
-   "tittel": "Ansatt på Østfold-skole varetektsfengslet – etterforsker mulig seksuell situasjon mellom barn",
+   "tittel": "Bekrefter at personer fra det russiske skipet «Professor Moltsjanov» har kommet seg hjem",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/ostfold/ansatt-pa-skole-i-ostfold-varetektsfengslet-1.18017931"
-  },
-  {
-   "tittel": "Elever på mattekurs: Jonas (16) klarte å knekke koden",
-   "kilde": "Trøndelag",
-   "lenke": "https://www.nrk.no/trondelag/satser-pa-intensive-mattekurs-pa-olav-duun-videregaende-skole-i-namsos-1.18009008"
-  },
-  {
-   "tittel": "Skoleansatt i Østfold varetektsfengslet – etterforsker mulig seksuell situasjon mellom barn",
-   "kilde": "NRK",
-   "lenke": "https://www.nrk.no/nyheter/skoleansatt-i-ostfold-varetektsfengslet-_-etterforsker-mulig-seksuell-situasjon-mellom-barn-1.18017899"
+   "lenke": "https://www.nrk.no/tromsogfinnmark/69-personer-tilbake-i-russland-etter-arrest-av-russisk-skip-pa-svalbard-1.18018029"
   }
  ]
 }
