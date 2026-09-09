@@ -1,15 +1,20 @@
 {
- "oppdatert": "2026-09-09T06:25:01Z",
+ "oppdatert": "2026-09-09T11:43:29Z",
  "saker": [
+  {
+   "tittel": "Åge Aleksandersen sang «Jørgen Hattemaker» i kong Haralds gravferd",
+   "kilde": "Trøndelag",
+   "lenke": "https://www.nrk.no/norge/age-aleksandersen-sang_jorgen-hattemaker_-i-kong-haralds-gravferd-1.18018925"
+  },
   {
    "tittel": "Karskbrennevin ble stoppet av Vinmonopolet",
    "kilde": "Trøndelag",
    "lenke": "https://www.nrk.no/trondelag/karskbrennevin-fra-by-brenneri-ble-stoppet-av-vinmonopolet-1.18017184"
   },
   {
-   "tittel": "Den svenske kongefamilien på vei mot Oslo",
+   "tittel": "Julie og Seth har førebudd seg til gravferda med dikt og samtalar om døden",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/nyheter/den-svenske-kongefamilien-pa-vei-mot-oslo-1.18018711"
+   "lenke": "https://www.nrk.no/nordland/slik-blir-kong-harald-sin-gravferd-markert-pa-skulane-i-noreg-1.18018860"
   },
   {
    "tittel": "Se tirsdagens Midtnytt",
@@ -17,9 +22,9 @@
    "lenke": "https://www.nrk.no/video/DKTL98090826"
   },
   {
-   "tittel": "En person omkom etter brann i Vennesla",
+   "tittel": "Marthes farvel: – En stor, stor ære",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/sorlandet/en-person-omkom-etter-brann-i-rekkehus-i-vennesla-1.18018586"
+   "lenke": "https://www.nrk.no/vestfoldogtelemark/kong-haralds-ord-reddet-marthe-kristine-paulsen-_-na-er-hun-klar-for-a-ta-farvel-1.18018963"
   },
   {
    "tittel": "Kartla ansatte på sykehus: Svært mange går på jobb med smerter",
@@ -27,9 +32,9 @@
    "lenke": "https://www.nrk.no/trondelag/syv-av-ti-ansatte-ved-st.-olavs-hospital-gar-pa-jobb-med-smerter-i-muskler-og-ledd-1.17994182"
   },
   {
-   "tittel": "Dette må du vite om du skal inn til Oslo i dag",
+   "tittel": "Kongens fiskevenner er invitert til gravferden i Oslo domkirke",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/stor-oslo/dette-ma-du-vite-om-du-skal-inn-til-oslo-under-gravferden-1.18018220"
+   "lenke": "https://www.nrk.no/tromsogfinnmark/kongens-fiskevenn-hans-kristian-kjeldsberg-skal-folge-gravferden-til-kong-harald-fra-oslo-domkirke-1.18018831"
   },
   {
    "tittel": "Russisk kritikk mot amerikansk missilsystem i Trøndelag",
@@ -37,9 +42,9 @@
    "lenke": "https://www.nrk.no/norge/russisk-kritikk-mot-amerikansk-missilsystem-i-trondelag-1.18017095"
   },
   {
-   "tittel": "Indre del av Oslo sperres før gravferden: – Det største vi har gjort",
+   "tittel": "Den svenske kongefamilien på vei mot Oslo",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/norge/na-stenges-indre-del-av-oslo-for-gravferden-1.18018612"
+   "lenke": "https://www.nrk.no/nyheter/den-svenske-kongefamilien-pa-vei-mot-oslo-1.18018711"
   },
   {
    "tittel": "Elisabeth Strand Mølster med ukas første sending",
@@ -47,9 +52,9 @@
    "lenke": "https://www.nrk.no/video/DKTL98090726"
   },
   {
-   "tittel": "Oslo sentrum sperret av",
+   "tittel": "En person omkom etter brann i Vennesla",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/nyheter/oslo-sentrum-sperret-av-1.18018582"
+   "lenke": "https://www.nrk.no/sorlandet/en-person-omkom-etter-brann-i-rekkehus-i-vennesla-1.18018586"
   },
   {
    "tittel": "Visste katastrofen kunne skje: – For noen er det tall, for oss er det mennesker vi kjenner",
@@ -57,9 +62,9 @@
    "lenke": "https://www.nrk.no/trondelag/forskere-og-studenter-ved-ntnu-er-bekymret-for-sine-kollegaer-i-nepal-1.18013509"
   },
   {
-   "tittel": "Rørt av storlagets kong Harald-gest: – Blir et sterkt øyeblikk",
+   "tittel": "Dette må du vite om du skal til eller fra Oslo i dag",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/sport/rort-av-storlagets-kong-harald-gest_-_-blir-et-sterkt-oyeblikk-1.18018348"
+   "lenke": "https://www.nrk.no/stor-oslo/dette-ma-du-vite-om-du-skal-inn-til-oslo-under-gravferden-1.18018220"
   },
   {
    "tittel": "Ny fotballsupporter frikjent i retten – meiner politiet må vurdere eigen praksis",
@@ -67,19 +72,9 @@
    "lenke": "https://www.nrk.no/trondelag/fotballsupporter-frikjent-i-retten-_-sjuande-gong-politiet-i-trondelag-tapar-i-retten-1.18006144"
   },
   {
-   "tittel": "Brann i rekkehus i Vennesla",
+   "tittel": "Indre del av Oslo sperres før gravferden: – Det største vi har gjort",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/nyheter/brann-i-rekkehus-i-vennesla--1.18018576"
-  },
-  {
-   "tittel": "– Sju bad på éin dag og 300 mil på ni døgn",
-   "kilde": "Trøndelag",
-   "lenke": "https://www.nrk.no/mr/mor-og-dotter-bada-i-kvar-kommune-i-trondelag-og-more-og-romsdal-1.18011350"
-  },
-  {
-   "tittel": "USA forbyr import av flere varer fra Canada",
-   "kilde": "NRK",
-   "lenke": "https://www.nrk.no/nyheter/usa-forbyr-import-av-flere-varer-fra-canada-1.18018568"
+   "lenke": "https://www.nrk.no/norge/na-stenges-indre-del-av-oslo-for-gravferden-1.18018612"
   }
  ]
 }
