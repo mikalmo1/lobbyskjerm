@@ -9,20 +9,6 @@
    "lukket_notat": null,
    "forestillinger": [
     {
-     "id": 48945,
-     "tid": "18:00",
-     "tittel": "Vaiana",
-     "aldersgrense": "6",
-     "spilletid": 115,
-     "undertekst": "2D Norsk tale Norsk tekst",
-     "pris": 110,
-     "billettlenke": null,
-     "avlyst": false,
-     "avlyst_grunn": null,
-     "lukket": false,
-     "lukket_notat": null
-    },
-    {
      "id": 47986,
      "tid": "20:00",
      "tittel": "En nasjon i sjakk",
@@ -174,5 +160,5 @@
    "47986": "2026-09-16_47986_9.jpg"
   }
  },
- "oppdatert": "2026-09-09T20:00"
+ "oppdatert": "2026-09-10T14:27"
 }
