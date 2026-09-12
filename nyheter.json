@@ -1,15 +1,25 @@
 {
- "oppdatert": "2026-09-12T14:08:10Z",
+ "oppdatert": "2026-09-12T17:10:05Z",
  "saker": [
+  {
+   "tittel": "RBK møter Tromsø på Lerkendal klokken 18",
+   "kilde": "Trøndelag",
+   "lenke": "https://resultater.nrk.no/fotball/2026-09-12/1/events/2713723"
+  },
+  {
+   "tittel": "25.000 ukrainere i Norge aner ikke om de må dra",
+   "kilde": "NRK",
+   "lenke": "https://www.nrk.no/norge/25.000-ukrainere-i-norge-aner-ikke-om-de-ma-dra-1.18014541"
+  },
   {
    "tittel": "Nina (25) rakk ikke sykehuset – måtte føde i passasjersetet",
    "kilde": "Trøndelag",
    "lenke": "https://www.nrk.no/trondelag/smabarnsmamma-nina-therese-tomren-rakk-aldri-a-komme-til-sykehuset-i-levanger.-matte-fode-i-bilen-1.18012948"
   },
   {
-   "tittel": "– Kong Harald har betydd mykje for norsk seglsport",
+   "tittel": "Køkaos på E18: Fanget i P-kjeller i over tre timer",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/mr/arrangerte-nasjonal-minneseglas-for-a-heidre-avdode-kong-harald-1.18022824"
+   "lenke": "https://www.nrk.no/stor-oslo/kokaos-pa-e18_-fanget-i-p-kjeller-i-over-tre-timer-1.18022932"
   },
   {
    "tittel": "Éin kritisk skadd etter ATV-ulukke i Trondheim",
@@ -17,9 +27,9 @@
    "lenke": "https://www.nrk.no/trondelag/person-kritisk-skadd-etter-atv-ulykke-i-trondelag-1.18022583"
   },
   {
-   "tittel": "Verste sommaren for ukrainske barn så langt",
+   "tittel": "Jæger vant 700.000 kroner: – Går rett på sparekonto",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/urix/verste-sommaren-for-ukrainske-barn-sa-langt-1.18022675"
+   "lenke": "https://www.nrk.no/sport/jaeger-ble-nummer-to-i-ultimate-championship-finalen-pa-400-meter-1.18022933"
   },
   {
    "tittel": "Varsler erstatningskrav mot Bane Nor etter riving av omstridt bygg",
@@ -27,9 +37,9 @@
    "lenke": "https://www.nrk.no/trondelag/svartlamon-boligstiftelse-varsler-erstatningskrav-mot-bane-nor-etter-de-rev-strandveien-23-1.18022336"
   },
   {
-   "tittel": "Tomme ordrebøker og økonomiske nedgangstider i Aust-Finnmark",
+   "tittel": "Vålerenga-fansen kastet gjerder, bluss og glass - kapteinen forsvarer supporterne",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/tromsogfinnmark/sanksjonane-rammar-sor-varanger-og-aust-finnmark-hardt-1.18008703"
+   "lenke": "https://www.nrk.no/sport/valerenga-fansen-kastet-gjerder_-bluss-og-glass---kapteinen-forsvarer-supporterne-1.18022905"
   },
   {
    "tittel": "Modelltvillingene kapret rolle i norsk storfilm: – Passer helt perfekt",
@@ -37,9 +47,9 @@
    "lenke": "https://www.nrk.no/trondelag/modelltvillingene-fra-trondheim-kapret-rolle-i-norske-filmen-_en-nasjon-i-sjakk_-1.18017613"
   },
   {
-   "tittel": "Trump: Ville elsket å se et forent Irland",
+   "tittel": "Fødsel på Color Line: Rebecca Grading (29) fødte på Sandefjord-Strømstad-fergen",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/nyheter/trump_-ville-elsket-a-se-et-forent-irland-1.18022694"
+   "lenke": "https://www.nrk.no/vestfoldogtelemark/fodsel-pa-color-line_-rebecca-grading-_29_-fodte-pa-sandefjord-stromstad-fergen-1.18000480"
   },
   {
    "tittel": "Midtnytt: Kulturnatt i Trondheim",
@@ -47,9 +57,9 @@
    "lenke": "https://www.nrk.no/video/DKTL98091126"
   },
   {
-   "tittel": "Konkurrent hyller Ingebrigtsens kritikk: – «I love it»",
+   "tittel": "Trump: – Ville elska å sjå eit sameint Irland",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/sport/ultimate-championship_-hyller-ingebrigtsens-konkurrent-slakt-1.18022511"
+   "lenke": "https://www.nrk.no/urix/trump_-_-ville-elsket-a-se-et-forent-irland-1.18022779"
   },
   {
    "tittel": "Torgeir Micaelsen blir ny statsråd etter Karianne Tung",
@@ -57,9 +67,9 @@
    "lenke": "https://www.nrk.no/artikkel/store-viste-frem-sine-nye-statsrader-1527614"
   },
   {
-   "tittel": "Spøkelsestog stopper Gjøvikbanen",
+   "tittel": "– Kong Harald har betydd mykje for norsk seglsport",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/stor-oslo/spokelsestog-stopper-trafikken-pa-gjovikbanen-1.18022679"
+   "lenke": "https://www.nrk.no/mr/arrangerte-nasjonal-minneseglas-for-a-heidre-avdode-kong-harald-1.18022824"
   },
   {
    "tittel": "Karianne Tung ut av regjeringen",
@@ -67,19 +77,9 @@
    "lenke": "https://www.nrk.no/artikkel/opplysninger-til-nrk-karianne-tung-ut-av-regjering-1527579"
   },
   {
-   "tittel": "Google har auka klimagassutsleppa med 81 prosent sidan 2019",
+   "tittel": "Verste sommaren for ukrainske barn så langt",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/nyheter/google-har-auka-klimagassutsleppa-med-81-prosent-sidan-2019-1.18022648"
-  },
-  {
-   "tittel": "Midtnytt: 42 fjellrever født i Oppdal",
-   "kilde": "Trøndelag",
-   "lenke": "https://www.nrk.no/video/DKTL98091026"
-  },
-  {
-   "tittel": "En million russiske turister avlyste reiser til Krym",
-   "kilde": "NRK",
-   "lenke": "https://www.nrk.no/urix/en-million-russiske-turister-avlyste-reiser-til-krym-1.18003462"
+   "lenke": "https://www.nrk.no/urix/verste-sommaren-for-ukrainske-barn-sa-langt-1.18022675"
   }
  ]
 }
