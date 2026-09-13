@@ -1,15 +1,35 @@
 {
- "oppdatert": "2026-09-13T06:34:12Z",
+ "oppdatert": "2026-09-13T12:17:57Z",
  "saker": [
+  {
+   "tittel": "0 - 0 ved pause mellom RBK og Haugesund",
+   "kilde": "Trøndelag",
+   "lenke": "https://resultater.nrk.no/fotball/2026-09-13/1/events/2725764"
+  },
+  {
+   "tittel": "Betaler 600.000 for å reise hit",
+   "kilde": "NRK",
+   "lenke": "https://www.nrk.no/nordland/betaler-600.000-for-a-reise-hit-1.18013844"
+  },
+  {
+   "tittel": "Aksjonerte på E6 i helga – nå lover de mer",
+   "kilde": "Trøndelag",
+   "lenke": "https://www.nrk.no/trondelag/hoye-drivstoffpriser-gjor-at-_dieselbrolet_-skal-arrangere-flere-_kjor-sakte-aksjoner_-1.18016471"
+  },
+  {
+   "tittel": "Sør-Norge kan få med seg sjeldent månefenomen",
+   "kilde": "NRK",
+   "lenke": "https://www.nrk.no/sorlandet/sor-norge-kan-fa-med-seg-sjeldent-manefenomen-1.18023209"
+  },
   {
    "tittel": "RBK slo Tromsø 5-3 på Lerkendal",
    "kilde": "Trøndelag",
    "lenke": "https://resultater.nrk.no/fotball/2026-09-12/1/events/2713723"
   },
   {
-   "tittel": "Frierferd i fremmed landskap",
+   "tittel": "Stengte flyplassen i Vilnius etter dronealarm – var fugler",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/urix/xl/sverigedemokraterna-kaprer-flere-og-flere-innvandrerstemmer-1.18020988"
+   "lenke": "https://www.nrk.no/norge/stenger-flyplassen-i-vilnius-etter-mulig-droneobservasjon-1.18023331"
   },
   {
    "tittel": "Nina (25) rakk ikke sykehuset – måtte føde i passasjersetet",
@@ -17,9 +37,9 @@
    "lenke": "https://www.nrk.no/trondelag/smabarnsmamma-nina-therese-tomren-rakk-aldri-a-komme-til-sykehuset-i-levanger.-matte-fode-i-bilen-1.18012948"
   },
   {
-   "tittel": "Anthropic-sjef vil ha lavere KI-tempo",
+   "tittel": "– Noen må innse at fisken i elva er den samme som i fjorden",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/nyheter/anthropic-sjef-vil-ha-lavere-ki-tempo-1.18022951"
+   "lenke": "https://www.nrk.no/tromsogfinnmark/miljodirektoratet-usikker-pa-hvor-mye-villaks-som-fiskes-i-sjoen-1.18017656"
   },
   {
    "tittel": "Éin kritisk skadd etter ATV-ulukke i Trondheim",
@@ -27,9 +47,9 @@
    "lenke": "https://www.nrk.no/trondelag/person-kritisk-skadd-etter-atv-ulykke-i-trondelag-1.18022583"
   },
   {
-   "tittel": "Korrespondentbrevet fra USA: Valgkampen som ikke ser ut som valgkamp",
+   "tittel": "Fugler utløste dronealarm i Litauen",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/urix/korrespondentbrevet-fra-usa_-valgkampen-som-ikke-ser-ut-som-valgkamp-1.18017367"
+   "lenke": "https://www.nrk.no/nyheter/fugler-utloste-dronealarm-i-litauen-1.18023319"
   },
   {
    "tittel": "Varsler erstatningskrav mot Bane Nor etter riving av omstridt bygg",
@@ -37,19 +57,14 @@
    "lenke": "https://www.nrk.no/trondelag/svartlamon-boligstiftelse-varsler-erstatningskrav-mot-bane-nor-etter-de-rev-strandveien-23-1.18022336"
   },
   {
-   "tittel": "Skulle kartlegge fisk: Fikk isbjørn på stanga",
-   "kilde": "NRK",
-   "lenke": "https://www.nrk.no/tromsogfinnmark/isbjorn-dukket-opp-pa-video-pa-havforskningsinstituttets-tokt-1.18022800"
-  },
-  {
    "tittel": "Modelltvillingene kapret rolle i norsk storfilm: – Passer helt perfekt",
    "kilde": "Trøndelag",
    "lenke": "https://www.nrk.no/trondelag/modelltvillingene-fra-trondheim-kapret-rolle-i-norske-filmen-_en-nasjon-i-sjakk_-1.18017613"
   },
   {
-   "tittel": "Kanonscoring og keeper-storspill da Arsenal vant igjen",
+   "tittel": "Bygger enorme «pyramider» for å stanse snøskred",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/sport/kanonscoring-og-keeper-storspill-da-arsenal-vant-igjen-1.18023053"
+   "lenke": "https://www.nrk.no/nordland/disse-_pyramidene_-skal-stanse-snoskredene-1.18021484"
   },
   {
    "tittel": "Midtnytt: Kulturnatt i Trondheim",
@@ -57,29 +72,9 @@
    "lenke": "https://www.nrk.no/video/DKTL98091126"
   },
   {
-   "tittel": "BYGDETRAPEN er årets stjerneskudd på by:Larm",
+   "tittel": "Tradisjonsrikt utvær legg ned: – Ei varsla krise for ærfuglen",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/nyheter/bygdetrapen-er-arets-stjerneskudd-pa-by_larm-1.18023086"
-  },
-  {
-   "tittel": "Torgeir Micaelsen blir ny statsråd etter Karianne Tung",
-   "kilde": "Trøndelag",
-   "lenke": "https://www.nrk.no/artikkel/store-viste-frem-sine-nye-statsrader-1527614"
-  },
-  {
-   "tittel": "Céline Dion med comeback",
-   "kilde": "NRK",
-   "lenke": "https://www.nrk.no/nyheter/celine-dion-med-comeback-1.18023071"
-  },
-  {
-   "tittel": "Karianne Tung ut av regjeringen",
-   "kilde": "Trøndelag",
-   "lenke": "https://www.nrk.no/artikkel/opplysninger-til-nrk-karianne-tung-ut-av-regjering-1527579"
-  },
-  {
-   "tittel": "Israel reagerer kraftig på ny britisk politikk",
-   "kilde": "NRK",
-   "lenke": "https://www.nrk.no/urix/israel-reagerer-kraftig-pa-ny-britisk-politikk-1.18020692"
+   "lenke": "https://www.nrk.no/nordland/det-tradisjonsrike-utvaeret-lanan-legg-ned_-_-ei-varsla-krise-for-aerfuglen-1.18022886"
   }
  ]
 }
