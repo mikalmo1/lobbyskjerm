@@ -1,15 +1,45 @@
 {
- "oppdatert": "2026-09-16T14:59:30Z",
+ "oppdatert": "2026-09-16T18:49:17Z",
  "saker": [
+  {
+   "tittel": "Bolighus brant ned på Nord-Statland",
+   "kilde": "Trøndelag",
+   "lenke": "https://www.nrk.no/trondelag/bolighus-brant-ned-pa-nord-statland-1.18027309"
+  },
+  {
+   "tittel": "Stansa bussar etter prosjektil-treff",
+   "kilde": "NRK",
+   "lenke": "https://www.nrk.no/vestland/vy-stansa-bussrute-etter-at-prosjektil-knuste-bussvindauge-pa-holsnoy-1.18027114"
+  },
+  {
+   "tittel": "Midtnytt: Cupkveld!⚽",
+   "kilde": "Trøndelag",
+   "lenke": "https://www.nrk.no/video/DKTL98091626"
+  },
+  {
+   "tittel": "Cupdrama: Brann-spiller innrømmer dommerfeil: – Jeg takler meg selv",
+   "kilde": "NRK",
+   "lenke": "https://www.nrk.no/sport/fotball-nm_-kjetil-rekdal-og-aalesund-rystet-av-3.-divisjonslag-i-cupens-andre-runde-1.18027180"
+  },
+  {
+   "tittel": "Foreslår å legge ned Namsos lufthavn: – Ikke akseptabelt",
+   "kilde": "Trøndelag",
+   "lenke": "https://www.nrk.no/trondelag/samferdselsdepartementet-foreslar-a-legge-ned-namsos-lufthavn-1.18026880"
+  },
+  {
+   "tittel": "Bak Norges største politioperasjon",
+   "kilde": "NRK",
+   "lenke": "https://www.nrk.no/stor-oslo/xl/bak-norges-storste-politioperasjon_-mange-jobbet-i-det-skjulte-under-kong-haralds-gravferd-1.18022782"
+  },
   {
    "tittel": "Nå skal elever lære seg å takle krise og krig",
    "kilde": "Trøndelag",
    "lenke": "https://www.nrk.no/trondelag/xl/na-skal-elever-laere-seg-a-takle-krise-og-krig-1.18018958"
   },
   {
-   "tittel": "Siktet for drapsforsøk på spedbarn",
+   "tittel": "SVT: Håpet ute for de borgerlige",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/ostfold/siktet-for-drapsforsok-pa-spedbarn-1.18026976"
+   "lenke": "https://www.nrk.no/nyheter/svt_-hapet-ute-for-de-borgerlige-1.18027187"
   },
   {
    "tittel": "Her vil staten gi nytt beite til Fosen-reinen: – Stans prosessen",
@@ -17,9 +47,9 @@
    "lenke": "https://www.nrk.no/trondelag/her-vil-staten-gi-nytt-beite-til-fosen-reinen_-_-stans-prosessen-1.18025866"
   },
   {
-   "tittel": "Fyrverkeri kan bli forbudt – også på nyttårsaften",
+   "tittel": "Antall savnede i Nepal stiger med 1000",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/stor-oslo/sv-og-mdg-foreslar-totalforbud-mot-fyrverkeri-i-oslo-1.18026510"
+   "lenke": "https://www.nrk.no/nyheter/antall-savnede-i-nepal-stiger-med-1000-1.18027128"
   },
   {
    "tittel": "Meiner Sørloth kan miste startplassen på landslaget – peikar på erstattaren",
@@ -27,9 +57,9 @@
    "lenke": "https://www.nrk.no/sport/bakrommet_-ekspertar-meiner-alexander-sorloths-tid-i-startellevar-pa-landslaget-kan-vere-over-1.18025953"
   },
   {
-   "tittel": "Mistenkt kokk pågrepet",
+   "tittel": "På denne fotballbanen er ikke influensere ønsket",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/nyheter/mistenkt-kokk-pagrepet-1.18027042"
+   "lenke": "https://www.nrk.no/rogaland/sportsklubben-jarl-i-stavanger-forbyr-influensere-pa-fotballbanen-1.18026439"
   },
   {
    "tittel": "Norske studenter trives mer og mer: – En utvikling fra 0–100",
@@ -37,9 +67,9 @@
    "lenke": "https://www.nrk.no/trondelag/studentene-har-ikke-hatt-det-bedre-pa-16-ar_-viser-ny-undersokelse-1.18021570"
   },
   {
-   "tittel": "Dagbladet: Nordmann funnet død i Riga",
+   "tittel": "Sverige: Svært tett mellom blokkene",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/nyheter/dagbladet_-nordmann-funnet-dod-i-riga-1.18027005"
+   "lenke": "https://www.nrk.no/nyheter/sverige_-svaert-tett-mellom-blokkene-1.18027186"
   },
   {
    "tittel": "Midtnytt: Vil ha flere unge inn i transportnæringa",
@@ -47,39 +77,9 @@
    "lenke": "https://www.nrk.no/video/DKTL98091526"
   },
   {
-   "tittel": "Haaland til NRK: – Heia biblioteka",
+   "tittel": "Gjennomførte ny aksjon kort tid før rettssaka: – Fant det nødvendig",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/rogaland/erling-braut-haaland-er-arets-bibliotekvenn-i-rogaland_-_-heia-bibliotekene-1.18026669"
-  },
-  {
-   "tittel": "Ny meningsmåling: Arbeiderpartiet er igjen Trondheims største parti",
-   "kilde": "Trøndelag",
-   "lenke": "https://www.nrk.no/trondelag/ap_-frp-og-rodt-er-vinnerne-i-ny-meningsmaling-for-trondheim-1.18020983"
-  },
-  {
-   "tittel": "Knivstikking på Kuben: Sikta 17-åring er tidlegare dømd",
-   "kilde": "NRK",
-   "lenke": "https://www.nrk.no/stor-oslo/knivstikking-pa-kuben_-siktet-17-aring-er-tidlegare-domt-1.18026801"
-  },
-  {
-   "tittel": "Midtnytt: Arbeiderpartiet igjen størst i Trondheim",
-   "kilde": "Trøndelag",
-   "lenke": "https://www.nrk.no/video/DKTL98091426"
-  },
-  {
-   "tittel": "Ville henge opp markiser – ble kvalm da hun fikk svar fra kommunen",
-   "kilde": "NRK",
-   "lenke": "https://www.nrk.no/trondelag/marianne-galaen-ville-ha-markiser-over-butikkvinduene-pa-roros_-men-far-ikke-unntak-fra-regel-1.18018883"
-  },
-  {
-   "tittel": "Fisker funnet etter leteaksjon ved Snåsavatnet",
-   "kilde": "Trøndelag",
-   "lenke": "https://www.nrk.no/trondelag/leteaksjon-etter-fisker-ved-snasavatnet-1.18023745"
-  },
-  {
-   "tittel": "Likestilte tøffinger",
-   "kilde": "NRK",
-   "lenke": "https://www.nrk.no/ytring/likestilte-toffinger-1.18024566"
+   "lenke": "https://www.nrk.no/tromsogfinnmark/ny-aksjon-pa-karlsoybruket-manadar-for-rettssaka-1.18026631"
   }
  ]
 }
