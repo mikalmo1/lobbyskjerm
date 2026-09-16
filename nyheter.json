@@ -1,15 +1,35 @@
 {
- "oppdatert": "2026-09-16T05:17:52Z",
+ "oppdatert": "2026-09-16T10:11:18Z",
  "saker": [
+  {
+   "tittel": "Her vil staten gi nytt beite til Fosen-reinen: – Stans prosessen",
+   "kilde": "Trøndelag",
+   "lenke": "https://www.nrk.no/trondelag/her-vil-staten-gi-nytt-beite-til-fosen-reinen_-_-stans-prosessen-1.18025866"
+  },
+  {
+   "tittel": "Raftoprisen til miljøvernarar i Colombia",
+   "kilde": "NRK",
+   "lenke": "https://www.nrk.no/vestland/raftoprisen-2026-til-miljo--og-menneskerettsgruppe-i-colombia-1.18026575"
+  },
+  {
+   "tittel": "Meiner Sørloth kan miste startplassen på landslaget – peikar på erstattaren",
+   "kilde": "Trøndelag",
+   "lenke": "https://www.nrk.no/sport/bakrommet_-ekspertar-meiner-alexander-sorloths-tid-i-startellevar-pa-landslaget-kan-vere-over-1.18025953"
+  },
+  {
+   "tittel": "Sender rein kraft frå verdsarvfjorden ut av landet: – Ganske tåpeleg",
+   "kilde": "NRK",
+   "lenke": "https://www.nrk.no/mr/norwegian-hydrogen_-rekordmange-dispensasjonar-til-dieselferjer-i-nullutsleppsfjorden-geiranger-1.17996816"
+  },
   {
    "tittel": "Norske studenter trives mer og mer: – En utvikling fra 0–100",
    "kilde": "Trøndelag",
    "lenke": "https://www.nrk.no/trondelag/studentene-har-ikke-hatt-det-bedre-pa-16-ar_-viser-ny-undersokelse-1.18021570"
   },
   {
-   "tittel": "Varsel: Sykepleier tilkalte ikke hjelp på grunn av innsparinger – pasient døde",
+   "tittel": "Vil anke dommen for drapet på Marita Løfshus Haugen",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/tromsogfinnmark/varsel_-sykepleier-ba-ikke-om-hjelp-pa-grunn-av-innsparinger-i-finnmarkssykehuset-_-pasient-dode-1.17885686"
+   "lenke": "https://www.nrk.no/trondelag/vil-anke-dommen-for-drapet-pa-marita-lofshus-haugen-1.18026353"
   },
   {
    "tittel": "Midtnytt: Vil ha flere unge inn i transportnæringa",
@@ -17,9 +37,9 @@
    "lenke": "https://www.nrk.no/video/DKTL98091526"
   },
   {
-   "tittel": "Flere artister trekker seg fra Sheeran-turné",
+   "tittel": "Jente blir sparket og slått i 40 sekunder – midt i byen",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/nyheter/flere-artister-trekker-seg-fra-sheeran-turne-1.18026169"
+   "lenke": "https://www.nrk.no/buskerud/jente-blir-sparket-og-slatt-i-40-sekunder-_-midt-i-byen-1.18021927"
   },
   {
    "tittel": "Ny meningsmåling: Arbeiderpartiet er igjen Trondheims største parti",
@@ -27,9 +47,9 @@
    "lenke": "https://www.nrk.no/trondelag/ap_-frp-og-rodt-er-vinnerne-i-ny-meningsmaling-for-trondheim-1.18020983"
   },
   {
-   "tittel": "Meiner Sørloth kan miste startplassen på landslaget – peikar på erstattaren",
+   "tittel": "Knivstikking på Kuben: Samtykker til fengsling",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/sport/bakrommet_-ekspertar-meiner-alexander-sorloths-tid-i-startellevar-pa-landslaget-kan-vere-over-1.18025953"
+   "lenke": "https://www.nrk.no/stor-oslo/knivstikking-pa-kuben_-samtykker-til-fengsling-1.18026358"
   },
   {
    "tittel": "Midtnytt: Arbeiderpartiet igjen størst i Trondheim",
@@ -37,9 +57,9 @@
    "lenke": "https://www.nrk.no/video/DKTL98091426"
   },
   {
-   "tittel": "Folk tilbake på bibliotekene – tusenvis venter på nye norske bøker",
+   "tittel": "Bayern München med storinnrykk i Stavanger: – Må saga ned tre for å få plass til bussane",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/rogaland/folk-er-tilbake-pa-bibliotekene-_-naermere-1000-pa-venteliste-for-tore-renbergs-nye-bok-1.18020205"
+   "lenke": "https://www.nrk.no/rogaland/bayern-munchen-legg-opp-til-storinnrykk-i-stavanger_-_-ma-saga-ned-tre-for-a-fa-plass-til-bussane-1.18025209"
   },
   {
    "tittel": "Fisker funnet etter leteaksjon ved Snåsavatnet",
@@ -47,9 +67,9 @@
    "lenke": "https://www.nrk.no/trondelag/leteaksjon-etter-fisker-ved-snasavatnet-1.18023745"
   },
   {
-   "tittel": "Republikaner vil stille Hegseth for riksrett",
+   "tittel": "EU vil innføre felles aldersgrense for sosiale medier",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/nyheter/republikaner-vil-stille-hegseth-for-riksrett-1.18026238"
+   "lenke": "https://www.nrk.no/nyheter/eu-vil-innfore-felles-aldersgrense-for-sosiale-medier-1.18026522"
   },
   {
    "tittel": "Rosenborg vant 1-0 mot Haugesund",
@@ -57,29 +77,9 @@
    "lenke": "https://resultater.nrk.no/fotball/2026-09-13/1/events/2725764"
   },
   {
-   "tittel": "SpaceX planlegger jordbane-ferd",
+   "tittel": "Ber om fengsel for korrupsjonstiltalt eks-politibetjent",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/nyheter/spacex-planlegger-jordbane-ferd-1.18026242"
-  },
-  {
-   "tittel": "Aksjonerte på E6 i helga – nå lover de mer",
-   "kilde": "Trøndelag",
-   "lenke": "https://www.nrk.no/trondelag/hoye-drivstoffpriser-gjor-at-_dieselbrolet_-skal-arrangere-flere-_kjor-sakte-aksjoner_-1.18016471"
-  },
-  {
-   "tittel": "Test deg selv i PISA-spørsmål",
-   "kilde": "NRK",
-   "lenke": "https://www.nrk.no/norge/test-deg-selv-i-pisa-sporsmal-1.18026090"
-  },
-  {
-   "tittel": "RBK slo Tromsø 5-3 på Lerkendal",
-   "kilde": "Trøndelag",
-   "lenke": "https://resultater.nrk.no/fotball/2026-09-12/1/events/2713723"
-  },
-  {
-   "tittel": "Øksnes: Fotgjenger omkom etter påkjørsel",
-   "kilde": "NRK",
-   "lenke": "https://www.nrk.no/nordland/rykket-ut-til-pakjorsel-pa-oksnes-i-vesteralen-1.18026194"
+   "lenke": "https://www.nrk.no/sorlandet/ber-om-fengsel-for-korrupsjonstiltalt-eks-politibetjent-1.18026404"
   }
  ]
 }
