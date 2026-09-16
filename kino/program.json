@@ -2,29 +2,6 @@
  "sted": "Tælet Kultursal",
  "dager": [
   {
-   "dato": "2026-09-16",
-   "avlyst": false,
-   "avlyst_grunn": null,
-   "lukket": false,
-   "lukket_notat": null,
-   "forestillinger": [
-    {
-     "id": 47986,
-     "tid": "20:00",
-     "tittel": "En nasjon i sjakk",
-     "aldersgrense": "15",
-     "spilletid": 110,
-     "undertekst": "2D Original tale Norsk tekst",
-     "pris": 130,
-     "billettlenke": "https://kinologg.kino.no/nettsalg/47986",
-     "avlyst": false,
-     "avlyst_grunn": null,
-     "lukket": false,
-     "lukket_notat": null
-    }
-   ]
-  },
-  {
    "dato": "2026-09-30",
    "avlyst": false,
    "avlyst_grunn": null,
@@ -155,10 +132,8 @@
   }
  ],
  "hero": {
-  "dato": "2026-09-16",
-  "bilder": {
-   "47986": "2026-09-16_47986_9.jpg"
-  }
+  "dato": "2026-09-30",
+  "bilder": {}
  },
- "oppdatert": "2026-09-10T14:27"
+ "oppdatert": "2026-09-17T00:00"
 }
