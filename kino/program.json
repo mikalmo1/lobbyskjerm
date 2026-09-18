@@ -103,6 +103,20 @@
      "avlyst_grunn": null,
      "lukket": false,
      "lukket_notat": null
+    },
+    {
+     "id": 49020,
+     "tid": "20:00",
+     "tittel": "Markens grøde",
+     "aldersgrense": "12",
+     "spilletid": 159,
+     "undertekst": "2D Original tale Norsk tekst",
+     "pris": 130,
+     "billettlenke": null,
+     "avlyst": false,
+     "avlyst_grunn": null,
+     "lukket": false,
+     "lukket_notat": null
     }
    ]
   },
@@ -138,5 +152,5 @@
    "48888": "2026-09-30_48888_13.jpg"
   }
  },
- "oppdatert": "2026-09-17T08:14"
+ "oppdatert": "2026-09-18T12:00"
 }
