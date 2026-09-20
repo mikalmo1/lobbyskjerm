@@ -1,15 +1,40 @@
 {
- "oppdatert": "2026-09-20T06:16:43Z",
+ "oppdatert": "2026-09-20T11:42:50Z",
  "saker": [
+  {
+   "tittel": "Påkjørsel i Malvik – én person omkommet",
+   "kilde": "Trøndelag",
+   "lenke": "https://www.nrk.no/trondelag/to-personer-pakjort-i-malvik-1.18030637"
+  },
+  {
+   "tittel": "Det bare klatrerne ser",
+   "kilde": "NRK",
+   "lenke": "https://www.nrk.no/urix/xl/fjellet-er-blitt-farligere-1.18027972"
+  },
+  {
+   "tittel": "Har ingen medisinar som verkar – forskarar trur dei veit om ei mogleg behandling",
+   "kilde": "Trøndelag",
+   "lenke": "https://www.nrk.no/trondelag/ingen-medisinar-som-verkar-mot-leversjukdommen-psc-_-forskarar-trur-dei-veit-om-ei-mogleg-behandling-1.18021616"
+  },
+  {
+   "tittel": "Én fisketurist er død - tre er antatt omkommet",
+   "kilde": "NRK",
+   "lenke": "https://www.nrk.no/mr/savna-fisketurister-averoy_-soker-na-etter-antatt-omkomne-1.18030566"
+  },
+  {
+   "tittel": "Våtere klima tvinger fram gamle byggekunster",
+   "kilde": "Trøndelag",
+   "lenke": "https://www.nrk.no/trondelag/vatere-klima-tvinger-fram-gamle-byggekunster-_-over-700-bygninger-pa-roros-har-blitt-restaurert-1.18012836"
+  },
+  {
+   "tittel": "Daniel (18) mente Gud var en myte – nå går han i kirken hver søndag",
+   "kilde": "NRK",
+   "lenke": "https://www.nrk.no/rogaland/1-av-3-unge-tror-pa-gud-_-oppsiktsvekkende-stor-vekst-i-ny-norsk-monitor-undersokelse-1.17987513"
+  },
   {
    "tittel": "Reality-romanser: – Jeg skjønner at det fra utsiden virker underlig",
    "kilde": "Trøndelag",
    "lenke": "https://www.nrk.no/trondelag/romantikk-pa-norges-toffeste-og-i-andre-reality-programmer_-den-vitenskapelige-forklaringen-1.18000510"
-  },
-  {
-   "tittel": "Naa har dei to mest sentrale nordmennene skrota Å-en",
-   "kilde": "NRK",
-   "lenke": "https://www.nrk.no/mr/baade-kong-haakon-og-erling-braut-haaland-har-skrota-vaar-nasjonalbokstav-1.18007273"
   },
   {
    "tittel": "Forsker om paracetamol og gravi­ditet: Bør unngås når andre tiltak er nok",
@@ -17,9 +42,9 @@
    "lenke": "https://www.nrk.no/trondelag/bruk-av-paracetamol-i-svangerskapet-knyttes-til-mindre-eggstokker-og-testikler-hos-babyer-1.18026380"
   },
   {
-   "tittel": "Vy: 163 togavganger innstilt søndag",
+   "tittel": "Skrei-museet til over ein halv milliard opna denne helga",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/nyheter/vy_-163-togavganger-innstilt-sondag-1.18030514"
+   "lenke": "https://www.nrk.no/nordland/offisiell-opning-skrei-museet-i-lofoten-1.18029638"
   },
   {
    "tittel": "Flere kirkegårder rammet av hærverk: – Forkastelig atferd",
@@ -27,9 +52,9 @@
    "lenke": "https://www.nrk.no/trondelag/flere-gravsteiner-pa-saupstad-gravlund-i-trondheim-utsatt-for-haerverk-1.18029306"
   },
   {
-   "tittel": "Sheeran kommenterte Gaza-kritikken fra scenen",
+   "tittel": "Ukraina angrep oljeraffineri i Moskva",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/nyheter/sheeran-kommenterte-gaza-kritikken-fra-scenen-1.18030510"
+   "lenke": "https://www.nrk.no/nyheter/ukraina-angrep-oljeraffineri-i-moskva-1.18030537"
   },
   {
    "tittel": "Alvorlig MC-ulykke på Oppdal i Trøndelag",
@@ -37,9 +62,9 @@
    "lenke": "https://www.nrk.no/trondelag/alvorlig-mc-ulykke-pa-oppdal-i-trondelag-1.18028860"
   },
   {
-   "tittel": "Fire drept i båtangrep i Karibia",
+   "tittel": "Tyskland sliter med å finne nok soldater til Europas største hær",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/nyheter/fire-drept-i-batangrep-i-karibia-1.18030509"
+   "lenke": "https://www.nrk.no/urix/tyskland-trenger-80.000-nye-soldater-for-a-bli-krigsdyktige-1.18026481"
   },
   {
    "tittel": "Ukas siste Midtnytt: Norge møter Kina i tennisoppgjør",
@@ -47,39 +72,9 @@
    "lenke": "https://www.nrk.no/video/DKTL98091826"
   },
   {
-   "tittel": "Søker to mistenkte etter knivstikking i Bodø",
+   "tittel": "Naa har dei to mest sentrale nordmennene skrota Å-en",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/nyheter/soker-to-mistenkte-etter-knivstikking-i-bodo-1.18030449"
-  },
-  {
-   "tittel": "Punget ut for kynisk grep: – Kan si at planen vår funket godt",
-   "kilde": "Trøndelag",
-   "lenke": "https://www.nrk.no/sport/punget-ut-for-kynisk-grep_-_-kan-si-at-planen-var-funket-godt-1.18028530"
-  },
-  {
-   "tittel": "Alexander (19) haiket fra Lindesnes til Nordkapp på rekordtid",
-   "kilde": "NRK",
-   "lenke": "https://www.nrk.no/tromsogfinnmark/haiket-fra-lindesnes-til-nordkapp-pa-rekordtid-1.18021490"
-  },
-  {
-   "tittel": "Tester nytt internasjonalt samarbeid på sin «Top Gun-skole»",
-   "kilde": "Trøndelag",
-   "lenke": "https://www.nrk.no/trondelag/na-skal-norge-dele-fly-og-piloter-med-flere-andre-land-1.18026974"
-  },
-  {
-   "tittel": "Skaden kunne stoppet Johaugs løpedrøm: – Blodet sprutet i hele sommer",
-   "kilde": "NRK",
-   "lenke": "https://www.nrk.no/sport/denne-skaden-kunne-stoppet-therese-johaugs-lopedrom_-_-blodet-sprutet-i-hele-sommer-1.18030115"
-  },
-  {
-   "tittel": "Midtnytt: Lager grusbane for tennis i Spektrum",
-   "kilde": "Trøndelag",
-   "lenke": "https://www.nrk.no/video/DKTL98091726"
-  },
-  {
-   "tittel": "Tre mistenkte etter knivstikking i Fredrikstad",
-   "kilde": "NRK",
-   "lenke": "https://www.nrk.no/ostfold/knivstikking-i-fredrikstad-1.18030402"
+   "lenke": "https://www.nrk.no/mr/baade-kong-haakon-og-erling-braut-haaland-har-skrota-vaar-nasjonalbokstav-1.18007273"
   }
  ]
 }
