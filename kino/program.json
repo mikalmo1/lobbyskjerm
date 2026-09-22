@@ -44,7 +44,36 @@
    "avlyst_grunn": null,
    "lukket": false,
    "lukket_notat": null,
-   "forestillinger": []
+   "forestillinger": [
+    {
+     "id": 49043,
+     "tid": "18:00",
+     "tittel": "Sauen Shaun - Gårdens fårbannelse",
+     "aldersgrense": "A",
+     "spilletid": 81,
+     "undertekst": "2D Norsk tale Utekstet",
+     "pris": 110,
+     "billettlenke": null,
+     "avlyst": false,
+     "avlyst_grunn": null,
+     "lukket": false,
+     "lukket_notat": null
+    },
+    {
+     "id": 49045,
+     "tid": "20:00",
+     "tittel": "La fjella leve",
+     "aldersgrense": "A",
+     "spilletid": 100,
+     "undertekst": "2D Original tale Norsk tekst",
+     "pris": 130,
+     "billettlenke": null,
+     "avlyst": false,
+     "avlyst_grunn": null,
+     "lukket": false,
+     "lukket_notat": null
+    }
+   ]
   },
   {
    "dato": "2026-10-28",
@@ -152,5 +181,5 @@
    "48888": "2026-09-30_48888_13.jpg"
   }
  },
- "oppdatert": "2026-09-18T12:00"
+ "oppdatert": "2026-09-22T13:00"
 }
