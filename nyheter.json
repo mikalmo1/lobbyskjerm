@@ -1,15 +1,25 @@
 {
- "oppdatert": "2026-09-22T09:42:53Z",
+ "oppdatert": "2026-09-22T14:11:54Z",
  "saker": [
+  {
+   "tittel": "Ung mann fra Sunndal omkom i ulykka på Lønset",
+   "kilde": "Trøndelag",
+   "lenke": "https://www.nrk.no/mr/ung-mann-fra-sunndal-omkom-i-ulykke-1.18032692"
+  },
+  {
+   "tittel": "Kritisk til at Hangeland gir ut bok rett etter VM: – Stusser veldig",
+   "kilde": "NRK",
+   "lenke": "https://www.nrk.no/sport/kritisk-til-at-hangeland-gir-ut-bok-rett-etter-vm_-_-stusser-veldig-1.18031809"
+  },
   {
    "tittel": "Frykter for logistikken i en krise – ber nordiske land om oppgraderinger",
    "kilde": "Trøndelag",
    "lenke": "https://www.nrk.no/trondelag/frykter-for-logistikken-i-en-krise--_-ber-nordiske-land-om-oppgraderinger-1.18031940"
   },
   {
-   "tittel": "Kritiserer eiga regjering: – Ein smått absurd situasjon",
+   "tittel": "Slakter ministerens beredskaps-lekkasje i nord: – Er det 1. april?",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/sorlandet/bompengar-pa-e39_-lokale-ap-politikere-kritiserer-eiga-regjering-1.18031522"
+   "lenke": "https://www.nrk.no/tromsogfinnmark/slakter-justisministerens-forsvars-lekkasjer-til-finnmark-1.18032498"
   },
   {
    "tittel": "Frifunnet for uaktsomt drap etter dødsulykke: – Han er lettet",
@@ -17,9 +27,9 @@
    "lenke": "https://www.nrk.no/trondelag/mann-i-50-arene-frifunnet-i-lagmannsretten-for-uaktsomt-drap-pa-aud-andersen-sandodden-i-stjordal-1.18031897"
   },
   {
-   "tittel": "Store problemer i togtrafikken rundt Oslo",
+   "tittel": "Ber om ungdomsstraff for tenåringer i drapsforbund-sak",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/stor-oslo/store-problemer-i-togtrafikken-rundt-oslo-1.18032638"
+   "lenke": "https://www.nrk.no/rogaland/ber-om-ungdomsstraff-for-tenaringer-i-drapsforbund-sak-i-sandnes-1.18032473"
   },
   {
    "tittel": "Midtnytt: Kø ved pumpene i Sverige",
@@ -27,9 +37,9 @@
    "lenke": "https://www.nrk.no/video/DKTL98092126"
   },
   {
-   "tittel": "TV 2: Frogner-kvinnen ber om omkamp i retten",
+   "tittel": "Kritiserer eiga regjering: – Ein smått absurd situasjon",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/nyheter/tv-2_-frogner-kvinnen-ber-om-omkamp-i-retten-1.18032603"
+   "lenke": "https://www.nrk.no/sorlandet/bompengar-pa-e39_-lokale-ap-politikere-kritiserer-eiga-regjering-1.18031522"
   },
   {
    "tittel": "Gutt i tenårene omkom etter MC-ulykke",
@@ -37,9 +47,9 @@
    "lenke": "https://www.nrk.no/trondelag/gutt-i-tenarene-omkom-etter-mc-ulykke--1.18031647"
   },
   {
-   "tittel": "Ukrainske droner rammet to russiske oljeraffinerier",
+   "tittel": "Togtrøbbel rundt Oslo – fortsatt forsinkelser",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/nyheter/ukrainske-droner-rammet-to-russiske-oljeraffinerier-1.18032575"
+   "lenke": "https://www.nrk.no/stor-oslo/store-problemer-i-togtrafikken-rundt-oslo-1.18032638"
   },
   {
    "tittel": "Påkjørsel i Malvik – én person omkommet",
@@ -47,9 +57,9 @@
    "lenke": "https://www.nrk.no/trondelag/to-personer-pakjort-i-malvik-1.18030637"
   },
   {
-   "tittel": "Jubler etter regel-endring: – Et gigantisk steg mot EM for Norge",
+   "tittel": "TV 2: Frogner-kvinnen ber om omkamp i retten",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/sport/slik-kommer-norge-til-em-_-dette-ma-du-vite-om-nasjonsligaen-1.18031321"
+   "lenke": "https://www.nrk.no/nyheter/tv-2_-frogner-kvinnen-ber-om-omkamp-i-retten-1.18032603"
   },
   {
    "tittel": "Har ingen medisinar som verkar – forskarar trur dei veit om ei mogleg behandling",
@@ -57,9 +67,9 @@
    "lenke": "https://www.nrk.no/trondelag/ingen-medisinar-som-verkar-mot-leversjukdommen-psc-_-forskarar-trur-dei-veit-om-ei-mogleg-behandling-1.18021616"
   },
   {
-   "tittel": "Vil ha strengere regler for energidrikk – men det stopper ikke Lasse (16)",
+   "tittel": "Ukrainske droner rammet to russiske oljeraffinerier",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/nordland/stor-undersokelse-viser-at-ungdom-drikker-mye-energidrikk.-vil-fjerne-energidrikk-fra-norske-skoler-1.18029006"
+   "lenke": "https://www.nrk.no/nyheter/ukrainske-droner-rammet-to-russiske-oljeraffinerier-1.18032575"
   },
   {
    "tittel": "Våtere klima tvinger fram gamle byggekunster",
@@ -67,19 +77,9 @@
    "lenke": "https://www.nrk.no/trondelag/vatere-klima-tvinger-fram-gamle-byggekunster-_-over-700-bygninger-pa-roros-har-blitt-restaurert-1.18012836"
   },
   {
-   "tittel": "De voksne slår alarm om «krisetall» i skolen – nå svarer 15-åringene",
+   "tittel": "Jubler etter regel-endring: – Et gigantisk steg mot EM for Norge",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/nordland/de-voksne-slar-alarm-om-pisa-tallene-_-na-svarer-15-aringene-1.18028986"
-  },
-  {
-   "tittel": "Reality-romanser: – Jeg skjønner at det fra utsiden virker underlig",
-   "kilde": "Trøndelag",
-   "lenke": "https://www.nrk.no/trondelag/romantikk-pa-norges-toffeste-og-i-andre-reality-programmer_-den-vitenskapelige-forklaringen-1.18000510"
-  },
-  {
-   "tittel": "Solbakken refser kommentator: – Dette er syltynt",
-   "kilde": "NRK",
-   "lenke": "https://www.nrk.no/sport/stale-solbakken-refser-kommentator_-_-syltynn-artikkel-1.18031899"
+   "lenke": "https://www.nrk.no/sport/slik-kommer-norge-til-em-_-dette-ma-du-vite-om-nasjonsligaen-1.18031321"
   }
  ]
 }
