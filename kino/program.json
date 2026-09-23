@@ -164,14 +164,6 @@
    "lukket": false,
    "lukket_notat": null,
    "forestillinger": []
-  },
-  {
-   "dato": "2026-12-23",
-   "avlyst": true,
-   "avlyst_grunn": "Lille julaften",
-   "lukket": false,
-   "lukket_notat": null,
-   "forestillinger": []
   }
  ],
  "hero": {
@@ -181,5 +173,5 @@
    "48888": "2026-09-30_48888_13.jpg"
   }
  },
- "oppdatert": "2026-09-22T22:00"
+ "oppdatert": "2026-09-23T09:00"
 }
