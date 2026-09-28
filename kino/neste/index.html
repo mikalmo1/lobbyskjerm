@@ -3,164 +3,165 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Neste kinokveld – Tælet Kultursal</title>
+<title>Kino i Tælet Kultursal</title>
 <!--
-  «Neste kinokveld»-hero for kommunens kinoside (egen iframe over visningslista).
-  Leser ../program.json (samme data som lista); bakgrunnsbildene per film er
-  nedskalerte kopier av stillbildene fra materiell-pipelinen, pushet hit av
-  Knuten som <dato>_<forestilling>_<asset>.jpg. Tekst legges LEVENDE oppå fra
-  JSON-en — avlysning/billettlenke stemmer alltid, uansett bilde.
-  Heroen viser første kommende IKKE-avlyste kveld; en nærmere avlyst kveld
-  nevnes i en egen linje. Jf. DEPLOY-kinoliste.md.
+  Kinorammen på kommunens kinoside (sept. 2026). ÉN ramme som erstatter både
+  «Neste kinokveld»-heroen og visningslista (kino/index.html, som fortsatt virker).
+
+  Kommunesida (ACOS) har bare en iframe-widget med fast bredde og høyde, som
+  skaleres ned proporsjonalt på smal skjerm, og stripper script. Rammen er
+  derfor i stående format og designet for å få plass i den høyden: stort på
+  PC, kompakte rader på mobil, trinnvis kompaktere når høyden er liten.
+  Overskudd ruller diskret inni som siste utvei.
+
+  Innhold: neste kveld stort (bilde, omtale, billettstatus), de to neste
+  kveldene kompakt med plakat, og lenke til hele programmet hos Bygdekinoen.
+  «I kveld» på visningsdagen; etter at siste film er ferdig, går rammen videre
+  til neste kveld. Leser ../program.json (pushet av Knuten).
 -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
   :root{
-    --nea:#296079;
-    --nea-dyp:#1b4257;
-    --nea-natt:#12303f;
-    --gull:#e3b23c;
-    --hvit:#ffffff;
-    --dus:#b8ccd6;
+    --nea:#296079; --nea-dyp:#1b4257; --nea-natt:#12303f;
+    --gull:#e3b23c; --hvit:#fff; --dus:#b8ccd6; --svak:rgba(255,255,255,.08);
     --avlyst:#ff8a80;
   }
   *{box-sizing:border-box;margin:0;padding:0}
   html,body{height:100%}
   html{background:transparent}
-  body{
-    font-family:"Source Sans 3","Source Sans Pro","Segoe UI",Arial,sans-serif;
-    color:var(--hvit);background:transparent;font-size:16px;line-height:1.4;
+  body{font-family:"Source Sans 3","Source Sans Pro","Segoe UI",Arial,sans-serif;
+       color:var(--hvit);background:transparent;font-size:16px;line-height:1.4}
+  a{color:inherit}
+  .ramme{
+    height:100%;display:flex;flex-direction:column;gap:14px;
+    border-radius:12px;overflow:auto;scrollbar-width:thin;
+    background:linear-gradient(160deg,var(--nea) 0%,var(--nea-dyp) 45%,var(--nea-natt) 100%);
+    padding:18px 20px 16px;
   }
-  /* Heroen fyller HELE iframen (bredde og høyde) — widgetens px-felter i CMS-et
-     bestemmer størrelsen, og det blir aldri dødrom under panelet. */
-  .hero{
-    height:100%;display:flex;flex-direction:column;
-    border-radius:12px;overflow:hidden;
-    background:linear-gradient(135deg,var(--nea) 0%,var(--nea-dyp) 55%,var(--nea-natt) 100%);
-    padding:18px 20px 20px;
-  }
-  .topp{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:4px}
+  .ramme > *{flex-shrink:0}           /* aldri klem et kort; overskudd ruller heller */
+  .topp{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap}
   .kicker{font-size:.78rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--gull)}
   .dato{font-size:1.6rem;font-weight:700;line-height:1.15}
   .sted{font-size:.9rem;color:var(--dus)}
-  .varsel{
-    font-size:.88rem;color:var(--avlyst);margin:2px 0 6px;
-  }
-  /* Kortene holder 16:9 (bildene vises ubeskåret i bredden); panelet fyller
-     iframen og ledig plass sentreres rundt kortene i stedet for å strekke dem. */
-  .kort-rad{display:flex;gap:14px;margin-top:10px;flex:1 1 auto;min-height:0;align-items:center}
-  .kort{
-    position:relative;flex:1 1 0;min-width:0;border-radius:10px;overflow:hidden;
-    background:linear-gradient(160deg,#33708c,var(--nea-dyp));
-    aspect-ratio:16/9;max-height:100%;display:flex;align-items:flex-end;
-  }
-  /* Bildet vises alltid HELT (contain) — avviker det fra 16:9, fyller en uskarp
-     kopi av samme bilde feltene rundt i stedet for at motivet beskjæres. */
-  .kort img.bg-blur{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:blur(16px) brightness(.65);transform:scale(1.12)}
-  .kort img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:contain}
-  .kort .skygge{position:absolute;inset:0;background:linear-gradient(to top,rgba(10,30,40,.88) 0%,rgba(10,30,40,.25) 55%,rgba(10,30,40,.05) 100%)}
-  .kort .tidmerke{
-    position:absolute;top:10px;left:10px;background:var(--gull);color:#2b2410;
-    font-weight:700;font-size:.9rem;border-radius:7px;padding:3px 10px;
-  }
-  .kort .innhold{position:relative;width:100%;padding:12px 14px}
-  .k-tittel{font-weight:700;font-size:1.15rem;line-height:1.2;text-shadow:0 1px 3px rgba(0,0,0,.4)}
-  .k-tittel .kommer{font-weight:400;font-style:italic;color:var(--dus)}
-  .k-meta{font-size:.82rem;color:var(--dus);margin-top:2px}
-  .k-meta span + span::before{content:"·";margin:0 5px}
-  .k-handling{display:flex;align-items:center;gap:10px;margin-top:8px}
-  .kjop{
-    display:inline-block;background:var(--gull);color:#2b2410;text-decoration:none;
-    font-weight:700;font-size:.88rem;padding:6px 14px;border-radius:7px;white-space:nowrap;
-  }
-  .kjop:hover,.kjop:focus{filter:brightness(1.08)}
-  .pris{font-weight:600;font-size:.95rem}
-  .kort.er-avlyst img.bg{filter:grayscale(1) brightness(.55)}
-  .kort.er-avlyst .k-tittel{text-decoration:line-through;color:var(--dus)}
-  .kort.er-avlyst .tidmerke{background:#8a8a8a;color:#fff}
-  .merke-avlyst{
-    display:inline-block;background:#b3261e;color:#fff;font-size:.72rem;font-weight:700;
-    letter-spacing:.06em;text-transform:uppercase;padding:2px 9px;border-radius:99px;
-  }
+  .varsel{font-size:.88rem;color:var(--avlyst)}
   .tom{flex:1;display:flex;align-items:center;justify-content:center;text-align:center;color:var(--dus);padding:16px 6px}
 
-  @media (max-width:560px){
-    /* Mobil: samme formspråk som lista — rader på mørk bunn med 16:9-minibilde
-       til venstre, tidsmerke og tekst ved siden av. ALDRI tekst oppå bildet.
-       Alt må få plass i en FAST iframe-høyde (CMS-et stripper script); radene
-       midtstilles i ledig plass, og scroller diskret om det mot formodning
-       skulle bli for trangt. */
-    .hero{padding:12px 12px 14px}
-    .dato{font-size:1.2rem}
-    .sted{display:none}                   /* redundant — heroen står på kinosiden */
-    /* Ingen scroll: radene krymper heller til plassen (og under 340px høyde
-       ofres metalinja — se egen query under). */
-    .kort-rad{flex-direction:column;gap:8px;justify-content:center;overflow:hidden}
-    .kort{
-      flex:0 1 auto;min-height:0;aspect-ratio:auto;max-height:none;overflow:hidden;
-      flex-direction:row;align-items:center;gap:10px;padding:8px 10px;
-      background:rgba(255,255,255,.08);
-    }
-    .kort img.bg-blur,.kort .skygge{display:none}
-    .kort img.bg{
-      position:static;order:-1;flex:0 0 auto;
-      width:104px;height:auto;aspect-ratio:16/9;object-fit:cover;border-radius:6px;
-    }
-    .kort .tidmerke{position:static;flex:0 0 auto;font-size:.8rem}
-    .kort .innhold{position:relative;padding:0;min-width:0;flex:1}
-    .k-tittel{font-size:.95rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-shadow:none}
-    .k-meta{font-size:.78rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-    .k-handling{margin-top:4px}
-    .kjop{font-size:.78rem;padding:3px 9px}
-    .varsel{font-size:.82rem}
-    .kort.er-avlyst img.bg{filter:grayscale(1) brightness(.6)}
+  /* --- Neste kveld: store kort, tekst UNDER bildet (aldri oppå) -------------- */
+  .hoved{display:flex;gap:14px}
+  .stor{flex:1 1 0;min-width:0;display:flex;flex-direction:column;border-radius:10px;overflow:hidden;background:var(--svak)}
+  .bilde{position:relative;aspect-ratio:16/9;overflow:hidden;background:linear-gradient(160deg,#33708c,var(--nea-dyp))}
+  .bilde img.blur{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:blur(16px) brightness(.6);transform:scale(1.12)}
+  .bilde img.hel{position:absolute;inset:0;width:100%;height:100%;object-fit:contain}
+  .tidmerke{position:absolute;top:10px;left:10px;background:var(--gull);color:#2b2410;font-weight:700;font-size:.9rem;border-radius:7px;padding:3px 10px}
+  .stor .tekst{padding:10px 12px 12px;display:flex;flex-direction:column;gap:4px;flex:1;min-width:0}
+  .tittel{font-weight:700;font-size:1.12rem;line-height:1.2}
+  .meta{font-size:.82rem;color:var(--dus)}
+  .meta span + span::before{content:"·";margin:0 5px}
+  .omtale{font-size:.86rem;color:#dce8ee;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:4;overflow:hidden}
+  .handling{display:flex;align-items:center;flex-wrap:wrap;gap:6px 12px;margin-top:auto;padding-top:6px}
+  .kjop{display:inline-block;background:var(--gull);color:#2b2410;text-decoration:none;font-weight:700;font-size:.88rem;padding:6px 14px;border-radius:7px;white-space:nowrap}
+  .kjop:hover,.kjop:focus{filter:brightness(1.08)}
+  .pris{font-weight:600;font-size:.95rem}
+  .salg{font-size:.8rem;color:var(--dus)}
+  .om{font-size:.82rem;color:var(--dus);text-decoration:underline;text-underline-offset:2px}
+  .merke{display:inline-block;font-size:.72rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:2px 9px;border-radius:99px}
+  .merke.avlyst{background:#b3261e;color:#fff}
+  .merke.skole{background:#dce8ee;color:var(--nea-dyp)}
+  .er-avlyst .tittel{text-decoration:line-through;color:var(--dus)}
+  .er-avlyst img{filter:grayscale(1) brightness(.55)}
+
+  /* --- Senere: kompakte rader med plakat --------------------------------------- */
+  .senere{display:flex;flex-direction:column;gap:10px}
+  .senere h2{font-size:.78rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--gull)}
+  .kveld{background:var(--svak);border-radius:10px;padding:10px 12px}
+  .kveld-dato{font-weight:700;font-size:1rem;margin-bottom:6px}
+  .liten{display:flex;gap:12px;align-items:flex-start;padding:6px 0}
+  .liten + .liten{border-top:1px solid rgba(255,255,255,.08)}
+  .plakat{flex:0 0 auto;width:52px;aspect-ratio:2/3;border-radius:5px;overflow:hidden;background:linear-gradient(160deg,#33708c,var(--nea-dyp))}
+  .plakat img{width:100%;height:100%;object-fit:cover;display:block}
+  .liten .tekst{flex:1;min-width:0;display:flex;flex-direction:column;gap:2px}
+  .rad1{display:flex;align-items:baseline;gap:8px;min-width:0}
+  .tid{flex:0 0 auto;font-weight:700;font-size:.8rem;background:var(--gull);color:#2b2410;border-radius:6px;padding:1px 7px}
+  .liten .tittel{font-size:.98rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .liten .omtale{-webkit-line-clamp:2;font-size:.82rem}
+  .liten .handling{margin-top:2px;padding-top:2px}
+  .liten .kjop{font-size:.78rem;padding:3px 10px}
+  .kommer{font-style:italic;color:var(--dus);font-size:.9rem}
+
+  .fot{margin-top:auto;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;font-size:.82rem;color:var(--dus)}
+  .fot a{color:var(--hvit);font-weight:600;text-decoration:underline;text-underline-offset:3px}
+
+  /* Middels bredde (nettbrett): omtalen i «Senere» faller bort, den store er kortere. */
+  @media (max-width:760px){
+    .omtale{-webkit-line-clamp:2}
+    .liten .omtale{display:none}
   }
 
-  /* Lav iframe på mobil (ACOS skalerer widget-høyden med bredden — på smal
-     skjerm er heroen typisk bare ~180–200px høy): kompakter trinnvis i stedet
-     for å scrolle. Minibildene beholdes hele veien ned. */
-  @media (max-width:560px) and (max-height:340px){
-    .hero{padding:8px 10px 10px}
-    .kicker{font-size:.68rem}
-    .dato{font-size:1.05rem}
-    .kort-rad{gap:6px;margin-top:6px}
-    .kort{padding:5px 8px}
-    .kort img.bg{width:84px}
-    .k-meta{display:none}
+  /* --- Smal ramme (mobil): stort kort blir rad, ingen omtale ------------------- */
+  @media (max-width:560px){
+    .ramme{padding:10px 12px;gap:7px}
+    .dato{font-size:1.2rem}
+    .sted{display:none}
+    .hoved{flex-direction:column;gap:8px}
+    .stor{flex:0 0 auto;flex-direction:row;align-items:center;gap:10px;padding:4px 8px}
+    .bilde{flex:0 0 auto;width:92px;border-radius:6px}
+    .bilde img.blur{display:none}
+    .bilde img.hel{object-fit:cover}
+    .tidmerke{top:4px;left:4px;font-size:.72rem;padding:1px 6px;border-radius:5px}
+    .stor .tekst{padding:0;gap:2px}
+    .tittel{font-size:.95rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+    .meta{font-size:.76rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+    .omtale{display:none}
+    .handling{padding-top:2px}
+    .kjop{font-size:.76rem;padding:3px 9px}
+    .pris{font-size:.85rem}
+    .om{display:none}
+    .senere{gap:6px}
+    .senere h2{display:none}
+    .kveld{padding:4px 10px}
+    .kveld-dato{font-size:.9rem;margin-bottom:0}
+    .liten{gap:10px;padding:2px 0;align-items:center}
+    .plakat{width:26px}
+    .liten .tittel{font-size:.92rem}
+    .liten .meta{display:none}
+    .liten .handling{display:none}
+    .fot{font-size:.76rem}
+    .fot .oppdatert{display:none}
   }
-  @media (max-width:560px) and (max-height:250px){
-    .hero{padding:6px 8px 8px;border-radius:8px}
-    .kicker{display:none}
-    .dato{font-size:.98rem}
-    .kort-rad{gap:5px;margin-top:5px}
-    .kort{padding:4px 6px;gap:8px}
-    .kort img.bg{width:70px;border-radius:4px}
-    .kort .tidmerke{font-size:.72rem;padding:2px 7px}
-    .k-tittel{font-size:.86rem}
-    .k-handling{margin-top:2px}
-    .kjop{font-size:.72rem;padding:2px 8px}
-    .pris{font-size:.82rem}
+  /* Lav ramme: kompakter trinnvis. */
+  @media (max-height:520px){
+    .omtale{-webkit-line-clamp:2}
+    .liten .omtale{display:none}
+  }
+  @media (max-width:560px) and (max-height:470px){
+    .ramme{gap:7px;padding:9px 10px}
+    .kicker{font-size:.66rem}
+    .stor{padding:5px 8px}
+    .bilde{width:84px}
+    .stor .meta{display:none}
+    .senere h2{display:none}
+    .liten{padding:2px 0}
+    .plakat{width:26px}
   }
 </style>
 </head>
 <body>
-<div class="hero" id="hero">
-  <div class="tom" id="laster">Henter neste kinokveld …</div>
+<div class="ramme" id="ramme">
+  <div class="tom">Henter kinoprogrammet …</div>
 </div>
 
 <script>
 (function(){
   "use strict";
-  var hero = document.getElementById("hero");
+  var ramme = document.getElementById("ramme");
+  var SENERE = 2;                       // kvelder etter den neste (Mikal, 28.09.2026)
 
   function meldHoyde(){
-    try{ parent.postMessage({type:"selbukino-hero-hoyde",
-                             hoyde: document.documentElement.scrollHeight}, "*"); }catch(e){}
+    try{ parent.postMessage({type:"selbukino-hero-hoyde", hoyde: document.documentElement.scrollHeight}, "*"); }catch(e){}
   }
   if ("ResizeObserver" in window) new ResizeObserver(meldHoyde).observe(document.body);
-  window.addEventListener("load", meldHoyde);
 
   function esc(s){
     return String(s).replace(/[&<>"']/g, function(c){
@@ -168,85 +169,137 @@
     });
   }
   function lokalDato(iso){ var d=iso.split("-"); return new Date(+d[0],+d[1]-1,+d[2]); }
-  function datoTekst(iso, medAar){
+  function datoTekst(iso){
     var dt = lokalDato(iso);
     var opts = {weekday:"long", day:"numeric", month:"long"};
-    if (medAar || dt.getFullYear() !== new Date().getFullYear()) opts.year = "numeric";
+    if (dt.getFullYear() !== new Date().getFullYear()) opts.year = "numeric";
     var s = new Intl.DateTimeFormat("nb-NO", opts).format(dt);
     return s.charAt(0).toUpperCase() + s.slice(1);
   }
   function aldersTekst(a){
-    if (!a) return null;
+    if (!a) return "Aldersgrense kommer";
     if (String(a).toUpperCase() === "A") return "Tillatt for alle";
     return /^\d+$/.test(a) ? a + " år" : String(a);
   }
-
-  function kortHtml(f, bilde){
-    var avlyst = !!f.avlyst;
-    var meta = [];
-    var alder = aldersTekst(f.aldersgrense); if (alder) meta.push(esc(alder));
-    if (f.undertekst) meta.push(esc(f.undertekst));
-
-    var h = '<div class="kort' + (avlyst ? ' er-avlyst' : '') + '">';
-    if (bilde){
-      h += '<img class="bg-blur" src="' + esc(bilde) + '" alt="" onerror="this.remove()">';
-      h += '<img class="bg" src="' + esc(bilde) + '" alt="" onerror="this.remove()">';
-    }
-    h += '<div class="skygge"></div>';
-    if (f.tid) h += '<div class="tidmerke">Kl. ' + esc(f.tid) + '</div>';
-    h += '<div class="innhold">';
-    h += '<div class="k-tittel">' + (f.tittel ? esc(f.tittel) : '<span class="kommer">Program kommer</span>') + '</div>';
-    if (meta.length) h += '<div class="k-meta"><span>' + meta.join("</span><span>") + '</span></div>';
-    h += '<div class="k-handling">';
-    if (avlyst){
-      h += '<span class="merke-avlyst">Avlyst</span>';
-      if (f.avlyst_grunn) h += '<span class="k-meta">' + esc(f.avlyst_grunn) + '</span>';
+  function spilletid(min){
+    if (!min) return null;
+    var t = Math.floor(min/60), m = min % 60;
+    return (t ? t + " t " : "") + (m ? m + " min" : "");
+  }
+  function metaHtml(f){
+    var deler = [aldersTekst(f.aldersgrense), spilletid(f.spilletid), f.undertekst].filter(Boolean);
+    return '<div class="meta"><span>' + deler.map(esc).join("</span><span>") + '</span></div>';
+  }
+  // Billettstatus: avlyst, skolekino, kjøp, eller forklaring når nettsalget ikke har åpnet.
+  function handlingHtml(f, med){
+    var h = '<div class="handling">';
+    if (f.avlyst){
+      h += '<span class="merke avlyst">Avlyst</span>';
+      if (f.avlyst_grunn) h += '<span class="salg">' + esc(f.avlyst_grunn) + '</span>';
+    } else if (f.lukket){
+      h += '<span class="merke skole">Skolekino</span><span class="salg">Lukket visning</span>';
     } else {
       if (f.billettlenke) h += '<a class="kjop" href="' + esc(f.billettlenke) + '" target="_blank" rel="noopener">Kjøp billett</a>';
       if (f.pris != null) h += '<span class="pris">' + esc(f.pris) + ' kr</span>';
+      if (!f.billettlenke) h += '<span class="salg">Nettsalget åpner snart · billetter også i døra</span>';
     }
-    h += '</div></div></div>';
+    if (med && f.filmside) h += '<a class="om" href="' + esc(f.filmside) + '" target="_blank" rel="noopener">Om filmen</a>';
+    return h + '</div>';
+  }
+
+  function storHtml(f, bilde){
+    var h = '<article class="stor' + (f.avlyst ? ' er-avlyst' : '') + '"><div class="bilde">';
+    if (bilde){
+      h += '<img class="blur" src="' + esc(bilde) + '" alt="" onerror="this.remove()">' +
+           '<img class="hel" src="' + esc(bilde) + '" alt="" onerror="this.remove()">';
+    }
+    if (f.tid) h += '<span class="tidmerke">Kl. ' + esc(f.tid) + '</span>';
+    h += '</div><div class="tekst">';
+    h += '<div class="tittel">' + (f.tittel ? esc(f.tittel) : '<span class="kommer">Film kommer</span>') + '</div>';
+    h += metaHtml(f);
+    if (f.omtale) h += '<p class="omtale">' + esc(f.omtale) + '</p>';
+    h += handlingHtml(f, true) + '</div></article>';
     return h;
   }
 
+  function litenHtml(f){
+    var h = '<div class="liten' + (f.avlyst ? ' er-avlyst' : '') + '"><div class="plakat">';
+    if (f.plakat) h += '<img src="' + esc(f.plakat) + '" alt="" loading="lazy" onerror="this.remove()">';
+    h += '</div><div class="tekst"><div class="rad1">';
+    if (f.tid) h += '<span class="tid">' + esc(f.tid) + '</span>';
+    h += '<span class="tittel">' + (f.tittel ? esc(f.tittel) : '<span class="kommer">Film kommer</span>') + '</span></div>';
+    h += metaHtml(f);
+    if (f.omtale) h += '<p class="omtale">' + esc(f.omtale) + '</p>';
+    h += handlingHtml(f, false) + '</div></div>';
+    return h;
+  }
+
+  // Er kvelden over? Siste film + spilletid (to timer om den mangler), og 15 min slingring.
+  function kveldenErOver(dag, naa){
+    var slutt = null;
+    (dag.forestillinger || []).forEach(function(f){
+      if (!f.tid) return;
+      var d = lokalDato(dag.dato), hm = f.tid.split(":");
+      d.setHours(+hm[0], +hm[1] + (f.spilletid || 120) + 15, 0, 0);
+      if (!slutt || d > slutt) slutt = d;
+    });
+    if (!slutt){ slutt = lokalDato(dag.dato); slutt.setHours(23, 0, 0, 0); }
+    return naa > slutt;
+  }
+
   function vis(program){
-    var iDag = new Date(); iDag.setHours(0,0,0,0);
+    var naa = new Date(), iDag = new Date(); iDag.setHours(0,0,0,0);
     var kommende = (program.dager || []).filter(function(d){
-      return lokalDato(d.dato) >= iDag;
+      var dt = lokalDato(d.dato);
+      if (dt < iDag) return false;
+      return !(dt.getTime() === iDag.getTime() && kveldenErOver(d, naa));
     });
 
-    // Heroen løfter fram første IKKE-avlyste, ordinære kveld; avlyste kvelder og
-    // skolekinodager (lukket visning) før den nevnes bare.
-    var dag = null, avlystFoer = [];
+    // Neste ORDINÆRE kveld får plassen; avlyste og skolekinodager før den nevnes bare.
+    var dag = null, foer = [], idx = -1;
     for (var i = 0; i < kommende.length; i++){
-      if (kommende[i].avlyst || kommende[i].lukket){ avlystFoer.push(kommende[i]); } else { dag = kommende[i]; break; }
+      if (kommende[i].avlyst || kommende[i].lukket){ foer.push(kommende[i]); } else { dag = kommende[i]; idx = i; break; }
     }
+    var iKveld = dag && lokalDato(dag.dato).getTime() === iDag.getTime();
 
-    var h = '<div class="topp"><div><div class="kicker">Neste kinokveld</div>' +
+    var h = '<header class="topp"><div><div class="kicker">' + (iKveld ? 'I kveld' : 'Neste kinokveld') + '</div>' +
             (dag ? '<div class="dato">' + esc(datoTekst(dag.dato)) + '</div>' : '') +
-            '</div><div class="sted">' + esc(program.sted || "Tælet Kultursal") + '</div></div>';
-
-    avlystFoer.forEach(function(d){
-      if (d.avlyst){
-        h += '<div class="varsel">Visningen ' + esc(datoTekst(d.dato).toLowerCase()) + ' er avlyst' +
-             (d.avlyst_grunn ? ' — ' + esc(d.avlyst_grunn) : '') + '.</div>';
-      } else {
-        h += '<div class="varsel">' + esc(datoTekst(d.dato)) + ' er det skolekino (lukket visning), ' +
-             'ingen ordinær kinokveld.</div>';
-      }
+            '</div><div class="sted">' + esc(program.sted || "Tælet Kultursal") + '</div></header>';
+    foer.forEach(function(d){
+      h += '<div class="varsel">' + (d.avlyst
+        ? 'Visningen ' + esc(datoTekst(d.dato).toLowerCase()) + ' er avlyst' + (d.avlyst_grunn ? ': ' + esc(d.avlyst_grunn) : '') + '.'
+        : esc(datoTekst(d.dato)) + ' er det skolekino (lukket visning), ingen ordinær kinokveld.') + '</div>';
     });
 
     if (!dag){
       h += '<div class="tom">Ingen planlagte kinovisninger akkurat nå.<br>Nye datoer legges ut så snart de er klare.</div>';
     } else if (!dag.forestillinger.length){
-      h += '<div class="tom">Programmet for kvelden er ikke klart ennå — datoen er det!</div>';
+      h += '<div class="tom">Programmet for kvelden er ikke klart ennå. Datoen er det!</div>';
     } else {
       var bilder = (program.hero && program.hero.dato === dag.dato && program.hero.bilder) || {};
-      h += '<div class="kort-rad">' + dag.forestillinger.map(function(f){
-        return kortHtml(f, bilder[String(f.id)] || null);
-      }).join("") + '</div>';
+      h += '<section class="hoved">' + dag.forestillinger.map(function(f){
+        // Stillbildet vi har lastet opp (uten tekst) først, så Bygdekinoens, så plakaten.
+        return storHtml(f, bilder[String(f.id)] || f.still || f.plakat || null);
+      }).join("") + '</section>';
     }
-    hero.innerHTML = h;
+
+    var senere = dag ? kommende.slice(idx + 1).filter(function(d){ return !d.lukket; }).slice(0, SENERE) : [];
+    if (senere.length){
+      h += '<section class="senere"><h2>Senere</h2>' + senere.map(function(d){
+        var k = '<div class="kveld"><div class="kveld-dato">' + esc(datoTekst(d.dato)) +
+                (d.avlyst ? ' <span class="merke avlyst">Avlyst</span>' : '') + '</div>';
+        k += d.forestillinger.length ? d.forestillinger.map(litenHtml).join("")
+                                     : '<div class="kommer">Programmet kommer</div>';
+        return k + '</div>';
+      }).join("") + '</section>';
+    }
+
+    var oppd = program.oppdatert ? new Date(program.oppdatert) : null;
+    h += '<footer class="fot">' +
+         (program.programlenke ? '<a href="' + esc(program.programlenke) + '" target="_blank" rel="noopener">Se hele programmet hos Bygdekinoen →</a>' : '<span></span>') +
+         (oppd && !isNaN(oppd) ? '<span class="oppdatert">Oppdatert ' + oppd.getDate() + '.' + (oppd.getMonth()+1) + '.</span>' : '') +
+         '</footer>';
+    ramme.innerHTML = h;
     meldHoyde();
   }
 
@@ -254,7 +307,7 @@
     .then(function(r){ if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); })
     .then(vis)
     .catch(function(){
-      hero.innerHTML = '<div class="tom">Klarte ikke å hente programmet akkurat nå. Prøv igjen om litt.</div>';
+      ramme.innerHTML = '<div class="tom">Klarte ikke å hente kinoprogrammet akkurat nå. Prøv igjen om litt.</div>';
       meldHoyde();
     });
 })();
