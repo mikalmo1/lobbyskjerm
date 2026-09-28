@@ -1,5 +1,6 @@
 {
  "sted": "Tælet Kultursal",
+ "programlenke": "https://www.bygdekinoen.no/#selbu",
  "dager": [
   {
    "dato": "2026-09-30",
@@ -20,7 +21,11 @@
      "avlyst": false,
      "avlyst_grunn": null,
      "lukket": false,
-     "lukket_notat": null
+     "lukket_notat": null,
+     "plakat": "https://cdn.sanity.io/images/j0wdmpyb/production/d7f37b4dd10260c620949baf6caba8ba06beee0e-1500x2122.webp?w=240&auto=format",
+     "still": "https://cdn.sanity.io/images/j0wdmpyb/production/078cdf6ff02e104d4650af74ae5cb2f6565c8b4b-3840x1632.jpg?w=960&auto=format",
+     "omtale": "Bestevennene Jo og Raissa vokser opp på Filippinene på 90-tallet. Når en av dem brått må flytte, frykter de at vennskapet deres vil endres for alltid.",
+     "filmside": "https://www.bygdekinoen.no/film/UIP20221470"
     },
     {
      "id": 48888,
@@ -34,7 +39,11 @@
      "avlyst": false,
      "avlyst_grunn": null,
      "lukket": false,
-     "lukket_notat": null
+     "lukket_notat": null,
+     "plakat": "https://cdn.sanity.io/images/j0wdmpyb/production/641d021d9fc49ace25d7dc8dc00faac506ed47c0-1500x2223.webp?w=240&auto=format",
+     "still": "https://cdn.sanity.io/images/j0wdmpyb/production/aee445e8ded973294f43533ec5f531f9cb140156-4000x1763.webp?w=960&auto=format",
+     "omtale": "Med Sandra Bullock og Nicole Kidman i hovedrollene tar \"Practical Magic: Family Legacy\" oss tilbake til en verden badet i månelys, med rampestreker og mektig slektsmagi, der Owens-søstrene må konfrontere den mørke forbannelsen som truer…",
+     "filmside": "https://www.bygdekinoen.no/film/WAB20240290"
     }
    ]
   },
@@ -57,7 +66,11 @@
      "avlyst": false,
      "avlyst_grunn": null,
      "lukket": false,
-     "lukket_notat": null
+     "lukket_notat": null,
+     "plakat": "https://cdn.sanity.io/images/j0wdmpyb/production/0690cc492885fe739c3d101a3af245ffa6db81a9-1500x2143.webp?w=240&auto=format",
+     "still": "https://cdn.sanity.io/images/j0wdmpyb/production/18045d99e07cafa3d6ab559fac32d4be6fd830ec-4000x2250.webp?w=960&auto=format",
+     "omtale": "Beboerne på Mossy Bottom Farm gleder seg til Halloween – helt til den klønete bonden ødelegger flokkens elskede gresskarhage.",
+     "filmside": "https://www.bygdekinoen.no/film/EDI20250794"
     },
     {
      "id": 49045,
@@ -71,7 +84,11 @@
      "avlyst": false,
      "avlyst_grunn": null,
      "lukket": false,
-     "lukket_notat": null
+     "lukket_notat": null,
+     "plakat": "https://cdn.sanity.io/images/j0wdmpyb/production/9e2becf046d5e48f185642c6975acaa812ac5992-904x1280.jpg?w=240&auto=format",
+     "still": "https://cdn.sanity.io/images/j0wdmpyb/production/664031bc6524aca585b34bcf5f0244080890aa88-4000x2109.webp?w=960&auto=format",
+     "omtale": "I over 20 år har samiske reindriftsutøvere på Fosen kjempet mot Europas største vindkraftanlegg, bygget midt i de viktigste beiteområdene deres.",
+     "filmside": "https://www.bygdekinoen.no/film/EDI20251487"
     }
    ]
   },
@@ -94,7 +111,11 @@
      "avlyst": false,
      "avlyst_grunn": null,
      "lukket": false,
-     "lukket_notat": null
+     "lukket_notat": null,
+     "plakat": "https://cdn.sanity.io/images/j0wdmpyb/production/cac3f4d17c62542a32feee5ba8c338dd325f60fc-1080x1527.jpg?w=240&auto=format",
+     "still": "https://cdn.sanity.io/images/j0wdmpyb/production/d7513ca30d9c7256ee340018256bdca65ad60e1f-4000x2667.webp?w=960&auto=format",
+     "omtale": "Historien bak filmen er like gåtefull som den er sann. Regissør Silje Evensmo Jacobsens film tar utgangspunkt i et ekte og lokalt forankret mysterium. Hvert år mottar to søsken og deres familie en anonym pakke sendt fra Arendal.",
+     "filmside": "https://www.bygdekinoen.no/film/EDI20250084"
     },
     {
      "id": 47669,
@@ -108,7 +129,11 @@
      "avlyst": false,
      "avlyst_grunn": null,
      "lukket": false,
-     "lukket_notat": null
+     "lukket_notat": null,
+     "plakat": "https://cdn.sanity.io/images/j0wdmpyb/production/4400c8093f9e9fa4e232f6516351793798f8a4b7-1080x1920.jpg?w=240&auto=format",
+     "still": "https://cdn.sanity.io/images/j0wdmpyb/production/390f2c26b8fac9a78fd2f92b21fd95d209e39474-4000x1676.webp?w=960&auto=format",
+     "omtale": "Etter 40 år som lojal hjemmeværende kone, får Annema sparken - til fordel for en yngre modell. Sammen med karrierekvinnen Nina, som går ut på dato for arbeidslivet, og rebellen Mona, bestemmer trioen seg for å pensjonere seg fra…",
+     "filmside": "https://www.bygdekinoen.no/film/EDI20250183"
     }
    ]
   },
@@ -131,7 +156,11 @@
      "avlyst": false,
      "avlyst_grunn": null,
      "lukket": false,
-     "lukket_notat": null
+     "lukket_notat": null,
+     "plakat": "https://cdn.sanity.io/images/j0wdmpyb/production/48e8411522836146104d015dc86ab395cacf0345-1500x2143.webp?w=240&auto=format",
+     "still": "https://cdn.sanity.io/images/j0wdmpyb/production/ef1674fcc41acce30602ddbab3817861e236d4bc-4000x2162.webp?w=960&auto=format",
+     "omtale": "Da ni år gamle Mari en natt våkner og oppdager en nisse på soverommet sitt, blir det starten på et juleeventyr utenom det vanlige.",
+     "filmside": "https://www.bygdekinoen.no/film/NOR20240691"
     },
     {
      "id": 49020,
@@ -145,7 +174,11 @@
      "avlyst": false,
      "avlyst_grunn": null,
      "lukket": false,
-     "lukket_notat": null
+     "lukket_notat": null,
+     "plakat": "https://cdn.sanity.io/images/j0wdmpyb/production/943380dae75ad76ca882fe18ded60aebec1ffb4d-1500x2142.webp?w=240&auto=format",
+     "still": "https://cdn.sanity.io/images/j0wdmpyb/production/bc0d4e09b8806382bd95d088e39139743fc34dbf-4000x2909.webp?w=960&auto=format",
+     "omtale": "Den prisbelønte regissøren Hans Petter Moland bringer Knut Hamsuns udødelige mesterverk Markens grøde til det store lerretet, med Herbert Nordrum («Verdens verste menneske») og Asta Kamma August («Hendelser ved Vann») i hovedrollene.",
+     "filmside": "https://www.bygdekinoen.no/film/EDI20251399"
     }
    ]
   },
@@ -173,5 +206,5 @@
    "48888": "2026-09-30_48888_13.jpg"
   }
  },
- "oppdatert": "2026-09-28T10:37"
+ "oppdatert": "2026-09-28T11:30"
 }
