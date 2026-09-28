@@ -1,5 +1,5 @@
 {
- "oppdatert": "2026-09-28T15:59:08Z",
+ "oppdatert": "2026-09-28T21:49:22Z",
  "saker": [
   {
    "tittel": "Bruker avføring som medisin",
@@ -7,9 +7,19 @@
    "lenke": "https://www.nrk.no/trondelag/evidensia-trondheim-dyresykehus-bruker-avforing-for-a-behandle-hunder-og-katter-med-mageproblemer-1.18022207"
   },
   {
-   "tittel": "Vil slå hardere ned på skjult reklame – kan gi influensere bøter på opptil 25 millioner",
+   "tittel": "Maricarmen Abascal får flytte heim etter store demonstrasjonar",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/vestfoldogtelemark/forbrukertilsynet-slar-ned-pa-skjult-reklame_-kan-gi-millionboter-for-_tilfeldige_-selfies-1.18023919"
+   "lenke": "https://www.nrk.no/urix/maricarmen-abascal-far-flytte-heim-etter-store-demonstrasjonar-1.18039361"
+  },
+  {
+   "tittel": "Midtnytt: Ny forskning på barnekreft",
+   "kilde": "Trøndelag",
+   "lenke": "https://www.nrk.no/video/DKTL98092826"
+  },
+  {
+   "tittel": "Ber om spleiselag etter million­regning i båtfølge-saken",
+   "kilde": "NRK",
+   "lenke": "https://www.nrk.no/vestfoldogtelemark/horten-soker-stotte-etter-millionregning-for-batfolget-i-oslofjorden-1.18038838"
   },
   {
    "tittel": "Nordmenn strømmer til bensinstasjon i Sverige – ble helt tom for drivstoff",
@@ -17,9 +27,9 @@
    "lenke": "https://www.nrk.no/trondelag/nordmenn-strommer-til-bensinstasjonen-pa-storlien-i-sverige-for-a-fylle-drivstoff-_-ble-helt-tom-1.18032122"
   },
   {
-   "tittel": "Kom med tydelig melding etter nederlaget: – Dette må vi øve på",
+   "tittel": "– Ser ut som et månelandskap",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/sport/erling-braut-haaland-kom-med-tydelig-beskjed-til-norges-landslagssjef-stale-solbakken-1.18038374"
+   "lenke": "https://www.nrk.no/innlandet/_-ser-ut-som-et-manelandskap-1.18036569"
   },
   {
    "tittel": "Anmeldelse konsert, Kamfest: Musikk som åpner sinnet",
@@ -27,9 +37,9 @@
    "lenke": "https://www.nrk.no/artikkel/kamfest-musikk-som-apner-sinnet-1528361"
   },
   {
-   "tittel": "Solbakken kraftig ut mot NRK-kommentator: – Dette var en avgjørelse jeg tok",
+   "tittel": "Advarer etter Solbakkens beskjed: – Vil være et gigantisk tap",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/sport/nasjonsligaen_-stale-solbakken-hardt-ut-mot-nrk-kommentator-jan-petter-saltvedt-1.18038339"
+   "lenke": "https://www.nrk.no/sport/advarer-etter-solbakkens-beskjed_-_-vil-vaere-et-gigantisk-tap-1.18039078"
   },
   {
    "tittel": "Jeger satt fast i bratt terreng",
@@ -37,9 +47,9 @@
    "lenke": "https://www.nrk.no/trondelag/mann-sitter-fast-i-bratt-terreng-ved-fjellet-trollknuten-i-namsos-1.18038146"
   },
   {
-   "tittel": "Dobbeltdrapet i Ski: Anker frifinnelse",
+   "tittel": "Kan bli ulovlig å røyke på holdeplasser i Oslo",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/stor-oslo/dobbeltdrapet-i-ski_-anker-frifinnelse-1.18038713"
+   "lenke": "https://www.nrk.no/stor-oslo/vil-innfore-roykeforbud-pa-kollektiv-holdeplasser-i-oslo-1.18038865"
   },
   {
    "tittel": "Mann pågrepet etter to branner i samme område",
@@ -47,9 +57,9 @@
    "lenke": "https://www.nrk.no/trondelag/mann-siktet-etter-husbrann-i-namsos-1.18037776"
   },
   {
-   "tittel": "Dobbeltdrapet i Ski: Dommen ankes",
+   "tittel": "Professorer rister på hodet av Støres KI-opprop",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/stor-oslo/dobbeltdrapet-i-ski_-dommen-ankes-1.18038368"
+   "lenke": "https://www.nrk.no/norge/hard-kritikk-mot-stores-ki-opprop-1.18039066"
   },
   {
    "tittel": "Norsk milliardær er deleier av kasino-selskap på Curaçao",
@@ -57,9 +67,9 @@
    "lenke": "https://www.nrk.no/trondelag/morten-klein-er-storste-personlige-aksjonaer-i-comeon-curacao-1.18035511"
   },
   {
-   "tittel": "Siste sjanse",
+   "tittel": "Har beslaglagt flere våpen etter melding om trusselsituasjon",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/vestland/xl/siste-sjanse-1.17994249"
+   "lenke": "https://www.nrk.no/nordland/etterforsker-trusler-og-ulovlig-jakt-i-vesteralen-1.18039106"
   },
   {
    "tittel": "Frontkollisjon i tunnel – en person kritisk skadd",
@@ -67,19 +77,9 @@
    "lenke": "https://www.nrk.no/trondelag/trafikkulykke-i-helltunnellen-_-vogntog-og-personbil-involvert-1.18036655"
   },
   {
-   "tittel": "Møter i retten mandag: Pelsdyrbønder krever 60 millioner fra staten",
+   "tittel": "Postkort fra Kinas influencer­hovedstad",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/rogaland/rettssaken-starter-na_-pelsdyrbonder-krever-60-millioner-fra-staten-1.18035399"
-  },
-  {
-   "tittel": "Jens Olav (58) fra Overhalla blir ny sysselmester på Svalbard",
-   "kilde": "Trøndelag",
-   "lenke": "https://www.nrk.no/tromsogfinnmark/ny-sysselmeister-pa-svalbard-presentert-i-dag-1.18036558"
-  },
-  {
-   "tittel": "Fikk åpenbaring i VM: «Wow, her har det skjedd noe»",
-   "kilde": "NRK",
-   "lenke": "https://www.nrk.no/sport/fikk-apenbaring-i-vm_-_wow_-her-har-det-skjedd-noe_-1.18038008"
+   "lenke": "https://www.nrk.no/urix/xl/postkort-fra-kinas-influenserhovedstad-1.18017412"
   }
  ]
 }
