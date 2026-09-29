@@ -1,5 +1,5 @@
 {
- "oppdatert": "2026-08-12T10:09:22Z",
+ "oppdatert": "2026-09-29T08:26:12Z",
  "plakater": {
   "MOT_Hei_Animasjon_Norsk.mp4": {
    "video": true,
@@ -9,6 +9,10 @@
    "fra": "2026-08-12",
    "til": "2026-09-01",
    "spillemodus": "runde"
+  },
+  "hvordan-vil-du-bo-i-selbu-facebook-infoskjerm.png": {
+   "tittel": "Hvordan vil du bo i selbu facebook infoskjerm",
+   "avsender": "Selbu kommune"
   }
  }
 }
