@@ -1,15 +1,35 @@
 {
- "oppdatert": "2026-09-30T02:09:20Z",
+ "oppdatert": "2026-09-30T08:34:15Z",
  "saker": [
+  {
+   "tittel": "Slik holder du hjertet friskt",
+   "kilde": "Trøndelag",
+   "lenke": "https://www.nrk.no/video/d739f0b1-76f7-4659-bb3e-9ceb6c621f9d"
+  },
+  {
+   "tittel": "Løslater overgrepssiktet lærer",
+   "kilde": "NRK",
+   "lenke": "https://www.nrk.no/stor-oslo/loslater-overgrepssiktet-laerer--1.18040625"
+  },
+  {
+   "tittel": "Barnekreft: Blir friske, men får senskader senere i livet",
+   "kilde": "Trøndelag",
+   "lenke": "https://www.nrk.no/trondelag/barn-med-blodkreft-far-senskader-i-voksenlivet_-viser-ny-forskningsstudie-fra-st.-olavs-hospital-1.18038592"
+  },
+  {
+   "tittel": "Regjeringen vil bruke nær 650 millioner på ny rakettrampe på Andøya",
+   "kilde": "NRK",
+   "lenke": "https://www.nrk.no/nordland/regjeringen-vil-bruke-naer-650-millioner-pa-ny-rakettrampe-pa-andoya-1.18039629"
+  },
   {
    "tittel": "Meslingar påvist i Trondheim: – Eit av dei mest smittsame virusa vi kjenner til",
    "kilde": "Trøndelag",
    "lenke": "https://www.nrk.no/trondelag/tre-tilfelle-av-meslingar-pavist-i-trondheim_-_-eit-av-dei-mest-smittsame-virusa-vi-kjenner-til-1.18038552"
   },
   {
-   "tittel": "Streiken i private barnehager er avblåst",
+   "tittel": "LIS-strid mot staten fortsetter: Dansk legepar anker til Høyesterett",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/nyheter/streiken-i-private-barnehager-er-avblast-1.18040486"
+   "lenke": "https://www.nrk.no/rogaland/legepar-anker-til-hoyesterett-for-a-fa-godkjent-dansk-praksis-som-lis-1.18032338"
   },
   {
    "tittel": "Bruker avføring som medisin",
@@ -17,9 +37,9 @@
    "lenke": "https://www.nrk.no/trondelag/evidensia-trondheim-dyresykehus-bruker-avforing-for-a-behandle-hunder-og-katter-med-mageproblemer-1.18022207"
   },
   {
-   "tittel": "Nå er det mangel på norsk kjøtt – det kan være en fordel for norske bønder",
+   "tittel": "Det blir ikke streik i private barnehager",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/rogaland/na-er-det-mangel-pa-norsk-kjott-_-det-kan-vaere-en-fordel-for-norske-bonder-1.18038784"
+   "lenke": "https://www.nrk.no/nyheter/det-blir-ikke-streik-i-private-barnehager--1.18040486"
   },
   {
    "tittel": "Midtnytt: Ny forskning på barnekreft",
@@ -27,9 +47,9 @@
    "lenke": "https://www.nrk.no/video/DKTL98092826"
   },
   {
-   "tittel": "Sjeføkonom: Nordmenn har betre råd enn før",
+   "tittel": "Nå er det mangel på norsk kjøtt – det kan være en fordel for norske bønder",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/norge/sjefokonom_-nordmenn-har-bedre-rad-enn-for-1.18040221"
+   "lenke": "https://www.nrk.no/rogaland/na-er-det-mangel-pa-norsk-kjott-_-det-kan-vaere-en-fordel-for-norske-bonder-1.18038784"
   },
   {
    "tittel": "Nordmenn strømmer til bensinstasjon i Sverige – ble helt tom for drivstoff",
@@ -37,9 +57,9 @@
    "lenke": "https://www.nrk.no/trondelag/nordmenn-strommer-til-bensinstasjonen-pa-storlien-i-sverige-for-a-fylle-drivstoff-_-ble-helt-tom-1.18032122"
   },
   {
-   "tittel": "Norge-helten er iskald i England: – Brutal verden",
+   "tittel": "Sjeføkonom: Nordmenn har betre råd enn før",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/sport/u21_-norge-herjet-_-til-em-med-seks-scoringer-1.18040247"
+   "lenke": "https://www.nrk.no/norge/sjefokonom_-nordmenn-har-bedre-rad-enn-for-1.18040221"
   },
   {
    "tittel": "Anmeldelse konsert, Kamfest: Musikk som åpner sinnet",
@@ -47,9 +67,9 @@
    "lenke": "https://www.nrk.no/artikkel/kamfest-musikk-som-apner-sinnet-1528361"
   },
   {
-   "tittel": "Norge herjet – til EM med seks scoringer",
+   "tittel": "Norge-helten er iskald i England: – Brutal verden",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/sport/norge-herjet-_-til-em-med-seks-scoringer-1.18040361"
+   "lenke": "https://www.nrk.no/sport/u21_-norge-herjet-_-til-em-med-seks-scoringer-1.18040247"
   },
   {
    "tittel": "Jeger satt fast i bratt terreng",
@@ -57,29 +77,9 @@
    "lenke": "https://www.nrk.no/trondelag/mann-sitter-fast-i-bratt-terreng-ved-fjellet-trollknuten-i-namsos-1.18038146"
   },
   {
-   "tittel": "Ceuta: River ned leir – migrantene sendes mot grensa",
+   "tittel": "Norge herjet – til EM med seks scoringer",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/urix/river-ned-leir-_-migrantene-sendes-mot-grensa-1.18040086"
-  },
-  {
-   "tittel": "Mann pågrepet etter to branner i samme område",
-   "kilde": "Trøndelag",
-   "lenke": "https://www.nrk.no/trondelag/mann-siktet-etter-husbrann-i-namsos-1.18037776"
-  },
-  {
-   "tittel": "Får skjerpet straff etter ulykken der Chris-Stian (17) døde",
-   "kilde": "NRK",
-   "lenke": "https://www.nrk.no/tromsogfinnmark/skjerpet-straff-etter-arbeidsulykken-der-chris-stian-_17_-dode-1.18040309"
-  },
-  {
-   "tittel": "Norsk milliardær er deleier av kasino-selskap på Curaçao",
-   "kilde": "Trøndelag",
-   "lenke": "https://www.nrk.no/trondelag/morten-klein-er-storste-personlige-aksjonaer-i-comeon-curacao-1.18035511"
-  },
-  {
-   "tittel": "Regjeringen vil stramme inn reglene for datasentre",
-   "kilde": "NRK",
-   "lenke": "https://www.nrk.no/vestfoldogtelemark/regjeringen-vil-stramme-inn-reglene-for-datasentre-i-norge-1.18040088"
+   "lenke": "https://www.nrk.no/sport/norge-herjet-_-til-em-med-seks-scoringer-1.18040361"
   }
  ]
 }
