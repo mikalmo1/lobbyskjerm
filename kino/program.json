@@ -3,51 +3,6 @@
  "programlenke": "https://www.bygdekinoen.no/#selbu",
  "dager": [
   {
-   "dato": "2026-09-30",
-   "avlyst": false,
-   "avlyst_grunn": null,
-   "lukket": false,
-   "lukket_notat": null,
-   "forestillinger": [
-    {
-     "id": 48481,
-     "tid": "18:00",
-     "tittel": "Glemselens øy",
-     "aldersgrense": "9",
-     "spilletid": 109,
-     "undertekst": "2D Norsk tale Norsk tekst",
-     "pris": 110,
-     "billettlenke": "https://kinologg.kino.no/nettsalg/48481",
-     "avlyst": false,
-     "avlyst_grunn": null,
-     "lukket": false,
-     "lukket_notat": null,
-     "plakat": "https://cdn.sanity.io/images/j0wdmpyb/production/d7f37b4dd10260c620949baf6caba8ba06beee0e-1500x2122.webp?w=240&auto=format",
-     "still": "https://cdn.sanity.io/images/j0wdmpyb/production/078cdf6ff02e104d4650af74ae5cb2f6565c8b4b-3840x1632.jpg?w=960&auto=format",
-     "omtale": "Bestevennene Jo og Raissa vokser opp på Filippinene på 90-tallet. Når en av dem brått må flytte, frykter de at vennskapet deres vil endres for alltid.",
-     "filmside": "https://www.bygdekinoen.no/film/UIP20221470"
-    },
-    {
-     "id": 48888,
-     "tid": "20:00",
-     "tittel": "Practical Magic: Family Legacy",
-     "aldersgrense": "12",
-     "spilletid": 129,
-     "undertekst": "2D Original tale Norsk tekst",
-     "pris": 130,
-     "billettlenke": "https://kinologg.kino.no/nettsalg/48888",
-     "avlyst": false,
-     "avlyst_grunn": null,
-     "lukket": false,
-     "lukket_notat": null,
-     "plakat": "https://cdn.sanity.io/images/j0wdmpyb/production/641d021d9fc49ace25d7dc8dc00faac506ed47c0-1500x2223.webp?w=240&auto=format",
-     "still": "https://cdn.sanity.io/images/j0wdmpyb/production/aee445e8ded973294f43533ec5f531f9cb140156-4000x1763.webp?w=960&auto=format",
-     "omtale": "Med Sandra Bullock og Nicole Kidman i hovedrollene tar \"Practical Magic: Family Legacy\" oss tilbake til en verden badet i månelys, med rampestreker og mektig slektsmagi, der Owens-søstrene må konfrontere den mørke forbannelsen som truer…",
-     "filmside": "https://www.bygdekinoen.no/film/WAB20240290"
-    }
-   ]
-  },
-  {
    "dato": "2026-10-14",
    "avlyst": false,
    "avlyst_grunn": null,
@@ -200,11 +155,11 @@
   }
  ],
  "hero": {
-  "dato": "2026-09-30",
+  "dato": "2026-10-14",
   "bilder": {
-   "48481": "2026-09-30_48481_11.jpg",
-   "48888": "2026-09-30_48888_13.jpg"
+   "49043": "2026-10-14_49043_15.jpg",
+   "49045": "2026-10-14_49045_17.jpg"
   }
  },
- "oppdatert": "2026-09-30T16:00"
+ "oppdatert": "2026-10-01T00:00"
 }
