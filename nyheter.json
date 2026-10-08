@@ -1,15 +1,45 @@
 {
- "oppdatert": "2026-10-08T02:57:53Z",
+ "oppdatert": "2026-10-08T10:21:09Z",
  "saker": [
+  {
+   "tittel": "Brann i Steinkjerhallen",
+   "kilde": "Trøndelag",
+   "lenke": "https://www.nrk.no/trondelag/brann-i-steinkjerhallen-1.18049114"
+  },
+  {
+   "tittel": "40 år med musikk – kor mange rette klarar du?",
+   "kilde": "NRK",
+   "lenke": "https://www.nrk.no/kultur/popquiz-40-ar-1.18039662"
+  },
+  {
+   "tittel": "Suksesshistoria om fjellreven – nesten som tigeren",
+   "kilde": "Trøndelag",
+   "lenke": "https://www.nrk.no/buskerud/suksesshistoria-om-fjellreven-_-nesten-som-tigeren-1.18049001"
+  },
+  {
+   "tittel": "Her er landets eneste fotballbane – har like mye makt som Frankrike",
+   "kilde": "NRK",
+   "lenke": "https://www.nrk.no/sport/oya-er-like-stor-som-hareid-_-har-like-mye-makt-i-fifa-som-frankrike-1.17993379"
+  },
+  {
+   "tittel": "Lotteritilsynet blokkerer ulovlige pengespill: Nye funn viser langt større omfang",
+   "kilde": "Trøndelag",
+   "lenke": "https://www.nrk.no/trondelag/xl/lotteritilsynet-blokkerer-ulovlige-pengespill_-nye-funn-viser-langt-storre-omfang-1.18033656"
+  },
+  {
+   "tittel": "Kriminelle nettverk utnytter turistveksten: – Turistguider delaktige",
+   "kilde": "NRK",
+   "lenke": "https://www.nrk.no/tromsogfinnmark/trusselvurderingen_-kriminelle-nettverk-utnytter-turistveksten-1.18049160"
+  },
   {
    "tittel": "Vil ha erstatning etter covid-vaksine: – Det offentlige som skal ta ansvar",
    "kilde": "Trøndelag",
    "lenke": "https://www.nrk.no/trondelag/vil-ha-erstatning-etter-covid-vaksine_-_-er-det-tvil_-sa-er-det-det-offentlige-som-skal-ta-ansvar-1.18047620"
   },
   {
-   "tittel": "Bevæpnet politi i Kautokeino etter melding om skudd",
+   "tittel": "Felles øvelse for nødetatene i Oslo – bevæpnet politi synlig i gatene",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/nyheter/bevaepnet-politi-i-kautokeino-etter-melding-om-skudd-1.18048924"
+   "lenke": "https://www.nrk.no/stor-oslo/felles-ovelse-for-nodetatene-i-oslo-_-bevaepnet-politi-synlig-i-gatene-1.18049036"
   },
   {
    "tittel": "Midtnytt: Vil kutte i Posten",
@@ -17,9 +47,9 @@
    "lenke": "https://www.nrk.no/video/DKTL98100726"
   },
   {
-   "tittel": "Storhamar-helten Eirik Skadsdammen er død",
+   "tittel": "Økokrim: Kriminelle nettverk har etablert seg i norske næringer",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/sport/ishockeyspiller-og-storhamar-helt-eirik-skadsdammen-er-dod-1.18048891"
+   "lenke": "https://www.nrk.no/nyheter/okokrim_-kriminelle-nettverk-har-etablert-seg-i-norske-naeringer-1.18049084"
   },
   {
    "tittel": "Kjell Otto frykter for jobben etter forslag om kutt i Posten",
@@ -27,9 +57,9 @@
    "lenke": "https://www.nrk.no/trondelag/regjeringen-vil-ha-postombaering-en-gang-i-uken-1.18047577"
   },
   {
-   "tittel": "Nekter å sende barna alene til skolen: – Jeg frykter de ikke kommer hjem igjen",
+   "tittel": "Refser satsingen på sivil beredskap: – Tomme ord",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/buskerud/fortviler-over-trafikkfarlig-skolevei_-_-jeg-vil-at-pappa-skal-holde-meg-i-handa-1.18029822"
+   "lenke": "https://www.nrk.no/tromsogfinnmark/regjeringen-har-vedtatt-a-bruke-80-milliarder-pa-sivil-beredskap_-i-finnmark-ser-man-lite-til-dette-1.18045467"
   },
   {
    "tittel": "Lege mener det er sannsynlig at covid-vaksinen kan gi kronisk utmattelse",
@@ -37,9 +67,9 @@
    "lenke": "https://www.nrk.no/trondelag/lege-om-covid-vaksine_-sannsynlig-at-vaksinen-kan-gi-kronisk-utmattelse-i-sjeldne-tilfeller-1.18046485"
   },
   {
-   "tittel": "Kvinnelig Oslo-advokat pågrepet for vold i nære relasjoner",
+   "tittel": "TV 2: Tidligere fotballspiller dømt til ni år og åtte måneders fengsel",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/nyheter/kvinnelig-oslo-advokat-pagrepet-for-vold-i-naere-relasjoner--1.18048846"
+   "lenke": "https://www.nrk.no/nyheter/tv-2_-tidligere-fotballspiller-domt-til-ni-ar-og-atte-maneders-fengsel-1.18048962"
   },
   {
    "tittel": "Statsråder møter studenter i Midtnytt",
@@ -47,39 +77,9 @@
    "lenke": "https://www.nrk.no/video/DKTL98100626"
   },
   {
-   "tittel": "Stortinget ba om avvikling – regjeringen foreslår videre drift",
+   "tittel": "Regjeringen vil gi Mari Boine 200.000 kroner i lønn",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/nordland/stortinget-ba-om-avvikling-_-regjeringen-foreslar-videre-drift-1.18048383"
-  },
-  {
-   "tittel": "Mann falt i sjøen – kritisk tilstand",
-   "kilde": "Trøndelag",
-   "lenke": "https://www.nrk.no/trondelag/mann-har-falt-i-sjoen-pa-hitra-1.18046035"
-  },
-  {
-   "tittel": "Maricarmen (87) som utløste spanske boligprotester er død",
-   "kilde": "NRK",
-   "lenke": "https://www.nrk.no/nyheter/maricarmen-_87_-som-utloste-spanske-boligprotester-er-dod-1.18048830"
-  },
-  {
-   "tittel": "«Klassisk musikks Taylor Swift» spiller inn konsertfilm i Nidarosdomen",
-   "kilde": "Trøndelag",
-   "lenke": "https://www.nrk.no/trondelag/britiske-anna-lapwood-spiller-inn-orgelkonsert-film-i-nidarosdomen-i-trondheim-1.18041607"
-  },
-  {
-   "tittel": "Svarar på sponsorkritikken: – Blir litt smalt",
-   "kilde": "NRK",
-   "lenke": "https://www.nrk.no/sport/alpinistane-svarer-pa-red-bull-kritikken_-_-blir-litt-smalt-1.18048431"
-  },
-  {
-   "tittel": "Følg stormen i Trøndelag: Flere er fortsatt uten strøm",
-   "kilde": "Trøndelag",
-   "lenke": "https://www.nrk.no/trondelag/farevarsel-for-vindkast-i-trondelag-_-full-storm-pa-kysten-1.18046192"
-  },
-  {
-   "tittel": "Tre drept og 36 skadd i flyplass-angrep i Saudi-Arabia",
-   "kilde": "NRK",
-   "lenke": "https://www.nrk.no/nyheter/tre-drept-og-36-skadd-i-flyplass-angrep-i-saudi-arabia-1.18048816"
+   "lenke": "https://www.nrk.no/sapmi/statsbudsjettet-2027_-regjeringen-vil-gi-mari-boine-200.000-kroner-i-aret-1.18047120"
   }
  ]
 }
