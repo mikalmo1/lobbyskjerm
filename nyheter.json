@@ -1,6 +1,16 @@
 {
- "oppdatert": "2026-10-10T01:06:38Z",
+ "oppdatert": "2026-10-10T07:07:09Z",
  "saker": [
+  {
+   "tittel": "Mann pågripen etter brann i leikestue",
+   "kilde": "Trøndelag",
+   "lenke": "https://www.nrk.no/trondelag/etterforskar-brann-i-leikestue-pa-oya-i-trondheim_-_-kan-vere-pasett-1.18051255"
+  },
+  {
+   "tittel": "Trump med krass kritikk av Norge i tale",
+   "kilde": "NRK",
+   "lenke": "https://www.nrk.no/nyheter/trump-med-krass-kritikk-av-norge-i-tale-1.18051239"
+  },
   {
    "tittel": "Slår alarm om streik ved asylmottak: – Vi frykter for liv og helse",
    "kilde": "Trøndelag",
@@ -65,16 +75,6 @@
    "tittel": "Trump lover russisk dieselleveranse",
    "kilde": "NRK",
    "lenke": "https://www.nrk.no/nyheter/trump-lover-russisk-dieselleveranse-1.18051145"
-  },
-  {
-   "tittel": "Midtnytt: Togstans etter mobilbrudd",
-   "kilde": "Trøndelag",
-   "lenke": "https://www.nrk.no/video/DKTL98100826"
-  },
-  {
-   "tittel": "Kraftig jordskjelv i Panama",
-   "kilde": "NRK",
-   "lenke": "https://www.nrk.no/nyheter/kraftig-jordskjelv-i-panama-1.18051095"
   }
  ]
 }
