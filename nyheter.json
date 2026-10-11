@@ -1,5 +1,5 @@
 {
- "oppdatert": "2026-10-11T18:18:03Z",
+ "oppdatert": "2026-10-11T22:16:50Z",
  "saker": [
   {
    "tittel": "Mann i 60-åra knivstukket i Trondheim – var nabo til institusjon",
@@ -7,9 +7,9 @@
    "lenke": "https://www.nrk.no/trondelag/mann-i-60-ara-knivstukket-i-trondheim-1.18051905"
   },
   {
-   "tittel": "Haaland og City herjet etter Liverpool-protester: – Et nydelig øyeblikk",
+   "tittel": "Molde-trener med tirade etter dommeravgjørelse: – Fyfaen",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/sport/premier-league_-manchester-city-og-haaland-ble-hanet-_-deretter-valset-de-over-liverpool-1.18051883"
+   "lenke": "https://www.nrk.no/sport/molde-trener-med-tirade-etter-dommeravgjorelse_-_-fyfaen-1.18051995"
   },
   {
    "tittel": "Håkon (18) måtte kjempe for plassen – nå er linjen åpen for hele landet",
@@ -17,9 +17,9 @@
    "lenke": "https://www.nrk.no/trondelag/e-sportslinje-pa-tiller-vgs.-i-trondheim-blir-nasjonal-_-hakon-nordsti-ostereng-kjempet-for-plassen-1.18043738"
   },
   {
-   "tittel": "Matkjedenes prisjegere i retten – står om 4,9 milliarder kroner",
+   "tittel": "Vil ikke ha elektriske mopedbiler: – Bensin og diesel til jeg dør",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/norge/rema_-kiwi-og-coop-i-retten-mot-staten-om-milliardbot-for-prissamarbeid-1.18050488"
+   "lenke": "https://www.nrk.no/vestfoldogtelemark/vil-ikke-ha-elektriske-mopedbiler_-nesten-9-av-10-gar-pa-bensin-og-diesel-1.18032499"
   },
   {
    "tittel": "Fem år siden Fosen-dommen: Ingke (26) arver kampen",
@@ -27,9 +27,9 @@
    "lenke": "https://www.nrk.no/sapmi/xl/fem-ar-siden-fosen-dommen_-_-kan-ikke-ga-og-kjenne-pa-alle-de-tunge-folelsene-1.18050856"
   },
   {
-   "tittel": "Norsk influenser påkjørt under ekstrem­triatlon – pådro seg flere brudd",
+   "tittel": "Haaland og City herjet etter Liverpool-protester: – Et nydelig øyeblikk",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/sport/treningsinfluenser-grunde-myhrer-krasjet-med-lastebil-under-ekstremtriatlon-1.18051564"
+   "lenke": "https://www.nrk.no/sport/premier-league_-manchester-city-og-haaland-ble-hanet-_-deretter-valset-de-over-liverpool-1.18051883"
   },
   {
    "tittel": "En hektisk natt for politiet i Trøndelag: – En sliten gjeng som dro hjem",
@@ -37,9 +37,9 @@
    "lenke": "https://www.nrk.no/trondelag/en-hektisk-natt-for-politiet-i-trondelag_-_-en-sliten-gjeng-som-dro-hjem-1.18051713"
   },
   {
-   "tittel": "Full utrykking då Norwegian-fly fekk tekniske problem",
+   "tittel": "Matkjedenes prisjegere i retten – står om 4,9 milliarder kroner",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/vestland/norwegian-fly-fra-bergen-sendte-naudmelding-1.18051903"
+   "lenke": "https://www.nrk.no/norge/rema_-kiwi-og-coop-i-retten-mot-staten-om-milliardbot-for-prissamarbeid-1.18050488"
   },
   {
    "tittel": "Derfor er starten på joggeturen alltid så slitsom",
@@ -47,9 +47,19 @@
    "lenke": "https://www.nrk.no/trondelag/dette-gjor-starten-pa-joggeturen-sa-toff-_-handler-ikke-om-at-man-er-i-darlig-form-1.18043184"
   },
   {
+   "tittel": "Norsk influenser påkjørt under ekstrem­triatlon – pådro seg flere brudd",
+   "kilde": "NRK",
+   "lenke": "https://www.nrk.no/sport/treningsinfluenser-grunde-myhrer-krasjet-med-lastebil-under-ekstremtriatlon-1.18051564"
+  },
+  {
    "tittel": "Norges tøffeste vant over frykten: – Jeg har skjønt at jeg takler å stå i litt dritt",
    "kilde": "Trøndelag",
    "lenke": "https://www.nrk.no/trondelag/xl/vant-norges-toffeste-2026_-_-reddeste-jeg-har-vaert-i-hele-mitt-liv-1.17943889"
+  },
+  {
+   "tittel": "Full utrykking då Norwegian-fly fekk tekniske problem",
+   "kilde": "NRK",
+   "lenke": "https://www.nrk.no/vestland/norwegian-fly-fra-bergen-sendte-naudmelding-1.18051903"
   },
   {
    "tittel": "Jaktlag trefte bustadhus: – Svært ubehageleg",
@@ -57,19 +67,9 @@
    "lenke": "https://www.nrk.no/trondelag/fekk-prosjektil-fra-jaktlag-gjennom-ruta-i-trondheim-_-politiet-gjer-krimtekniske-undersokingar-1.18051337"
   },
   {
-   "tittel": "Trump: Hevdar energi-våpenkvile mellom Russland og Ukraina",
-   "kilde": "NRK",
-   "lenke": "https://www.nrk.no/nyheter/trump_-hevdar-energi-vapenkvile-mellom-russland-og-ukraina-1.18051868"
-  },
-  {
    "tittel": "Varsler kamp for verna fosser: – Ingen strøm å avse til datasenter",
    "kilde": "Trøndelag",
    "lenke": "https://www.nrk.no/trondelag/vil-ha-kraftutbygging-i-verna-vassdrag-i-trondelag-og-troms-1.18038704"
-  },
-  {
-   "tittel": "Nye regler skaper hodebry - slik er veien videre i City-saken",
-   "kilde": "NRK",
-   "lenke": "https://www.nrk.no/sport/manchester-city-skandalen_-nye-regler-skaper-hodebry---slik-er-veien-videre-i-city-saken-1.18046597"
   }
  ]
 }
