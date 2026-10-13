@@ -1,15 +1,25 @@
 {
- "oppdatert": "2026-10-13T00:12:29Z",
+ "oppdatert": "2026-10-13T06:49:34Z",
  "saker": [
+  {
+   "tittel": "Brenner fortsatt i kornsilo i Trondheim",
+   "kilde": "Trøndelag",
+   "lenke": "https://www.nrk.no/trondelag/1.18053139"
+  },
+  {
+   "tittel": "Branndrama: Hoppet fra andre etasje",
+   "kilde": "NRK",
+   "lenke": "https://www.nrk.no/nordland/branndrama_-hoppet-fra-andre-etasje-1.18053148"
+  },
   {
    "tittel": "Rykket ut til brann i næringsbygg – var fare for spredning",
    "kilde": "Trøndelag",
    "lenke": "https://www.nrk.no/trondelag/brann-i-melhus-kommune-_-fare-for-spredning-1.18053047"
   },
   {
-   "tittel": "Fleire tatt for ulovleg vidaresal",
+   "tittel": "Flaske skapte kaos i debuten: – Jeg måtte springe ned",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/rogaland/selde-viking-billettar-til-elleville-prisar-pa-svarteborsen_-no-mistar-dei-sesongkortet-1.18052381"
+   "lenke": "https://www.nrk.no/sport/flaske-skapte-kaos-for-viking-i-debuten_-_-jeg-matte-springe-ned-1.18052940"
   },
   {
    "tittel": "Mann i 60-åra knivstukket i Trondheim – var nabo til institusjon",
@@ -17,9 +27,9 @@
    "lenke": "https://www.nrk.no/trondelag/mann-i-60-ara-knivstukket-i-trondheim-1.18051905"
   },
   {
-   "tittel": "Trumps energivåpenhvile: Luftslott som tjener Putin",
+   "tittel": "Fire leiligheter totalskadet etter boligbrann i Brønnøy",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/ytring/trumps-energivapenhvile_-luftslott-som-tjener-putin-1.18052304"
+   "lenke": "https://www.nrk.no/nyheter/fire-leiligheter-totalskadet-etter-boligbrann-i-bronnoy-1.18053100"
   },
   {
    "tittel": "Midtnytt: NAV vil få flere i arbeid",
@@ -27,9 +37,9 @@
    "lenke": "https://www.nrk.no/video/DKTL98101226"
   },
   {
-   "tittel": "Vålerengas skrekkrekke fortsetter – tapte mot KFUM",
+   "tittel": "Fleire tatt for ulovleg vidaresal",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/sport/valerengas-skrekkrekke-fortsetter-_-tapte-mot-kfum-1.18052919"
+   "lenke": "https://www.nrk.no/rogaland/selde-viking-billettar-til-elleville-prisar-pa-svarteborsen_-no-mistar-dei-sesongkortet-1.18052381"
   },
   {
    "tittel": "Håkon (18) måtte kjempe for plassen – nå er linjen åpen for hele landet",
@@ -37,9 +47,9 @@
    "lenke": "https://www.nrk.no/trondelag/e-sportslinje-pa-tiller-vgs.-i-trondheim-blir-nasjonal-_-hakon-nordsti-ostereng-kjempet-for-plassen-1.18043738"
   },
   {
-   "tittel": "Nå kommer Haakon VIII til byen som ikke ville ha Haakon VII",
+   "tittel": "Trumps energivåpenhvile: Luftslott som tjener Putin",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/nordland/na-kommer-haakon-viii-til-narvik-som-ikke-ville-ha-haakon-vii-1.18051019"
+   "lenke": "https://www.nrk.no/ytring/trumps-energivapenhvile_-luftslott-som-tjener-putin-1.18052304"
   },
   {
    "tittel": "Fem år siden Fosen-dommen: Ingke (26) arver kampen",
@@ -47,9 +57,9 @@
    "lenke": "https://www.nrk.no/sapmi/xl/fem-ar-siden-fosen-dommen_-_-kan-ikke-ga-og-kjenne-pa-alle-de-tunge-folelsene-1.18050856"
   },
   {
-   "tittel": "Livet ble snudd på hodet etter sjokkbeskjed: – Shit, hva betyr det?",
+   "tittel": "Vålerengas skrekkrekke fortsetter – tapte mot KFUM",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/sport/silje-opseth-apner-opp_-gravid-og-hopper-ikke-neste-sesong-1.18051743"
+   "lenke": "https://www.nrk.no/sport/valerengas-skrekkrekke-fortsetter-_-tapte-mot-kfum-1.18052919"
   },
   {
    "tittel": "En hektisk natt for politiet i Trøndelag: – En sliten gjeng som dro hjem",
@@ -57,9 +67,9 @@
    "lenke": "https://www.nrk.no/trondelag/en-hektisk-natt-for-politiet-i-trondelag_-_-en-sliten-gjeng-som-dro-hjem-1.18051713"
   },
   {
-   "tittel": "Norske forhold fikk giganten til å snu: – Blir snakket mye om det",
+   "tittel": "Nå kommer Haakon VIII til byen som ikke ville ha Haakon VII",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/sport/norske-kunstgressforhold-far-bayern-munchen-til-a-snu_-_-blir-snakket-mye-om-det-1.18052753"
+   "lenke": "https://www.nrk.no/nordland/na-kommer-haakon-viii-til-narvik-som-ikke-ville-ha-haakon-vii-1.18051019"
   },
   {
    "tittel": "Derfor er starten på joggeturen alltid så slitsom",
@@ -67,19 +77,9 @@
    "lenke": "https://www.nrk.no/trondelag/dette-gjor-starten-pa-joggeturen-sa-toff-_-handler-ikke-om-at-man-er-i-darlig-form-1.18043184"
   },
   {
-   "tittel": "Vard har sagt opp millionkontrakt – 100 arbeidarar råka",
+   "tittel": "Livet ble snudd på hodet etter sjokkbeskjed: – Shit, hva betyr det?",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/mr/verftstilsette-star-utan-jobb-og-lonn-etter-kontraktsbrot-mellom-vard-og-maxship-1.18052320"
-  },
-  {
-   "tittel": "Norges tøffeste vant over frykten: – Jeg har skjønt at jeg takler å stå i litt dritt",
-   "kilde": "Trøndelag",
-   "lenke": "https://www.nrk.no/trondelag/xl/vant-norges-toffeste-2026_-_-reddeste-jeg-har-vaert-i-hele-mitt-liv-1.17943889"
-  },
-  {
-   "tittel": "Reagerte på VM-klapping på Norges hotell: – Ganske patetisk",
-   "kilde": "NRK",
-   "lenke": "https://www.nrk.no/sport/hangeland-reagerte-pa-klapping-pa-norges-vm-hotell_-_-ganske-patetisk-1.18052556"
+   "lenke": "https://www.nrk.no/sport/silje-opseth-apner-opp_-gravid-og-hopper-ikke-neste-sesong-1.18051743"
   }
  ]
 }
