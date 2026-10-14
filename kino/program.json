@@ -3,51 +3,6 @@
  "programlenke": "https://www.bygdekinoen.no/#selbu",
  "dager": [
   {
-   "dato": "2026-10-14",
-   "avlyst": false,
-   "avlyst_grunn": null,
-   "lukket": false,
-   "lukket_notat": null,
-   "forestillinger": [
-    {
-     "id": 49043,
-     "tid": "18:00",
-     "tittel": "Sauen Shaun - Gårdens fårbannelse",
-     "aldersgrense": "A",
-     "spilletid": 81,
-     "undertekst": "2D Norsk tale Utekstet",
-     "pris": 110,
-     "billettlenke": "https://kinologg.kino.no/nettsalg/49043",
-     "avlyst": false,
-     "avlyst_grunn": null,
-     "lukket": false,
-     "lukket_notat": null,
-     "plakat": "https://cdn.sanity.io/images/j0wdmpyb/production/0690cc492885fe739c3d101a3af245ffa6db81a9-1500x2143.webp?w=240&auto=format",
-     "still": "https://cdn.sanity.io/images/j0wdmpyb/production/18045d99e07cafa3d6ab559fac32d4be6fd830ec-4000x2250.webp?w=960&auto=format",
-     "omtale": "Beboerne på Mossy Bottom Farm gleder seg til Halloween – helt til den klønete bonden ødelegger flokkens elskede gresskarhage.",
-     "filmside": "https://www.bygdekinoen.no/film/EDI20250794"
-    },
-    {
-     "id": 49045,
-     "tid": "20:00",
-     "tittel": "La fjella leve",
-     "aldersgrense": "A",
-     "spilletid": 100,
-     "undertekst": "2D Original tale Norsk tekst",
-     "pris": 130,
-     "billettlenke": "https://kinologg.kino.no/nettsalg/49045",
-     "avlyst": false,
-     "avlyst_grunn": null,
-     "lukket": false,
-     "lukket_notat": null,
-     "plakat": "https://cdn.sanity.io/images/j0wdmpyb/production/9e2becf046d5e48f185642c6975acaa812ac5992-904x1280.jpg?w=240&auto=format",
-     "still": "https://cdn.sanity.io/images/j0wdmpyb/production/664031bc6524aca585b34bcf5f0244080890aa88-4000x2109.webp?w=960&auto=format",
-     "omtale": "I over 20 år har samiske reindriftsutøvere på Fosen kjempet mot Europas største vindkraftanlegg, bygget midt i de viktigste beiteområdene deres.",
-     "filmside": "https://www.bygdekinoen.no/film/EDI20251487"
-    }
-   ]
-  },
-  {
    "dato": "2026-10-28",
    "avlyst": false,
    "avlyst_grunn": null,
@@ -155,11 +110,11 @@
   }
  ],
  "hero": {
-  "dato": "2026-10-14",
+  "dato": "2026-10-28",
   "bilder": {
-   "49043": "2026-10-14_49043_15.jpg",
-   "49045": "2026-10-14_49045_17.jpg"
+   "47370": "2026-10-28_47370_19.jpg",
+   "47669": "2026-10-28_47669_21.jpg"
   }
  },
- "oppdatert": "2026-10-14T16:00"
+ "oppdatert": "2026-10-15T00:00"
 }
