@@ -62,7 +62,7 @@
      "spilletid": 73,
      "undertekst": "2D Norsk tale Norsk tekst",
      "pris": 110,
-     "billettlenke": null,
+     "billettlenke": "https://kinologg.kino.no/nettsalg/47464",
      "avlyst": false,
      "avlyst_grunn": null,
      "lukket": false,
@@ -116,5 +116,5 @@
    "47669": "2026-10-28_47669_21.jpg"
   }
  },
- "oppdatert": "2026-10-15T00:00"
+ "oppdatert": "2026-10-15T15:00"
 }
