@@ -58,7 +58,7 @@
      "id": 47464,
      "tid": "18:00",
      "tittel": "Julenissens verksted",
-     "aldersgrense": null,
+     "aldersgrense": "A",
      "spilletid": 73,
      "undertekst": "2D Norsk tale Norsk tekst",
      "pris": 110,
@@ -116,5 +116,5 @@
    "47669": "2026-10-28_47669_21.jpg"
   }
  },
- "oppdatert": "2026-10-15T15:00"
+ "oppdatert": "2026-10-16T07:00"
 }
