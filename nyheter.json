@@ -1,10 +1,35 @@
 {
- "oppdatert": "2026-10-19T14:22:36Z",
+ "oppdatert": "2026-10-19T20:04:52Z",
  "saker": [
+  {
+   "tittel": "Terje frykter postkutt: – Kan begrense tilgangen til informasjon",
+   "kilde": "Trøndelag",
+   "lenke": "https://www.nrk.no/trondelag/terje-frykter-postkutt_-_-kan-begrense-tilgangen-til-informasjon-1.18052366"
+  },
+  {
+   "tittel": "Søker med hund etter savnet mann: – Har vært ute siden fredag",
+   "kilde": "NRK",
+   "lenke": "https://www.nrk.no/tromsogfinnmark/mann-i-80-arene-savnet-i-tana-1.18059031"
+  },
   {
    "tittel": "Knivstakk mann i hjertet: – Jeg beklager",
    "kilde": "Trøndelag",
    "lenke": "https://www.nrk.no/trondelag/knivstakk-tre-personer-pa-mollenberg-i-trondheim-_-beklaget-forste-dag-i-retten-1.18058321"
+  },
+  {
+   "tittel": "Zelenskyj: Forhandlere kan møtes i Norge",
+   "kilde": "NRK",
+   "lenke": "https://www.nrk.no/nyheter/zelenskyj_-forhandlere-kan-motes-i-norge-1.18059063"
+  },
+  {
+   "tittel": "Midtnytt: Spillavhengige blir lokket til å spille mer",
+   "kilde": "Trøndelag",
+   "lenke": "https://www.nrk.no/video/DKTL98101926"
+  },
+  {
+   "tittel": "Regjeringen vil begrense ordningen: – Helt krise for meg",
+   "kilde": "NRK",
+   "lenke": "https://www.nrk.no/innlandet/som-15-aring-ble-han-lam_-uten-aktivitetsmidler-hadde-han-ikke-hatt-et-fullverdig-liv-1.18053291"
   },
   {
    "tittel": "Slik lokker spillselskapene problemspillerne tilbake",
@@ -12,9 +37,9 @@
    "lenke": "https://www.nrk.no/trondelag/xl/nrk-undersokelse_-spillavhengige-blir-kontaktet-av-nettkasino-daglig-1.18052335"
   },
   {
-   "tittel": "Milliardær gjorde «spontankjøp» – VM-tromma ble solgt for rekordsum",
+   "tittel": "Ny teknologi kan gjøre aluminium helt utslippsfri",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/sport/knut-ugland-kjopte-vm-tromma-for-rekordsum-under-tv-aksjonen-1.18058523"
+   "lenke": "https://www.nrk.no/vestfoldogtelemark/ny-hydro-teknologi-kan-fjerne-co_-utslipp-fra-aluminium-1.18058813"
   },
   {
    "tittel": "Nå kan du bli kjent med historiene bak gravene",
@@ -22,9 +47,9 @@
    "lenke": "https://www.nrk.no/trondelag/kulturgraver-skal-fortelle-historiene-bak-gravsteinene_-_-vil-vaere-et-veldig-viktig-historieverk-1.18053300"
   },
   {
-   "tittel": "Næringsministeren ber hotellgigantene skjerpe seg",
+   "tittel": "Portforbud i franske byer",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/nordland/turistskatten_-naeringsministeren-ber-hotellgigantene-skjerpe-seg-1.18052557"
+   "lenke": "https://www.nrk.no/nyheter/portforbud-i-franske-byer-1.18059042"
   },
   {
    "tittel": "Ranheim slo Bryne 4-2",
@@ -32,9 +57,9 @@
    "lenke": "https://resultater.nrk.no/fotball/2026-10-18/1/events/2714010"
   },
   {
-   "tittel": "Centerparti-leder får prøve å danne regjering i Sverige",
+   "tittel": "Reagerer på City-køyret: – Tissar i buksa for å halde varmen",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/nyheter/centerparti-leder-far-prove-a-danne-regjering-i-sverige-1.18058702"
+   "lenke": "https://www.nrk.no/sport/ekspertar-hardt-ut-mot-marescas-haaland-beskjed-1.18058741"
   },
   {
    "tittel": "Seier til Rosenborg i Sarpsborg!",
@@ -42,39 +67,14 @@
    "lenke": "https://resultater.nrk.no/fotball/2026-10-18/1/events/2713741"
   },
   {
-   "tittel": "Fryktar hamnespy i Oslofjorden: – Ei tikkande bombe",
-   "kilde": "NRK",
-   "lenke": "https://www.nrk.no/ostfold/fryktar-hamnespy-rykker-inn-i-oslofjorden_-ber-folk-sjekke-baten-1.18058300"
-  },
-  {
    "tittel": "Fengsles i fire uker: – Nå er jeg både sliten og lei",
    "kilde": "Trøndelag",
    "lenke": "https://www.nrk.no/trondelag/fengslingsmote-i-halliksaken-resulterte-i-fire-uker-fengsel-1.18057845"
   },
   {
-   "tittel": "Skipsarresten på Svalbard: Skal ha blitt truet med «store konsekvenser»",
+   "tittel": "Milliardær gjorde «spontankjøp» – VM-tromma ble solgt for rekordsum",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/tromsogfinnmark/_professor-moltsjanov_-i-arrest_-advokat-hevder-arrestasjonen-ble-truet-med-store-konsekvenser-1.18057606"
-  },
-  {
-   "tittel": "Ikkje berre for å vere snill",
-   "kilde": "Trøndelag",
-   "lenke": "https://www.nrk.no/trondelag/xl/natteramnar-kan-ikkje-gripe-inn-mot-vald_-men-synet-av-dei-kan-trygge-og-sikre-alle-som-ser-dei.-1.18016692"
-  },
-  {
-   "tittel": "VM–arrangøren i Narvik sier fra seg prestisjerenn: – For stor usikkerhet",
-   "kilde": "NRK",
-   "lenke": "https://www.nrk.no/nordland/arrangorene-av-alpin-vm-i-narvik-i-2029-bekrefter-at-det-ikke-blir-verdenscuprenn-i-2027-1.18058532"
-  },
-  {
-   "tittel": "Sexklubb-grunnlegger er siktet for hallikvirksomhet igjen",
-   "kilde": "Trøndelag",
-   "lenke": "https://www.nrk.no/trondelag/to-menn-siktet-for-hallikvirksomhet-i-trondelag-1.18057586"
-  },
-  {
-   "tittel": "På eitt punkt meiner dei Premier League er akterutsegla: – Heilt absurd",
-   "kilde": "NRK",
-   "lenke": "https://www.nrk.no/sport/hardt-ut-mot-engelsk-supporterkultur-for-viking-mote_-_-rett-og-slett-avleggs-1.18050007"
+   "lenke": "https://www.nrk.no/sport/knut-ugland-kjopte-vm-tromma-for-rekordsum-under-tv-aksjonen-1.18058523"
   }
  ]
 }
