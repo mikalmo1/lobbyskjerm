@@ -107,6 +107,14 @@
    "lukket": false,
    "lukket_notat": null,
    "forestillinger": []
+  },
+  {
+   "dato": "2026-12-27",
+   "avlyst": false,
+   "avlyst_grunn": null,
+   "lukket": false,
+   "lukket_notat": null,
+   "forestillinger": []
   }
  ],
  "hero": {
@@ -116,5 +124,5 @@
    "47669": "2026-10-28_47669_21.jpg"
   }
  },
- "oppdatert": "2026-10-16T07:00"
+ "oppdatert": "2026-10-20T10:00"
 }
