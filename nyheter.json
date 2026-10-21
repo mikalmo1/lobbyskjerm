@@ -1,5 +1,5 @@
 {
- "oppdatert": "2026-10-21T19:07:33Z",
+ "oppdatert": "2026-10-21T22:21:22Z",
  "saker": [
   {
    "tittel": "Attraktive studenter får jobb før de er utdannet",
@@ -7,19 +7,19 @@
    "lenke": "https://www.nrk.no/trondelag/attraktive-studenter-far-jobb-for-de-er-utdannet-1.18058336"
   },
   {
-   "tittel": "Lærarutdanninga mistar 360 studieplassar: Fryktar nedbygging av tilbodet",
+   "tittel": "Tripic med krass kritikk mot eget lag: – Kaster bort kampen",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/vestland/hvl-styret-flyttar-360-studieplassar-fra-laerarutdanninga-1.18060475"
+   "lenke": "https://www.nrk.no/sport/mesterligaen_-aston-villa-_-viking_-tripic-blemme-og-praktmal-i-viking-nedtur_-_-brutal-laering-1.18061158"
   },
   {
-   "tittel": "Frontkollisjon på E39: – Fremstår alvorlig",
+   "tittel": "Frontkollisjon på E39: Person i 80-årene omkom",
    "kilde": "Trøndelag",
    "lenke": "https://www.nrk.no/trondelag/to-biler-og-tre-personer-involvert-i-frontkollisjon-pa-e39-i-heim-kommune-1.18061011"
   },
   {
-   "tittel": "Como ydmyket Manchester United: – Totalt krise",
+   "tittel": "Nå er de nye bydelsnavnene vedtatt",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/sport/manchester-united-ydmyket-av-como-1.18061110"
+   "lenke": "https://www.nrk.no/stor-oslo/nye-navn-pa-oslos-bydeler-vedtatt-1.18061263"
   },
   {
    "tittel": "Midtnytt: Feirer strøm og trikk",
@@ -27,9 +27,9 @@
    "lenke": "https://www.nrk.no/video/DKTL98102126"
   },
   {
-   "tittel": "TV-bilde etter Viking-kamp forbløffar: – Aldri sett noko liknande",
+   "tittel": "Ber amerikanere forlate Saudi-Arabia",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/sport/viking-si-openheit-forbloffar_-_-aldri-sett-noko-liknande-1.18059744"
+   "lenke": "https://www.nrk.no/nyheter/ber-amerikanere-forlate-saudi-arabia-1.18061250"
   },
   {
    "tittel": "Dobbel noregsrekord i ultraløp – sprang i over 70 timar i strekk",
@@ -37,14 +37,19 @@
    "lenke": "https://www.nrk.no/trondelag/tok-noregsrekord-i-ultralop-_-lop-i-over-70-timar-i-strekk-1.18060497"
   },
   {
+   "tittel": "Oslos nye bydelsnavn vedtatt",
+   "kilde": "NRK",
+   "lenke": "https://www.nrk.no/stor-oslo/oslos-nye-bydelsnavn-vedtatt-1.18061231"
+  },
+  {
    "tittel": "Ber om fire år i fengsel for mann tiltalt for drapsforsøk",
    "kilde": "Trøndelag",
    "lenke": "https://www.nrk.no/trondelag/ber-om-fire-ar-i-fengsel-for-mann-tiltalt-for-drapsforsok--1.18060716"
   },
   {
-   "tittel": "Advokat pågrepet midt i rettssak",
+   "tittel": "Lærarutdanninga mistar 360 studieplassar: Fryktar nedbygging av tilbodet",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/vestfoldogtelemark/lagmannsretten-griper-inn_-menneskehandelsak-kan-kollapse-etter-advokat-pagripelse-1.18060490"
+   "lenke": "https://www.nrk.no/vestland/hvl-styret-flyttar-360-studieplassar-fra-laerarutdanninga-1.18060475"
   },
   {
    "tittel": "Ein person omkom i trafikkulukke i Orkland",
@@ -52,9 +57,9 @@
    "lenke": "https://www.nrk.no/trondelag/trafikkulukke-i-orkland_-_-framstar-alvorleg-1.18060743"
   },
   {
-   "tittel": "Fikk toppjobb kort tid etter avgangen – nå øker presset mot ham",
+   "tittel": "United slaktes etter flause: – Som å se menn mot barn",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/vestfoldogtelemark/fikk-toppjobb-kort-tid-etter-avgangen-_-na-oker-presset-mot-ham-1.18059513"
+   "lenke": "https://www.nrk.no/sport/manchester-united-ydmyket-av-como-1.18061110"
   },
   {
    "tittel": "Glutenfrie matvarer blir dyrere. Likevel kan Sandra (21) få mindre i støtte: – Helt uhørt",
@@ -62,9 +67,9 @@
    "lenke": "https://www.nrk.no/trondelag/reagerer-pa-regjeringens-forslag-om-a-redusere-stonaden-til-personer-med-coliaki-1.18053297"
   },
   {
-   "tittel": "Må vente fire uker lenger på abort i nord enn i vest",
+   "tittel": "TV-bilde etter Viking-kamp forbløffar: – Aldri sett noko liknande",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/trondelag/abortforskjeller-i-norge_-ma-vente-opptil-fire-uker-lenger-ut-fra-hvor-de-bor-1.18033854"
+   "lenke": "https://www.nrk.no/sport/viking-si-openheit-forbloffar_-_-aldri-sett-noko-liknande-1.18059744"
   },
   {
    "tittel": "Terje frykter postkutt: – Kan begrense tilgangen til informasjon",
@@ -72,9 +77,9 @@
    "lenke": "https://www.nrk.no/trondelag/terje-frykter-postkutt_-_-kan-begrense-tilgangen-til-informasjon-1.18052366"
   },
   {
-   "tittel": "Granatangrepet på Strømmen: – Hvorfor skjedde dette oss?",
+   "tittel": "Frontkollisjon på E39: – Fremstår alvorlig",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/stor-oslo/granatangrepet-pa-strommen_-uenighet-om-tenaringene-handlet-for-organisert-kriminelt-nettverk-1.18055698"
+   "lenke": "https://www.nrk.no/trondelag/to-biler-og-tre-personer-involvert-i-frontkollisjon-pa-e39-i-heim-kommune-1.18061011"
   }
  ]
 }
