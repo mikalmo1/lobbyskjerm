@@ -1,5 +1,5 @@
 {
- "oppdatert": "2026-10-22T11:47:05Z",
+ "oppdatert": "2026-10-22T11:47:30Z",
  "plakater": {
   "hvordan-vil-du-bo-i-selbu-facebook-infoskjerm.png": {
    "tittel": "Hvordan vil du bo i Selbu?",
@@ -9,8 +9,11 @@
    "til": "2026-10-27"
   },
   "hvem-fortjener-kulturprisen-facebook-infoskjerm.png": {
-   "tittel": "Hvem fortjener kulturprisen facebook infoskjerm",
-   "avsender": "Selbu kommune"
+   "tittel": "Hvem fortjener kulturprisen?",
+   "avsender": "Selbu kommune",
+   "fullskjerm": true,
+   "fra": "2026-10-22",
+   "til": "2026-11-06"
   }
  }
 }
