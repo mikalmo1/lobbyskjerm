@@ -115,6 +115,102 @@
    "lukket": false,
    "lukket_notat": null,
    "forestillinger": []
+  },
+  {
+   "dato": "2027-01-13",
+   "avlyst": false,
+   "avlyst_grunn": null,
+   "lukket": false,
+   "lukket_notat": null,
+   "forestillinger": []
+  },
+  {
+   "dato": "2027-01-27",
+   "avlyst": false,
+   "avlyst_grunn": null,
+   "lukket": false,
+   "lukket_notat": null,
+   "forestillinger": []
+  },
+  {
+   "dato": "2027-02-10",
+   "avlyst": false,
+   "avlyst_grunn": null,
+   "lukket": false,
+   "lukket_notat": null,
+   "forestillinger": []
+  },
+  {
+   "dato": "2027-02-24",
+   "avlyst": false,
+   "avlyst_grunn": null,
+   "lukket": false,
+   "lukket_notat": null,
+   "forestillinger": []
+  },
+  {
+   "dato": "2027-03-10",
+   "avlyst": false,
+   "avlyst_grunn": null,
+   "lukket": false,
+   "lukket_notat": null,
+   "forestillinger": []
+  },
+  {
+   "dato": "2027-03-24",
+   "avlyst": false,
+   "avlyst_grunn": null,
+   "lukket": false,
+   "lukket_notat": null,
+   "forestillinger": []
+  },
+  {
+   "dato": "2027-04-07",
+   "avlyst": false,
+   "avlyst_grunn": null,
+   "lukket": false,
+   "lukket_notat": null,
+   "forestillinger": []
+  },
+  {
+   "dato": "2027-04-21",
+   "avlyst": false,
+   "avlyst_grunn": null,
+   "lukket": false,
+   "lukket_notat": null,
+   "forestillinger": []
+  },
+  {
+   "dato": "2027-05-05",
+   "avlyst": false,
+   "avlyst_grunn": null,
+   "lukket": false,
+   "lukket_notat": null,
+   "forestillinger": []
+  },
+  {
+   "dato": "2027-05-19",
+   "avlyst": false,
+   "avlyst_grunn": null,
+   "lukket": false,
+   "lukket_notat": null,
+   "forestillinger": []
+  },
+  {
+   "dato": "2027-06-02",
+   "avlyst": false,
+   "avlyst_grunn": null,
+   "lukket": false,
+   "lukket_notat": null,
+   "forestillinger": []
+  },
+  {
+   "dato": "2027-06-16",
+   "avlyst": false,
+   "avlyst_grunn": null,
+   "lukket": false,
+   "lukket_notat": null,
+   "forestillinger": []
   }
  ],
  "hero": {
@@ -124,5 +220,5 @@
    "47669": "2026-10-28_47669_21.jpg"
   }
  },
- "oppdatert": "2026-10-21T17:00"
+ "oppdatert": "2026-10-22T12:00"
 }
