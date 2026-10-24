@@ -1,15 +1,25 @@
 {
- "oppdatert": "2026-10-24T11:28:59Z",
+ "oppdatert": "2026-10-24T14:47:11Z",
  "saker": [
+  {
+   "tittel": "Mann veltet i kano: Hentet opp fra sjøen",
+   "kilde": "Trøndelag",
+   "lenke": "https://www.nrk.no/trondelag/mann-veltet-i-kano_-hentet-opp-fra-sjoen-1.18063750"
+  },
+  {
+   "tittel": "Haaland slår tilbake etter kritikk: – Snakka om at eg kom til å slite",
+   "kilde": "NRK",
+   "lenke": "https://www.nrk.no/sport/erling-braut-haaland-slar-tilbake-etter-kritikk-om-at-han-er-sliten-etter-vm-og-nasjonsligaen-1.18063782"
+  },
   {
    "tittel": "Hadde hemmelige møter med Snåsamannen",
    "kilde": "Trøndelag",
    "lenke": "https://www.nrk.no/artikkel/hadde-hemmeleg-mote-med-snasamannen-ga-hap-i-ein-fortvilt-situasjon-1530621"
   },
   {
-   "tittel": "Freser mot eigen klubb etter Europa-mareritt: – Øydela heile kampopplevinga",
+   "tittel": "Stormvarsel på Østlandet – frykter ikke «Amy»-tilstander",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/sport/lsk-supporter-si-verste-oppleving-pa-arasen-1.18063360"
+   "lenke": "https://www.nrk.no/vestfoldogtelemark/stormvarsel-pa-ostlandet-_-frykter-ikke-_amy_-tilstander-1.18063720"
   },
   {
    "tittel": "Då sjåføren døydde bak rattet, fortsette bilen å køyre i rundt 17 minutt",
@@ -17,9 +27,9 @@
    "lenke": "https://www.nrk.no/trondelag/da-sjaforen-doydde-bak-rattet-i-orkland_-fortsette-bilen-a-koyre-i-rundt-17-minutt-1.18061812"
   },
   {
-   "tittel": "NRK avslører: Telefonsvindlerne ringer fra norske nummer",
+   "tittel": "Én knivstukket – leter etter gjerningsperson",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/dokumentar/nrk-avslorer_-telefonsvindlerne-ringer-fra-norske-nummer-1.18040432"
+   "lenke": "https://www.nrk.no/stor-oslo/alvorlig-voldshendelse-i-oslo-_-leter-etter-gjerningsperson-1.18063733"
   },
   {
    "tittel": "Brannen i Verdal: Huseigar er framleis sikta, men mistanken er svekka",
@@ -27,9 +37,9 @@
    "lenke": "https://www.nrk.no/trondelag/brannen-i-verdal_-huseigar-er-framleis-sikta_-men-mistanken-er-svekka-1.18062898"
   },
   {
-   "tittel": "Ukraina: Stabil tilkobling til Starlink – hastigheten øker",
+   "tittel": "Alvorlig voldshendelse i Oslo – leter etter gjerningsperson",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/norge/ukraina_-stabil-tilkobling-til-starlink-_-hastigheten-oker-1.18063632"
+   "lenke": "https://www.nrk.no/stor-oslo/alvorlig-voldshendelse-i-oslo-_-leter-etter-gjerningsperson-1.18063711"
   },
   {
    "tittel": "Kolstad tapte mot tyske Magdeburg",
@@ -37,14 +47,19 @@
    "lenke": "https://resultater.nrk.no/handball/2026-10-22/3/events/275242"
   },
   {
+   "tittel": "Freser mot eigen klubb etter Europa-mareritt: – Øydela heile kampopplevinga",
+   "kilde": "NRK",
+   "lenke": "https://www.nrk.no/sport/lsk-supporter-si-verste-oppleving-pa-arasen-1.18063360"
+  },
+  {
    "tittel": "Laksedød, batteribranner og snart Halloween",
    "kilde": "Trøndelag",
    "lenke": "https://www.nrk.no/video/DKTL98102226"
   },
   {
-   "tittel": "Avslører heftige kranglar: «No smell det her»",
+   "tittel": "NRK avslører: Telefonsvindlerne ringer fra norske nummer",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/sport/stale-og-ida-solbakken-opnar-opp-om-heftige-kranglar_-_-da-gar-dei-andre-1.18039872"
+   "lenke": "https://www.nrk.no/dokumentar/nrk-avslorer_-telefonsvindlerne-ringer-fra-norske-nummer-1.18040432"
   },
   {
    "tittel": "Parkinson: Sprøytemidler kan være en årsak",
@@ -52,29 +67,14 @@
    "lenke": "https://www.nrk.no/artikkel/parkinson-sproytemidler-kan-vare-en-arsak-1528893"
   },
   {
-   "tittel": "Minst 35 gjester ble syke: Oppkast og diaré etter besøk på stjernerestaurant",
+   "tittel": "Ukraina: Stabil tilkobling til Starlink – hastigheten øker",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/rogaland/minst-35-gjester-ble-syke-etter-restaurantbesok-pa-re-naa-i-stavanger-1.18043712"
+   "lenke": "https://www.nrk.no/norge/ukraina_-stabil-tilkobling-til-starlink-_-hastigheten-oker-1.18063632"
   },
   {
    "tittel": "Attraktive studenter får jobb før de er utdannet",
    "kilde": "Trøndelag",
    "lenke": "https://www.nrk.no/trondelag/attraktive-studenter-far-jobb-for-de-er-utdannet-1.18058336"
-  },
-  {
-   "tittel": "Historisk Mesternes mester-vinnar: – Ei lykke å dele det med nokon",
-   "kilde": "NRK",
-   "lenke": "https://www.nrk.no/sport/mesternes-mester-team_-solveig-gulbrandsen-og-marco-elsafadi-vann-den-forste-utgava-av-programmet-1.18056588"
-  },
-  {
-   "tittel": "Frontkollisjon på E39: Person i 80-årene omkom",
-   "kilde": "Trøndelag",
-   "lenke": "https://www.nrk.no/trondelag/to-biler-og-tre-personer-involvert-i-frontkollisjon-pa-e39-i-heim-kommune-1.18061011"
-  },
-  {
-   "tittel": "No skal brunosten til Kina: – Eg trur kinesiske forbrukarar vil like det",
-   "kilde": "NRK",
-   "lenke": "https://www.nrk.no/vestland/no-startar-eksporten-av-brunost-til-kina-1.18062974"
   }
  ]
 }
