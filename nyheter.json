@@ -1,15 +1,25 @@
 {
- "oppdatert": "2026-10-26T05:24:49Z",
+ "oppdatert": "2026-10-26T11:23:15Z",
  "saker": [
+  {
+   "tittel": "Send inn forslag: Hvem er Årets trønder og Årets hverdagshelt?",
+   "kilde": "Trøndelag",
+   "lenke": "https://www.nrk.no/trondelag/2026_-hvem-er-arets-tronder-og-arets-hverdagshelt_-1.18054356"
+  },
+  {
+   "tittel": "Braathen røper klesutfordring: – Det er heilt krise opplegg",
+   "kilde": "NRK",
+   "lenke": "https://www.nrk.no/sport/alpint_-lucas-pinheiro-braathen-ma-pakke-enorme-mengder-med-klede_-_-eit-logistikkmessig-mareritt-1.18063011"
+  },
   {
    "tittel": "Innstilte ferjer skal ikke lenger gi lønnstrekk",
    "kilde": "Trøndelag",
    "lenke": "https://www.nrk.no/trondelag/nar-ferja-innstilles_-skal-ikke-trekkes-i-lonn-1.18064478"
   },
   {
-   "tittel": "Én pågrepet etter mistenkt drap på Ringerike",
+   "tittel": "Kirkenes uten vann: Kjell henter vann i elva",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/nyheter/en-pagrepet-etter-mistenkt-drap-pa-ringerike-1.18064611"
+   "lenke": "https://www.nrk.no/tromsogfinnmark/vannmangel-i-sor-varanger_-kjell-henter-vann-i-elva-1.18064714"
   },
   {
    "tittel": "Plater blåste ned fra bygg",
@@ -17,9 +27,9 @@
    "lenke": "https://www.nrk.no/trondelag/plater-blaste-ned-fra-bygg-1.18064127"
   },
   {
-   "tittel": "Haaland kjempar om å bli verdas beste: – Som målskårar så er det ingen som kan måle seg",
+   "tittel": "106 ansatte får sluttpakke i NRK",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/sport/erling-braut-haaland-kan-vinne-gullballen-1.18063965"
+   "lenke": "https://www.nrk.no/nyheter/106-ansatte-far-sluttpakke-i-nrk-1.18064707"
   },
   {
    "tittel": "RBKs superduo sørget for borteseier",
@@ -27,9 +37,9 @@
    "lenke": "https://www.nrk.no/trondelag/rbks-superduo-sorget-for-borteseier-1.18063947"
   },
   {
-   "tittel": "Nytt vannbrudd i Sør-Varanger",
+   "tittel": "Danskebåten snudde på vei til Oslo",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/tromsogfinnmark/nytt-vannbrudd-i-sor-varanger-1.18064577"
+   "lenke": "https://www.nrk.no/stor-oslo/danskebaten-snudde-pa-vei-til-oslo-1.18064663"
   },
   {
    "tittel": "Mann veltet i kano: Hentet opp fra sjøen",
@@ -37,14 +47,19 @@
    "lenke": "https://www.nrk.no/trondelag/mann-veltet-i-kano_-hentet-opp-fra-sjoen-1.18063750"
   },
   {
+   "tittel": "Kritisk for omstridd gruveprosjekt: Stoppar drift for å unngå konkurs",
+   "kilde": "NRK",
+   "lenke": "https://www.nrk.no/vestland/nordic-mining-stanser-gruvedrifta-midlertidig-for-a-spare-pengar-1.18064666"
+  },
+  {
    "tittel": "Hadde hemmelige møter med Snåsamannen",
    "kilde": "Trøndelag",
    "lenke": "https://www.nrk.no/artikkel/hadde-hemmeleg-mote-med-snasamannen-ga-hap-i-ein-fortvilt-situasjon-1530621"
   },
   {
-   "tittel": "Skulle berre ein snartur på butikken: Vart låst inne",
+   "tittel": "Danskebåten snudde og på Vestlandet stiger vannet",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/nordland/blei-last-inne-pa-matbutikk-i-vesteralen-1.18064348"
+   "lenke": "https://www.nrk.no/vestland/bryggen-i-bergen-er-stengt-for-trafikk-pa-grunn-av-fare-for-flom-1.18064643"
   },
   {
    "tittel": "Då sjåføren døydde bak rattet, fortsette bilen å køyre i rundt 17 minutt",
@@ -52,9 +67,9 @@
    "lenke": "https://www.nrk.no/trondelag/da-sjaforen-doydde-bak-rattet-i-orkland_-fortsette-bilen-a-koyre-i-rundt-17-minutt-1.18061812"
   },
   {
-   "tittel": "E6 stengt mellom Lillehammer og Biri",
+   "tittel": "Eide: – Han vet at Nobelkomiteen er uavhengig",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/innlandet/e6-stengt-mellom-lillehammer-og-biri-1.18064498"
+   "lenke": "https://www.nrk.no/nyheter/eide_-_-han-vet-at-nobelkomiteen-er-uavhengig-1.18064642"
   },
   {
    "tittel": "Brannen i Verdal: Huseigar er framleis sikta, men mistanken er svekka",
@@ -62,19 +77,9 @@
    "lenke": "https://www.nrk.no/trondelag/brannen-i-verdal_-huseigar-er-framleis-sikta_-men-mistanken-er-svekka-1.18062898"
   },
   {
-   "tittel": "NRK-profilen enda i badekar etter fantomløp",
+   "tittel": "Kvinne funnet død – mann siktet for drap",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/sport/nrk-ekspert-pal-golberg-enda-i-badekar-etter-fantomlop-under-frankfurt-maraton-1.18064192"
-  },
-  {
-   "tittel": "Kolstad tapte mot tyske Magdeburg",
-   "kilde": "Trøndelag",
-   "lenke": "https://resultater.nrk.no/handball/2026-10-22/3/events/275242"
-  },
-  {
-   "tittel": "Brann i togbremser – Lillestrøm stasjon stengt",
-   "kilde": "NRK",
-   "lenke": "https://www.nrk.no/buskerud/brann-i-togbremser-_-lillestrom-stasjon-stengt-1.18064461"
+   "lenke": "https://www.nrk.no/buskerud/mistenker-drap-_-en-pagrepet-pa-ringerike-1.18064633"
   }
  ]
 }
