@@ -114,7 +114,26 @@
    "avlyst_grunn": null,
    "lukket": false,
    "lukket_notat": null,
-   "forestillinger": []
+   "forestillinger": [
+    {
+     "id": 49522,
+     "tid": "18:00",
+     "tittel": "Bukkene Bruse drar til Syden",
+     "aldersgrense": null,
+     "spilletid": 74,
+     "undertekst": "2D Norsk tale Norsk tekst",
+     "pris": 110,
+     "billettlenke": null,
+     "avlyst": false,
+     "avlyst_grunn": null,
+     "lukket": false,
+     "lukket_notat": null,
+     "plakat": null,
+     "still": null,
+     "omtale": null,
+     "filmside": null
+    }
+   ]
   },
   {
    "dato": "2027-01-13",
@@ -220,5 +239,5 @@
    "47669": "2026-10-28_47669_21.jpg"
   }
  },
- "oppdatert": "2026-10-26T12:00"
+ "oppdatert": "2026-10-27T14:00"
 }
