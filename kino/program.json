@@ -3,51 +3,6 @@
  "programlenke": "https://www.bygdekinoen.no/#selbu",
  "dager": [
   {
-   "dato": "2026-10-28",
-   "avlyst": false,
-   "avlyst_grunn": null,
-   "lukket": false,
-   "lukket_notat": null,
-   "forestillinger": [
-    {
-     "id": 47370,
-     "tid": "18:00",
-     "tittel": "Mysteriepakken",
-     "aldersgrense": "A",
-     "spilletid": 86,
-     "undertekst": "2D Original tale Norsk tekst",
-     "pris": 110,
-     "billettlenke": "https://kinologg.kino.no/nettsalg/47370",
-     "avlyst": false,
-     "avlyst_grunn": null,
-     "lukket": false,
-     "lukket_notat": null,
-     "plakat": "https://cdn.sanity.io/images/j0wdmpyb/production/e796551111af9fba503fffcbd45d77f4a13d0521-1080x1527.png?w=240&auto=format",
-     "still": "https://cdn.sanity.io/images/j0wdmpyb/production/d7513ca30d9c7256ee340018256bdca65ad60e1f-4000x2667.webp?w=960&auto=format",
-     "omtale": "Historien bak filmen er like gåtefull som den er sann. Regissør Silje Evensmo Jacobsens film tar utgangspunkt i et ekte og lokalt forankret mysterium. Hvert år mottar to søsken og deres familie en anonym pakke sendt fra Arendal.",
-     "filmside": "https://www.bygdekinoen.no/film/EDI20250084"
-    },
-    {
-     "id": 47669,
-     "tid": "20:00",
-     "tittel": "Pensjonskuppet",
-     "aldersgrense": "9",
-     "spilletid": 110,
-     "undertekst": "2D Original tale Norsk tekst",
-     "pris": 130,
-     "billettlenke": "https://kinologg.kino.no/nettsalg/47669",
-     "avlyst": false,
-     "avlyst_grunn": null,
-     "lukket": false,
-     "lukket_notat": null,
-     "plakat": "https://cdn.sanity.io/images/j0wdmpyb/production/4400c8093f9e9fa4e232f6516351793798f8a4b7-1080x1920.jpg?w=240&auto=format",
-     "still": "https://cdn.sanity.io/images/j0wdmpyb/production/390f2c26b8fac9a78fd2f92b21fd95d209e39474-4000x1676.webp?w=960&auto=format",
-     "omtale": "Etter 40 år som lojal hjemmeværende kone, får Annema sparken - til fordel for en yngre modell. Sammen med karrierekvinnen Nina, som går ut på dato for arbeidslivet, og rebellen Mona, bestemmer trioen seg for å pensjonere seg fra…",
-     "filmside": "https://www.bygdekinoen.no/film/EDI20250183"
-    }
-   ]
-  },
-  {
    "dato": "2026-11-11",
    "avlyst": false,
    "avlyst_grunn": null,
@@ -233,11 +188,11 @@
   }
  ],
  "hero": {
-  "dato": "2026-10-28",
+  "dato": "2026-11-11",
   "bilder": {
-   "47370": "2026-10-28_47370_19.jpg",
-   "47669": "2026-10-28_47669_21.jpg"
+   "47464": "2026-11-11_47464_24.jpg",
+   "49020": "2026-11-11_49020_25.jpg"
   }
  },
- "oppdatert": "2026-10-27T15:00"
+ "oppdatert": "2026-10-29T00:00"
 }
