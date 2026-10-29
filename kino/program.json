@@ -74,7 +74,7 @@
      "id": 49522,
      "tid": "18:00",
      "tittel": "Bukkene Bruse drar til Syden",
-     "aldersgrense": null,
+     "aldersgrense": "A",
      "spilletid": 74,
      "undertekst": "2D Norsk tale Norsk tekst",
      "pris": 110,
@@ -194,5 +194,5 @@
    "49020": "2026-11-11_49020_25.jpg"
   }
  },
- "oppdatert": "2026-10-29T00:00"
+ "oppdatert": "2026-10-29T07:00"
 }
