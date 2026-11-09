@@ -53,7 +53,26 @@
    "avlyst_grunn": null,
    "lukket": false,
    "lukket_notat": null,
-   "forestillinger": []
+   "forestillinger": [
+    {
+     "id": 49777,
+     "tid": "20:00",
+     "tittel": "The Hunger Games: Sunrise on the Reaping",
+     "aldersgrense": "12",
+     "spilletid": 158,
+     "undertekst": "2D Original tale Norsk tekst",
+     "pris": 130,
+     "billettlenke": null,
+     "avlyst": false,
+     "avlyst_grunn": null,
+     "lukket": false,
+     "lukket_notat": null,
+     "plakat": "https://cdn.sanity.io/images/j0wdmpyb/production/a77228cd6145b069bbe22cff595a7a15ce9db0fc-1500x2222.webp?w=240&auto=format",
+     "still": "https://cdn.sanity.io/images/j0wdmpyb/production/71a80665846d9dc19b47411f8c177801beb536ed-3840x1602.jpg?w=960&auto=format",
+     "omtale": "SUNRISE ON THE REAPING er den nyeste forhistorien i Hunger Games-sagaen, og utspiller seg 24 år før hendelsene i Katniss Everdeens originale trilogi, noe som plasserer den omtrent fire tiår etter den siste fortellingen The Hunger Games…",
+     "filmside": "https://www.bygdekinoen.no/film/EDI20251030"
+    }
+   ]
   },
   {
    "dato": "2026-12-09",
@@ -194,5 +213,5 @@
    "49020": "2026-11-11_49020_25.jpg"
   }
  },
- "oppdatert": "2026-11-04T18:00"
+ "oppdatert": "2026-11-09T17:00"
 }
