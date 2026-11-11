@@ -3,51 +3,6 @@
  "programlenke": "https://www.bygdekinoen.no/#selbu",
  "dager": [
   {
-   "dato": "2026-11-11",
-   "avlyst": false,
-   "avlyst_grunn": null,
-   "lukket": false,
-   "lukket_notat": null,
-   "forestillinger": [
-    {
-     "id": 47464,
-     "tid": "18:00",
-     "tittel": "Julenissens verksted",
-     "aldersgrense": "A",
-     "spilletid": 73,
-     "undertekst": "2D Norsk tale Norsk tekst",
-     "pris": 110,
-     "billettlenke": "https://kinologg.kino.no/nettsalg/47464",
-     "avlyst": false,
-     "avlyst_grunn": null,
-     "lukket": false,
-     "lukket_notat": null,
-     "plakat": "https://cdn.sanity.io/images/j0wdmpyb/production/6709e48a4ac96bb7821de663e44feff52c689458-1190x1684.jpg?w=240&auto=format",
-     "still": "https://cdn.sanity.io/images/j0wdmpyb/production/ef1674fcc41acce30602ddbab3817861e236d4bc-4000x2162.webp?w=960&auto=format",
-     "omtale": "Da ni år gamle Mari en natt våkner og oppdager en nisse på soverommet sitt, blir det starten på et juleeventyr utenom det vanlige.",
-     "filmside": "https://www.bygdekinoen.no/film/NOR20240691"
-    },
-    {
-     "id": 49020,
-     "tid": "20:00",
-     "tittel": "Markens grøde",
-     "aldersgrense": "12",
-     "spilletid": 155,
-     "undertekst": "2D Original tale Norsk tekst",
-     "pris": 130,
-     "billettlenke": "https://kinologg.kino.no/nettsalg/49020",
-     "avlyst": false,
-     "avlyst_grunn": null,
-     "lukket": false,
-     "lukket_notat": null,
-     "plakat": "https://cdn.sanity.io/images/j0wdmpyb/production/0054744e1f36936a0b20e8ec95cf475d967bb7a6-1080x1514.jpg?w=240&auto=format",
-     "still": "https://cdn.sanity.io/images/j0wdmpyb/production/bc0d4e09b8806382bd95d088e39139743fc34dbf-4000x2909.webp?w=960&auto=format",
-     "omtale": "Den prisbelønte regissøren Hans Petter Moland bringer Knut Hamsuns udødelige mesterverk Markens grøde til det store lerretet, med Herbert Nordrum («Verdens verste menneske») og Asta Kamma August («Hendelser ved Vann») i hovedrollene.",
-     "filmside": "https://www.bygdekinoen.no/film/EDI20251399"
-    }
-   ]
-  },
-  {
    "dato": "2026-11-25",
    "avlyst": false,
    "avlyst_grunn": null,
@@ -207,11 +162,8 @@
   }
  ],
  "hero": {
-  "dato": "2026-11-11",
-  "bilder": {
-   "47464": "2026-11-11_47464_24.jpg",
-   "49020": "2026-11-11_49020_25.jpg"
-  }
+  "dato": "2026-11-25",
+  "bilder": {}
  },
- "oppdatert": "2026-11-11T19:00"
+ "oppdatert": "2026-11-12T00:00"
 }
