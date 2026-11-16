@@ -35,7 +35,26 @@
    "avlyst_grunn": null,
    "lukket": false,
    "lukket_notat": null,
-   "forestillinger": []
+   "forestillinger": [
+    {
+     "id": 49905,
+     "tid": "18:00",
+     "tittel": "Hexe: det magiske riket",
+     "aldersgrense": "6",
+     "spilletid": 109,
+     "undertekst": "2D Norsk tale Norsk tekst",
+     "pris": 110,
+     "billettlenke": null,
+     "avlyst": false,
+     "avlyst_grunn": null,
+     "lukket": false,
+     "lukket_notat": null,
+     "plakat": "https://cdn.sanity.io/images/j0wdmpyb/production/bf8e21c21311a71e249a351f0799a559591c98da-1440x2057.jpg?w=240&auto=format",
+     "still": "https://cdn.sanity.io/images/j0wdmpyb/production/e192e60fc9cf35acebc2c1fd2546d6ceb28fab95-3840x2058.jpg?w=960&auto=format",
+     "omtale": "Billie er en impulsiv og ukonvensjonell tenåringsjente. En dag oppdager hun hemmelige magiske evner som kaster henne inn i en spektakulær reise til et enormt, magisk rike kalt Hexe.",
+     "filmside": "https://www.bygdekinoen.no/film/EDI20251212"
+    }
+   ]
   },
   {
    "dato": "2026-12-27",
@@ -165,5 +184,5 @@
   "dato": "2026-11-25",
   "bilder": {}
  },
- "oppdatert": "2026-11-12T00:00"
+ "oppdatert": "2026-11-16T15:00"
 }
