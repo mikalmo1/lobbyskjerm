@@ -1,10 +1,60 @@
 {
- "oppdatert": "2026-11-17T08:50:25Z",
+ "oppdatert": "2026-11-17T18:11:42Z",
  "saker": [
+  {
+   "tittel": "Kongebesøk i byen",
+   "kilde": "Trøndelag",
+   "lenke": "https://www.nrk.no/video/DKTL98111726"
+  },
+  {
+   "tittel": "Pågående cyberangrep mot Equinor",
+   "kilde": "NRK",
+   "lenke": "https://www.nrk.no/nyheter/pagaende-cyberangrep-mot-equinor-1.18083829"
+  },
+  {
+   "tittel": "SAS kuttet i nord – nå skal Widerøe sette inn ekstra fly",
+   "kilde": "Trøndelag",
+   "lenke": "https://www.nrk.no/nordland/wideroe-oker-antall-avganger-mellom-bodo_-tromso-og-trondheim-1.18083296"
+  },
+  {
+   "tittel": "Slik spredte fugleinfluensaen seg til flere norske gårder",
+   "kilde": "NRK",
+   "lenke": "https://www.nrk.no/rogaland/fugleinfluensa_-mattilsynet-ga-tillatelse-som-spredte-smitten-1.18083519"
+  },
+  {
+   "tittel": "Sør-Fosen sijte har hatt møte med staten: – Kommer til å ha god kontroll på dyrene",
+   "kilde": "Trøndelag",
+   "lenke": "https://www.nrk.no/trondelag/sor-fosen-sijte-har-hatt-mote-med-staten_-_-kommer-til-a-ha-god-kontroll-pa-dyrene-1.18083510"
+  },
+  {
+   "tittel": "Infantino-utfordreren til NRK: – Kunne ikke se på at ingen sa stopp",
+   "kilde": "NRK",
+   "lenke": "https://www.nrk.no/sport/philippe-diallo-utfordrer-gianni-infantino-_-bestemte-seg-for-a-stille-etter-at-arsene-wenger-sa-nei-1.18083460"
+  },
+  {
+   "tittel": "Kongeparet er på besøk i Trondheim og Nidarosdomen: – Store forventingar",
+   "kilde": "Trøndelag",
+   "lenke": "https://www.nrk.no/trondelag/kongeparet-er-pa-besok-i-trondheim-og-nidarosdomen_-_-store-forventingar-1.18083641"
+  },
+  {
+   "tittel": "Drapet på Jonas Aarseth Henriksen skal opp for Høyesterett",
+   "kilde": "NRK",
+   "lenke": "https://www.nrk.no/buskerud/ankesaken-etter-drapet-pa-jonas-aarseth-henriksen-skal-opp-for-hoyesterett-1.17959846"
+  },
   {
    "tittel": "Vil opne nye havområde for oppdrett: – Sentral milepæl",
    "kilde": "Trøndelag",
    "lenke": "https://www.nrk.no/trondelag/regjeringa-vil-opne-nye-havomrade-for-oppdrett-1.18083212"
+  },
+  {
+   "tittel": "Orienterte om Finnmark-gruve i hemmelig møte på Stortinget",
+   "kilde": "NRK",
+   "lenke": "https://www.nrk.no/tromsogfinnmark/naeringsministeren-orienterte-om-nussir-gruva-i-hemmelig-mote-pa-stortinget-1.18083481"
+  },
+  {
+   "tittel": "Her kommer bilen over i motsatt kjørefelt",
+   "kilde": "Trøndelag",
+   "lenke": "https://www.nrk.no/trondelag/snur-og-kjorer-i-motsatt-kjoreretning-i-110-sonen-1.18082974"
   },
   {
    "tittel": "Utdanningsforbundet frykter skolekutt på 11 milliarder kroner",
@@ -12,9 +62,9 @@
    "lenke": "https://www.nrk.no/trondelag/kommunene-frykter-et-skolekutt-pa-11-milliarder-kroner-pa-grunn-av-faerre-elever-1.18074831"
   },
   {
-   "tittel": "Kongeparet er på besøk i Trondheim",
+   "tittel": "NRK erfarer: Solbakken overrasker: Nyland tilbake fra start mot Danmark",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/nyheter/kongeparet-er-pa-besok-i-trondheim-1.18083209"
+   "lenke": "https://www.nrk.no/sport/nrk-erfarer_-nyland-starter-mot-danmark-1.18083669"
   },
   {
    "tittel": "Midtnytt: Kjører feil på nye E6",
@@ -22,59 +72,9 @@
    "lenke": "https://www.nrk.no/video/DKTL98111626"
   },
   {
-   "tittel": "Ladetårn byrja brenne med ferje tilkopla",
+   "tittel": "Sikrar fleirtal i bomsak: Vil halvere prisen i eit år",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/vestland/brann-i-ladetarn-pa-ferjekai-1.18083166"
-  },
-  {
-   "tittel": "Full fyr i bolig på Jøa i Namsos",
-   "kilde": "Trøndelag",
-   "lenke": "https://www.nrk.no/trondelag/bolig-brant-pa-joa-i-namsos-1.18082465"
-  },
-  {
-   "tittel": "Trippelmøte i Kina: Xi, Trump, Putin og mannen som ikke er der",
-   "kilde": "NRK",
-   "lenke": "https://www.nrk.no/urix/trippelmote-i-kina_-xi_-trump_-putin-og-mannen-som-ikke-er-der-1.18082205"
-  },
-  {
-   "tittel": "Undersøker løse jordmasser i Trondheim – ett hus evakuert",
-   "kilde": "Trøndelag",
-   "lenke": "https://www.nrk.no/trondelag/jordmasser-sunket-ved-hallset-_-ett-hus-evakuert-1.18082240"
-  },
-  {
-   "tittel": "Danskene tror Haaland bløffer: – Tar det med en klype salt",
-   "kilde": "NRK",
-   "lenke": "https://www.nrk.no/sport/danskene-tror-haaland-bloffer_-_-tar-det-med-en-klype-salt-1.18083080"
-  },
-  {
-   "tittel": "Studenter spiller i «Rinnan»: – Vil vise fram motstandskvinnene",
-   "kilde": "Trøndelag",
-   "lenke": "https://www.nrk.no/trondelag/unge-trondere-i-rinnan-serien-1.18079634"
-  },
-  {
-   "tittel": "Russisk leder: Bro til Krym angrepet",
-   "kilde": "NRK",
-   "lenke": "https://www.nrk.no/nyheter/russisk-leder_-bro-til-krym-angrepet-1.18083128"
-  },
-  {
-   "tittel": "Tok kvelertak på vektere – ble bortvist fra bysentrum",
-   "kilde": "Trøndelag",
-   "lenke": "https://www.nrk.no/trondelag/glatte-veier-i-trondelag-og-kvelertak-pa-utestedet-1.18082126"
-  },
-  {
-   "tittel": "Gjev seg etter 20 år – fekk klar beskjed i Ødegaard-debut",
-   "kilde": "NRK",
-   "lenke": "https://www.nrk.no/sport/morten-scott-janssen-gjev-seg-etter-20-ar_-_-litt-som-kjaerleikssorg-1.18081649"
-  },
-  {
-   "tittel": "Bransjekrise tvang Silje til å tenke nytt",
-   "kilde": "Trøndelag",
-   "lenke": "https://www.nrk.no/trondelag/nedgangstider-i-arkitektbransjen-gjor-at-flere-starter-for-seg-selv-i-trondheim-1.18073237"
-  },
-  {
-   "tittel": "Russer kjøper Nussir-gruven: – Døm oss på fakta, ikke fordommer",
-   "kilde": "NRK",
-   "lenke": "https://www.nrk.no/tromsogfinnmark/nussirs-nye-styreleder-artem-volynets-besokte-hammerfest-og-slar-tilbake-mot-russland-skepsis-1.18082972"
+   "lenke": "https://www.nrk.no/sorlandet/fleirtal-i-bomsak_-prisen-skal-halverast-i-eit-ar-1.18079312"
   }
  ]
 }
