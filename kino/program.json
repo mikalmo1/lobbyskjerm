@@ -53,6 +53,24 @@
      "still": "https://cdn.sanity.io/images/j0wdmpyb/production/e192e60fc9cf35acebc2c1fd2546d6ceb28fab95-3840x2058.jpg?w=960&auto=format",
      "omtale": "Billie er en impulsiv og ukonvensjonell tenåringsjente. En dag oppdager hun hemmelige magiske evner som kaster henne inn i en spektakulær reise til et enormt, magisk rike kalt Hexe.",
      "filmside": "https://www.bygdekinoen.no/film/EDI20251212"
+    },
+    {
+     "id": 49993,
+     "tid": "20:00",
+     "tittel": "Focker In-Law",
+     "aldersgrense": "A",
+     "spilletid": 105,
+     "undertekst": "2D Original tale Norsk tekst",
+     "pris": 130,
+     "billettlenke": null,
+     "avlyst": false,
+     "avlyst_grunn": null,
+     "lukket": false,
+     "lukket_notat": null,
+     "plakat": null,
+     "still": null,
+     "omtale": null,
+     "filmside": null
     }
    ]
   },
@@ -184,5 +202,5 @@
   "dato": "2026-11-25",
   "bilder": {}
  },
- "oppdatert": "2026-11-16T15:00"
+ "oppdatert": "2026-11-17T16:00"
 }
