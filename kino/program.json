@@ -67,10 +67,10 @@
      "avlyst_grunn": null,
      "lukket": false,
      "lukket_notat": null,
-     "plakat": null,
-     "still": null,
-     "omtale": null,
-     "filmside": null
+     "plakat": "https://cdn.sanity.io/images/j0wdmpyb/production/c103dfec09c25b19ec70e6c5c3fe406a0ca4296d-1500x2122.webp?w=240&auto=format",
+     "still": "https://cdn.sanity.io/images/j0wdmpyb/production/bc0228543ed4ae656c6dd93c9a24af4000119f14-4000x2667.webp?w=960&auto=format",
+     "omtale": "For 26 år siden forsøkte Greg Focker (Ben Stiller) iherdig å bli akseptert inn i familien av den strenge svigerfaren, Jack (Robert De Niro), i Meet the Parents.",
+     "filmside": "https://www.bygdekinoen.no/film/EDI20250806"
     }
    ]
   },
@@ -202,5 +202,5 @@
   "dato": "2026-11-25",
   "bilder": {}
  },
- "oppdatert": "2026-11-17T16:00"
+ "oppdatert": "2026-11-17T17:00"
 }
