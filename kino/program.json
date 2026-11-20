@@ -209,7 +209,7 @@
   },
   {
    "dato": "2027-06-16",
-   "avlyst": false,
+   "avlyst": true,
    "avlyst_grunn": null,
    "lukket": false,
    "lukket_notat": null,
@@ -223,5 +223,5 @@
    "49777": "2026-11-25_49777_29.jpg"
   }
  },
- "oppdatert": "2026-11-18T14:40"
+ "oppdatert": "2026-11-20T09:22"
 }
