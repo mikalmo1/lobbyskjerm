@@ -101,7 +101,7 @@
    "forestillinger": [
     {
      "id": 49522,
-     "tid": "18:00",
+     "tid": "15:00",
      "tittel": "Bukkene Bruse drar til Syden",
      "aldersgrense": "A",
      "spilletid": 74,
@@ -116,6 +116,24 @@
      "still": "https://cdn.sanity.io/images/j0wdmpyb/production/0773afa5c2d1579fb5b3fa883962dd7c7f3338ac-2048x858.jpg?w=960&auto=format",
      "omtale": "De tre Bukkene Bruse bytter ut vafler på sætra med grisefest i Syden i denne helsprø animasjonsfilmen. Storebror, Mellombror og Lillebror Bruse rømmer fra Trollet og sommerregnet for å dra på verdens beste ferie.",
      "filmside": "https://www.bygdekinoen.no/film/NOR20240710"
+    },
+    {
+     "id": 50025,
+     "tid": "17:00",
+     "tittel": "Avengers: Doomsday",
+     "aldersgrense": null,
+     "spilletid": 150,
+     "undertekst": "2D Original tale Norsk tekst",
+     "pris": 110,
+     "billettlenke": null,
+     "avlyst": false,
+     "avlyst_grunn": null,
+     "lukket": false,
+     "lukket_notat": null,
+     "plakat": "https://cdn.sanity.io/images/j0wdmpyb/production/f58adb08dfef8ec012865e3c1b39d61c5c45f4b7-1440x2057.jpg?w=240&auto=format",
+     "still": "https://cdn.sanity.io/images/j0wdmpyb/production/9fb758d17d3b4121147a3104b0e4aaee99a0b137-3456x1450.jpg?w=960&auto=format",
+     "omtale": null,
+     "filmside": "https://www.bygdekinoen.no/film/BVI20200545"
     }
    ]
   },
@@ -223,5 +241,5 @@
    "49777": "2026-11-25_49777_29.jpg"
   }
  },
- "oppdatert": "2026-11-20T09:23"
+ "oppdatert": "2026-11-20T11:27"
 }
