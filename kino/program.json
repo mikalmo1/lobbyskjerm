@@ -193,7 +193,7 @@
   },
   {
    "dato": "2027-05-19",
-   "avlyst": false,
+   "avlyst": true,
    "avlyst_grunn": null,
    "lukket": false,
    "lukket_notat": null,
