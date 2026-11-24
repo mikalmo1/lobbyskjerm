@@ -208,30 +208,6 @@
    "lukket": false,
    "lukket_notat": null,
    "forestillinger": []
-  },
-  {
-   "dato": "2027-05-19",
-   "avlyst": true,
-   "avlyst_grunn": null,
-   "lukket": false,
-   "lukket_notat": null,
-   "forestillinger": []
-  },
-  {
-   "dato": "2027-06-02",
-   "avlyst": true,
-   "avlyst_grunn": null,
-   "lukket": false,
-   "lukket_notat": null,
-   "forestillinger": []
-  },
-  {
-   "dato": "2027-06-16",
-   "avlyst": true,
-   "avlyst_grunn": null,
-   "lukket": false,
-   "lukket_notat": null,
-   "forestillinger": []
   }
  ],
  "hero": {
@@ -241,5 +217,5 @@
    "49777": "2026-11-25_49777_29.jpg"
   }
  },
- "oppdatert": "2026-11-23T18:00"
+ "oppdatert": "2026-11-24T14:40"
 }
