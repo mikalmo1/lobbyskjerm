@@ -1,15 +1,45 @@
 {
- "oppdatert": "2026-11-25T12:57:51Z",
+ "oppdatert": "2026-11-25T22:19:44Z",
  "saker": [
+  {
+   "tittel": "Rykket ut etter eksplosjon i powerbank",
+   "kilde": "Trøndelag",
+   "lenke": "https://www.nrk.no/rykket-ut-etter-eksplosjon-i-powerbank-1.18088765"
+  },
+  {
+   "tittel": "Ekspertene raser etter nok en United-nedtur",
+   "kilde": "NRK",
+   "lenke": "https://www.nrk.no/sport/ekspertene-raser-etter-nok-en-united-nedtur-1.18088750"
+  },
+  {
+   "tittel": "Har saksøkt staten etter koronavaksine: – Dei som har blitt skada må få erstatning",
+   "kilde": "Trøndelag",
+   "lenke": "https://www.nrk.no/har-saksokt-staten-etter-koronavaksine-dei-som-har-blitt-skada-ma-fa-erstatning-1.18088186"
+  },
+  {
+   "tittel": "Omdiskutert keepervalg av Viking: – Så ærlige må vi være",
+   "kilde": "NRK",
+   "lenke": "https://www.nrk.no/sport/viking-sliter-mot-atletico-madrid-1.18088731"
+  },
+  {
+   "tittel": "RBK-trener bekrefter sterk interesse",
+   "kilde": "Trøndelag",
+   "lenke": "https://www.nrk.no/rbk-trener-bekrefter-sterk-interesse-1.18088547"
+  },
+  {
+   "tittel": "Slik lurer spillene barn til å bruke penger",
+   "kilde": "NRK",
+   "lenke": "https://www.nrk.no/vestfoldogtelemark/slik-lurer-spillene-barn-til-a-bruke-penger-1.18084337"
+  },
   {
    "tittel": "Slår alarm om «Helikopterforeldre» i barneidretten",
    "kilde": "Trøndelag",
    "lenke": "https://www.nrk.no/slar-alarm-om-helikopterforeldre-i-barneidretten-1.18040695"
   },
   {
-   "tittel": "Martine (1) døde: Dagmamma-frifinnelsen blir stående",
+   "tittel": "Meglere drilles i å avsløre spion-skalkeskjul",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/buskerud/martine-_1_-dode_-dagmamma-frifinnelsen-blir-staende-1.18088370"
+   "lenke": "https://www.nrk.no/tromsogfinnmark/eiendomsmeglere-kurses-i-a-avslore-spioner-fra-fremmede-makter-1.18082193"
   },
   {
    "tittel": "Varsler tøffere tider for kollektivtrafikken",
@@ -17,9 +47,9 @@
    "lenke": "https://www.nrk.no/varsler-toffere-tider-for-kollektivtrafikken-1.18088236"
   },
   {
-   "tittel": "Fekk ikkje mensen: – Måtte velje mellom idretten eller eiga helse",
+   "tittel": "Dronning Mette-Marit kommer på takkekonserten i Trefoldighetskirken",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/sport/maya-cloetens-knytte-menstruasjon-til-darleg-form_-_-er-ikkje-normalt-1.18082896"
+   "lenke": "https://www.nrk.no/nyheter/dronning-mette-marit-kommer-pa-takkekonserten-i-trefoldighetskirken-1.18088528"
   },
   {
    "tittel": "Sunniva Hofstad ble europamester for fjerde gang: – Fantastisk følelse",
@@ -27,9 +57,9 @@
    "lenke": "https://www.nrk.no/sunniva-hofstad-ble-europamester-for-fjerde-gang-fantastisk-folelse-1.18088041"
   },
   {
-   "tittel": "Jordskjelv i Midt-Troms",
+   "tittel": "Gjør endringer på nettsiden etter NRK-sak: – Vi har lyttet",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/tromsogfinnmark/registrerte-jordskjelv-med-styrke-pa-2_8-i-midt-troms-1.18088230"
+   "lenke": "https://www.nrk.no/nordland/havila-kystruten-gjor-endringer-pa-nettsiden-etter-nrk-sak_-_-vi-har-lyttet-1.18088272"
   },
   {
    "tittel": "Sky Sports: RBK-trener tilbudt jobb for Swansea",
@@ -37,9 +67,9 @@
    "lenke": "https://www.nrk.no/sky-sports-rbk-trener-tilbudt-jobb-for-swansea-1.18087867"
   },
   {
-   "tittel": "Gard må avlive 225.000 unghøner – varslar klage",
+   "tittel": "En femtemann fortsatt siktet etter Jonas-drapet: – Belastende",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/rogaland/a_a-salte-kyllingoppdrett-varslar-klage-pa-vedtak-om-avliving-av-225.000-unghoner-1.18088192"
+   "lenke": "https://www.nrk.no/buskerud/en-femtemann-fortsatt-siktet-etter-jonas-drapet_-_-belastende-1.18084062"
   },
   {
    "tittel": "Pappa Sørloth: – Viking har null sjanser mot Atlético Madrid",
@@ -47,39 +77,9 @@
    "lenke": "https://www.nrk.no/pappa-sorloth-viking-har-null-sjanser-mot-atletico-madrid-1.18086941"
   },
   {
-   "tittel": "Flyselskapet Norse sliter – stuper på børsen",
+   "tittel": "Norsk vegansamfunn vant mot staten",
    "kilde": "NRK",
-   "lenke": "https://www.nrk.no/sorlandet/flyeselskapet-norse-sliter-med-finansiering-1.18088214"
-  },
-  {
-   "tittel": "Brann i enebolig på Møllenberg",
-   "kilde": "Trøndelag",
-   "lenke": "https://www.nrk.no/brann-i-enebolig-pa-mollenberg-1.18087922"
-  },
-  {
-   "tittel": "Byråkratar fekk undersøke seg sjølv – oversåg grove feil",
-   "kilde": "NRK",
-   "lenke": "https://www.nrk.no/norge/byrakratar-fekk-granske-seg-sjolv-_-oversag-grove-feil-1.18061913"
-  },
-  {
-   "tittel": "Vil bygge ut videregående skole flere år tidligere",
-   "kilde": "Trøndelag",
-   "lenke": "https://www.nrk.no/vil-bygge-ut-videregaende-skole-flere-ar-tidligere-1.18087228"
-  },
-  {
-   "tittel": "Pasientar fekk sjokkbeskjed på telefon: – Hjarterått",
-   "kilde": "NRK",
-   "lenke": "https://www.nrk.no/ostfold/pasientar-ved-sjukehuset-ostfold-fekk-beskjed-om-dodeleg-sjukdom-pa-telefon-1.18086313"
-  },
-  {
-   "tittel": "Ueinige om koronavaksinen kan føre til ME",
-   "kilde": "Trøndelag",
-   "lenke": "https://www.nrk.no/ueinige-om-koronavaksinen-kan-fore-til-me-1.18087498"
-  },
-  {
-   "tittel": "Nusa-dobbel for Leipzig i Meisterligaen",
-   "kilde": "NRK",
-   "lenke": "https://www.nrk.no/sport/nusa-dobbel-for-leipzig-i-meisterligaen-1.18088054"
+   "lenke": "https://www.nrk.no/nyheter/norsk-vegansamfunn-vant-mot-staten-1.18088603"
   }
  ]
 }
