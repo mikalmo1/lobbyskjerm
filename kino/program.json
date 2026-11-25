@@ -3,51 +3,6 @@
  "programlenke": "https://www.bygdekinoen.no/#selbu",
  "dager": [
   {
-   "dato": "2026-11-25",
-   "avlyst": false,
-   "avlyst_grunn": null,
-   "lukket": false,
-   "lukket_notat": null,
-   "forestillinger": [
-    {
-     "id": 50000,
-     "tid": "18:00",
-     "tittel": "Julenissens verksted",
-     "aldersgrense": "A",
-     "spilletid": 73,
-     "undertekst": "2D Norsk tale Norsk tekst",
-     "pris": 110,
-     "billettlenke": "https://kinologg.kino.no/nettsalg/50000",
-     "avlyst": false,
-     "avlyst_grunn": null,
-     "lukket": false,
-     "lukket_notat": null,
-     "plakat": "https://cdn.sanity.io/images/j0wdmpyb/production/6709e48a4ac96bb7821de663e44feff52c689458-1190x1684.jpg?w=240&auto=format",
-     "still": "https://cdn.sanity.io/images/j0wdmpyb/production/ef1674fcc41acce30602ddbab3817861e236d4bc-4000x2162.webp?w=960&auto=format",
-     "omtale": "Da ni år gamle Mari en natt våkner og oppdager en nisse på soverommet sitt, blir det starten på et juleeventyr utenom det vanlige.",
-     "filmside": "https://www.bygdekinoen.no/film/NOR20240691"
-    },
-    {
-     "id": 49777,
-     "tid": "20:00",
-     "tittel": "The Hunger Games: Sunrise on the Reaping",
-     "aldersgrense": "12",
-     "spilletid": 158,
-     "undertekst": "2D Original tale Norsk tekst",
-     "pris": 130,
-     "billettlenke": "https://kinologg.kino.no/nettsalg/49777",
-     "avlyst": false,
-     "avlyst_grunn": null,
-     "lukket": false,
-     "lukket_notat": null,
-     "plakat": "https://cdn.sanity.io/images/j0wdmpyb/production/759098369c8d9e4e168cd21dec664a9588893e2e-1240x1754.jpg?w=240&auto=format",
-     "still": "https://cdn.sanity.io/images/j0wdmpyb/production/71a80665846d9dc19b47411f8c177801beb536ed-3840x1602.jpg?w=960&auto=format",
-     "omtale": "SUNRISE ON THE REAPING er den nyeste forhistorien i Hunger Games-sagaen, og utspiller seg 24 år før hendelsene i Katniss Everdeens originale trilogi, noe som plasserer den omtrent fire tiår etter den siste fortellingen The Hunger Games…",
-     "filmside": "https://www.bygdekinoen.no/film/EDI20251030"
-    }
-   ]
-  },
-  {
    "dato": "2026-12-09",
    "avlyst": false,
    "avlyst_grunn": null,
@@ -211,11 +166,11 @@
   }
  ],
  "hero": {
-  "dato": "2026-11-25",
+  "dato": "2026-12-09",
   "bilder": {
-   "50000": "2026-11-25_50000_28.jpg",
-   "49777": "2026-11-25_49777_29.jpg"
+   "49905": "2026-12-09_49905_32.jpg",
+   "49993": "2026-12-09_49993_33.jpg"
   }
  },
- "oppdatert": "2026-11-25T01:00"
+ "oppdatert": "2026-11-26T00:00"
 }
