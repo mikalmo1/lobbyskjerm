@@ -1,5 +1,5 @@
 {
- "oppdatert": "2026-11-26T09:19:31Z",
+ "oppdatert": "2026-11-26T09:19:56Z",
  "plakater": {
   "hvordan-vil-du-bo-i-selbu-facebook-infoskjerm.png": {
    "tittel": "Hvordan vil du bo i Selbu?",
@@ -17,7 +17,10 @@
   },
   "Romjulskino-2026-lobbyskjerm-jul.png": {
    "tittel": "Romjulskino 2026 lobbyskjerm jul",
-   "avsender": "Selbu kommune"
+   "avsender": "Selbu kommune",
+   "fullskjerm": true,
+   "fra": "2026-11-26",
+   "til": "2026-12-27"
   }
  }
 }
