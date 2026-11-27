@@ -114,7 +114,26 @@
    "avlyst_grunn": null,
    "lukket": false,
    "lukket_notat": null,
-   "forestillinger": []
+   "forestillinger": [
+    {
+     "id": 50362,
+     "tid": "20:00",
+     "tittel": "Bygd på kjærlighet",
+     "aldersgrense": "6",
+     "spilletid": null,
+     "undertekst": "2D Norsk tale Norsk tekst",
+     "pris": 130,
+     "billettlenke": null,
+     "avlyst": false,
+     "avlyst_grunn": null,
+     "lukket": false,
+     "lukket_notat": null,
+     "plakat": null,
+     "still": null,
+     "omtale": null,
+     "filmside": null
+    }
+   ]
   },
   {
    "dato": "2027-02-24",
@@ -172,5 +191,5 @@
    "49993": "2026-12-09_49993_33.jpg"
   }
  },
- "oppdatert": "2026-11-26T00:00"
+ "oppdatert": "2026-11-27T14:00"
 }
